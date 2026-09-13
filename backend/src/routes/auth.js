@@ -23,7 +23,7 @@ router.post('/register', async (req, res) => {
   if (password.length < 6) {
     return res.status(400).json({ error: 'يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.' });
   }
-  if (db.findUserByEmail(email)) {
+  if (await db.findUserByEmail(email)) {
     return res.status(409).json({ error: 'يوجد حساب مسجل بهذا البريد الإلكتروني بالفعل.' });
   }
 
@@ -37,7 +37,7 @@ router.post('/register', async (req, res) => {
     status: 'pending', // ينتظر موافقة صاحب المنصة (عماد) قبل الدخول إلى المحتوى
     createdAt: new Date().toISOString(),
   };
-  db.addUser(user);
+  await db.addUser(user);
 
   res.status(201).json({
     pending: true,
@@ -52,7 +52,7 @@ router.post('/login', async (req, res) => {
     return res.status(400).json({ error: 'البريد الإلكتروني وكلمة المرور مطلوبان.' });
   }
 
-  const user = db.findUserByEmail(email);
+  const user = await db.findUserByEmail(email);
   if (!user) {
     return res.status(401).json({ error: 'البريد الإلكتروني أو كلمة المرور غير صحيحة.' });
   }

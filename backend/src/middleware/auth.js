@@ -27,8 +27,8 @@ function requireAdmin(req, res, next) {
 }
 
 // Content (tests/quizzes) requires an account approved by the platform owner.
-function requireApproved(req, res, next) {
-  const user = db.findUserById(req.userId);
+async function requireApproved(req, res, next) {
+  const user = await db.findUserById(req.userId);
   if (!user || (user.status !== 'approved')) {
     return res.status(403).json({ error: 'يجب أن يوافق عماد على طلب تسجيلك قبل الوصول إلى المحتوى.' });
   }

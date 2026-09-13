@@ -1,46 +1,69 @@
-const fs = require('fs');
-const path = require('path');
+const admin = require('firebase-admin');
 
-const DB_FILE = path.join(__dirname, '..', 'db.json');
-
-function loadDb() {
-  if (!fs.existsSync(DB_FILE)) {
-    const initial = { users: [], results: [] };
-    fs.writeFileSync(DB_FILE, JSON.stringify(initial, null, 2));
-    return initial;
-  }
-  const raw = fs.readFileSync(DB_FILE, 'utf-8');
-  return JSON.parse(raw);
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert({
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      // Vercel env vars store literal "\n" — convert back to real newlines.
+      privateKey: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+    }),
+  });
 }
 
-function saveDb(data) {
-  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
-}
+const db = admin.firestore();
+const usersCol = db.collection('users');
+const resultsCol = db.collection('results');
 
-let cache = loadDb();
+function docToObj(doc) {
+  return { id: doc.id, ...doc.data() };
+}
 
 module.exports = {
-  getUsers: () => cache.users,
-  getResults: () => cache.results,
-  addUser: (user) => {
-    cache.users.push(user);
-    saveDb(cache);
+  getUsers: async () => {
+    const snap = await usersCol.get();
+    return snap.docs.map(docToObj);
+  },
+  getResults: async () => {
+    const snap = await resultsCol.get();
+    return snap.docs.map(docToObj);
+  },
+  addUser: async (user) => {
+    const { id, ...data } = user;
+    await usersCol.doc(id).set(data);
     return user;
   },
-  updateUser: (id, changes) => {
-    const user = cache.users.find((u) => u.id === id);
-    if (!user) return null;
-    Object.assign(user, changes);
-    saveDb(cache);
-    return user;
+  updateUser: async (id, changes) => {
+    const ref = usersCol.doc(id);
+    const doc = await ref.get();
+    if (!doc.exists) return null;
+    await ref.update(changes);
+    return docToObj(await ref.get());
   },
-  findUserByEmail: (email) => cache.users.find((u) => u.email.toLowerCase() === email.toLowerCase()),
-  findUserById: (id) => cache.users.find((u) => u.id === id),
-  getPendingUsers: () => cache.users.filter((u) => u.status === 'pending'),
-  addResult: (result) => {
-    cache.results.push(result);
-    saveDb(cache);
+  findUserByEmail: async (email) => {
+    const snap = await usersCol.where('email', '==', email).limit(1).get();
+    if (!snap.empty) return docToObj(snap.docs[0]);
+    // Emails are stored as given; fall back to a case-insensitive scan for
+    // older/mixed-case entries.
+    const all = await usersCol.get();
+    const match = all.docs.find((d) => d.data().email.toLowerCase() === email.toLowerCase());
+    return match ? docToObj(match) : undefined;
+  },
+  findUserById: async (id) => {
+    const doc = await usersCol.doc(id).get();
+    return doc.exists ? docToObj(doc) : undefined;
+  },
+  getPendingUsers: async () => {
+    const snap = await usersCol.where('status', '==', 'pending').get();
+    return snap.docs.map(docToObj);
+  },
+  addResult: async (result) => {
+    const { id, ...data } = result;
+    await resultsCol.doc(id).set(data);
     return result;
   },
-  getResultsByUser: (userId) => cache.results.filter((r) => r.userId === userId),
+  getResultsByUser: async (userId) => {
+    const snap = await resultsCol.where('userId', '==', userId).get();
+    return snap.docs.map(docToObj);
+  },
 };

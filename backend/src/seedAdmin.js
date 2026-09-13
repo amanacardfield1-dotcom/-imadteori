@@ -13,16 +13,16 @@ async function seedAdmin() {
     return;
   }
 
-  const existing = db.findUserByEmail(email);
+  const existing = await db.findUserByEmail(email);
   if (existing) {
     if (existing.role !== 'admin' || existing.status !== 'approved') {
-      db.updateUser(existing.id, { role: 'admin', status: 'approved' });
+      await db.updateUser(existing.id, { role: 'admin', status: 'approved' });
     }
     return;
   }
 
   const passwordHash = await bcrypt.hash(password, 10);
-  db.addUser({
+  await db.addUser({
     id: nanoid(),
     name: 'عماد (صاحب المنصة)',
     email,

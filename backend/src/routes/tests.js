@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
 });
 
 // Submit answers, grade server-side, and store the result for this trainee.
-router.post('/:id/submit', (req, res) => {
+router.post('/:id/submit', async (req, res) => {
   const test = tests.find((t) => t.id === req.params.id);
   if (!test) {
     return res.status(404).json({ error: 'الاختبار غير موجود.' });
@@ -59,7 +59,7 @@ router.post('/:id/submit', (req, res) => {
     };
   });
 
-  db.addResult({
+  await db.addResult({
     id: nanoid(),
     testId: test.id,
     testTitle: test.title,

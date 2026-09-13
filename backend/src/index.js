@@ -17,16 +17,27 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// On serverless (Vercel), each cold start needs the admin account ensured
+// before serving requests; this runs once per warm instance and is cached.
+let seedPromise = null;
+app.use((req, res, next) => {
+  if (!seedPromise) seedPromise = seedAdmin().catch((err) => console.error('seedAdmin failed:', err));
+  seedPromise.then(() => next());
+});
+
 app.get('/api/health', (req, res) => res.json({ ok: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/tests', testRoutes);
 app.use('/api/results', resultRoutes);
 app.use('/api/admin', adminRoutes);
 
-const PORT = process.env.PORT || 4000;
-
-seedAdmin().finally(() => {
+// Only listen on a port when run directly (local dev / `npm start`).
+// On Vercel, this file is imported and the exported app is wrapped instead.
+if (require.main === module) {
+  const PORT = process.env.PORT || 4000;
   app.listen(PORT, () => {
     console.log(`Imad Teori Academy API يعمل على http://localhost:${PORT}`);
   });
-});
+}
+
+module.exports = app;

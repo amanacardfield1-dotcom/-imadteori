@@ -17,22 +17,22 @@ function publicUser(user) {
   };
 }
 
-router.get('/users', (req, res) => {
-  res.json(db.getUsers().map(publicUser));
+router.get('/users', async (req, res) => {
+  res.json((await db.getUsers()).map(publicUser));
 });
 
-router.get('/users/pending', (req, res) => {
-  res.json(db.getPendingUsers().map(publicUser));
+router.get('/users/pending', async (req, res) => {
+  res.json((await db.getPendingUsers()).map(publicUser));
 });
 
-router.post('/users/:id/approve', (req, res) => {
-  const user = db.updateUser(req.params.id, { status: 'approved' });
+router.post('/users/:id/approve', async (req, res) => {
+  const user = await db.updateUser(req.params.id, { status: 'approved' });
   if (!user) return res.status(404).json({ error: 'المستخدم غير موجود.' });
   res.json(publicUser(user));
 });
 
-router.post('/users/:id/reject', (req, res) => {
-  const user = db.updateUser(req.params.id, { status: 'rejected' });
+router.post('/users/:id/reject', async (req, res) => {
+  const user = await db.updateUser(req.params.id, { status: 'rejected' });
   if (!user) return res.status(404).json({ error: 'المستخدم غير موجود.' });
   res.json(publicUser(user));
 });
