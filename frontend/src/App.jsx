@@ -13,6 +13,8 @@ import Admin from './pages/Admin';
 import TrafficSigns from './pages/TrafficSigns';
 import TeoriProvIntro from './pages/TeoriProvIntro';
 import TeoriProvRun from './pages/TeoriProvRun';
+import AdminExamResults from './pages/AdminExamResults';
+import AdminExamDetail from './pages/AdminExamDetail';
 
 export default function App() {
   return (
@@ -78,6 +80,22 @@ export default function App() {
             element={
               <ProtectedRoute requireAdmin>
                 <Admin />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/exam-results"
+            element={
+              <ProtectedRoute requireAdmin>
+                <AdminExamResults />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/exam-results/:id"
+            element={
+              <ProtectedRoute requireAdmin>
+                <AdminExamDetail />
               </ProtectedRoute>
             }
           />

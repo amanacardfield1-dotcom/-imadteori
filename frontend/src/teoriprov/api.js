@@ -1,4 +1,4 @@
-import { collection, getDocs, addDoc, query, where } from 'firebase/firestore';
+import { collection, getDocs, addDoc, doc, getDoc, query, where } from 'firebase/firestore';
 import { db } from '../firebase';
 import { CATEGORY_COUNTS } from './engine';
 
@@ -33,13 +33,20 @@ export async function getLastAttemptQuestionIds(uid) {
   }
 }
 
-export async function saveAttempt(uid, result, durationUsedSeconds) {
+export async function saveAttempt(user, result, durationUsedSeconds) {
+  const takenAt = new Date();
+  const startedAt = new Date(takenAt.getTime() - durationUsedSeconds * 1000);
   await addDoc(collection(db, 'teoriprovAttempts'), {
-    userId: uid,
-    takenAt: new Date().toISOString(),
+    userId: user.uid,
+    userName: user.name || '',
+    userEmail: user.email || '',
+    startedAt: startedAt.toISOString(),
+    takenAt: takenAt.toISOString(),
     durationUsedSeconds,
     score: result.score,
     totalScored: result.total,
+    unansweredCount: result.questions.filter((q) => !q.isTrial && q.selectedIndex === null).length,
+    incorrectCount: result.questions.filter((q) => !q.isTrial && q.selectedIndex !== null && !q.isCorrect).length,
     passed: result.passed,
     percentage: result.percentage,
     categoryScores: result.categoryScores,
@@ -54,4 +61,18 @@ export async function getMyAttempts(uid) {
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
     .sort((a, b) => new Date(b.takenAt) - new Date(a.takenAt));
+}
+
+// لصاحب المنصة فقط: كل محاولات كل المتدربين.
+export async function getAllAttempts() {
+  const snap = await getDocs(collection(db, 'teoriprovAttempts'));
+  return snap.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .sort((a, b) => new Date(b.takenAt) - new Date(a.takenAt));
+}
+
+export async function getAttemptById(id) {
+  const snap = await getDoc(doc(db, 'teoriprovAttempts', id));
+  if (!snap.exists()) return null;
+  return { id: snap.id, ...snap.data() };
 }

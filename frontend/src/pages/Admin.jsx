@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { api } from '../firestoreApi';
 
 export default function Admin() {
@@ -35,6 +36,11 @@ export default function Admin() {
 
   return (
     <div className="page">
+      <div className="admin-subnav">
+        <Link to="/admin" className="active">طلبات التسجيل</Link>
+        <Link to="/admin/exam-results">نتائج الاختبارات</Link>
+      </div>
+
       <h1>لوحة إدارة المتدربين</h1>
       <p className="muted">هنا يوافق عماد على طلبات التسجيل الجديدة أو يرفضها.</p>
 

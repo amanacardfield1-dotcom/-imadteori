@@ -94,13 +94,19 @@ export default function TeoriProvRun() {
       setStage('result');
       sessionStorage.removeItem(STORAGE_KEY);
       try {
-        await saveAttempt(user.uid, graded, durationUsed);
+        await saveAttempt(user, graded, durationUsed);
       } catch {
         /* فشل حفظ النتيجة بالخادم لا يجب أن يمنع المستخدم من رؤية نتيجته محليًا */
       }
     },
-    [exam, answers, secondsLeft, user.uid]
+    [exam, answers, secondsLeft, user]
   );
+
+  // مرجع ثابت لآخر نسخة من handleSubmit: يمنع إعادة إنشاء المؤقت (setInterval)
+  // في كل مرة تتغير فيها الإجابات أو الوقت المتبقي، وهو ما كان يجعل العد
+  // التنازلي يتسارع بشكل غير صحيح عند التفاعل السريع مع الأسئلة.
+  const handleSubmitRef = useRef(handleSubmit);
+  handleSubmitRef.current = handleSubmit;
 
   useEffect(() => {
     if (stage !== 'exam') return undefined;
@@ -108,14 +114,14 @@ export default function TeoriProvRun() {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
           clearInterval(interval);
-          handleSubmit(true);
+          handleSubmitRef.current(true);
           return 0;
         }
         return prev - 1;
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [stage, handleSubmit]);
+  }, [stage]);
 
   const selectAnswer = (qid, optionIndex) => {
     setAnswers((prev) => {

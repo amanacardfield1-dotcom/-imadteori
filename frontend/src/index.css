@@ -543,3 +543,45 @@ main {
   margin-inline-start: 8px;
   font-weight: 400;
 }
+
+.admin-subnav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+.admin-subnav a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.admin-subnav a.active,
+.admin-subnav a:hover {
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+}
+.admin-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.admin-filters input,
+.admin-filters select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font: inherit;
+}
+.admin-filters input {
+  flex: 1;
+  min-width: 220px;
+}
+.tp-mono {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
