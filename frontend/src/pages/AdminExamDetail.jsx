@@ -41,6 +41,7 @@ export default function AdminExamDetail() {
       <div className="admin-subnav">
         <Link to="/admin">طلبات التسجيل</Link>
         <Link to="/admin/exam-results">نتائج الاختبارات</Link>
+        <Link to="/admin/question-bank">بنك الأسئلة الجديد</Link>
       </div>
 
       <Link to="/admin/exam-results">← العودة لقائمة النتائج</Link>

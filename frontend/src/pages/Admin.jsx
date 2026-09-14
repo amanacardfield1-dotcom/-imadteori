@@ -39,6 +39,7 @@ export default function Admin() {
       <div className="admin-subnav">
         <Link to="/admin" className="active">طلبات التسجيل</Link>
         <Link to="/admin/exam-results">نتائج الاختبارات</Link>
+        <Link to="/admin/question-bank">بنك الأسئلة الجديد</Link>
       </div>
 
       <h1>لوحة إدارة المتدربين</h1>

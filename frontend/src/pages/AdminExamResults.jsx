@@ -55,6 +55,7 @@ export default function AdminExamResults() {
       <div className="admin-subnav">
         <Link to="/admin">طلبات التسجيل</Link>
         <Link to="/admin/exam-results" className="active">نتائج الاختبارات</Link>
+        <Link to="/admin/question-bank">بنك الأسئلة الجديد</Link>
       </div>
 
       <h1>نتائج اختبارات Teoriprov</h1>

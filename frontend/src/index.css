@@ -812,6 +812,16 @@ main {
 .tp-question-toolbar legend {
   font-weight: 700;
 }
+.tp-question-image {
+  display: block;
+  max-width: min(100%, 560px);
+  max-height: 320px;
+  object-fit: contain;
+  margin: 14px auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+}
 .tp-flag-btn {
   background: none;
   border: 1px solid #d1d5db;

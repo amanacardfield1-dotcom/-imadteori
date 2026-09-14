@@ -50,5 +50,20 @@ service cloud.firestore {
       allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
       allow read: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
     }
+
+    // بنك الأسئلة الجديد (questionBankV2): 26 مجموعة معرفية + أسئلة أصلية +
+    // إعدادات الأوزان + سجل عمليات الاستيراد. مقروء فقط للمتدربين الموافَق
+    // عليهم، والكتابة (إضافة/تعديل/تعطيل أسئلة، تغيير الأوزان) للإدارة فقط.
+    match /questionBankV2/{document=**} {
+      allow read: if isApproved();
+      allow write: if isAdmin();
+    }
+
+    // محاولات الاختبارات التدريبية الديناميكية الجديدة (بنك questionBankV2):
+    // كل متدرب يكتب محاولته الخاصة فقط ويقرأها هو أو الإدارة، تمامًا كمحاولات Teoriprov.
+    match /practiceExamAttempts/{attemptId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+    }
   }
 }

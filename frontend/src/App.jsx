@@ -4,12 +4,13 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';
 import About from './pages/About';
 import Tests from './pages/Tests';
-import Quiz from './pages/Quiz';
+import PracticeExamRun from './pages/PracticeExamRun';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Pending from './pages/Pending';
 import Admin from './pages/Admin';
+import AdminQuestionBank from './pages/AdminQuestionBank';
 import TrafficSigns from './pages/TrafficSigns';
 import TeoriProvIntro from './pages/TeoriProvIntro';
 import TeoriProvRun from './pages/TeoriProvRun';
@@ -44,10 +45,10 @@ export default function App() {
             }
           />
           <Route
-            path="/tests/:id"
+            path="/tests/run"
             element={
               <ProtectedRoute requireApproved>
-                <Quiz />
+                <PracticeExamRun />
               </ProtectedRoute>
             }
           />
@@ -96,6 +97,14 @@ export default function App() {
             element={
               <ProtectedRoute requireAdmin>
                 <AdminExamDetail />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/question-bank"
+            element={
+              <ProtectedRoute requireAdmin>
+                <AdminQuestionBank />
               </ProtectedRoute>
             }
           />
