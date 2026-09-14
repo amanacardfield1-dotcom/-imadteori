@@ -295,6 +295,8 @@ function Dot({ c = RED, blink = false }) {
 function LineDiagram({ style = 'solid', color = WHITE }) {
   const common = { stroke: color, strokeWidth: 5, strokeLinecap: 'round' };
   if (style === 'dashed') return <line x1="0" y1="-24" x2="0" y2="24" strokeDasharray="8 6" {...common} />;
+  if (style === 'fine') return <line x1="0" y1="-24" x2="0" y2="24" strokeWidth="4" strokeDasharray="3 4" stroke={color} strokeLinecap="round" />;
+  if (style === 'block') return <line x1="0" y1="-24" x2="0" y2="24" strokeWidth="7" strokeDasharray="12 5" stroke={color} strokeLinecap="butt" />;
   if (style === 'double') return (
     <g>
       <line x1="-4" y1="-24" x2="-4" y2="24" {...common} />
@@ -354,12 +356,24 @@ function glyphContent(glyph, shape) {
 
   const simple = {
     car: <Car c={onColor} />, truck: <Truck c={onColor} />, bus: <Bus c={onColor} />,
+    'bus-station': (
+      <g>
+        <Bus c={onColor} />
+        <path d="M -11,-15 L -11,-19 L 11,-19 L 11,-15" fill="none" stroke={onColor} strokeWidth="1.8" strokeLinejoin="round" />
+      </g>
+    ),
     motorcycle: <Motorcycle c={onColor} />, bicycle: <Bicycle c={onColor} />, moped: <Moped c={onColor} />,
     tractor: <Tractor c={onColor} />, trailer: <Trailer c={onColor} />, snowmobile: <Snowmobile c={onColor} />,
     pedestrian: <Pedestrian c={onColor} />, children: <Children c={onColor} />, 'horse-rider': <HorseRider c={onColor} />,
     skier: <Skier c={onColor} />, animal: <Animal c={onColor} />, 'horse-cart': <HorseCart c={onColor} />,
     wheelchair: <Wheelchair c={onColor} />, ferry: <Ferry c={onColor} />,
-    'motor-multi': <Motorcycle c={onColor} />, hazmat: (
+    'motor-multi': (
+      <g>
+        <Car c={onColor} />
+        <circle cx="-9" cy="12" r="2.2" fill={onColor} />
+        <circle cx="9" cy="12" r="2.2" fill={onColor} />
+      </g>
+    ), hazmat: (
       <g transform="rotate(45)"><rect x="-9" y="-9" width="18" height="18" fill={onColor} /></g>
     ),
     'no-entry-bar': <rect x="-16" y="-4.5" width="32" height="9" rx="2" fill={onColor} />,
@@ -383,6 +397,12 @@ function glyphContent(glyph, shape) {
     'info-i': (
       <g fill={onColor}><circle cx="0" cy="-9" r="3" /><rect x="-2.4" y="-3" width="4.8" height="15" rx="2" /></g>
     ),
+    'info-generic': (
+      <g>
+        <g fill={onColor}><circle cx="0" cy="-9" r="3" /><rect x="-2.4" y="-3" width="4.8" height="15" rx="2" /></g>
+        <rect x="-14" y="-16" width="28" height="28" rx="3" fill="none" stroke={onColor} strokeWidth="1.4" strokeDasharray="3 3" />
+      </g>
+    ),
     star: <path d="M0,-14 L4,-4 L15,-4 L6,3 L9,14 L0,7 L-9,14 L-6,3 L-15,-4 L-4,-4 Z" fill={onColor} />,
     landmark: <path d="M -12,12 L 12,12 L 8,-10 L -8,-10 Z M -4,12 L -4,0 M 4,12 L 4,0" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
     hospital: (
@@ -405,16 +425,28 @@ function glyphContent(glyph, shape) {
     cabin: <path d="M -11,12 L -11,-2 L 0,-13 L 11,-2 L 11,12 Z M -4,12 L -4,3 L 4,3 L 4,12" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
     tent: <path d="M 0,-13 L 12,12 L -12,12 Z M 0,-13 L 0,12" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
     caravan: <path d="M -13,10 L -13,-2 a4,4 0 0 1 4,-4 L 9,-6 L 13,2 L 13,10 Z M -13,10 L 13,10" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
+    'caravan-facility': (
+      <g>
+        <path d="M -12,9 L -12,-1 a3.4,3.4 0 0 1 3.4,-3.4 L 8,-5 L 12,2 L 12,9 Z M -12,9 L 12,9" fill="none" stroke={onColor} strokeWidth="2" strokeLinejoin="round" />
+        <path d="M -15,13 L 15,13" stroke={onColor} strokeWidth="1.6" strokeDasharray="3 2" fill="none" />
+      </g>
+    ),
     picnic: <path d="M -12,4 L 12,4 M -9,4 L -12,12 M 9,4 L 12,12 M -12,-4 L 12,-4 M 0,-4 L 0,4" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" />,
     swim: <path d="M -13,6 q4,5 8,0 q4,-5 8,0 q4,5 8,0 M -3,-2 a4,4 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" />,
-    hiker: <Pedestrian c={onColor} />,
+    hiker: (
+      <g fill={onColor}>
+        <ellipse cx="-6" cy="-6" rx="3" ry="4.5" transform="rotate(-20 -6 -6)" />
+        <ellipse cx="6" cy="4" rx="3" ry="4.5" transform="rotate(15 6 4)" />
+        <ellipse cx="-4" cy="12" rx="3" ry="4.5" transform="rotate(-10 -4 12)" />
+      </g>
+    ),
     chairlift: <path d="M -12,-12 L 12,12 M -4,-2 L -10,4 M -4,-2 L -8,-8" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" />,
     towlift: <path d="M -12,-12 L 12,12 M 4,2 L 10,-2" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" />,
     golf: <path d="M -6,12 L -6,-13 L 8,-8 L -6,-3" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
     fish: <path d="M -12,0 Q -4,-8 8,0 Q -4,8 -12,0 Z M 8,0 L 13,-4 L 13,4 Z" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
     craft: <path d="M -8,10 L 4,-2 M -2,-10 a4,4 0 1 0 6,6 L 10,4 a3,3 0 0 1 -4,4 L -1,-1" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round" />,
     route: <path d="M -12,10 Q 0,-14 12,10" fill="none" stroke={onColor} strokeWidth="3" strokeDasharray="5 4" strokeLinecap="round" />,
-    'area-generic': <rect x="-11" y="-11" width="22" height="22" rx="3" fill="none" stroke={onColor} strokeWidth="3" />,
+    area: <rect x="-11" y="-11" width="22" height="22" rx="3" fill="none" stroke={onColor} strokeWidth="3" />,
     heritage: <circle cx="0" cy="0" r="12" fill="none" stroke={onColor} strokeWidth="3" />,
     tunnel: <path d="M -13,10 L -13,0 a13,13 0 0 1 26,0 L 13,10" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
     bridge: <path d="M -14,6 Q 0,-10 14,6 M -14,6 L -14,10 M 14,6 L 14,10" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
@@ -450,7 +482,11 @@ function glyphContent(glyph, shape) {
     'rail-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" />,
     'tram-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13 M -6,6 a6,6 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
     'rail-distance': <g>{[-10, 0, 10].map((x) => <line key={x} x1={x} y1="-10" x2={x} y2="10" stroke={onColor} strokeWidth="3" />)}</g>,
-    accident: <ExclaimIcon c={onColor} />,
+    accident: (
+      <g stroke={onColor} strokeWidth="2.6" strokeLinecap="round" fill="none">
+        <path d="M -10,10 L 10,-10 M -10,-10 L 10,10 M 0,-13 L 0,13 M -13,0 L 13,0" />
+      </g>
+    ),
     'no-turn': (
       <g>
         <ArrowIcon c={onColor} rot={90} />
@@ -529,7 +565,12 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'parking-p': <TextGlyph text="P" c={onColor} size={24} />,
-    'area-end': <rect x="-11" y="-11" width="22" height="22" rx="3" fill="none" stroke={onColor} strokeWidth="3" />,
+    'parking-p-special': (
+      <g>
+        <TextGlyph text="P" c={onColor} size={19} />
+        <rect x="-9" y="7" width="18" height="6" rx="1" fill="none" stroke={onColor} strokeWidth="1.6" />
+      </g>
+    ),
     'eco-zone': <TextGlyph text="MILJÖ" c={onColor} size={9} />,
     'bicycle-street': <Bicycle c={onColor} />,
     'emergency-bay': <TextGlyph text="SOS" c={onColor} size={13} />,
@@ -539,8 +580,18 @@ function glyphContent(glyph, shape) {
         <ArrowIcon c={onColor} rot={90} />
       </g>
     ),
-    'evac-route': <ArrowIcon c={onColor} rot={90} />,
-    'hazmat-arrow': <ArrowIcon c={onColor} rot={0} />,
+    'evac-route': (
+      <g>
+        <ArrowIcon c={onColor} rot={90} />
+        <rect x="8" y="-13" width="6" height="10" fill="none" stroke={onColor} strokeWidth="1.6" />
+      </g>
+    ),
+    'hazmat-arrow': (
+      <g>
+        <ArrowIcon c={onColor} rot={0} />
+        <g transform="translate(10,-10) scale(0.4) rotate(45)"><rect x="-9" y="-9" width="18" height="18" fill={onColor} /></g>
+      </g>
+    ),
     'bus-lane': <Bus c={onColor} />,
     'pedestrian-bicycle': (
       <g transform="scale(0.75)">
@@ -556,7 +607,7 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'arrow-forced': <ArrowIcon c={onColor} rot={0} />,
-    'arrow-lane': <ArrowIcon c={onColor} rot={0} />,
+    'arrow-lane': <ArrowIcon c={onColor} rot={0} double />,
     'arrow-yield': <ArrowIcon c={RED} rot={45} />,
     'arrow-yield-rev': <ArrowIcon c={RED} rot={-45} />,
     'arrow-extent': <ArrowIcon c={onColor} rot={90} double />,
@@ -595,6 +646,26 @@ function glyphContent(glyph, shape) {
         <line x1="-13" y1="-3" x2="13" y2="-3" />
         <line x1="-13" y1="5" x2="13" y2="5" />
         <line x1="0" y1="-11" x2="0" y2="11" />
+      </g>
+    ),
+    'table-list-junction': (
+      <g>
+        <g fill="none" stroke={onColor} strokeWidth="1.8">
+          <rect x="-12" y="-3" width="24" height="16" rx="1.5" />
+          <line x1="-12" y1="5" x2="12" y2="5" />
+          <line x1="0" y1="-3" x2="0" y2="13" />
+        </g>
+        <path d="M 0,-6 L 0,-16 M 0,-16 L -5,-11 M 0,-16 L 5,-11" stroke={onColor} strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    ),
+    'table-list-ped': (
+      <g>
+        <g fill="none" stroke={onColor} strokeWidth="1.8">
+          <rect x="-13" y="-13" width="26" height="16" rx="1.5" />
+          <line x1="-13" y1="-5" x2="13" y2="-5" />
+          <line x1="0" y1="-13" x2="0" y2="3" />
+        </g>
+        <g transform="translate(0,11) scale(0.34)"><Pedestrian c={onColor} /></g>
       </g>
     ),
     'arrow-signpost': (
@@ -647,6 +718,12 @@ function glyphContent(glyph, shape) {
     'diversion-arrow': (
       <g fill="none" stroke={onColor} strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M -12,8 Q -12,-8 4,-8 L 4,-13 L 13,-4 L 4,5 L 4,0 Q -6,0 -6,8" />
+      </g>
+    ),
+    'diversion-direction-arrow': (
+      <g>
+        <ArrowIcon c={onColor} rot={90} />
+        <path d="M -13,10 L -6,3 M -13,-4 L -6,3" stroke={onColor} strokeWidth="2.4" strokeLinecap="round" fill="none" />
       </g>
     ),
     'lane-increase': (
@@ -769,9 +846,13 @@ function glyphContent(glyph, shape) {
     'no-parking': <TextGlyph text="P" c={onColor} size={20} />,
     'no-parking-odd': <TextGlyph text="1-31" c={onColor} size={13} />,
     'no-parking-even': <TextGlyph text="2-30" c={onColor} size={13} />,
-    'no-parking-date': <TextGlyph text="P" c={onColor} size={20} />,
-    'purpose-place-end': <TextGlyph text="P" c={onColor} size={20} />,
-    'turning-place-end': <ArrowIcon c={onColor} rot={180} double />,
+    'no-parking-date': (
+      <g>
+        <TextGlyph text="P" c={onColor} size={17} />
+        <rect x="6" y="6" width="9" height="7" rx="1" fill="none" stroke={onColor} strokeWidth="1.6" />
+        <line x1="6" y1="9" x2="15" y2="9" stroke={onColor} strokeWidth="1.6" />
+      </g>
+    ),
     'parking-angle': <path d="M -10,10 L -2,-10 L 10,10" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
     // road markings (top-down)
     'zebra': (
@@ -797,7 +878,12 @@ function glyphContent(glyph, shape) {
     ),
     'no-stop-mark': <TextGlyph text="✕" c={WHITE} size={18} />,
     'no-park-mark': <TextGlyph text="P" c={WHITE} size={18} />,
-    'no-stop-park-mark': <TextGlyph text="✕" c={WHITE} size={18} />,
+    'no-stop-park-mark': (
+      <g>
+        <TextGlyph text="✕" c={WHITE} size={13} />
+        <text x="0" y="15" fontSize="10" fontWeight="800" fill={WHITE} textAnchor="middle" fontFamily="Arial, sans-serif">P</text>
+      </g>
+    ),
     'parking-spot-mark': <rect x="-12" y="-12" width="24" height="24" fill="none" stroke={WHITE} strokeWidth="2" />,
     // symbols/text-based
     's-symbol': <TextGlyph text="S" c={onColor} size={20} />,
@@ -814,6 +900,228 @@ function glyphContent(glyph, shape) {
     'hand-control': <HandFigure arm="control" c={onColor} />,
     'hand-follow': <HandFigure arm="follow" c={onColor} />,
     'hand-pullover': <HandFigure arm="pullover" c={onColor} />,
+    'hand-stop-side': (
+      <g>
+        <HandFigure arm="stop" c={onColor} />
+        <g transform="translate(11,-16) scale(0.55)"><Dot c={RED} /></g>
+      </g>
+    ),
+    'hand-stop-torch': (
+      <g>
+        <HandFigure arm="stop" c={onColor} />
+        <path d="M 14,-9 l5,-3 l-1,6 z" fill="#ffd400" stroke="none" transform="translate(0,0)" />
+      </g>
+    ),
+    'hand-stop-vest': (
+      <g>
+        <HandFigure arm="stop" c={onColor} />
+        <rect x="-3" y="-4" width="6" height="10" fill="#ffd400" stroke="none" opacity="0.9" />
+      </g>
+    ),
+    'hand-forward-vest': (
+      <g>
+        <HandFigure arm="forward" c={onColor} />
+        <rect x="-3" y="-4" width="6" height="10" fill="#ffd400" stroke="none" opacity="0.9" />
+      </g>
+    ),
+    'hand-slow-behind': (
+      <g>
+        <HandFigure arm="slow" c={onColor} />
+        <g transform="translate(-13,14) scale(0.4)"><Car c={onColor} /></g>
+      </g>
+    ),
+    'hand-slow-oncoming': (
+      <g>
+        <HandFigure arm="slow" c={onColor} />
+        <g transform="translate(13,14) scale(-0.4,0.4)"><Car c={onColor} /></g>
+      </g>
+    ),
+    'hand-control-advance': (
+      <g>
+        <HandFigure arm="control" c={onColor} />
+        <g transform="translate(12,14) scale(0.6)"><ExclaimIcon c={onColor} /></g>
+      </g>
+    ),
+    'truck-trailer': (
+      <g transform="scale(0.85)">
+        <g transform="translate(-6,3)"><Truck c={onColor} /></g>
+        <g transform="translate(9,3)"><Trailer c={onColor} /></g>
+      </g>
+    ),
+    'car-trailer': (
+      <g transform="scale(0.85)">
+        <g transform="translate(-7,3)"><Car c={onColor} /></g>
+        <g transform="translate(9,4) scale(0.7)"><Trailer c={onColor} /></g>
+      </g>
+    ),
+    'car-class2': (
+      <g>
+        <Car c={onColor} />
+        <text x="0" y="-10" fontSize="9" fontWeight="800" fill={onColor} textAnchor="middle" fontFamily="Arial, sans-serif">II</text>
+      </g>
+    ),
+    'weight-10t': <TextGlyph text="10 t" c={onColor} size={13} />,
+    'weight-16t': <TextGlyph text="16 t" c={onColor} size={13} />,
+    'axle-8t': <TextGlyph text="8 t" c={onColor} size={14} />,
+    'axle-12t': <TextGlyph text="12 t" c={onColor} size={13} />,
+    'axle-18t': <TextGlyph text="18 t" c={onColor} size={13} />,
+    'screen-obstacle': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6">
+        <rect x="-11" y="-11" width="22" height="22" />
+        <line x1="-11" y1="-11" x2="11" y2="11" strokeWidth="4" />
+        <line x1="11" y1="-11" x2="-11" y2="11" strokeWidth="4" />
+      </g>
+    ),
+    'screen-side-obstacle': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6">
+        <rect x="-11" y="-11" width="22" height="22" />
+        <line x1="-8" y1="-11" x2="-8" y2="11" strokeWidth="3" />
+        <line x1="0" y1="-11" x2="0" y2="11" strokeWidth="3" />
+        <line x1="8" y1="-11" x2="8" y2="11" strokeWidth="3" />
+      </g>
+    ),
+    'screen-exit': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="-11" y="-11" width="22" height="22" />
+        <path d="M -5,0 L 5,0 M 1,-5 L 6,0 L 1,5" />
+      </g>
+    ),
+    'screen-railway': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6">
+        <rect x="-11" y="-11" width="22" height="22" />
+        <line x1="-11" y1="-4" x2="11" y2="-4" strokeWidth="1.6" />
+        <line x1="-11" y1="4" x2="11" y2="4" strokeWidth="1.6" />
+        <line x1="-7" y1="-8" x2="-7" y2="8" strokeWidth="1.6" />
+        <line x1="0" y1="-8" x2="0" y2="8" strokeWidth="1.6" />
+        <line x1="7" y1="-8" x2="7" y2="8" strokeWidth="1.6" />
+      </g>
+    ),
+    'barrier-road': <rect x="-16" y="-3" width="32" height="6" rx="2" fill={onColor} transform="rotate(-18)" />,
+    'barrier-railway': (
+      <g>
+        <rect x="-16" y="-3" width="32" height="6" rx="2" fill={onColor} transform="rotate(-18)" />
+        <g stroke={onColor} strokeWidth="1.6">
+          <line x1="-14" y1="10" x2="14" y2="10" />
+          <line x1="-10" y1="7" x2="-10" y2="13" />
+          <line x1="0" y1="7" x2="0" y2="13" />
+          <line x1="10" y1="7" x2="10" y2="13" />
+        </g>
+      </g>
+    ),
+    'clock-general': <TextGlyph text="⏱" c={onColor} size={16} />,
+    'clock-parking': (
+      <g>
+        <TextGlyph text="P" c={onColor} size={13} />
+        <circle cx="8" cy="8" r="7" fill="none" stroke={onColor} strokeWidth="1.6" />
+        <line x1="8" y1="8" x2="8" y2="4" stroke={onColor} strokeWidth="1.4" />
+        <line x1="8" y1="8" x2="11" y2="8" stroke={onColor} strokeWidth="1.4" />
+      </g>
+    ),
+    'bed-hotel': (
+      <g fill="none" stroke={onColor} strokeWidth="2.2" strokeLinejoin="round">
+        <path d="M -12,10 L -12,-4 L 12,-4 L 12,10 M -12,-4 L -12,-9 L 4,-9 L 4,-4" />
+        <line x1="-12" y1="3" x2="12" y2="3" />
+      </g>
+    ),
+    'bed-hostel': (
+      <g fill="none" stroke={onColor} strokeWidth="2" strokeLinejoin="round">
+        <rect x="-12" y="-10" width="24" height="8" />
+        <rect x="-12" y="2" width="24" height="8" />
+      </g>
+    ),
+    'bed-bnb': (
+      <g fill="none" stroke={onColor} strokeWidth="2.2" strokeLinejoin="round">
+        <path d="M -11,3 L 0,-9 L 11,3 M -8,3 L -8,10 L 8,10 L 8,3" />
+        <line x1="-8" y1="7" x2="8" y2="7" />
+      </g>
+    ),
+    'cutlery-snack': <path d="M -3,-12 v10 M -6,-12 v6 a3,3 0 0 0 6,0 v-6" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />,
+    'cutlery-restaurant': <path d="M -8,-12 v10 M -11,-12 v6 a3,3 0 0 0 6,0 v-6 M -8,-2 v14 M 6,-12 a5,7 0 0 0 0,14 v-14" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />,
+    'cabin-village': (
+      <g fill="none" stroke={onColor} strokeWidth="2" strokeLinejoin="round">
+        <path d="M -13,10 L -13,0 L -6,-8 L 1,0 L 1,10 Z" />
+        <path d="M -1,10 L -1,2 L 6,-6 L 13,2 L 13,10 Z" />
+      </g>
+    ),
+    'cabin-single': (
+      <g fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round">
+        <path d="M -11,10 L -11,-2 L 0,-13 L 11,-2 L 11,10 Z" />
+        <line x1="-4" y1="10" x2="-4" y2="3" />
+        <line x1="4" y1="10" x2="4" y2="3" />
+      </g>
+    ),
+    'ferry-vehicle': <path d="M -14,4 L 14,4 L 10,12 L -10,12 Z M -8,4 L -8,-8 L 8,-8 L 8,4" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />,
+    'ferry-passenger': (
+      <g>
+        <path d="M -13,6 L 13,6 L 9,12 L -9,12 Z M -7,6 L -7,-3 L 7,-3 L 7,6" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="0" cy="-9" r="2.6" fill={onColor} stroke="none" />
+      </g>
+    ),
+    'shop-commercial': <path d="M -12,-4 L -10,-12 L 10,-12 L 12,-4 M -12,-4 L -12,12 L 12,12 L 12,-4 M -12,-4 L 12,-4 M -4,12 L -4,2 L 4,2 L 4,12" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
+    'shop-farm': (
+      <g fill="none" stroke={onColor} strokeWidth="2.2" strokeLinejoin="round">
+        <path d="M -11,10 L -11,0 L 0,-9 L 11,0 L 11,10 Z" />
+        <path d="M 0,4 q-3,-5 0,-8 q3,3 0,8 Z" fill={onColor} stroke="none" />
+      </g>
+    ),
+    'info-advance': (
+      <g fill={onColor}>
+        <circle cx="-6" cy="-9" r="3" /><rect x="-8.4" y="-3" width="4.8" height="15" rx="2" />
+        <path d="M 8,-2 L 8,10 M 5,4 L 8,10 L 11,4" stroke={onColor} strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    ),
+    'map-junction-exit': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M 0,14 L 0,-4 L -12,-14 M 0,-4 L 12,-14" />
+        <circle cx="0" cy="-4" r="2.4" fill={onColor} stroke="none" />
+        <path d="M 6,-11 l4,-1 l-1,4 z" fill={onColor} stroke="none" />
+      </g>
+    ),
+    'location-pin-ped': (
+      <g>
+        <path d="M 0,10 C -7,2 -8,-3 0,-11 C 8,-3 7,2 0,10 Z" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />
+        <g transform="translate(0,0) scale(0.4)"><Pedestrian c={onColor} /></g>
+      </g>
+    ),
+    'distance-list-ped': (
+      <g fill={onColor}>
+        <text x="0" y="-1" fontSize="10" fontWeight="800" textAnchor="middle" fontFamily="Arial, sans-serif">1,2</text>
+        <text x="0" y="11" fontSize="8" textAnchor="middle" fontFamily="Arial, sans-serif">km</text>
+      </g>
+    ),
+    'lane-config-junction': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round">
+        <line x1="-9" y1="-14" x2="-9" y2="4" strokeDasharray="5 4" />
+        <line x1="0" y1="-14" x2="0" y2="4" strokeDasharray="5 4" />
+        <line x1="9" y1="-14" x2="9" y2="4" />
+        <line x1="-13" y1="10" x2="13" y2="10" strokeWidth="3" />
+      </g>
+    ),
+    'route-truck-long': (
+      <g transform="scale(0.8)">
+        <g transform="translate(-10,3)"><Truck c={onColor} /></g>
+        <g transform="translate(8,3)"><Trailer c={onColor} /></g>
+        <path d="M -18,13 L 18,13" stroke={onColor} strokeWidth="1.8" strokeDasharray="3 3" fill="none" />
+      </g>
+    ),
+    'line-combo-center-solid': (
+      <g>
+        <line x1="-4" y1="-14" x2="-4" y2="14" stroke={WHITE} strokeWidth="4" strokeDasharray="7 5" />
+        <line x1="4" y1="-14" x2="4" y2="14" stroke={WHITE} strokeWidth="4" />
+      </g>
+    ),
+    'line-combo-warning-solid': (
+      <g>
+        <line x1="-4" y1="-14" x2="-4" y2="14" stroke={WHITE} strokeWidth="4" strokeDasharray="12 3" />
+        <line x1="4" y1="-14" x2="4" y2="14" stroke={WHITE} strokeWidth="4" />
+      </g>
+    ),
+    'line-combo-center-warning': (
+      <g>
+        <line x1="-4" y1="-14" x2="-4" y2="14" stroke={WHITE} strokeWidth="4" strokeDasharray="7 5" />
+        <line x1="4" y1="-14" x2="4" y2="14" stroke={WHITE} strokeWidth="4" strokeDasharray="12 3" />
+      </g>
+    ),
     'closed': <line x1="-14" y1="14" x2="14" y2="-14" stroke={RED} strokeWidth="5" />,
     'generic': <GenericBox c={onColor} />,
     'none': null,
@@ -857,18 +1165,48 @@ function glyphContent(glyph, shape) {
 
   // خطوط الطريق (M) — تُرسم كخط علوي بدل رمز مركزي
   const lineStyles = {
-    'line-center': 'dashed', 'line-edge': 'edge', 'line-warning': 'warning', 'line-guide': 'dashed',
-    'line-bike': 'dashed', 'line-transit': 'dashed', 'line-reversible': 'dashed', 'line-solid': 'solid',
+    'line-center': 'dashed', 'line-edge': 'edge', 'line-warning': 'warning', 'line-guide': 'fine',
+    'line-transit': 'block', 'line-solid': 'solid',
     'line-combo': 'double',
   };
+  if (glyph === 'line-bike') return g(
+    <g>
+      <LineDiagram style="fine" color={WHITE} />
+      <circle cx="0" cy="0" r="4" fill="none" stroke={WHITE} strokeWidth="1.6" />
+    </g>
+  );
+  if (glyph === 'line-reversible') return g(
+    <g>
+      <LineDiagram style="dashed" color={WHITE} />
+      <path d="M -6,-8 L 0,-14 L 6,-8 M -6,8 L 0,14 L 6,8" stroke={WHITE} strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  );
   if (lineStyles[glyph]) return g(<LineDiagram style={lineStyles[glyph]} color={WHITE} />);
   if (glyph === 'hatched-area') return g(<g stroke={WHITE} strokeWidth="2">{[-16, -8, 0, 8, 16].map((x) => <line key={x} x1={x} y1="-16" x2={x + 10} y2="16" />)}</g>);
 
   // إشارات الإضاءة (الدائرة الملونة)
   const dots = {
     'dot-red': ['#e74c3c', false], 'dot-green': ['#2ecc71', false], 'dot-yellow': ['#f1c40f', false],
-    'dot-red-yellow': ['#e74c3c', false], 'dot-yellow-blink': ['#f1c40f', true], 'dot-red-blink': ['#e74c3c', true],
+    'dot-yellow-blink': ['#f1c40f', true], 'dot-red-blink': ['#e74c3c', true],
   };
+  if (glyph === 'dot-red-yellow') return g(
+    <g>
+      <circle cx="-6" cy="0" r="9" fill="#e74c3c" />
+      <circle cx="7" cy="0" r="9" fill="#f1c40f" />
+    </g>
+  );
+  if (glyph === 'dot-red-steady') return g(
+    <g>
+      <Dot c="#e74c3c" blink={false} />
+      <circle cx="0" cy="0" r="13" fill="none" stroke="#e74c3c" strokeWidth="1.2" />
+    </g>
+  );
+  if (glyph === 'dot-yellow-blink-caution') return g(
+    <g>
+      <Dot c="#f1c40f" blink />
+      <text x="0" y="-15" fontSize="11" fontWeight="800" fill="#f1c40f" textAnchor="middle" fontFamily="Arial, sans-serif">!</text>
+    </g>
+  );
   if (dots[glyph]) {
     const [color, blink] = dots[glyph];
     return g(<Dot c={color} blink={blink} />);
