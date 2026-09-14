@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <Link to="/" className="brand">
-        🇸🇪 أكاديمية عماد للتيوري
+        🇸🇪 عماد للتيوري
       </Link>
       <nav className="nav-links">
         <Link to="/tests">الاختبارات</Link>
