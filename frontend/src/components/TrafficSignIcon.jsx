@@ -569,6 +569,178 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'lane-change': <ArrowIcon c={onColor} rot={25} />,
+    'map-junction': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M 0,14 L 0,-4 L -12,-14 M 0,-4 L 12,-14" />
+        <circle cx="0" cy="-4" r="2.4" fill={onColor} stroke="none" />
+      </g>
+    ),
+    'map-junction-noturn': (
+      <g>
+        <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+          <path d="M 0,14 L 0,-4 L -12,-14 M 0,-4 L 12,-14" />
+          <circle cx="0" cy="-4" r="2.4" fill={onColor} stroke="none" />
+        </g>
+        <line x1="-13" y1="-16" x2="-3" y2="-6" stroke={RED} strokeWidth="3" strokeLinecap="round" />
+      </g>
+    ),
+    'diversion-map': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -12,10 L -12,0 L 0,-10 L 12,0 L 12,10" strokeDasharray="4 3" />
+      </g>
+    ),
+    'table-list': (
+      <g fill="none" stroke={onColor} strokeWidth="2.2">
+        <rect x="-13" y="-11" width="26" height="22" rx="1.5" />
+        <line x1="-13" y1="-3" x2="13" y2="-3" />
+        <line x1="-13" y1="5" x2="13" y2="5" />
+        <line x1="0" y1="-11" x2="0" y2="11" />
+      </g>
+    ),
+    'arrow-signpost': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M -13,-6 L 6,-6 L 6,-11 L 14,-2 L 6,7 L 6,2 L -13,2 Z" />
+      </g>
+    ),
+    'arrow-signpost-ped': (
+      <g transform="scale(0.82)">
+        <g transform="translate(-6,-8)"><Pedestrian c={onColor} /></g>
+        <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" transform="translate(4,9)">
+          <path d="M -10,0 L 6,0 L 6,-4 L 13,2 L 6,8 L 6,4 L -10,4 Z" />
+        </g>
+      </g>
+    ),
+    'exit-arrow': (
+      <g fill="none" stroke={onColor} strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M -12,-10 L 4,-10 Q 14,-10 14,0 L 14,12" />
+        <path d="M 8,7 L 14,13 L 20,7" transform="translate(-6,-1)" />
+      </g>
+    ),
+    'signpost-cluster': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M -13,-9 L 4,-9 L 4,-12 L 11,-6 L 4,0 L 4,-3 L -13,-3 Z" />
+        <path d="M -13,3 L 2,3 L 2,0 L 9,6 L 2,12 L 2,9 L -13,9 Z" />
+      </g>
+    ),
+    'location-pin': (
+      <path d="M 0,12 C -8,2 -10,-4 0,-13 C 10,-4 8,2 0,12 Z M 0,-4 a3.4,3.4 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />
+    ),
+    'street-name-plate': (
+      <g fill="none" stroke={onColor} strokeWidth="2.4" strokeLinecap="round">
+        <line x1="-13" y1="0" x2="13" y2="0" />
+        <line x1="-9" y1="-6" x2="-9" y2="6" />
+        <line x1="3" y1="-6" x2="3" y2="6" />
+      </g>
+    ),
+    'water-wave': (
+      <g fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round">
+        <path d="M -13,-3 q4,-6 8,0 q4,6 8,0 q4,-6 8,0" />
+        <path d="M -13,6 q4,-6 8,0 q4,6 8,0 q4,-6 8,0" />
+      </g>
+    ),
+    'distance-list': (
+      <g fill={onColor}>
+        <text x="0" y="-3" fontSize="11" fontWeight="800" textAnchor="middle" fontFamily="Arial, sans-serif">3 2 1</text>
+        <text x="0" y="10" fontSize="9" textAnchor="middle" fontFamily="Arial, sans-serif">km</text>
+      </g>
+    ),
+    'diversion-arrow': (
+      <g fill="none" stroke={onColor} strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M -12,8 Q -12,-8 4,-8 L 4,-13 L 13,-4 L 4,5 L 4,0 Q -6,0 -6,8" />
+      </g>
+    ),
+    'lane-increase': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -4,12 L -4,-12 M 4,12 L 10,-12" strokeDasharray="6 4" />
+        <path d="M -10,12 L -10,4" />
+      </g>
+    ),
+    'lane-decrease': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -4,12 L -4,-12 M 4,-12 L -2,12" strokeDasharray="6 4" />
+        <path d="M 10,-12 L 10,-4" />
+      </g>
+    ),
+    'lane-config': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round">
+        <line x1="-9" y1="-12" x2="-9" y2="12" strokeDasharray="5 4" />
+        <line x1="0" y1="-12" x2="0" y2="12" strokeDasharray="5 4" />
+        <line x1="9" y1="-12" x2="9" y2="12" />
+      </g>
+    ),
+    'lane-merge-accel': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -8,12 L -8,-12" />
+        <path d="M 8,12 Q 8,-4 -2,-12" />
+      </g>
+    ),
+    'lane-merge-separate': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -8,12 L -8,-12 M 8,12 L 8,-12" />
+        <path d="M -8,-2 Q 0,-2 0,-8" strokeWidth="2" />
+      </g>
+    ),
+    'national-emblem': (
+      <path d="M 0,-12 L 3,-4 L 11,-4 L 4,1 L 7,10 L 0,4 L -7,10 L -4,1 L -11,-4 L -3,-4 Z" fill={onColor} />
+    ),
+    'lane-ends': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <path d="M -8,12 L -8,-12" strokeDasharray="5 4" />
+        <path d="M 8,12 L 8,-2 Q 8,-10 -1,-12" />
+      </g>
+    ),
+    'lane-closed': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <line x1="-8" y1="-12" x2="-8" y2="12" strokeDasharray="5 4" />
+        <line x1="-9" y1="-9" x2="9" y2="9" stroke={RED} />
+        <line x1="9" y1="-9" x2="-9" y2="9" stroke={RED} />
+      </g>
+    ),
+    'junction-number-shield': (
+      <g>
+        <rect x="-11" y="-9" width="22" height="18" rx="4" fill="none" stroke={onColor} strokeWidth="2.4" />
+        <text x="0" y="5" fontSize="13" fontWeight="800" fill={onColor} textAnchor="middle" fontFamily="Arial, sans-serif">12</text>
+      </g>
+    ),
+    'parking-garage': (
+      <g fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round">
+        <path d="M -12,10 L -12,-2 L 0,-11 L 12,-2 L 12,10 Z" />
+        <text x="0" y="8" fontSize="12" fontWeight="800" fill={onColor} stroke="none" textAnchor="middle" fontFamily="Arial, sans-serif">P</text>
+      </g>
+    ),
+    'park-ride': (
+      <g>
+        <text x="-6" y="5" fontSize="14" fontWeight="800" fill={onColor} textAnchor="middle" fontFamily="Arial, sans-serif">P</text>
+        <g transform="translate(7,3) scale(0.5)"><Bus c={onColor} /></g>
+      </g>
+    ),
+    'local-loop': (
+      <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
+        <circle cx="0" cy="0" r="11" strokeDasharray="4 3" />
+        <path d="M 8,-6 l4,-2 l-1,5 z" fill={onColor} stroke="none" />
+      </g>
+    ),
+    'route-truck': (
+      <g transform="scale(0.85)">
+        <Truck c={onColor} />
+        <path d="M -14,13 L 14,13" stroke={onColor} strokeWidth="2" strokeDasharray="3 3" fill="none" />
+      </g>
+    ),
+    'rescue-point': (
+      <g>
+        <g fill={onColor}><rect x="-2.4" y="-12" width="4.8" height="24" /><rect x="-12" y="-2.4" width="24" height="4.8" /></g>
+        <TextGlyph text="12" c={onColor} size={9} />
+      </g>
+    ),
+    'bike-route': (
+      <g transform="scale(0.85)">
+        <Bicycle c={onColor} />
+        <path d="M -14,13 L 14,13" stroke={onColor} strokeWidth="2" strokeDasharray="3 3" fill="none" />
+      </g>
+    ),
+    'text-length': <TextGlyph text="2 km" c={onColor} size={15} />,
+    'text-distance': <TextGlyph text="500 m" c={onColor} size={13} />,
+    'text-distance-stop': <TextGlyph text="50 m" c={onColor} size={14} />,
     'lane-end': <ArrowIcon c={onColor} rot={25} />,
     'road-continue': <path d="M -12,10 L -2,-10 M 2,-10 L 12,10" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
     'yield-multi': (

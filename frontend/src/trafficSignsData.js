@@ -1843,11 +1843,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Orienteringstavla",
     "arabicName": "لوحة توجيهية عامة (خريطة اتجاهات)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة توجيهية عامة (خريطة اتجاهات).",
+    "officialMeaning": "لوحة توجيهية شاملة تُثبَّت قبل تقاطع أو مفترق طرق معقّد نسبيًا، وتعرض مخططًا تخطيطيًا لشكل التقاطع القادم مع أسماء الاتجاهات والوجهات المتاحة من كل فرع، لمساعدتك على اختيار المسار الصحيح مبكرًا قبل الوصول فعليًا للتقاطع.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "map-junction"
   },
   {
     "code": "F2",
@@ -1856,11 +1856,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Orienteringstavla vid förbjuden sväng i korsning",
     "arabicName": "لوحة توجيهية عند منع الانعطاف بالتقاطع",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة توجيهية عند منع الانعطاف بالتقاطع.",
+    "officialMeaning": "نسخة خاصة من لوحة التوجيه الشاملة (F1-1) تُستخدم تحديدًا عند تقاطعات يُمنع فيها الانعطاف باتجاه معين، فتوضح شكل التقاطع مع تمييز الاتجاه الممنوع.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "map-junction-noturn"
   },
   {
     "code": "F3",
@@ -1869,11 +1869,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Tabellorienteringstavla",
     "arabicName": "لوحة توجيهية بجدول مسارات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة توجيهية بجدول مسارات.",
+    "officialMeaning": "لوحة توجيهية بشكل جدول نصي (وليس مخططًا تخطيطيًا للتقاطع)، تسرد الوجهات المتاحة من كل مسار بشكل قائمة واضحة قبل تقاطعات كبيرة أو معقدة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "table-list"
   },
   {
     "code": "F4",
@@ -1882,11 +1882,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Avfartsorienteringstavla",
     "arabicName": "لوحة توجيهية عند مخرج الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة توجيهية عند مخرج الطريق.",
+    "officialMeaning": "لوحة توجيهية تُثبَّت قبل مخرج طريق سريع أو شبه سريع تحديدًا، وتعرض مخططًا لشكل نقطة الخروج والوجهات المتاحة عبره.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "map-junction"
   },
   {
     "code": "F5",
@@ -1895,11 +1895,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vägvisare",
     "arabicName": "لافتة توجيه (دليل اتجاهات)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه (دليل اتجاهات).",
+    "officialMeaning": "اللافتة الأساسية الأكثر شيوعًا للإرشاد: سهم باتجاه معين مصحوب باسم وجهة أو أكثر، تُثبَّت عند التقاطعات لتوجيه السائق نحو الاتجاه الصحيح مباشرة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "arrow-signpost"
   },
   {
     "code": "F6",
@@ -1908,11 +1908,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Tabellvägvisare",
     "arabicName": "لافتة توجيه بجدول مسارات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه بجدول مسارات.",
+    "officialMeaning": "لافتة توجيه بشكل جدول يجمع عدة وجهات واتجاهاتها في لوحة واحدة، بديلة عن استخدام عدة لافتات سهمية منفصلة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "table-list"
   },
   {
     "code": "F7",
@@ -1921,11 +1921,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Avfartsvisare",
     "arabicName": "لافتة توجيه عند مخرج الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه عند مخرج الطريق.",
+    "officialMeaning": "لافتة توجيه مخصصة لمخارج الطرق السريعة تحديدًا، توضح اسم الوجهة أو المنطقة التي يؤدي إليها ذلك المخرج بالتحديد.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "exit-arrow"
   },
   {
     "code": "F8",
@@ -1934,11 +1934,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Körfältsvägvisare",
     "arabicName": "لافتة توجيه حسب المسار",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه حسب المسار.",
+    "officialMeaning": "لافتة تُثبَّت فوق كل مسار من مسارات الطريق على حدة (عادة على جسر أو حامل علوي)، وتوضح أي وجهة أو اتجاه يجب اتباعه من ذلك المسار تحديدًا — مفيدة جدًا في الطرق متعددة المسارات قبل تشعبها.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-arrows"
   },
   {
     "code": "F9",
@@ -1947,11 +1947,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Samlingsmärke för vägvisning",
     "arabicName": "علامة توجيه مجمّعة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: علامة توجيه مجمّعة.",
+    "officialMeaning": "علامة تجمع بين عدة عناصر توجيه في لوحة واحدة مركّبة (كأسهم واتجاهات ورموز مصادر)، تُستخدم لتبسيط المشهد بدل تكرار عدة لافتات منفصلة متجاورة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "signpost-cluster"
   },
   {
     "code": "F10",
@@ -1960,11 +1960,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Platsmärke",
     "arabicName": "علامة تحديد موقع/مكان",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: علامة تحديد موقع/مكان.",
+    "officialMeaning": "لوحة صغيرة تحمل اسم موقع أو منطقة أو حي معين دون سهم اتجاه بالضرورة، تُستخدم غالبًا لتأكيد دخولك لمنطقة معينة أو المرور بجانبها.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "location-pin"
   },
   {
     "code": "F11",
@@ -1973,11 +1973,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vägnamn",
     "arabicName": "اسم الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: اسم الطريق.",
+    "officialMeaning": "لوحة تحمل اسم الطريق أو الشارع نفسه الذي تسير عليه حاليًا، وليست لافتة توجيه لمكان آخر.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "street-name-plate"
   },
   {
     "code": "F12",
@@ -1986,11 +1986,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vattendrag",
     "arabicName": "اسم مجرى مائي",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: اسم مجرى مائي.",
+    "officialMeaning": "لوحة تحمل اسم مجرى مائي (نهر أو بحيرة) يمر بجانب الطريق أو يعبره جسر قريب.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "water-wave"
   },
   {
     "code": "F13",
@@ -1999,11 +1999,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Avståndstavla",
     "arabicName": "لوحة المسافات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة المسافات.",
+    "officialMeaning": "لوحة تعرض المسافات بالكيلومترات إلى عدة وجهات على نفس الطريق دفعة واحدة، عادة عند مدخل طريق رئيسي أو بعد تقاطع كبير.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "distance-list"
   },
   {
     "code": "F14",
@@ -2012,11 +2012,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vägnummer",
     "arabicName": "رقم الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: رقم الطريق.",
+    "officialMeaning": "درع صغير يحمل الرقم الرسمي للطريق (كرقم طريق أوروبي أو وطني)، يساعد على تتبع المسار الصحيح باستخدام أرقام الطرق بدل أسماء الوجهات فقط.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "road-number"
   },
   {
     "code": "F15",
@@ -2025,11 +2025,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Omledning",
     "arabicName": "مسار تحويل (تحويلة مرورية)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مسار تحويل (تحويلة مرورية).",
+    "officialMeaning": "لوحة تشير إلى وجود مسار تحويل مروري (Omledning) بديل مؤقت، غالبًا بسبب أعمال طريق أو إغلاق جزئي، مع توضيح الوجهة التي يقود إليها هذا التحويل.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "diversion-arrow"
   },
   {
     "code": "F16",
@@ -2038,11 +2038,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Ökning av antal körfält",
     "arabicName": "زيادة عدد المسارات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: زيادة عدد المسارات.",
+    "officialMeaning": "مخطط تخطيطي يوضح أن عدد مسارات الطريق سيزداد قريبًا (كإضافة مسار جديد)، ليستعد السائق لإعادة توزيع موقعه بين المسارات إذا لزم.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-increase"
   },
   {
     "code": "F17",
@@ -2051,11 +2051,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Minskning av antal körfält",
     "arabicName": "نقصان عدد المسارات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نقصان عدد المسارات.",
+    "officialMeaning": "مخطط تخطيطي يوضح أن عدد مسارات الطريق سينقص قريبًا (اندماج مسارين في واحد)، لتنبيه السائقين لضرورة الاندماج بأمان قبل نقطة الانتهاء.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-decrease"
   },
   {
     "code": "F18",
@@ -2064,11 +2064,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Körfältsindelning på sträcka",
     "arabicName": "توزيع المسارات على امتداد الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: توزيع المسارات على امتداد الطريق.",
+    "officialMeaning": "مخطط يوضح كيفية توزّع المسارات المتاحة على امتداد مسافة معينة من الطريق (أيها يستمر مباشرة وأيها ينحرف)، وليس فقط عند نقطة تقاطع واحدة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-config"
   },
   {
     "code": "F19",
@@ -2077,11 +2077,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Väganslutning med accelerationsfält",
     "arabicName": "نقطة اتصال طريق بمسار تسارع",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نقطة اتصال طريق بمسار تسارع.",
+    "officialMeaning": "مخطط يوضح نقطة انضمام طريق فرعي إلى الطريق الرئيسي عبر مسار تسارع مخصص، يسمح للمركبات القادمة برفع سرعتها قبل الاندماج الفعلي في حركة المرور الرئيسية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-merge-accel"
   },
   {
     "code": "F20",
@@ -2090,11 +2090,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Väganslutning med separat körfält",
     "arabicName": "نقطة اتصال طريق بمسار منفصل",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نقطة اتصال طريق بمسار منفصل.",
+    "officialMeaning": "مخطط يوضح نقطة انضمام طريق فرعي إلى الطريق الرئيسي عبر مسار منفصل يستمر لمسافة إضافية (بخلاف مسار التسارع القصير)، مما يمنح وقتًا أطول للاندماج الآمن.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-merge-separate"
   },
   {
     "code": "F21",
@@ -2103,11 +2103,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Körfältsindelning före korsning",
     "arabicName": "توزيع المسارات قبل التقاطع",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: توزيع المسارات قبل التقاطع.",
+    "officialMeaning": "مخطط يوضح كيف ستتوزع المسارات تحديدًا قبل الوصول إلى تقاطع قادم (أي مسار يتجه يمينًا أو يسارًا أو يستمر مستقيمًا)، لمساعدة السائق على اختيار مساره الصحيح من مسافة كافية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-config"
   },
   {
     "code": "F22",
@@ -2116,11 +2116,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Riksmärke",
     "arabicName": "علامة وطنية (معلم رسمي)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: علامة وطنية (معلم رسمي).",
+    "officialMeaning": "علامة رسمية تُستخدم لتمييز طريق ذي أهمية وطنية أو تاريخية خاصة (كطريق ملكي أو مسار رسمي معتمد)، وهي علامة تعريفية أكثر من كونها إرشادًا عمليًا مباشرًا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "national-emblem"
   },
   {
     "code": "F23",
@@ -2129,11 +2129,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Orienteringstavla för omledningsväg",
     "arabicName": "لوحة توجيهية لطريق التحويل",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة توجيهية لطريق التحويل.",
+    "officialMeaning": "لوحة توجيهية شاملة خاصة تُستخدم عند بداية مسار تحويل مروري (لا عند تقاطع عادي)، وتوضح شكل مسار التحويل البديل بأكمله.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "diversion-map"
   },
   {
     "code": "F24",
@@ -2142,11 +2142,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Färdriktning vid omledning",
     "arabicName": "اتجاه السير أثناء التحويل المروري",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: اتجاه السير أثناء التحويل المروري.",
+    "officialMeaning": "سهم يوضح تحديدًا الاتجاه الذي يجب اتباعه أثناء السير على مسار تحويل مروري مؤقت، لضمان عدم ضياع السائق عن المسار البديل المخصص.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "diversion-arrow"
   },
   {
     "code": "F25",
@@ -2155,11 +2155,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Körfält upphör",
     "arabicName": "نهاية المسار",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نهاية المسار.",
+    "officialMeaning": "مخطط يُنبّه أن المسار الذي تسير فيه تحديدًا سينتهي قريبًا (وليس أن عدد المسارات الكلي سينقص بالضرورة)، فعليك تغيير مسارك قبل نقطة الانتهاء.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-ends"
   },
   {
     "code": "F26",
@@ -2168,11 +2168,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Körfält avstängt",
     "arabicName": "إغلاق المسار",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: إغلاق المسار.",
+    "officialMeaning": "مخطط يوضح أن مسارًا معينًا مغلق حاليًا أمامك (غالبًا بسبب أعمال طريق أو حادث)، ويُظهر عادة علامة X فوق المسار المغلق تحديدًا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "lane-closed"
   },
   {
     "code": "F27",
@@ -2181,11 +2181,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Trafikplatsnummer",
     "arabicName": "رقم مفترق الطرق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: رقم مفترق الطرق.",
+    "officialMeaning": "درع يحمل رقمًا تعريفيًا لمفترق طرق أو نقطة تبادل (Trafikplats) معينة، يُستخدم كمرجع دقيق (مثلًا في نظام GPS أو تقارير حوادث) لتحديد ذلك الموقع بدقة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "junction-number-shield"
   },
   {
     "code": "F28",
@@ -2194,11 +2194,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Parkeringshus",
     "arabicName": "مرآب/موقف سيارات مغطى",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مرآب/موقف سيارات مغطى.",
+    "officialMeaning": "علامة ترشدك إلى وجود مرآب أو موقف سيارات مغطى (متعدد الطوابق غالبًا) قريب، بخلاف مواقف السيارات المكشوفة العادية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "parking-garage"
   },
   {
     "code": "F29",
@@ -2207,11 +2207,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Infartsparkering",
     "arabicName": "موقف انتقال لوسائل النقل العام (Park & Ride)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: موقف انتقال لوسائل النقل العام (Park & Ride).",
+    "officialMeaning": "علامة ترشدك إلى موقف مخصص لترك سيارتك والانتقال باستخدام وسيلة نقل عام (حافلة أو قطار) لبقية الرحلة — نظام معروف باسم Park & Ride.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "park-ride"
   },
   {
     "code": "F30",
@@ -2220,11 +2220,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Lokal slinga",
     "arabicName": "مسار محلي دائري",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مسار محلي دائري.",
+    "officialMeaning": "علامة تشير إلى وجود مسار محلي دائري (Lokal slinga) يعيدك إلى نقطة قريبة من بدايتك بعد جولة قصيرة، غالبًا لأغراض سياحية أو خدمية محلية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "local-loop"
   },
   {
     "code": "F31",
@@ -2233,11 +2233,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Lämplig väg eller förbifart för visst fordonsslag eller trafikantgrupp",
     "arabicName": "طريق أو طريق بديل مناسب لنوع معين من المركبات أو مستخدمي الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: طريق أو طريق بديل مناسب لنوع معين من المركبات أو مستخدمي الطريق.",
+    "officialMeaning": "علامة تشير إلى وجود طريق أو مسار بديل أنسب لنوع معين من المركبات أو مستخدمي الطريق (كالشاحنات الثقيلة أو الدراجات)، لتجنيبهم طريقًا أقل ملاءمة لهم.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "route-truck"
   },
   {
     "code": "F31a",
@@ -2246,11 +2246,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Färdväg för långa fordonståg",
     "arabicName": "مسار مخصص لقطارات المركبات الطويلة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مسار مخصص لقطارات المركبات الطويلة.",
+    "officialMeaning": "نسخة خاصة من علامة الطريق البديل، مخصصة تحديدًا لمركبات جر القطارات الطويلة (كالشاحنات ذات المقطورات المزدوجة) التي تحتاج مسارًا يستوعب طولها الإضافي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "route-truck"
   },
   {
     "code": "F32",
@@ -2259,11 +2259,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Farligt gods",
     "arabicName": "بضائع خطرة (طريق مخصص لنقلها)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: بضائع خطرة (طريق مخصص لنقلها).",
+    "officialMeaning": "علامة توجّه تحديدًا المركبات المحمَّلة ببضائع خطرة نحو المسار المصرَّح لها قانونًا باستخدامه، والذي قد يختلف عن المسار المعتاد للمركبات العادية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "hazmat"
   },
   {
     "code": "F33",
@@ -2272,11 +2272,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Räddningsplats",
     "arabicName": "موقع إنقاذ/إغاثة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: موقع إنقاذ/إغاثة.",
+    "officialMeaning": "علامة تشير إلى أقرب نقطة وصول رسمية لفرق الإنقاذ والطوارئ (تحمل رقمًا مرجعيًا للموقع)، مفيدة بشكل خاص في الطرق الريفية أو الغابات البعيدة عند الإبلاغ عن حادث لتحديد الموقع بدقة لطاقم الطوارئ.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "rescue-point"
   },
   {
     "code": "F34",
@@ -2285,11 +2285,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vägvisare (gång/cykel)",
     "arabicName": "لافتة توجيه للمشاة والدراجات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه للمشاة والدراجات.",
+    "officialMeaning": "نسخة من لافتة التوجيه الأساسية (F5) لكنها مخصصة لمسارات المشاة والدراجات الهوائية تحديدًا، وليس لحركة المركبات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "arrow-signpost-ped"
   },
   {
     "code": "F35",
@@ -2298,11 +2298,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Tabellvägvisare (gång/cykel)",
     "arabicName": "لافتة توجيه بجدول مسارات (مشاة/دراجات)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لافتة توجيه بجدول مسارات (مشاة/دراجات).",
+    "officialMeaning": "نسخة من لافتة التوجيه بجدول (F6) لكنها مخصصة لمسارات المشاة والدراجات الهوائية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "table-list"
   },
   {
     "code": "F36",
@@ -2311,11 +2311,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Platsmärke (gång/cykel)",
     "arabicName": "علامة تحديد موقع (مشاة/دراجات)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: علامة تحديد موقع (مشاة/دراجات).",
+    "officialMeaning": "نسخة من علامة تحديد الموقع (F10) لكنها مخصصة لمستخدمي مسارات المشاة والدراجات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "location-pin"
   },
   {
     "code": "F37",
@@ -2324,11 +2324,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Avståndstavla (gång/cykel)",
     "arabicName": "لوحة مسافات (مشاة/دراجات)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: لوحة مسافات (مشاة/دراجات).",
+    "officialMeaning": "نسخة من لوحة المسافات (F13) لكنها مخصصة لمسارات المشاة والدراجات، وتُقدَّر المسافات فيها عادة بالكيلومترات أو الأمتار المناسبة للسير أو ركوب الدراجة لا القيادة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "distance-list"
   },
   {
     "code": "F38",
@@ -2337,11 +2337,11 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Cykelled",
     "arabicName": "مسار دراجات هوائية سياحي (Cykelled)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مسار دراجات هوائية سياحي (Cykelled).",
+    "officialMeaning": "علامة تشير إلى مسار مخصص ومُعلَّم رسميًا لركوب الدراجات الهوائية لمسافات طويلة (غالبًا لأغراض سياحية أو رياضية)، بخلاف مسار الدراجات اليومي العادي داخل المدن.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "generic"
+    "glyph": "bike-route"
   },
   {
     "code": "G1",
@@ -2350,7 +2350,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Post",
     "arabicName": "مكتب بريد",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مكتب بريد.",
+    "officialMeaning": "ترشدك إلى أقرب مكتب بريد رسمي (Postombud) يقدّم خدمات إرسال واستلام الطرود والرسائل.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2363,7 +2363,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Hjälptelefon",
     "arabicName": "هاتف طوارئ",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: هاتف طوارئ.",
+    "officialMeaning": "ترشدك إلى أقرب هاتف طوارئ عمومي ثابت، وهي مفيدة خصوصًا في مناطق ريفية أو نفقية قد تضعف فيها تغطية الهاتف المحمول.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2376,7 +2376,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Radiostation för vägtrafikinformation",
     "arabicName": "محطة إذاعة لمعلومات حركة المرور",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: محطة إذاعة لمعلومات حركة المرور.",
+    "officialMeaning": "تُعلمك بوجود بث إذاعي محلي مخصص لمعلومات حركة المرور (كالازدحام أو الحوادث) يمكنك التقاطه على تردد مذكور عادة أسفل العلامة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2389,7 +2389,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Akutsjukhus",
     "arabicName": "مستشفى للحالات الطارئة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مستشفى للحالات الطارئة.",
+    "officialMeaning": "تحديدًا للمستشفيات التي تحتوي قسم طوارئ فعلي يستقبل الحالات الحرجة على مدار الساعة، وليس لأي عيادة أو مركز صحي عادي بلا قسم طوارئ.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2402,7 +2402,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Industriområde",
     "arabicName": "منطقة صناعية",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منطقة صناعية.",
+    "officialMeaning": "تشير إلى بداية منطقة صناعية (مصانع ومستودعات)، وتُستخدم غالبًا للتوجيه إلى عناوين الشركات هناك أكثر من كونها معلمًا سياحيًا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2415,7 +2415,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Järnvägsstation",
     "arabicName": "محطة قطار",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: محطة قطار.",
+    "officialMeaning": "ترشدك إلى أقرب محطة قطار للركاب، سواء للنقل الحضري أو بين المدن.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2428,7 +2428,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Busstation",
     "arabicName": "محطة حافلات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: محطة حافلات.",
+    "officialMeaning": "ترشدك إلى محطة حافلات رئيسية (وليس مجرد موقف توقف عادي على الطريق) قد تخدم عدة خطوط.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2441,7 +2441,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Flygplats",
     "arabicName": "مطار",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مطار.",
+    "officialMeaning": "ترشدك إلى أقرب مطار، وتظهر عادة على الطرق الرئيسية المؤدية إليه من مسافة كافية للتخطيط للمسار.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2454,7 +2454,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Brandsläckare",
     "arabicName": "طفاية حريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: طفاية حريق.",
+    "officialMeaning": "تشير إلى موقع طفاية حريق عمومية متاحة للطوارئ، وتظهر غالبًا داخل الأنفاق الطويلة أو مناطق الخدمات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2467,7 +2467,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Handelsområde",
     "arabicName": "منطقة تجارية",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منطقة تجارية.",
+    "officialMeaning": "تشير إلى بداية منطقة تجارية (مجمّعات محال ومتاجر)، مفيدة للتوجه نحو التسوق دون الحاجة لعنوان محدد.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2480,7 +2480,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Färja",
     "arabicName": "معدية (عبّارة)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: معدية (عبّارة).",
+    "officialMeaning": "ترشدك إلى نقطة ركوب معدية تنقل المركبات عبر مسطح مائي ضمن مسار الطريق نفسه.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2493,7 +2493,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المرافق العامة",
     "swedishName": "Personfärja",
     "arabicName": "معدية ركاب",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: معدية ركاب.",
+    "officialMeaning": "ترشدك إلى معدية مخصصة لنقل الركاب سيرًا على الأقدام (وليست بالضرورة مؤهَّلة لنقل المركبات كالمعدية العادية).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2506,7 +2506,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Informationsplats",
     "arabicName": "نقطة معلومات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نقطة معلومات.",
+    "officialMeaning": "تشير إلى نقطة معلومات سياحية أو خدمية عامة (غير مرتبطة بالضرورة بموقع محدد)، تجد فيها عادة خرائط أو نشرات إرشادية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2519,7 +2519,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Fordonsverkstad",
     "arabicName": "ورشة صيانة مركبات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: ورشة صيانة مركبات.",
+    "officialMeaning": "ترشدك إلى ورشة صيانة وإصلاح مركبات، مفيدة عند وجود عطل أو حاجة لصيانة أثناء رحلة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2532,7 +2532,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Drivmedel",
     "arabicName": "محطة وقود",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: محطة وقود.",
+    "officialMeaning": "ترشدك إلى محطة وقود تقليدية (بنزين/ديزل)، وتختلف عن علامة الغاز (H4) المخصصة تحديدًا لمحطات تعبئة الغاز.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2545,7 +2545,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Gas för fordonsdrift",
     "arabicName": "غاز لتشغيل المركبات",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: غاز لتشغيل المركبات.",
+    "officialMeaning": "مخصصة تحديدًا لمحطات تعبئة الغاز (كالغاز الطبيعي المضغوط) لتشغيل المركبات العاملة بهذا النوع من الوقود، بخلاف محطات الوقود التقليدية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2558,7 +2558,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Servering",
     "arabicName": "مطعم/مكان تقديم وجبات خفيفة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مطعم/مكان تقديم وجبات خفيفة.",
+    "officialMeaning": "تشير إلى مكان لتقديم وجبات خفيفة أو مرطبات سريعة، وهي أخف من علامة \"مطعم\" (H6) الكاملة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2571,7 +2571,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Restaurang",
     "arabicName": "مطعم",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مطعم.",
+    "officialMeaning": "تشير تحديدًا إلى مطعم يقدّم وجبات كاملة (وليس فقط وجبات خفيفة كما في H5).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2584,7 +2584,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Hotell",
     "arabicName": "فندق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: فندق.",
+    "officialMeaning": "تشير إلى فندق يقدّم إقامة مدفوعة بمعايير فندقية اعتيادية، بخلاف بيت الشباب (H8) الأبسط والأرخص عادة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2597,7 +2597,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Vandrarhem",
     "arabicName": "بيت شباب (نُزل)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: بيت شباب (نُزل).",
+    "officialMeaning": "تشير إلى بيت شباب أو نُزل اقتصادي (Vandrarhem)، وهو خيار إقامة أبسط وأرخص عادة من الفندق التقليدي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2610,7 +2610,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Stugby",
     "arabicName": "قرية أكواخ سياحية",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: قرية أكواخ سياحية.",
+    "officialMeaning": "تشير إلى مجمّع أكواخ سياحية متعددة (Stugby) مخصص للإيجار قصير المدى، وليس كوخًا واحدًا فرديًا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2623,7 +2623,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Stuga",
     "arabicName": "كوخ سياحي",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: كوخ سياحي.",
+    "officialMeaning": "تشير إلى كوخ سياحي فردي واحد متاح للإيجار، بخلاف علامة قرية الأكواخ (H9) التي تشير إلى مجمّع كامل.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2636,7 +2636,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Campingplats",
     "arabicName": "موقع تخييم",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: موقع تخييم.",
+    "officialMeaning": "ترشدك إلى موقع تخييم رسمي مجهَّز (غالبًا بمرافق أساسية كالمياه ودورات المياه)، وليس أي أرض مفتوحة عشوائية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2649,7 +2649,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Husvagnsplats",
     "arabicName": "موقف مقطورات سكنية (كارافان)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: موقف مقطورات سكنية (كارافان).",
+    "officialMeaning": "تشير تحديدًا إلى موقف مخصص لمقطورات السكن المتنقل (كارافان)، بخلاف موقف السيارات العادي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2662,7 +2662,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Rastplats",
     "arabicName": "منطقة استراحة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منطقة استراحة.",
+    "officialMeaning": "تشير إلى منطقة استراحة على الطريق (Rastplats) مجهَّزة عادة بمقاعد وطاولات، دون بالضرورة خدمات إضافية كالمطاعم أو الوقود.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2675,7 +2675,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Toalett",
     "arabicName": "دورة مياه عامة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: دورة مياه عامة.",
+    "officialMeaning": "ترشدك إلى دورة مياه عامة متاحة للاستخدام المجاني أو شبه المجاني.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2688,7 +2688,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Badplats",
     "arabicName": "مكان سباحة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مكان سباحة.",
+    "officialMeaning": "ترشدك إلى مكان سباحة عام رسمي (كبحيرة أو شاطئ مخصص للسباحة)، وليس أي مسطح مائي عشوائي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2701,7 +2701,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Friluftsområde",
     "arabicName": "منطقة ترفيه في الهواء الطلق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منطقة ترفيه في الهواء الطلق.",
+    "officialMeaning": "تشير إلى منطقة مخصصة للأنشطة الترفيهية في الهواء الطلق (كالمتنزهات الطبيعية العامة).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2714,7 +2714,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Vandringsled",
     "arabicName": "مسار مشي (هايكنغ)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مسار مشي (هايكنغ).",
+    "officialMeaning": "ترشدك إلى بداية مسار مشي أو هايكنغ رسمي معلَّم، غالبًا في مناطق طبيعية أو غابات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2727,7 +2727,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Stollift",
     "arabicName": "مصعد تزلج (تلفريك مقاعد)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مصعد تزلج (تلفريك مقاعد).",
+    "officialMeaning": "تشير تحديدًا إلى مصعد تزلج من نوع التلفريك بمقاعد (وليس مصعد الجر البسيط في H19).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2740,7 +2740,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Släplift",
     "arabicName": "مصعد جر للمتزلجين",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: مصعد جر للمتزلجين.",
+    "officialMeaning": "تشير إلى مصعد جر بسيط للمتزلجين (يُجرّون به واقفين على الثلج)، بخلاف التلفريك بمقاعد (H18).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2753,7 +2753,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Golfbana",
     "arabicName": "ملعب غولف",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: ملعب غولف.",
+    "officialMeaning": "ترشدك إلى ملعب غولف رسمي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2766,7 +2766,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Försäljningsställe för fiskekort",
     "arabicName": "نقطة بيع تصاريح الصيد",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: نقطة بيع تصاريح الصيد.",
+    "officialMeaning": "ترشدك إلى نقطة بيع تصاريح الصيد الرسمية المطلوبة قانونًا لممارسة الصيد في تلك المنطقة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2779,7 +2779,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Sevärdhet",
     "arabicName": "معلم أو مكان جدير بالمشاهدة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: معلم أو مكان جدير بالمشاهدة.",
+    "officialMeaning": "تشير إلى معلم أو موقع يستحق المشاهدة (منظر طبيعي أو أثر تاريخي) دون أن يكون بالضرورة موقعًا سياحيًا رسميًا مصنَّفًا كتراث عالمي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2792,7 +2792,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Förberedande upplysning om vägnära service",
     "arabicName": "معلومات تمهيدية عن خدمات قريبة من الطريق",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: معلومات تمهيدية عن خدمات قريبة من الطريق.",
+    "officialMeaning": "لوحة تمهيدية تظهر قبل مجموعة من علامات الخدمات القادمة (كتجمع محطة وقود ومطعم واستراحة معًا)، لتنبيهك مسبقًا بأن خدمات متعددة تقترب دفعة واحدة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2805,7 +2805,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Rum och frukost",
     "arabicName": "غرفة وإفطار (Bed & Breakfast)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: غرفة وإفطار (Bed & Breakfast).",
+    "officialMeaning": "تشير إلى إقامة من نوع \"غرفة وإفطار\" (Bed & Breakfast) — إقامة صغيرة في منزل خاص مع وجبة إفطار، وهي أبسط من الفندق (H7) وغالبًا أصغر من بيت الشباب (H8).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2818,7 +2818,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Gårdsbutik",
     "arabicName": "متجر مزرعة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: متجر مزرعة.",
+    "officialMeaning": "ترشدك إلى متجر يبيع منتجات مزرعة محلية مباشرة (كالخضار والألبان)، بخلاف علامة \"المنطقة التجارية\" العامة (G10).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2831,7 +2831,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Hantverk",
     "arabicName": "حرفة يدوية محلية",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: حرفة يدوية محلية.",
+    "officialMeaning": "ترشدك إلى مكان لبيع أو عرض حرف يدوية محلية تقليدية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2844,7 +2844,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Laddstation",
     "arabicName": "محطة شحن (مركبات كهربائية)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: محطة شحن (مركبات كهربائية).",
+    "officialMeaning": "ترشدك إلى محطة شحن مخصصة للمركبات الكهربائية، بخلاف محطات الوقود التقليدية (H3) أو محطات الغاز (H4).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2857,7 +2857,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الخدمات",
     "swedishName": "Anläggning som enbart tillhandahåller platser för bilar med bostadsutrymme",
     "arabicName": "منشأة مخصصة فقط لمواقف مركبات السكن المتنقل",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منشأة مخصصة فقط لمواقف مركبات السكن المتنقل.",
+    "officialMeaning": "منشأة مخصصة حصريًا لمواقف مركبات السكن المتنقل (لا تشمل خدمات تخييم أو أكواخ إضافية كما في H11/H9).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2870,7 +2870,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الأماكن والمعالم السياحية",
     "swedishName": "Turistväg",
     "arabicName": "طريق سياحي",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: طريق سياحي.",
+    "officialMeaning": "يشير إلى طريق مصنَّف رسميًا كـ\"طريق سياحي\" (Turistväg) لجودة مناظره الطبيعية أو أهميته الثقافية على امتداد مساره كاملًا، وليس فقط عند نقطة واحدة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
@@ -2883,7 +2883,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الأماكن والمعالم السياحية",
     "swedishName": "Turistområde",
     "arabicName": "منطقة سياحية",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: منطقة سياحية.",
+    "officialMeaning": "يشير إلى منطقة جغرافية أوسع مصنَّفة كمنطقة ذات أهمية سياحية عامة، وليس معلمًا واحدًا محددًا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
@@ -2896,7 +2896,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الأماكن والمعالم السياحية",
     "swedishName": "Landmärke",
     "arabicName": "معلم بارز (لاند مارك)",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: معلم بارز (لاند مارك).",
+    "officialMeaning": "يشير إلى معلم بارز مميز (Landmärke) يمكن رؤيته من مسافة بعيدة كنقطة استدلال بصري (كبرج أو تمثال ضخم)، بخلاف علامة \"معلم يستحق المشاهدة\" العامة (H22).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
@@ -2909,7 +2909,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الأماكن والمعالم السياحية",
     "swedishName": "Världsarv",
     "arabicName": "موقع تراث عالمي",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: موقع تراث عالمي.",
+    "officialMeaning": "مخصصة حصريًا للمواقع المصنَّفة رسميًا ضمن قائمة التراث العالمي لليونسكو (UNESCO World Heritage)، وهو تصنيف دولي رسمي أعلى درجة من أي علامة سياحية محلية أخرى.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
@@ -2922,7 +2922,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المعلومات",
     "swedishName": "Upplysningsmärke",
     "arabicName": "علامة معلومات عامة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: علامة معلومات عامة.",
+    "officialMeaning": "علامة معلومات عامة متعددة الاستخدامات تُستخدم لنقل معلومة محددة السياق لا تندرج تحت فئة أخرى (مثل الإشارة إلى نهاية مقطع طريق مُملَّح شتاءً)، ويُحدَّد نص أو رمز المعلومة الفعلي حسب الحاجة الموضعية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
@@ -2935,7 +2935,7 @@ export const trafficSigns = [
     "categoryNameAr": "علامات المعلومات",
     "swedishName": "Livsfarlig ledning",
     "arabicName": "خط كهرباء عالي الخطورة",
-    "officialMeaning": "علامة إرشادية توجّه مستخدم الطريق إلى: خط كهرباء عالي الخطورة.",
+    "officialMeaning": "تحذير من خطر مميت حقيقي بوجود خط كهرباء عالي الجهد مكشوف أو قريب (كخطوط كهرباء القطارات)، وتستدعي أقصى درجات الحذر خاصة عند التعامل مع معدات طويلة أو مرتفعة بالقرب منها.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
@@ -3797,7 +3797,7 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text"
+    "glyph": "text-length"
   },
   {
     "code": "T2",
@@ -3810,7 +3810,7 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text"
+    "glyph": "text-distance"
   },
   {
     "code": "T3",
@@ -3823,7 +3823,7 @@ export const trafficSigns = [
     "trainingNote": "عند رؤية شاخصة B1 أو B2 مصحوبة بهذه اللوحة، فالمعنى أن واجب إفساح الطريق أو التوقف الإجباري يبدأ عند المسافة المذكورة أمامك، وليس عند موضع العلامة نفسها.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text"
+    "glyph": "text-distance-stop"
   },
   {
     "code": "T4",
