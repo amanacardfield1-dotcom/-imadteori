@@ -38,5 +38,17 @@ service cloud.firestore {
       allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
       allow read: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
     }
+
+    // بنك أسئلة محاكاة Teoriprov (250 سؤالًا)، مقروء فقط للمتدربين الموافَق عليهم.
+    match /teoriprovBank/{questionId} {
+      allow read: if isApproved();
+      allow write: if isAdmin();
+    }
+
+    // محاولات اختبار Teoriprov: كل متدرب يكتب محاولته الخاصة فقط ويقرأها هو أو الإدارة.
+    match /teoriprovAttempts/{attemptId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+    }
   }
 }

@@ -18,6 +18,7 @@ export default function Navbar() {
       </Link>
       <nav className="nav-links">
         <Link to="/tests">الاختبارات</Link>
+        <Link to="/teoriprov">محاكاة Teoriprov</Link>
         <Link to="/traffic-signs">إشارات المرور</Link>
         <Link to="/about">عن المدرب</Link>
         {isAuthenticated ? (

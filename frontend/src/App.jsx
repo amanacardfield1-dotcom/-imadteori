@@ -11,6 +11,8 @@ import Dashboard from './pages/Dashboard';
 import Pending from './pages/Pending';
 import Admin from './pages/Admin';
 import TrafficSigns from './pages/TrafficSigns';
+import TeoriProvIntro from './pages/TeoriProvIntro';
+import TeoriProvRun from './pages/TeoriProvRun';
 
 export default function App() {
   return (
@@ -44,6 +46,22 @@ export default function App() {
             element={
               <ProtectedRoute requireApproved>
                 <Quiz />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/teoriprov"
+            element={
+              <ProtectedRoute requireApproved>
+                <TeoriProvIntro />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/teoriprov/run"
+            element={
+              <ProtectedRoute requireApproved>
+                <TeoriProvRun />
               </ProtectedRoute>
             }
           />
