@@ -79,7 +79,7 @@ function buildSummarySection(a) {
 
   wrap.innerHTML = `
     <div style="text-align:center;margin-bottom:20px;border-bottom:3px solid #0a3d91;padding-bottom:12px;">
-      <div style="font-size:22px;font-weight:800;color:#0a3d91;">🇸🇪 أكاديمية عماد للتيوري السويدي</div>
+      <div style="font-size:22px;font-weight:800;color:#0a3d91;">🇸🇪 عماد للتيوري السويدي</div>
       <div style="font-size:16px;color:#6b7280;margin-top:4px;">تقرير نتيجة محاكاة اختبار Teoriprov</div>
     </div>
 

@@ -102,7 +102,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="site-footer">
-        <p>© {new Date().getFullYear()} أكاديمية عماد للتيوري السويدي — موقع مجاني للمتدربين.</p>
+        <p>© {new Date().getFullYear()} عماد للتيوري السويدي — موقع مجاني للمتدربين.</p>
       </footer>
     </>
   );
