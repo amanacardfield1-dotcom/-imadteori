@@ -148,11 +148,6 @@ export default function TrafficSigns() {
         </div>
       </div>
 
-      <div className="signs-source-note">
-        تم ترتيب الفروع على نمط Sweden4، مع اعتماد أسماء ورموز Transportstyrelsen في البيانات
-        وتقديم شرح عربي مختصر داخل كل بطاقة.
-      </div>
-
       <div className="sign-group-grid" aria-label="فروع الشاخصات المرورية">
         {groupStats.map((group) => (
           <GroupCard
