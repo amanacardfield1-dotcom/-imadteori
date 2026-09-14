@@ -2,28 +2,37 @@ import { useMemo, useState } from 'react';
 import { trafficSigns } from '../trafficSignsData';
 import TrafficSignIcon from '../components/TrafficSignIcon';
 
+// بنية المجموعات هذه رُوجعت ونُقّحت لتطابق تصنيف الشاخصات المرورية كما هو
+// منشور فعليًا في القسم المرجعي المقابل على sweden4.com (15 صفحة تصنيف
+// مستقلة تم التحقق منها فردًا فردًا)، وليس تصنيفًا مبتكرًا من عندنا.
+// ملاحظة: مجموعة "places" (G/H/I الرسمية من Transportstyrelsen: مرافق عامة،
+// خدمات، معالم سياحية) لا يوجد لها صفحة مستقلة مقابلة في مرجع sweden4 —
+// أُبقيت كمحتوى تكميلي إضافي خارج نطاق المرجع (EXTRA / NOT IN REFERENCE)
+// لقيمتها التعليمية الحقيقية، مع تمييزها بوضوح بدل حذفها دون داعٍ.
 const SIGN_GROUPS = [
-  { id: 'warning', label: 'شاخصات التحذير', code: 'A', categories: ['A'], sourceLabel: 'Varningsmarken', summary: 'تنبهك إلى خطر أو وضع خاص أمامك، والقاعدة العملية هي تخفيف السرعة وزيادة الانتباه قبل الوصول إليه.' },
-  { id: 'priority', label: 'شاخصات الأولوية', code: 'B', categories: ['B'], sourceLabel: 'Vajningspliktsmarken', summary: 'تحدد من له حق المرور: إعطاء الأولوية، قف، الطريق الرئيسي، وتنظيم المرور المتقابل.' },
-  { id: 'prohibition', label: 'شاخصات المنع', code: 'C', categories: ['C'], sourceLabel: 'Forbudsmarken', summary: 'تمنع دخولًا أو حركة أو سرعة أو توقفًا أو نوعًا معينًا من المركبات، وغالبًا تتغير تفاصيلها بلوحات إضافية.' },
-  { id: 'mandatory', label: 'شاخصات الإلزام', code: 'D', categories: ['D'], sourceLabel: 'Pabudsmarken', summary: 'تجبر السائق أو مستخدم الطريق على اتجاه أو مسار أو استعمال محدد مثل الدوار، المشاة، الدراجات أو الحافلات.' },
-  { id: 'guidance', label: 'شاخصات الإرشاد', code: 'E', categories: ['E'], sourceLabel: 'Anvisningsmarken', summary: 'تشرح نوع الطريق أو المنطقة والقواعد العامة فيها، مثل الأوتوستراد، شارع المشاة، موقف السيارات أو منطقة السكن.' },
-  { id: 'directions', label: 'شاخصات التوجيه للطرق', code: 'F', categories: ['F'], sourceLabel: 'Lokaliseringsmarken', summary: 'تساعدك على اختيار الاتجاه أو المخرج أو المسار الصحيح قبل التقاطعات والطرق السريعة والمناطق المختلفة.' },
-  { id: 'places', label: 'شاخصات المراكز المهمة', code: 'G', categories: ['G'], sourceLabel: 'Platser och inrattningar', summary: 'تدل على مرافق مهمة يحتاجها السائق مثل المستشفى، محطة القطار، المطار، المعدية أو المنطقة الصناعية.' },
-  { id: 'services', label: 'الخدمات والسياحة والمعلومات', code: 'H-I-J', categories: ['H', 'I', 'J'], sourceLabel: 'Service, turism och upplysning', summary: 'لوحات عملية للمرافق والخدمات والسياحة والمعلومات العامة أثناء الرحلة.' },
-  { id: 'markings', label: 'العلامات الأرضية', code: 'M', categories: ['M'], sourceLabel: 'Vagmarkeringar', summary: 'خطوط ورموز مرسومة على الطريق تحدد المسارات، الحواف، مناطق المنع، الوقوف، ممرات المشاة والدراجات.' },
-  { id: 'lights', label: 'الإشارات الضوئية والسكك', code: 'SIG-Y', categories: ['SIG', 'Y'], sourceLabel: 'Trafiksignaler och plankorsning', summary: 'إشارات التقاطعات والعبور وسكك الحديد: الأحمر، الأصفر، الأخضر، الأسهم، الأصوات، الحواجز والضوء الوماض.' },
-  { id: 'officers', label: 'إشارات البوليس والحارس', code: 'P-V', categories: ['P', 'V'], sourceLabel: 'Polismans och vakts tecken', summary: 'إشارات اليد أو المركبة التي تصدر من الشرطة أو حارس الطريق، وهي مقدمة على الشاخصات والإشارات العادية عند التعارض.' },
-  { id: 'devices', label: 'تجهيزات الإرشاد على الطرق', code: 'X', categories: ['X'], sourceLabel: 'Anordningar', summary: 'حواجز وأسهم ولوحات مؤقتة أو ثابتة تساعد على توجيه الحركة حول العوائق والتحويلات وأعمال الطريق.' },
-  { id: 'additional', label: 'لوحات إضافية', code: 'T', categories: ['T'], sourceLabel: 'Tillaggstavlor', summary: 'تضيف تفاصيل للشاخصة الرئيسية مثل المسافة، المدة، الاتجاه، الوقت، الوزن أو الاستثناءات.' },
+  { id: 'warning', label: 'شاخصات التحذير', code: 'A', categories: ['A'], sourceLabel: 'Varningsmärken', summary: 'تنبهك إلى خطر أو وضع خاص أمامك، والقاعدة العملية هي تخفيف السرعة وزيادة الانتباه قبل الوصول إليه.' },
+  { id: 'priority', label: 'شاخصات الأولوية', code: 'B', categories: ['B'], sourceLabel: 'Väjningspliktsmärken', summary: 'تحدد من له حق المرور: إعطاء الأولوية، قف، الطريق الرئيسي، وتنظيم المرور المتقابل.' },
+  { id: 'prohibition', label: 'شاخصات المنع', code: 'C', categories: ['C'], sourceLabel: 'Förbudsmärken', summary: 'تمنع دخولًا أو حركة أو سرعة أو توقفًا أو نوعًا معينًا من المركبات، وغالبًا تتغير تفاصيلها بلوحات إضافية.' },
+  { id: 'mandatory', label: 'شاخصات إلزامية', code: 'D', categories: ['D'], sourceLabel: 'Påbudsmärken', summary: 'تجبر السائق أو مستخدم الطريق على اتجاه أو مسار أو استعمال محدد مثل الدوار، المشاة، الدراجات أو الحافلات.' },
+  { id: 'guidance', label: 'شاخصات إرشادية', code: 'E', categories: ['E'], sourceLabel: 'Anvisningsmärken', summary: 'تشرح نوع الطريق أو المنطقة والقواعد العامة فيها، مثل الأوتوستراد، شارع المشاة، موقف السيارات أو منطقة السكن.' },
+  { id: 'directions', label: 'شاخصات التوجيه للطرق', code: 'F', categories: ['F'], sourceLabel: 'Lokaliseringsmärken', summary: 'تساعدك على اختيار الاتجاه أو المخرج أو المسار الصحيح قبل التقاطعات والطرق السريعة والمناطق المختلفة.' },
+  { id: 'places', label: 'شاخصات مرافق وخدمات إضافية', code: 'G-H-I', categories: ['G', 'H', 'I'], sourceLabel: 'محتوى تكميلي (غير موجود كصفحة مستقلة في مرجع sweden4)', summary: 'مرافق عامة وخدمات ومعالم سياحية (مستشفى، محطة قطار، محطة وقود، مطعم...) — تصنيف رسمي من Transportstyrelsen مُضاف كتوسّع تعليمي، وليس جزءًا من تصنيف sweden4 نفسه.' },
+  { id: 'markings', label: 'العلامات الأرضية', code: 'M', categories: ['M'], sourceLabel: 'Vägmarkeringar', summary: 'خطوط ورموز مرسومة على الطريق تحدد المسارات، الحواف، مناطق المنع، الوقوف، ممرات المشاة والدراجات.' },
+  { id: 'lights', label: 'الإشارات الضوئية', code: 'SIG', categories: ['SIG'], sourceLabel: 'Trafiksignaler', summary: 'إشارات التقاطعات والعبور: الأحمر، الأصفر، الأخضر، الأسهم، إشارات المشاة، والإشارات الصوتية.' },
+  { id: 'railway', label: 'إشارات تقاطعات السكك الحديدية والترام', code: 'Y', categories: ['Y'], sourceLabel: 'Signaler vid korsning med järnväg eller spårväg', summary: 'الضوء الأحمر الوامض، الإشارة الصوتية، والحواجز المستخدمة عند تقاطعات السكك الحديدية أو الترام.' },
+  { id: 'police', label: 'إشارات الشرطي', code: 'P', categories: ['P'], sourceLabel: 'Tecken av polisman', summary: 'إشارات اليد التي يعطيها ضابط الشرطة مباشرة لتنظيم الحركة، ولها الأولوية على أي شاخصة أو إشارة ضوئية أخرى.' },
+  { id: 'guard', label: 'إشارات الحارس', code: 'V', categories: ['V'], sourceLabel: 'Tecken av vakt', summary: 'إشارات يعطيها عامل أو حارس مخوَّل (كموقع أعمال الطريق) لتنظيم الحركة في تلك المنطقة تحديدًا.' },
+  { id: 'devices', label: 'تجهيزات أخرى', code: 'X', categories: ['X'], sourceLabel: 'Andra anordningar för anvisningar för trafiken', summary: 'حواجز وأسهم ولوحات مؤقتة أو ثابتة تساعد على توجيه الحركة حول العوائق والتحويلات وأعمال الطريق.' },
+  { id: 'additional', label: 'لوحات إضافية', code: 'T', categories: ['T'], sourceLabel: 'Tilläggstavlor', summary: 'تضيف تفاصيل للشاخصة الرئيسية مثل المسافة، المدة، الاتجاه، الوقت، الوزن أو الاستثناءات.' },
   { id: 'symbols', label: 'شاخصات الرموز', code: 'S', categories: ['S'], sourceLabel: 'Symboler', summary: 'رموز مختصرة لأنواع المركبات ومستخدمي الطريق، وتظهر عادة داخل شاخصات أو لوحات إضافية.' },
+  { id: 'info', label: 'شاخصات معلومات', code: 'J', categories: ['J'], sourceLabel: 'Upplysningsmärken', summary: 'معلومات عملية للسائق مثل نهاية منطقة تمليح الطريق أو التحذير من خط كهرباء عالي الخطورة.' },
 ];
 
 const CATEGORY_CHIPS = {
   A: 'A - تحذير', B: 'B - أولوية', C: 'C - منع', D: 'D - إلزام', E: 'E - إرشاد',
   F: 'F - اتجاهات', G: 'G - مرافق عامة', H: 'H - خدمات', I: 'I - سياحة', J: 'J - معلومات',
   T: 'T - لوحات إضافية', M: 'M - خطوط الطريق', SIG: 'إشارات ضوئية',
-  P: 'P - إشارات الشرطة', V: 'V - إشارات المراقب', X: 'X - أجهزة تنظيم', Y: 'Y - سكك حديد', S: 'S - رموز',
+  P: 'P - إشارات الشرطي', V: 'V - إشارات الحارس', X: 'X - أجهزة تنظيم', Y: 'Y - سكك حديد', S: 'S - رموز',
 };
 
 const IMPORTANT_CODES = new Set(['B1', 'B2', 'B3', 'B4', 'C1', 'C2', 'C31', 'C35', 'C36', 'D1', 'D3', 'E1', 'E19', 'SIG1', 'SIG3', 'Y1']);
@@ -167,10 +176,17 @@ export default function TrafficSigns() {
           قد تستخدم إلى جانب شاخصة قائمة لتأكيد نفس القاعدة أو بشكل مستقل.
         </p>
       )}
-      {['officers', 'devices', 'lights'].includes(groupId) && (
+      {['police', 'guard', 'devices', 'lights', 'railway'].includes(groupId) && (
         <p className="tp-disclaimer">
           هذا الفرع يضم إشارات وأجهزة تنظيم حركة، وهي جزء من نظام المرور الرسمي حتى إن لم تكن شاخصة
           معدنية تقليدية على عمود.
+        </p>
+      )}
+      {groupId === 'places' && (
+        <p className="tp-disclaimer">
+          ⚠️ هذه المجموعة تصنيف رسمي حقيقي من Transportstyrelsen (فئات G وH وI) أضفناه كتوسّع
+          تعليمي مفيد، لكنه غير موجود كصفحة مستقلة في تصنيف sweden4 المرجعي — لذلك أبقيناه ظاهرًا
+          ومنفصلًا بدل حذفه أو الخلط بينه وبين بقية الفروع المطابقة للمرجع.
         </p>
       )}
 
