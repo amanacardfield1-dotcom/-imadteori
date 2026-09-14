@@ -151,10 +151,6 @@ export default function TrafficSigns() {
             والمنع والإلزام، ثم الإرشاد، التوجيه، العلامات الأرضية، الإشارات الضوئية، واللوحات الإضافية.
           </p>
         </div>
-        <div className="signs-hero-count">
-          <strong>{trafficSigns.length}</strong>
-          <span>علامة ورمز</span>
-        </div>
       </div>
 
       <div className="sign-group-grid" aria-label="فروع الشاخصات المرورية">

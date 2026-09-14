@@ -509,7 +509,7 @@ main {
 }
 .signs-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
   align-items: center;
   background: #ffffff;
@@ -531,23 +531,6 @@ main {
   margin: 0;
   color: var(--muted);
   line-height: 1.8;
-}
-.signs-hero-count {
-  display: grid;
-  place-items: center;
-  min-height: 118px;
-  border: 1px solid #dbe3ef;
-  border-radius: 8px;
-  background: #f8fafc;
-}
-.signs-hero-count strong {
-  color: var(--danger);
-  font-size: 2.2rem;
-  line-height: 1;
-}
-.signs-hero-count span {
-  color: var(--blue-dark);
-  font-weight: 700;
 }
 .sign-group-grid {
   display: grid;
@@ -678,9 +661,6 @@ main {
   .signs-hero {
     grid-template-columns: 1fr;
     padding: 18px;
-  }
-  .signs-hero-count {
-    min-height: 86px;
   }
   .sign-group-grid {
     grid-template-columns: 1fr;
