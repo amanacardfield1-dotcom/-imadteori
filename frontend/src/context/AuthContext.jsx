@@ -1,36 +1,40 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../firebase';
+import { api } from '../firestoreApi';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  const [token, setToken] = useState(() => localStorage.getItem('token'));
-  const [user, setUser] = useState(() => {
-    const raw = localStorage.getItem('user');
-    return raw ? JSON.parse(raw) : null;
-  });
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (token) localStorage.setItem('token', token);
-    else localStorage.removeItem('token');
-  }, [token]);
+    const unsubscribe = onAuthStateChanged(auth, async (fbUser) => {
+      if (fbUser) {
+        const profile = await api.getProfile(fbUser.uid);
+        setUser(profile ? { uid: fbUser.uid, ...profile } : null);
+      } else {
+        setUser(null);
+      }
+      setLoading(false);
+    });
+    return unsubscribe;
+  }, []);
 
-  useEffect(() => {
-    if (user) localStorage.setItem('user', JSON.stringify(user));
-    else localStorage.removeItem('user');
-  }, [user]);
-
-  const login = (data) => {
-    setToken(data.token);
-    setUser(data.user);
+  const login = async (email, password) => {
+    const profile = await api.login(email, password);
+    setUser({ uid: auth.currentUser.uid, ...profile });
+    return profile;
   };
 
-  const logout = () => {
-    setToken(null);
+  const logout = async () => {
+    await api.logout();
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ token, user, login, logout, isAuthenticated: !!token }}>
+    <AuthContext.Provider value={{ user, loading, login, logout, isAuthenticated: !!user }}>
       {children}
     </AuthContext.Provider>
   );

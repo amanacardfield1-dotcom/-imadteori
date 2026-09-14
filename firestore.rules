@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function myProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    function isAdmin() {
+      return isSignedIn() && myProfile().role == 'admin';
+    }
+    function isApproved() {
+      return isSignedIn() && (myProfile().status == 'approved' || myProfile().role == 'admin');
+    }
+
+    // كل متدرب له وثيقة واحدة بنفس معرف حساب المصادقة (uid).
+    match /users/{userId} {
+      allow read: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+      // عند التسجيل: المستخدم ينشئ وثيقته الخاصة فقط، بحالة "pending" إلزامية
+      // ودور "trainee" إلزامي، بدون أي صلاحية لمنح نفسه الموافقة أو دور الإدارة.
+      allow create: if isSignedIn() && request.auth.uid == userId
+        && request.resource.data.status == 'pending'
+        && request.resource.data.role == 'trainee';
+      // صاحب المنصة فقط يستطيع تغيير الحالة أو الدور.
+      allow update: if isAdmin();
+    }
+
+    // بنك الأسئلة أصلي بالكامل، مقروء فقط للمتدربين الموافَق عليهم أو الإدارة.
+    match /tests/{testId} {
+      allow read: if isApproved();
+      allow write: if isAdmin();
+    }
+
+    // نتائج الاختبارات: كل متدرب يكتب نتيجته الخاصة فقط ويقرأها هو أو الإدارة.
+    match /results/{resultId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+  }
+}

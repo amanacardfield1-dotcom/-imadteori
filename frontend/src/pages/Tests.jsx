@@ -1,21 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { api } from '../api';
-import { useAuth } from '../context/AuthContext';
+import { api } from '../firestoreApi';
 
 export default function Tests() {
-  const { token } = useAuth();
   const [tests, setTests] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     api
-      .getTests(token)
+      .getTests()
       .then(setTests)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
-  }, [token]);
+  }, []);
 
   return (
     <div className="page">

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { api } from '../api';
+import { api } from '../firestoreApi';
 
 export default function Register() {
   const [name, setName] = useState('');
@@ -15,7 +15,7 @@ export default function Register() {
     setLoading(true);
     setError('');
     try {
-      await api.register({ name, email, password });
+      await api.register(name, email, password);
       setDone(true);
     } catch (e2) {
       setError(e2.message);

@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { api } from '../api';
+import { api } from '../firestoreApi';
 import { useAuth } from '../context/AuthContext';
 
 export default function Dashboard() {
-  const { token, user } = useAuth();
+  const { user } = useAuth();
   const [results, setResults] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     api
-      .getMyResults(token)
+      .getMyResults(user.uid)
       .then(setResults)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
-  }, [token]);
+  }, [user.uid]);
 
   const average = results.length
     ? Math.round((results.reduce((sum, r) => sum + r.score / r.total, 0) / results.length) * 100)

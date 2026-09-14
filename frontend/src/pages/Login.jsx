@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { api } from '../api';
 import { useAuth } from '../context/AuthContext';
 
 export default function Login() {
@@ -16,10 +15,9 @@ export default function Login() {
     setLoading(true);
     setError('');
     try {
-      const data = await api.login({ email, password });
-      login(data);
-      if (data.user.role === 'admin') navigate('/admin');
-      else if (data.user.status === 'approved') navigate('/dashboard');
+      const profile = await login(email, password);
+      if (profile.role === 'admin') navigate('/admin');
+      else if (profile.status === 'approved') navigate('/dashboard');
       else navigate('/pending');
     } catch (e2) {
       setError(e2.message);

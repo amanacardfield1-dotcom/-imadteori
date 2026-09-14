@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
-import { api } from '../api';
-import { useAuth } from '../context/AuthContext';
+import { api } from '../firestoreApi';
 
 export default function Admin() {
-  const { token } = useAuth();
   const [users, setUsers] = useState([]);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
@@ -12,19 +10,19 @@ export default function Admin() {
   const load = () => {
     setLoading(true);
     api
-      .getAllUsers(token)
+      .getAllUsers()
       .then(setUsers)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
   };
 
-  useEffect(load, [token]);
+  useEffect(load, []);
 
   const act = async (id, action) => {
     setBusyId(id);
     try {
-      if (action === 'approve') await api.approveUser(id, token);
-      else await api.rejectUser(id, token);
+      if (action === 'approve') await api.approveUser(id);
+      else await api.rejectUser(id);
       load();
     } catch (e) {
       setError(e.message);

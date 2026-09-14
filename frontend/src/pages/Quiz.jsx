@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { api } from '../api';
+import { api } from '../firestoreApi';
 import { useAuth } from '../context/AuthContext';
 
 export default function Quiz() {
   const { id } = useParams();
-  const { token } = useAuth();
+  const { user } = useAuth();
   const [test, setTest] = useState(null);
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
@@ -16,8 +16,8 @@ export default function Quiz() {
     setTest(null);
     setResult(null);
     setAnswers({});
-    api.getTest(id, token).then(setTest).catch((e) => setError(e.message));
-  }, [id, token]);
+    api.getTest(id).then(setTest).catch((e) => setError(e.message));
+  }, [id]);
 
   const selectAnswer = (questionId, optionIndex) => {
     setAnswers((prev) => ({ ...prev, [questionId]: optionIndex }));
@@ -28,7 +28,7 @@ export default function Quiz() {
     setSubmitting(true);
     setError('');
     try {
-      const data = await api.submitTest(id, answers, token);
+      const data = await api.submitTest(user.uid, test, answers);
       setResult(data);
     } catch (e2) {
       setError(e2.message);
