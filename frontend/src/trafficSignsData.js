@@ -494,7 +494,7 @@ export const trafficSigns = [
     "officialMeaning": "تُحذّر هذه العلامة مستخدمي الطريق من الخطر أو الوضع الخاص التالي: المسافة المتبقية حتى تقاطع السكة الحديد. المطلوب من السائق تقليل السرعة وزيادة الانتباه عند الاقتراب من الموقع الذي تشير إليه العلامة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "triangle-warning",
+    "shape": "plaque-tall-white",
     "glyph": "rail-distance"
   },
   {
@@ -716,7 +716,7 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "trailer"
+    "glyph": "car-trailer"
   },
   {
     "code": "C7",
@@ -1145,7 +1145,7 @@ export const trafficSigns = [
     "trainingNote": "منع 'التوقف والوقوف' معًا أشد من C35 — يمنع حتى التوقف اللحظي القصير لأي غرض تقريبًا، عدا حالات الاضطرار الحقيقي.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-stop-park"
+    "glyph": "no-stop-park-x"
   },
   {
     "code": "C40",
@@ -1456,7 +1456,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: منطقة مأهولة (بداية منطقة سكنية/حضرية).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-white-black",
     "glyph": "urban-area"
   },
   {
@@ -1469,7 +1469,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية المنطقة المأهولة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-white-black",
     "glyph": "urban-area-end"
   },
   {
@@ -1508,7 +1508,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: منطقة بسرعة المشي.",
     "trainingNote": "'منطقة سرعة المشي' (Gångfartsområde) تُلزم السائق بعدم تجاوز سرعة المشي فعليًا، وليس فقط التوصية بالتمهل.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-white-blue",
     "glyph": "walking-speed"
   },
   {
@@ -1521,7 +1521,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية منطقة سرعة المشي.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-white-blue",
     "glyph": "walking-speed-end"
   },
   {
@@ -1820,7 +1820,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: شارع للدراجات الهوائية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "square-blue-framed",
     "glyph": "bicycle-street"
   },
   {
@@ -1833,7 +1833,7 @@ export const trafficSigns = [
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية شارع الدراجات الهوائية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "square-blue-framed",
     "glyph": "bicycle-street-end"
   },
   {
@@ -2288,7 +2288,7 @@ export const trafficSigns = [
     "officialMeaning": "نسخة من لافتة التوجيه الأساسية (F5) لكنها مخصصة لمسارات المشاة والدراجات الهوائية تحديدًا، وليس لحركة المركبات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-navy",
     "glyph": "arrow-signpost-ped"
   },
   {
@@ -2301,7 +2301,7 @@ export const trafficSigns = [
     "officialMeaning": "نسخة من لافتة التوجيه بجدول (F6) لكنها مخصصة لمسارات المشاة والدراجات الهوائية.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-navy",
     "glyph": "table-list-ped"
   },
   {
@@ -2314,7 +2314,7 @@ export const trafficSigns = [
     "officialMeaning": "نسخة من علامة تحديد الموقع (F10) لكنها مخصصة لمستخدمي مسارات المشاة والدراجات.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-navy",
     "glyph": "location-pin-ped"
   },
   {
@@ -2327,7 +2327,7 @@ export const trafficSigns = [
     "officialMeaning": "نسخة من لوحة المسافات (F13) لكنها مخصصة لمسارات المشاة والدراجات، وتُقدَّر المسافات فيها عادة بالكيلومترات أو الأمتار المناسبة للسير أو ركوب الدراجة لا القيادة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-navy",
     "glyph": "distance-list-ped"
   },
   {
@@ -2340,7 +2340,7 @@ export const trafficSigns = [
     "officialMeaning": "علامة تشير إلى مسار مخصص ومُعلَّم رسميًا لركوب الدراجات الهوائية لمسافات طويلة (غالبًا لأغراض سياحية أو رياضية)، بخلاف مسار الدراجات اليومي العادي داخل المدن.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-info-navy",
     "glyph": "bike-route"
   },
   {

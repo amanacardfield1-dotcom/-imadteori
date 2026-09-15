@@ -4,10 +4,12 @@
 // الرسمي المطبوع في ملحق SFS 2007:90 — لذلك يبقى الاسم الرسمي والرقم والمصدر
 // هما المرجع القانوني، والأيقونة أداة بصرية مساعدة للتعرّف السريع فقط.
 
-const RED = '#c0392b';
-const BLUE = '#0a3d91';
-const YELLOW = '#ffd400';
-const BROWN = '#5b3a1e';
+// الألوان الرسمية بحسب "Färger för illustrationer" (Transportstyrelsen):
+// أحمر PMS 185C، أصفر PMS 116C، أزرق فاتح PMS 294C، بني PMS 469C.
+const RED = '#e73137';
+const BLUE = '#005092';
+const YELLOW = '#e1d300';
+const BROWN = '#7a4a00';
 const BLACK = '#1b1f27';
 const WHITE = '#ffffff';
 
@@ -21,16 +23,35 @@ function Center({ children }) {
 function ShapeContainer({ shape, children }) {
   switch (shape) {
     case 'triangle-warning':
+      // هندسة مقاسة من الرسم التخطيطي الرسمي لمثلث التحذير (TSFS 2019:74، الملحق
+      // الخاص بمقاسات A1–A20 وغيرها): زاوية مدورة بنصف قطر ≈ 7% من طول الضلع،
+      // وسماكة الشريط الأحمر ≈ 8.3% من طول الضلع. الخلفية صفراء وليست بيضاء —
+      // علامات التحذير والمنع في السويد صفراء الخلفية خلافًا لمعظم أوروبا.
       return (
         <>
-          <polygon points="32,6 60,56 4,56" fill={WHITE} stroke={RED} strokeWidth="5" strokeLinejoin="round" />
+          <path
+            d="M 33.95,9.49 L 58.05,52.51 Q 60,56 56,56 L 8,56 Q 4,56 5.95,52.51 L 30.05,9.49 Q 32,6 33.95,9.49 Z"
+            fill={YELLOW}
+            stroke={RED}
+            strokeWidth="4.8"
+            strokeLinejoin="round"
+          />
           <g transform="translate(0,4)">{children}</g>
         </>
       );
     case 'triangle-yield':
+      // نفس نصف قطر التدوير المقاس رسميًا للمثلث القياسي (A1...)، مطبّقًا على
+      // المثلث المقلوب لعلامات "واجب إفساح الطريق" — الخلفية بيضاء هنا (خلافًا
+      // لمثلث التحذير الأصفر)، لأن قاعدة الخلفية الصفراء تشمل فقط التحذير والمنع.
       return (
         <>
-          <polygon points="32,58 60,8 4,8" fill={WHITE} stroke={RED} strokeWidth="5" strokeLinejoin="round" />
+          <path
+            d="M 33.95,54.51 L 58.05,11.49 Q 60,8 56,8 L 8,8 Q 4,8 5.95,11.49 L 30.05,54.51 Q 32,58 33.95,54.51 Z"
+            fill={WHITE}
+            stroke={RED}
+            strokeWidth="4.8"
+            strokeLinejoin="round"
+          />
           <g transform="translate(0,-3)">{children}</g>
         </>
       );
@@ -59,14 +80,23 @@ function ShapeContainer({ shape, children }) {
         </>
       );
     case 'circle-prohibit-red':
+      // خلفية صفراء (وليست بيضاء) — نفس القاعدة السويدية المطبّقة على شاخصات
+      // التحذير: "Gul bakgrundsfärg på både varnings- och förbudsmärken".
       return (
         <>
-          <circle cx="32" cy="32" r="27" fill={WHITE} stroke={RED} strokeWidth="6" />
+          <circle cx="32" cy="32" r="27" fill={YELLOW} stroke={RED} strokeWidth="6" />
           {children}
         </>
       );
     case 'circle-solid-red':
-      return <circle cx="32" cy="32" r="27" fill={RED} stroke={WHITE} strokeWidth="2" />;
+      // علامة "منع الدخول" — دائرة حمراء صلبة مع شريط أبيض أفقي، وهي من أكثر
+      // الشاخصات المرورية شهرة عالميًا؛ الشريط الأبيض جزء أساسي من الشكل الرسمي.
+      return (
+        <>
+          <circle cx="32" cy="32" r="27" fill={RED} stroke={WHITE} strokeWidth="2" />
+          <rect x="14" y="27" width="36" height="10" rx="1" fill={WHITE} />
+        </>
+      );
     case 'circle-prohibit-blue':
       return (
         <>
@@ -89,6 +119,45 @@ function ShapeContainer({ shape, children }) {
           {children}
         </>
       );
+    case 'rect-info-navy':
+      // شكل خاص بشاخصات التوجيه للمشاة والدراجات (F34-F38) — كُحلي داكن مميّز،
+      // وليس نفس الأزرق العادي المستخدم لبقية لافتات F. تحقّقتُ من اللون عبر
+      // أخذ عيّنة بكسل فعلية من صورة منتج (rgb 25,34,63 ≈ #19223f).
+      return (
+        <>
+          <rect x="6" y="6" width="52" height="52" rx="6" fill="#19223f" />
+          {children}
+        </>
+      );
+    case 'rect-info-white-black':
+      // شكل خاص بعلامتي E5/E6 (بداية/نهاية منطقة مأهولة) — تحققتُ منه عبر صورة
+      // منتج فعلي من مُصنِّع لافتات سويدي: خلفية بيضاء وحدود سوداء، خلافًا لبقية
+      // شاخصات هذه الفئة (E) التي تكون زرقاء الخلفية.
+      return (
+        <>
+          <rect x="6" y="6" width="52" height="52" rx="6" fill={WHITE} stroke={BLACK} strokeWidth="2.5" />
+          {children}
+        </>
+      );
+    case 'rect-info-white-blue':
+      // شكل خاص بعلامتي E9/E10 (منطقة بسرعة المشي) — خلفية بيضاء، حدود ورمز
+      // بالأزرق (تحقّق مصوَّر عبر منتج فعلي من مُصنِّع لافتات).
+      return (
+        <>
+          <rect x="6" y="6" width="52" height="52" rx="6" fill={WHITE} stroke={BLUE} strokeWidth="2.5" />
+          {children}
+        </>
+      );
+    case 'square-blue-framed':
+      // شكل خاص بعلامتي E33/E34 (شارع دراجات) — مربّع (وليس مستطيلًا) بهامش
+      // أبيض خارجي ومربّع أزرق داخلي، بحسب صورة فعلية للمنتج.
+      return (
+        <>
+          <rect x="6" y="6" width="52" height="52" rx="6" fill={WHITE} stroke={BLUE} strokeWidth="2.5" />
+          <rect x="14" y="14" width="36" height="36" fill={BLUE} />
+          {children}
+        </>
+      );
     case 'rect-info-brown':
       return (
         <>
@@ -100,6 +169,16 @@ function ShapeContainer({ shape, children }) {
       return (
         <>
           <rect x="4" y="18" width="56" height="28" rx="3" fill={WHITE} stroke={BLACK} strokeWidth="2.5" />
+          {children}
+        </>
+      );
+    case 'plaque-tall-white':
+      // لوحة عمودية ضيقة (S1 أضيق من S2) — تُستخدم لعلامة A38 "المسافة المتبقية
+      // حتى تقاطع السكة الحديد"، وهي شكل مختلف تمامًا عن مثلث التحذير القياسي
+      // بحسب الرسم التخطيطي الرسمي في TSFS 2019:74 (صفحة 8).
+      return (
+        <>
+          <rect x="18" y="4" width="28" height="56" rx="3" fill={WHITE} stroke={BLACK} strokeWidth="2.5" />
           {children}
         </>
       );
@@ -229,10 +308,16 @@ function Children({ c = BLACK }) {
   );
 }
 function HorseRider({ c = BLACK }) {
+  // حصان + فارس تخطيطي واضح (جسم + رقبة/رأس + 4 أرجل + شخص جالس أعلى الظهر).
   return (
-    <g fill="none" stroke={c} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M -14,10 q4,-14 14,-14 q10,0 12,8 l4,6 M -14,10 l3,3 M -4,10 l0,4 M 4,10 l0,4" />
-      <circle cx="4" cy="-6" r="3.4" fill={c} stroke="none" />
+    <g fill={c}>
+      <path d="M -13,4 Q -14,0 -10,-1 L -12,-6 Q -13,-9 -10,-9 Q -8,-9 -7,-6 L -6,-1 Q 2,-3 9,-1 L 12,-4 L 13,-2 L 9,1.5 Q 10,4 8,4 Z" />
+      <rect x="-11" y="4" width="2.4" height="8" rx="1" />
+      <rect x="-6" y="4" width="2.4" height="8" rx="1" />
+      <rect x="2" y="4" width="2.4" height="8" rx="1" />
+      <rect x="6" y="4" width="2.4" height="8" rx="1" />
+      <circle cx="-3" cy="-10" r="2.8" />
+      <path d="M -4,-7 L -4,-1 L 1,-3 Z" />
     </g>
   );
 }
@@ -245,10 +330,15 @@ function Skier({ c = BLACK }) {
   );
 }
 function Animal({ c = BLACK }) {
+  // مخطط حيوان بري رباعي القوائم واقف (أيل/غزال تخطيطي) — وليس مبنى أو سياجًا،
+  // ليتوافق فعليًا مع معنى العلامة "تحذير من حيوانات".
   return (
-    <g fill="none" stroke={c} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M -14,10 L -14,2 L -8,-6 L 4,-6 L 10,0 L 14,10 M -14,2 L -10,2 M 4,-6 L 2,-11 L 6,-11 L 4,-6" />
-      <path d="M -11,10 L -11,14 M -6,10 L -6,14 M 6,10 L 6,14 M 10,10 L 10,14" />
+    <g fill={c}>
+      <path d="M -12,2 Q -13,-3 -7,-4 L -4,-10 Q -3,-13 0,-12.5 Q 2,-11.5 1,-9.5 L -1,-4 Q 6,-5 11,-1 Q 13,1 11,3 L -10,3 Q -12,3 -12,2 Z" />
+      <rect x="-9" y="2" width="2.6" height="9" rx="1" />
+      <rect x="-3" y="2" width="2.6" height="9" rx="1" />
+      <rect x="4" y="2" width="2.6" height="9" rx="1" />
+      <rect x="8" y="2" width="2.6" height="9" rx="1" />
     </g>
   );
 }
@@ -351,7 +441,7 @@ function GenericBox({ c = WHITE }) {
 // خريطة الرموز الداخلية: كل مفتاح glyph → JSX يُرسم مركّزًا داخل الحاوية
 // ---------------------------------------------------------------------------
 function glyphContent(glyph, shape) {
-  const onColor = shape.startsWith('circle-prohibit') || shape === 'triangle-warning' || shape === 'triangle-yield' || shape === 'symbol-plate' || shape === 'gesture' || shape === 'device' ? BLACK : WHITE;
+  const onColor = shape.startsWith('circle-prohibit') || shape === 'triangle-warning' || shape === 'triangle-yield' || shape === 'symbol-plate' || shape === 'gesture' || shape === 'device' || shape === 'rect-info-white-black' || shape === 'plaque-white' || shape === 'plaque-tall-white' ? BLACK : shape === 'rect-info-white-blue' ? BLUE : WHITE;
   const g = (el) => <Center>{el}</Center>;
 
   const simple = {
@@ -444,14 +534,36 @@ function glyphContent(glyph, shape) {
     towlift: <path d="M -12,-12 L 12,12 M 4,2 L 10,-2" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinecap="round" />,
     golf: <path d="M -6,12 L -6,-13 L 8,-8 L -6,-3" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
     fish: <path d="M -12,0 Q -4,-8 8,0 Q -4,8 -12,0 Z M 8,0 L 13,-4 L 13,4 Z" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
-    craft: <path d="M -8,10 L 4,-2 M -2,-10 a4,4 0 1 0 6,6 L 10,4 a3,3 0 0 1 -4,4 L -1,-1" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round" />,
+    craft: (
+      <g transform="rotate(-40)" fill={onColor}>
+        <rect x="-3" y="-4" width="6" height="20" rx="2" />
+        <rect x="-9" y="-16" width="18" height="12" rx="2" />
+      </g>
+    ),
     route: <path d="M -12,10 Q 0,-14 12,10" fill="none" stroke={onColor} strokeWidth="3" strokeDasharray="5 4" strokeLinecap="round" />,
     area: <rect x="-11" y="-11" width="22" height="22" rx="3" fill="none" stroke={onColor} strokeWidth="3" />,
-    heritage: <circle cx="0" cy="0" r="12" fill="none" stroke={onColor} strokeWidth="3" />,
+    heritage: (
+      <g fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round">
+        <circle cx="0" cy="0" r="12" />
+        <ellipse cx="0" cy="0" rx="5" ry="12" />
+        <line x1="-12" y1="0" x2="12" y2="0" />
+        <path d="M -10,-6 Q 0,-3 10,-6" />
+        <path d="M -10,6 Q 0,3 10,6" />
+      </g>
+    ),
     tunnel: <path d="M -13,10 L -13,0 a13,13 0 0 1 26,0 L 13,10" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
     bridge: <path d="M -14,6 Q 0,-10 14,6 M -14,6 L -14,10 M 14,6 L 14,10" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
     quay: <path d="M -14,2 L 14,2 M -14,2 L -14,12 M 14,2 L 14,12 M -14,-2 L -6,-10 L 2,-2 Z" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinejoin="round" />,
-    roundabout: <path d="M 0,0 m -13,0 a13,13 0 1 0 26,0 a13,13 0 1 0 -26,0" fill="none" stroke={onColor} strokeWidth="4" />,
+    roundabout: (
+      <g>
+        <circle cx="0" cy="0" r="10" fill="none" stroke={onColor} strokeWidth="3.4" />
+        <g fill={onColor}>
+          <polygon points="0,-4 3.5,3 -3.5,3" transform="translate(0,-10) rotate(-90)" />
+          <polygon points="0,-4 3.5,3 -3.5,3" transform="rotate(120) translate(0,-10) rotate(-90)" />
+          <polygon points="0,-4 3.5,3 -3.5,3" transform="rotate(240) translate(0,-10) rotate(-90)" />
+        </g>
+      </g>
+    ),
     'roundabout-arrow': (
       <g fill="none" stroke={onColor} strokeWidth="3.6" strokeLinecap="round">
         <circle cx="0" cy="0" r="12" />
@@ -466,9 +578,9 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'oncoming-traffic': (
-      <g fill={onColor}>
-        <g transform="translate(-8,0)"><Car c={onColor} /></g>
-        <g transform="translate(8,0) scale(-1,1)"><Car c={onColor} /></g>
+      <g fill={onColor} transform="scale(0.8)">
+        <g transform="translate(-13,0)"><Car c={onColor} /></g>
+        <g transform="translate(13,0) scale(-1,1)"><Car c={onColor} /></g>
       </g>
     ),
     queue: (
@@ -481,7 +593,13 @@ function glyphContent(glyph, shape) {
     'rail-gated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13 M -16,4 h10" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" />,
     'rail-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" />,
     'tram-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13 M -6,6 a6,6 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
-    'rail-distance': <g>{[-10, 0, 10].map((x) => <line key={x} x1={x} y1="-10" x2={x} y2="10" stroke={onColor} strokeWidth="3" />)}</g>,
+    'rail-distance': (
+      <g stroke={RED} strokeWidth="4">
+        <line x1="-10" y1="10" x2="-2" y2="-10" />
+        <line x1="-2" y1="10" x2="6" y2="-10" />
+        <line x1="6" y1="10" x2="14" y2="-10" />
+      </g>
+    ),
     accident: (
       <g stroke={onColor} strokeWidth="2.6" strokeLinecap="round" fill="none">
         <path d="M -10,10 L 10,-10 M -10,-10 L 10,10 M 0,-13 L 0,13 M -13,0 L 13,0" />
@@ -522,7 +640,12 @@ function glyphContent(glyph, shape) {
     'road-number': <TextGlyph text="40" c={onColor} size={16} />,
     'speed-reco': <TextGlyph text="30" c={onColor} size={18} />,
     'speed-reco-max': <TextGlyph text="70" c={onColor} size={18} />,
-    'clock': <TextGlyph text="⏱" c={onColor} size={16} />,
+    clock: (
+      <g>
+        <circle cx="0" cy="0" r="12" fill="none" stroke={onColor} strokeWidth="2.4" />
+        <path d="M 0,0 L 0,-8 M 0,0 L 6,2" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />
+      </g>
+    ),
     'clock24': <TextGlyph text="24h" c={onColor} size={14} />,
     'coin': <TextGlyph text="kr" c={onColor} size={16} />,
     'disc': <circle cx="0" cy="0" r="11" fill="none" stroke={onColor} strokeWidth="3" />,
@@ -535,14 +658,46 @@ function glyphContent(glyph, shape) {
     'purpose-place': <TextGlyph text="P" c={onColor} size={20} />,
     'turning-place': <ArrowIcon c={onColor} rot={180} double />,
     'special-parking': <TextGlyph text="P" c={onColor} size={20} />,
-    'studded-tire': <TextGlyph text="⊘" c={onColor} size={18} />,
+    'studded-tire': (
+      <g>
+        <circle cx="0" cy="0" r="11" fill="none" stroke={onColor} strokeWidth="3" />
+        <g stroke={onColor} strokeWidth="2.2" strokeLinecap="round">
+          <line x1="0" y1="-11" x2="0" y2="-14" />
+          <line x1="0" y1="11" x2="0" y2="14" />
+          <line x1="-11" y1="0" x2="-14" y2="0" />
+          <line x1="11" y1="0" x2="14" y2="0" />
+          <line x1="-7.8" y1="-7.8" x2="-9.9" y2="-9.9" />
+          <line x1="7.8" y1="-7.8" x2="9.9" y2="-9.9" />
+          <line x1="-7.8" y1="7.8" x2="-9.9" y2="9.9" />
+          <line x1="7.8" y1="7.8" x2="9.9" y2="9.9" />
+        </g>
+      </g>
+    ),
     'stop-purpose': <TextGlyph text="STOP" c={onColor} size={11} />,
     'customs': <TextGlyph text="TULL" c={onColor} size={10} />,
     'stop-text': <TextGlyph text="STOP" c={onColor} size={13} />,
     'taxi-text': <TextGlyph text="TAXI" c={onColor} size={13} />,
     'camera': <path d="M -11,-3 h6 l2,-3 h6 l2,3 h6 v11 h-22 z M 0,2 a5,5 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="2.4" strokeLinejoin="round" />,
     'toll': <TextGlyph text="kr" c={onColor} size={16} />,
-    'urban-area': <path d="M -12,10 L -12,-2 L -4,-9 L 4,-2 L 4,10 M 6,10 L 6,0 L 12,-4 L 12,10" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinejoin="round" />,
+    'urban-area': (
+      <g fill={onColor}>
+        <path d="M -18,10 L -18,-2 L -12,-6 L -6,-2 L -6,10 Z" />
+        <path d="M -6,10 L -6,-3 L -1,-18 L 4,-3 L 4,10 Z" />
+        <path d="M 4,10 L 4,2 L 8,-1 L 8,-4 L 11,-4 L 11,2 L 14,2 L 14,10 Z" />
+        <path d="M 14,10 L 14,-4 L 18,-8 L 18,10 Z" />
+      </g>
+    ),
+    'urban-area-end': (
+      <g>
+        <g fill={onColor}>
+          <path d="M -18,10 L -18,-2 L -12,-6 L -6,-2 L -6,10 Z" />
+          <path d="M -6,10 L -6,-3 L -1,-18 L 4,-3 L 4,10 Z" />
+          <path d="M 4,10 L 4,2 L 8,-1 L 8,-4 L 11,-4 L 11,2 L 14,2 L 14,10 Z" />
+          <path d="M 14,10 L 14,-4 L 18,-8 L 18,10 Z" />
+        </g>
+        <line x1="-20" y1="12" x2="20" y2="-16" stroke={RED} strokeWidth="3.4" />
+      </g>
+    ),
     'motorway': (
       <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
         <path d="M -6,12 L -6,-12 M 6,12 L 6,-12" />
@@ -555,7 +710,31 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'pedestrian-street': <Pedestrian c={onColor} />,
-    'walking-speed': <TextGlyph text="Gångfart" c={onColor} size={9} />,
+    'walking-speed': (
+      <g fill={onColor}>
+        <g transform="translate(-11,0) scale(0.85)">
+          <circle cx="0" cy="-9" r="4.5" />
+          <path d="M -6,-2 h12 v10 l-4,10 h-3 l1,-9 l-3,0 l1,9 h-3 l-4,-10 z" />
+        </g>
+        <g transform="translate(11,3) scale(0.85)">
+          <path d="M -12,3 q0,-7 6,-7 h12 q6,0 6,7 v5 h-24 z M -9,8 a3,3 0 1,0 0.1,0 M 9,8 a3,3 0 1,0 0.1,0" />
+        </g>
+      </g>
+    ),
+    'walking-speed-end': (
+      <g>
+        <g fill={onColor}>
+          <g transform="translate(-11,0) scale(0.85)">
+            <circle cx="0" cy="-9" r="4.5" />
+            <path d="M -6,-2 h12 v10 l-4,10 h-3 l1,-9 l-3,0 l1,9 h-3 l-4,-10 z" />
+          </g>
+          <g transform="translate(11,3) scale(0.85)">
+            <path d="M -12,3 q0,-7 6,-7 h12 q6,0 6,7 v5 h-24 z M -9,8 a3,3 0 1,0 0.1,0 M 9,8 a3,3 0 1,0 0.1,0" />
+          </g>
+        </g>
+        <line x1="-20" y1="12" x2="20" y2="-16" stroke={RED} strokeWidth="3.4" />
+      </g>
+    ),
     'merge': <path d="M -12,10 L 0,-2 L 12,10 M 0,-2 L 0,-12" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />,
     'one-way': <ArrowIcon c={onColor} rot={90} />,
     'dead-end': <path d="M -12,0 h20 M 4,-8 v16" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
@@ -572,7 +751,33 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'eco-zone': <TextGlyph text="MILJÖ" c={onColor} size={9} />,
-    'bicycle-street': <Bicycle c={onColor} />,
+    'bicycle-street': (
+      <g fill={onColor}>
+        <g transform="translate(0,-10) scale(0.65)">
+          <path d="M -12,3 q0,-7 6,-7 h12 q6,0 6,7 v5 h-24 z M -9,8 a3,3 0 1,0 0.1,0 M 9,8 a3,3 0 1,0 0.1,0" />
+        </g>
+        <g transform="translate(0,8) scale(0.75)" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round">
+          <circle cx="-9" cy="9" r="6" />
+          <circle cx="9" cy="9" r="6" />
+          <path d="M -9,9 L -2,-4 L 9,9 M -2,-4 L 2,-4 M -2,-4 L -6,9" />
+        </g>
+      </g>
+    ),
+    'bicycle-street-end': (
+      <g>
+        <g fill={onColor}>
+          <g transform="translate(0,-10) scale(0.65)">
+            <path d="M -12,3 q0,-7 6,-7 h12 q6,0 6,7 v5 h-24 z M -9,8 a3,3 0 1,0 0.1,0 M 9,8 a3,3 0 1,0 0.1,0" />
+          </g>
+          <g transform="translate(0,8) scale(0.75)" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round">
+            <circle cx="-9" cy="9" r="6" />
+            <circle cx="9" cy="9" r="6" />
+            <path d="M -9,9 L -2,-4 L 9,9 M -2,-4 L 2,-4 M -2,-4 L -6,9" />
+          </g>
+        </g>
+        <line x1="-16" y1="16" x2="16" y2="-16" stroke={RED} strokeWidth="3.4" />
+      </g>
+    ),
     'emergency-bay': <TextGlyph text="SOS" c={onColor} size={13} />,
     'emergency-exit': (
       <g>
@@ -608,8 +813,18 @@ function glyphContent(glyph, shape) {
     ),
     'arrow-forced': <ArrowIcon c={onColor} rot={0} />,
     'arrow-lane': <ArrowIcon c={onColor} rot={0} double />,
-    'arrow-yield': <ArrowIcon c={RED} rot={45} />,
-    'arrow-yield-rev': <ArrowIcon c={RED} rot={-45} />,
+    'arrow-yield': (
+      <g>
+        <path d="M 0,10 L 0,-6 M -4,-2 L 0,-6 L 4,-2" fill="none" stroke={onColor} strokeWidth="4.2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M 0,-10 L 0,6 M -4,2 L 0,6 L 4,2" fill="none" stroke={RED} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    ),
+    'arrow-yield-rev': (
+      <g>
+        <path d="M 0,-10 L 0,6 M -4,2 L 0,6 L 4,2" fill="none" stroke={onColor} strokeWidth="4.2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M 0,10 L 0,-6 M -4,-2 L 0,-6 L 4,-2" fill="none" stroke={RED} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    ),
     'arrow-extent': <ArrowIcon c={onColor} rot={90} double />,
     'arrow-direction': <ArrowIcon c={onColor} rot={0} />,
     'arrow-ped-bike': <ArrowIcon c={onColor} rot={0} />,
@@ -758,7 +973,21 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'national-emblem': (
-      <path d="M 0,-12 L 3,-4 L 11,-4 L 4,1 L 7,10 L 0,4 L -7,10 L -4,1 L -11,-4 L -3,-4 Z" fill={onColor} />
+      // علامة F22 "Riksmärke" الفعلية هي حلقة النجوم الذهبية الـ12 (رمز الاتحاد
+      // الأوروبي) المستخدمة عند المعابر الحدودية، وليست نجمة عامة واحدة —
+      // تحقّقتُ منها عبر صورة منتج فعلي (لافتة حدودية بالسويد/فنلندا).
+      <g fill="#ffd400">
+        {Array.from({ length: 12 }).map((_, i) => {
+          const a = (i * 30 - 90) * (Math.PI / 180);
+          const cx = 15 * Math.cos(a);
+          const cy = 15 * Math.sin(a);
+          return (
+            <g key={i} transform={`translate(${cx.toFixed(2)},${cy.toFixed(2)})`}>
+              <path d="M0,-3 L0.9,-0.9 L3,-0.9 L1.2,0.5 L1.8,2.8 L0,1.4 L-1.8,2.8 L-1.2,0.5 L-3,-0.9 L-0.9,-0.9 Z" />
+            </g>
+          );
+        })}
+      </g>
     ),
     'lane-ends': (
       <g fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round">
@@ -830,10 +1059,14 @@ function glyphContent(glyph, shape) {
         {[0, 90, 180, 270].map((r) => <g key={r} transform={`rotate(${r})`}><polygon points="0,-18 6,-10 -6,-10" fill={RED} /></g>)}
       </g>
     ),
-    'no-stop-park': (
+    // ملاحظة: علامة C39 (منع التوقف والوقوف) تستخدم شكل circle-prohibit-blue
+    // نفسه المستخدم لـC35-C38، فيحصل تلقائيًا على الخط القطري الأحمر من الحاوية؛
+    // يضاف هنا خط قطري ثانٍ ليكتمل شكل X المميّز لهذه العلامة الأشد (منع
+    // التوقف والوقوف معًا وليس الوقوف فقط).
+    'no-stop-park-x': (
       <g>
         <TextGlyph text="P" c={onColor} size={18} />
-        <line x1="-14" y1="14" x2="14" y2="-14" stroke={onColor} strokeWidth="3" />
+        <line x1="-14" y1="-14" x2="14" y2="14" stroke={RED} strokeWidth="5" />
       </g>
     ),
     cutlery: <path d="M -8,-12 v10 M -11,-12 v6 a3,3 0 0 0 6,0 v-6 M -8,-2 v14 M 6,-12 a5,7 0 0 0 0,14 v-14" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />,
@@ -876,18 +1109,31 @@ function glyphContent(glyph, shape) {
     'yield-line': (
       <g fill={WHITE}>{[-14, -4, 6].map((x) => <rect key={x} x={x} y="-3" width="8" height="6" />)}</g>
     ),
-    'no-stop-mark': <TextGlyph text="✕" c={WHITE} size={18} />,
+    'no-stop-mark': (
+      <g stroke={WHITE} strokeWidth="3" strokeLinecap="round">
+        <line x1="-8" y1="-8" x2="8" y2="8" />
+        <line x1="8" y1="-8" x2="-8" y2="8" />
+      </g>
+    ),
     'no-park-mark': <TextGlyph text="P" c={WHITE} size={18} />,
     'no-stop-park-mark': (
       <g>
-        <TextGlyph text="✕" c={WHITE} size={13} />
+        <g stroke={WHITE} strokeWidth="2.4" strokeLinecap="round" transform="translate(0,-6)">
+          <line x1="-6" y1="-6" x2="6" y2="6" />
+          <line x1="6" y1="-6" x2="-6" y2="6" />
+        </g>
         <text x="0" y="15" fontSize="10" fontWeight="800" fill={WHITE} textAnchor="middle" fontFamily="Arial, sans-serif">P</text>
       </g>
     ),
     'parking-spot-mark': <rect x="-12" y="-12" width="24" height="24" fill="none" stroke={WHITE} strokeWidth="2" />,
     // symbols/text-based
     's-symbol': <TextGlyph text="S" c={onColor} size={20} />,
-    's-symbol-line': <TextGlyph text="S̶" c={onColor} size={20} />,
+    's-symbol-line': (
+      <g>
+        <TextGlyph text="S" c={onColor} size={20} />
+        <line x1="-9" y1="0" x2="9" y2="0" stroke={onColor} strokeWidth="2" />
+      </g>
+    ),
     'vertical-line': <line x1="0" y1="-14" x2="0" y2="14" stroke={WHITE} strokeWidth="5" />,
     'horizontal-line': <line x1="-14" y1="0" x2="14" y2="0" stroke={WHITE} strokeWidth="5" />,
     'arrow-yellow': <ArrowIcon c="#ffd400" rot={0} />,
@@ -1008,7 +1254,12 @@ function glyphContent(glyph, shape) {
         </g>
       </g>
     ),
-    'clock-general': <TextGlyph text="⏱" c={onColor} size={16} />,
+    'clock-general': (
+      <g>
+        <circle cx="0" cy="0" r="12" fill="none" stroke={onColor} strokeWidth="2.4" />
+        <path d="M 0,0 L 0,-8 M 0,0 L 6,2" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />
+      </g>
+    ),
     'clock-parking': (
       <g>
         <TextGlyph text="P" c={onColor} size={13} />
@@ -1125,13 +1376,30 @@ function glyphContent(glyph, shape) {
     'closed': <line x1="-14" y1="14" x2="14" y2="-14" stroke={RED} strokeWidth="5" />,
     'generic': <GenericBox c={onColor} />,
     'none': null,
-    'curve-left': <path d="M -12,12 Q -12,-12 12,-12" fill="none" stroke={onColor} strokeWidth="4.5" strokeLinecap="round" />,
+    'curve-left': (
+      <g>
+        <path d="M -4,14 L -4,2 Q -4,-4 4,-12" fill="none" stroke={onColor} strokeWidth="4.6" strokeLinecap="round" strokeLinejoin="round" />
+        <polygon points="0,-7 -2.6,2.3 2.6,2.3" fill={onColor} transform="translate(4,-12) rotate(45)" />
+      </g>
+    ),
     'curve-double': <path d="M -13,12 Q -13,0 0,0 Q 13,0 13,-12" fill="none" stroke={onColor} strokeWidth="4.5" strokeLinecap="round" />,
-    'slope-down': <path d="M -14,-8 L 14,10" fill="none" stroke={onColor} strokeWidth="4.5" strokeLinecap="round" />,
-    'slope-up': <path d="M -14,10 L 14,-8" fill="none" stroke={onColor} strokeWidth="4.5" strokeLinecap="round" />,
+    'slope-down': (
+      <g>
+        <line x1="-11" y1="-7" x2="11" y2="8" stroke={onColor} strokeWidth="4" strokeLinecap="round" />
+        <circle cx="-11" cy="-7" r="2.6" fill={onColor} />
+        <circle cx="11" cy="8" r="2.6" fill={onColor} />
+      </g>
+    ),
+    'slope-up': (
+      <g>
+        <line x1="-11" y1="8" x2="11" y2="-7" stroke={onColor} strokeWidth="4" strokeLinecap="round" />
+        <circle cx="-11" cy="8" r="2.6" fill={onColor} />
+        <circle cx="11" cy="-7" r="2.6" fill={onColor} />
+      </g>
+    ),
     'narrow-road': <path d="M -14,-13 L -4,13 L 4,13 L 14,-13" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
     'uneven-road': <path d="M -14,8 L -7,-8 L 0,8 L 7,-8 L 14,8" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
-    'bump': <path d="M -14,8 Q 0,-14 14,8" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
+    'bump': <path d="M -14,9 L -8,9 L -4,-6 L 4,-6 L 8,9 L 14,9" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
     'skid': <path d="M -12,-6 Q 0,10 12,-6 M -12,6 Q 0,-10 -1,6" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
     'gravel': <g fill={onColor}>{[[-8,-6],[3,-9],[9,2],[-3,6],[-10,4]].map(([x,y]) => <circle key={x+','+y} cx={x} cy={y} r="3" />)}</g>,
     'rockfall': <path d="M -13,10 L -13,2 L -4,-9 L 5,2 L 5,10 M 9,10 L 9,4 L 13,-1 L 13,10" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
