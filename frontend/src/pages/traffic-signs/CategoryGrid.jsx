@@ -49,14 +49,6 @@ export default function TrafficSignsCategoryGrid() {
           <div>
             <span className="signs-section-code">{group.code}</span>
             <h2>{group.label}</h2>
-            <p>{group.summary}</p>
-            {!group.inReference && (
-              <p className="tp-disclaimer">
-                ⚠️ لم يُعثر على صفحة مقابلة لهذه الفئة في أرشيف sweden4.com الكامل (?cat=436)
-                رغم البحث الشامل. محتواها بانتظار تحقق مباشر من مصدر Transportstyrelsen الرسمي
-                (NEEDS_SOURCE_VERIFICATION) قبل اعتماده نهائيًا.
-              </p>
-            )}
           </div>
           <span className="signs-section-count">{filtered.length} نتيجة</span>
         </div>

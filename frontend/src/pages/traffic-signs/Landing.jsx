@@ -29,14 +29,9 @@ export default function TrafficSignsLanding() {
     <div>
       <div className="signs-hero">
         <div>
-          <p className="signs-eyebrow">مرجع الشاخصات المرورية في السويد</p>
           <h1>جميع الشاخصات المرورية في السويد</h1>
-          <p>
-            {totalCount} شاخصة موزّعة على {groupStats.length} فئة، منظمة بنفس فروع التصنيف الرسمي
-            (Transportstyrelsen / Vägmärkesförordning): التحذير، الأولوية، المنع، الإلزام، الإرشاد،
-            التوجيه، العلامات الأرضية، الإشارات الضوئية، وغيرها.
-          </p>
         </div>
+        <div className="signs-hero-count"><strong>{totalCount}</strong><span>شاخصة</span></div>
       </div>
 
       <form className="signs-toolbar" onSubmit={onSearchSubmit}>
@@ -59,10 +54,6 @@ export default function TrafficSignsLanding() {
           >
             <span className="sign-group-code">{group.code}</span>
             <span className="sign-group-title">{group.label}</span>
-            <span className="sign-group-source">
-              {group.sourceLabel}
-              {!group.inReference && ' · بانتظار تحقق من مصدر رسمي'}
-            </span>
             <span className="sign-group-examples">
               {group.examples.map((sign) => (
                 <TrafficSignIcon key={sign.code} shape={sign.shape} glyph={sign.glyph} size={34} />

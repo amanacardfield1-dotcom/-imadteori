@@ -38,7 +38,6 @@ export default function TrafficSignsAll() {
         <div className="signs-section-heading">
           <div>
             <h2>كل الشاخصات المرورية</h2>
-            <p>عرض مسطّح لكل الشاخصات مع تمييز الفئة، دون الحاجة للعودة إلى الرئيسية أو التنقل بين الفئات.</p>
           </div>
           <span className="signs-section-count">{filtered.length} / {trafficSigns.length}</span>
         </div>

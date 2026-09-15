@@ -692,7 +692,15 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     tunnel: <path d="M -13,10 L -13,0 a13,13 0 0 1 26,0 L 13,10" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
-    bridge: <path d="M -14,6 Q 0,-10 14,6 M -14,6 L -14,10 M 14,6 L 14,10" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
+    // A6 (جسر متحرك): مقارنة مع الصورة المرجعية (sweden4/Transportstyrelsen) —
+    // ورقة جسر مرفوعة قطريًا على ركيزة، فوق خط مائي متعرج، وليس قوس بسيط.
+    bridge: (
+      <g stroke={onColor} strokeLinecap="round" strokeLinejoin="round" fill="none">
+        <path d="M -11,7 L 9,-9" strokeWidth="4.2" />
+        <path d="M -11,7 L -11,10 M 9,-9 L 9,7 L 9,10" strokeWidth="3" />
+        <path d="M -14,10 L -9,10 L -6,7 L -2,10 L 2,7 L 6,10 L 9,10 M 9,10 L 14,10" strokeWidth="2.4" />
+      </g>
+    ),
     quay: <path d="M -14,2 L 14,2 M -14,2 L -14,12 M 14,2 L 14,12 M -14,-2 L -6,-10 L 2,-2 Z" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinejoin="round" />,
     roundabout: (
       <g>

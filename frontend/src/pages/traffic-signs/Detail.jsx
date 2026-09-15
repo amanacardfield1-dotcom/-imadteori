@@ -71,19 +71,10 @@ export default function TrafficSignDetail() {
             {pendingVariants.map((v) => <VariantChip key={v.id} variant={v} />)}
           </div>
           {pendingVariants.length > 0 && (
-            <p className="muted sign-variant-footnote">
-              المتغيرات المعلَّمة بـ «؟» موثّقة نصيًا من المرجع لكنها بانتظار رسم رسمي دقيق قبل عرضها بصريًا.
-            </p>
+            <p className="muted sign-variant-footnote">توجد متغيرات إضافية قيد المراجعة.</p>
           )}
         </div>
       )}
-
-      <div className="sign-modal-source muted">
-        المصدر: {sign.source}
-        {group.sourceUrl && (
-          <> · <a href={group.sourceUrl} target="_blank" rel="noopener noreferrer">صفحة sweden4.com المرجعية</a></>
-        )}
-      </div>
 
       <div className="sign-detail-nav">
         <button className="sign-detail-nav-btn" disabled={!prev} onClick={() => prev && navigate(`/traffic-signs/${groupId}/${prev.code}`)}>

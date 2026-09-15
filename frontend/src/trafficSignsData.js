@@ -12,7 +12,7 @@ export const trafficSigns = [
     "arabicName": "منعطف خطر (يسار/يمين)",
     "officialMeaning": "تبين الشاخصة وجود منعطف خطير واتجاه المنعطف. خفف السرعة. لا يحق لك الوقوف عندما تكون الرؤية محجوبة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "curve-left",
     "variants": [
@@ -43,7 +43,7 @@ export const trafficSigns = [
     "arabicName": "منعطفات خطرة متتابعة",
     "officialMeaning": "تحذير من منعطفات متتالية خطرة، أولها إلى اليسار أو إلى اليمين بحسب الشاخصة — قُد بحذر.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "curve-double",
     "variants": [
@@ -74,7 +74,7 @@ export const trafficSigns = [
     "arabicName": "منحدر هابط حاد وخطر",
     "officialMeaning": "تحذير من منحدر حاد وخطر، مسافة الفرملة تصبح أطول. يدل الرقم على النسبة المئوية لانحدار الطريق، مثال: ميلان 10م لكل مسافة أفقية 100م.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "slope-down",
     "variants": []
@@ -88,7 +88,7 @@ export const trafficSigns = [
     "arabicName": "صعود حاد وخطر",
     "officialMeaning": "تحذير من صعود حاد وخطر، مسافة الفرملة تصبح أطول. يدل الرقم على النسبة المئوية لانحدار الطريق، مثال: ميلان 10م لكل مسافة أفقية 100م.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "slope-up",
     "variants": []
@@ -102,7 +102,7 @@ export const trafficSigns = [
     "arabicName": "الطريق يضيق (من الجانبين/جهة واحدة)",
     "officialMeaning": "تحذير أن الطريق أو مسار القيادة سوف يضيق من الجانبين، أو من جهة اليسار فقط، أو من جهة اليمين فقط بحسب الشاخصة. التجاوز غير مناسب في هذه المنطقة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "narrow-road",
     "variants": [
@@ -140,7 +140,7 @@ export const trafficSigns = [
     "arabicName": "جسر متحرك",
     "officialMeaning": "تحذير من جسر متحرك — يجب الانتباه للإشارة الضوئية لغرض الوقوف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "bridge",
     "variants": []
@@ -154,7 +154,7 @@ export const trafficSigns = [
     "arabicName": "رصيف بحري",
     "officialMeaning": "تحذير أن الطريق ينتهي برصيف ميناء أو نهر — أمامك رصيف بحري أو حافة شاطئ أو مرفأ لسفن العبور. تبين الشاخصة أن الطريق باتجاه الماء.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "quay",
     "variants": []
@@ -168,7 +168,7 @@ export const trafficSigns = [
     "arabicName": "طريق غير مستوٍ",
     "officialMeaning": "تحذير من طريق غير مستوٍ (متموّج، فيه مطبات) — يجب الانتباه ومن المناسب القيادة ببطء. تبين الشاخصة وجود مسافات غير مستوية أو أضرار في الطريق تجعل القيادة بالسرعة المعتادة غير مناسبة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "uneven-road",
     "variants": []
@@ -182,7 +182,7 @@ export const trafficSigns = [
     "arabicName": "مطبات السرعة",
     "officialMeaning": "تحذير من مطبات السرعة — خفف السرعة. تبين الشاخصة أن هناك مطبات أو حفرات أُنشئت بهدف تخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "bump",
     "variants": []
@@ -196,7 +196,7 @@ export const trafficSigns = [
     "arabicName": "طريق زلق",
     "officialMeaning": "تحذير من طريق زلق لأسباب أخرى غير الثلج والجليد. لا تُستعمل الشاخصة للتحذير من خطر الانزلاق بسبب الثلج أو الجليد إلا في حالة وجود أسباب خاصة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "skid",
     "variants": []
@@ -210,7 +210,7 @@ export const trafficSigns = [
     "arabicName": "تطاير الأحجار والحصى",
     "officialMeaning": "تحذير من خطر تطاير الأحجار والحصى. لا تُستعمل الشاخصة في الطرق المفروشة بالحصى التي يكون فيها تطاير الحصى أمرًا معتادًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "gravel",
     "variants": []
@@ -224,7 +224,7 @@ export const trafficSigns = [
     "arabicName": "تساقط أحجار (يمين/يسار)",
     "officialMeaning": "تحذير من تساقط الأحجار من جهة اليمين أو من جهة اليسار بحسب الشاخصة — وجود خطر تساقط الأحجار أو وجود أحجار على الطريق بسبب تساقطها.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "rockfall",
     "variants": [
@@ -255,7 +255,7 @@ export const trafficSigns = [
     "arabicName": "معبر مشاة",
     "officialMeaning": "تحذير من معبر مشاة — الانتباه والاستعداد للوقوف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "pedestrian-crossing",
     "variants": []
@@ -269,7 +269,7 @@ export const trafficSigns = [
     "arabicName": "مشاة",
     "officialMeaning": "تحذير من وجود مشاة — احذر أمامك مشاة، انتبه وخفف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "pedestrian",
     "variants": []
@@ -283,7 +283,7 @@ export const trafficSigns = [
     "arabicName": "مرور أطفال",
     "officialMeaning": "تحذير من مرور أطفال — يجب الانتباه. تبين الشاخصة أن الأطفال يعبرون هذا الطريق غالبًا أو يتواجدون فيه أو بقربه.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "children",
     "variants": []
@@ -297,7 +297,7 @@ export const trafficSigns = [
     "arabicName": "دراجات هوائية ودراجات خفيفة (موبيد)",
     "officialMeaning": "تحذير من الدراجات الهوائية والدراجات الخفيفة (الموبيدات) — تتقاطع مع الطريق. تبين الشاخصة أن الطريق يقطعه أو يمر فيه غالبًا دراجات هوائية أو دراجات بخارية خفيفة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "bicycle",
     "variants": []
@@ -311,7 +311,7 @@ export const trafficSigns = [
     "arabicName": "متزلجون (زحافات)",
     "officialMeaning": "تحذير من مرور مستخدمي الزحافات (المتزلجين) — مسار التزلج يتقاطع مع الطريق، يجب الانتباه. تبين الشاخصة أن المكان يوجد فيه متزلجون يعبرون الطريق غالبًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "skier",
     "variants": []
@@ -325,7 +325,7 @@ export const trafficSigns = [
     "arabicName": "فرسان (خيّالة)",
     "officialMeaning": "تحذير من مرور فرسان (خيّالة) — تتقاطع مسارات الخيّالة مع الطريق، يجب الانتباه.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "horse-rider",
     "variants": []
@@ -339,7 +339,7 @@ export const trafficSigns = [
     "arabicName": "حيوانات",
     "officialMeaning": "تحذير من مرور حيوانات — تحذر الشاخصة من وجود حيوانات على امتداد جانبي الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "animal",
     "variants": []
@@ -353,7 +353,7 @@ export const trafficSigns = [
     "arabicName": "أعمال طريق",
     "officialMeaning": "تحذير من أعمال على الطريق — تحذر الشاخصة من وجود أشغال على الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "roadwork",
     "variants": []
@@ -367,7 +367,7 @@ export const trafficSigns = [
     "arabicName": "نهاية منطقة تصليح الطرق",
     "officialMeaning": "تبين الشاخصة نهاية منطقة تصليح الطرق. لا توضع الشاخصة إذا كان المكان الذي تنتهي فيه أعمال الطريق واضحًا بذاته.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "roadwork-end",
     "variants": []
@@ -381,7 +381,7 @@ export const trafficSigns = [
     "arabicName": "إشارة ضوئية ثلاثية",
     "officialMeaning": "تحذير من إشارة ضوئية ثلاثية أمامك — الاستعداد للوقوف بعد مسافة. تبين الشاخصة أن الطريق أمامك فيه إشارة ضوئية.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "traffic-light",
     "variants": []
@@ -395,7 +395,7 @@ export const trafficSigns = [
     "arabicName": "طائرات منخفضة",
     "officialMeaning": "تحذير من طائرات تحلق على ارتفاع منخفض — الانتباه لصوت الطائرة، وقد توجد إشارة ضوئية مصاحبة أحيانًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "airplane",
     "variants": []
@@ -409,7 +409,7 @@ export const trafficSigns = [
     "arabicName": "رياح جانبية قوية (يمين/يسار)",
     "officialMeaning": "تحذير من رياح جانبية قوية تهب من جهة اليمين أو من جهة اليسار بحسب الشاخصة. تبين الشاخصة منطقة يوجد فيها غالبًا رياح جانبية قوية على امتداد الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "crosswind",
     "variants": [
@@ -440,7 +440,7 @@ export const trafficSigns = [
     "arabicName": "حركة السير المقابلة",
     "officialMeaning": "تحذير من حركة السير المقابلة باتجاهك: أنت وحركة المرور القادمة من الجهة المعاكسة على نفس الطريق بدون حاجز يفصل بين الاتجاهين. تبين الشاخصة أن مضمار القيادة ذا الاتجاه الواحد سيصبح طريقًا بكلا الاتجاهين.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "oncoming-traffic",
     "variants": []
@@ -454,7 +454,7 @@ export const trafficSigns = [
     "arabicName": "نفق",
     "officialMeaning": "تحذير من نفق أمامك — ممنوع الوقوف داخل النفق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "tunnel",
     "variants": []
@@ -468,7 +468,7 @@ export const trafficSigns = [
     "arabicName": "حافة طريق هشة أو مرتفعة",
     "officialMeaning": "تحذير من هشاشة حافة الطريق أو ارتفاع جانب الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "weak-edge",
     "variants": []
@@ -482,7 +482,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع طرق",
     "officialMeaning": "تحذير من تقاطع طريق — الرؤية محجوبة، عليك الانتباه. تبين الشاخصة أن قاعدة الأولوية لليمين تُطبَّق في هذا التقاطع.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "crossroads",
     "variants": []
@@ -496,7 +496,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع طريق رئيسي مع فرعي",
     "officialMeaning": "تحذير من تقاطع طريق رئيسي مع طريق فرعية من جهة اليمين أو اليسار أو من الجهتين معًا. يجب على المركبات القادمة من الطريق الفرعي إعطاء حق الأولوية أو التوقف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "crossroads-priority",
     "variants": [
@@ -534,7 +534,7 @@ export const trafficSigns = [
     "arabicName": "دوار (منطقة دورانية)",
     "officialMeaning": "تحذير من دوار أمامك — إعطاء الأولوية لمن هو داخل الدوار، خفف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "roundabout",
     "variants": []
@@ -548,7 +548,7 @@ export const trafficSigns = [
     "arabicName": "مركبات بطيئة",
     "officialMeaning": "تحذير من مرور مركبات بطيئة الحركة — الطريق غالبًا يوجد فيه مركبات بطيئة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "slow-vehicle",
     "variants": []
@@ -562,7 +562,7 @@ export const trafficSigns = [
     "arabicName": "مركبات تجرها حيوانات",
     "officialMeaning": "تحذير من مركبات تجرها الحيوانات على الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "horse-cart",
     "variants": []
@@ -576,7 +576,7 @@ export const trafficSigns = [
     "arabicName": "مركبات الطرق الوعرة",
     "officialMeaning": "تحذير من مرور المركبات التي تسير على الطرق الوعرة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "snowmobile",
     "variants": []
@@ -590,7 +590,7 @@ export const trafficSigns = [
     "arabicName": "طابور سيارات",
     "officialMeaning": "تحذير من وجود طابور للسيارات على امتداد الطريق — الانتباه وتخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "queue",
     "variants": []
@@ -604,7 +604,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع سكة حديد بحواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة حديد ذات بوابة مع حواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "rail-gated",
     "variants": []
@@ -618,7 +618,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع سكة حديد بلا حواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة حديد من دون حواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "rail-ungated",
     "variants": []
@@ -632,7 +632,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع ترامواي بلا حواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة ترامواي (قطار الترام) غير مجهّز بحواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "tram-ungated",
     "variants": []
@@ -646,7 +646,7 @@ export const trafficSigns = [
     "arabicName": "المسافة إلى تقاطع سكة حديد",
     "officialMeaning": "تبين هذه الشاخصات المسافة المتبقية إلى تقاطع سكة الحديد عبر عدد الخطوط (لا تشير إلى عدد الأمتار مباشرة). الشاخصة بثلاثة خطوط هي الأبعد (عادة 150م)، وبخطين تبين ثلثي المسافة (عادة 100م)، وبخط واحد تبين الأقرب — ثلث المسافة (عادة 50م). تقل المسافة إلى السكة الحديد كلما قل عدد الخطوط.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "plaque-yellow-plain-tall",
     "glyph": "rail-distance",
     "variants": [
@@ -682,7 +682,7 @@ export const trafficSigns = [
     "arabicName": "علامة الصليب (تقاطع سكة حديد)",
     "officialMeaning": "تشير الشاخصة إلى وجود تقاطع مع سكة حديد أو سكة ترامواي — بخط واحد أو بعدة سكك حديدية بحسب الشاخصة. توضع مباشرة قبل تقاطع السكة الحديد، ولا داعي لوضعها في الطريق الفردي إذا كانت الحركة المرورية فيه قليلة ولا يشكل ذلك خطرًا على السلامة المرورية.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "cross-marker",
     "glyph": "cross-x",
     "variants": [
@@ -711,7 +711,7 @@ export const trafficSigns = [
     "arabicName": "أخطار أخرى",
     "officialMeaning": "تحذير من أخطار مختلفة — تبين الشاخصة وجود خطر من نوع آخر لا يمكن التحذير عنه بواسطة إشارة مرورية أخرى، ويُبيَّن نوع الخطر في شاخصة ملحقة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "exclaim",
     "variants": []
@@ -725,7 +725,7 @@ export const trafficSigns = [
     "arabicName": "حادث سير",
     "officialMeaning": "تحذير من حادث سير — تحذر الشاخصة من وجود حادث مروري أمامك، الانتباه وتخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) — نص المرجع؛ Transportstyrelsen – Vägmärken / Vägmärkesförordning (2007:90) — تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
     "shape": "triangle-warning",
     "glyph": "accident",
     "variants": []
