@@ -21,8 +21,7 @@ export default function TeoriProvIntro() {
       <h1>محاكاة اختبار Teoriprov — رخصة B</h1>
       <p className="muted">
         هذا الاختبار التدريبي مصمَّم ليحاكي بنية اختبار القيادة النظري السويدي الحقيقي لفئة B
-        (Behörighet B) من حيث عدد الأسئلة، الوقت، وطريقة احتساب النتيجة، بناءً على المعلومات
-        الرسمية المنشورة من Trafikverket و Transportstyrelsen.
+        (Behörighet B) من حيث عدد الأسئلة، الوقت، وطريقة احتساب النتيجة.
       </p>
 
       <div className="tp-info-grid">
@@ -42,8 +41,8 @@ export default function TeoriProvIntro() {
       </ul>
 
       <div className="tp-disclaimer">
-        ⚠️ هذا اختبار تدريبي مستقل من إعداد عماد للتيوري، وليس اختبارًا رسميًا تابعًا لـ
-        Trafikverket. الأسئلة أصلية من تأليفنا وليست نسخًا من أسئلة الاختبار الرسمي السرّية.
+        ⚠️ هذا اختبار تدريبي مستقل من إعداد عماد للتيوري. الأسئلة أصلية من تأليفنا
+        وليست نسخًا من أسئلة الاختبار الرسمي السرّية.
       </div>
 
       <button className="btn-primary tp-start-btn" onClick={() => navigate('/teoriprov/run')}>
