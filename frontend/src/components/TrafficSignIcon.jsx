@@ -12,6 +12,10 @@ const YELLOW = '#e1d300';
 const BROWN = '#7a4a00';
 const BLACK = '#1b1f27';
 const WHITE = '#ffffff';
+// أخضر لوحات الطرق الأوروبية (F14) — مطابق للون الفعلي في صور
+// Transportstyrelsen المباشرة (وليس تخمينًا)، تقريب بصري لأن اللون الدقيق
+// PMS غير منشور نصيًا في المصدر المتاح.
+const ROAD_GREEN = '#00754a';
 
 function Center({ children }) {
   return <g transform="translate(32,32)">{children}</g>;
@@ -98,11 +102,14 @@ function ShapeContainer({ shape, children }) {
         </>
       );
     case 'circle-prohibit-blue':
+      // اتجاه الخط القطري (أعلى-يسار إلى أسفل-يمين) موثّق مباشرة من صور
+      // Transportstyrelsen الرسمية لـ C35/C36/C37/C38/C39 (وليس تخمينًا) —
+      // كان معكوسًا سابقًا في هذا الملف.
       return (
         <>
           <circle cx="32" cy="32" r="27" fill={BLUE} stroke={WHITE} strokeWidth="2" />
           {children}
-          <line x1="10" y1="54" x2="54" y2="10" stroke={RED} strokeWidth="5" />
+          <line x1="10" y1="10" x2="54" y2="54" stroke={RED} strokeWidth="5" />
         </>
       );
     case 'circle-mandatory-blue':
@@ -116,6 +123,39 @@ function ShapeContainer({ shape, children }) {
       return (
         <>
           <rect x="6" y="6" width="52" height="52" rx="6" fill={BLUE} />
+          {children}
+        </>
+      );
+    // شواخص رقم الطريق (F14) الأربع — تحقّق مباشر من صور Transportstyrelsen:
+    // أزرق لطريق عام مرقّم، أخضر لطريق أوروبي (E)؛ إطار متقطع = شاخصة "الوصول
+    // إلى هذا الطريق" (وليست الطريق نفسه) مقابل إطار متصل = الطريق نفسه.
+    case 'rect-road-blue':
+      return (
+        <>
+          <rect x="5" y="10" width="54" height="44" rx="5" fill={BLUE} stroke={WHITE} strokeWidth="2.5" />
+          {children}
+        </>
+      );
+    case 'rect-road-blue-dashed':
+      return (
+        <>
+          <rect x="5" y="10" width="54" height="44" rx="5" fill={BLUE} stroke={WHITE} strokeWidth="2.5" />
+          <rect x="10" y="15" width="44" height="34" rx="3" fill="none" stroke={WHITE} strokeWidth="2.2" strokeDasharray="4.5,3.5" />
+          {children}
+        </>
+      );
+    case 'rect-road-green':
+      return (
+        <>
+          <rect x="5" y="10" width="54" height="44" rx="5" fill={ROAD_GREEN} stroke={WHITE} strokeWidth="2.5" />
+          {children}
+        </>
+      );
+    case 'rect-road-green-dashed':
+      return (
+        <>
+          <rect x="5" y="10" width="54" height="44" rx="5" fill={ROAD_GREEN} stroke={WHITE} strokeWidth="2.5" />
+          <rect x="10" y="15" width="44" height="34" rx="3" fill="none" stroke={WHITE} strokeWidth="2.2" strokeDasharray="4.5,3.5" />
           {children}
         </>
       );
@@ -172,6 +212,27 @@ function ShapeContainer({ shape, children }) {
           {children}
         </>
       );
+    case 'plaque-yellow-plain-tall':
+      // A38 (المسافة إلى تقاطع سكة الحديد): لوحة صفراء صرفة بلا أي إطار أو حدّ
+      // — تأكّد ذلك مباشرة من صورة Transportstyrelsen (وليس افتراض plaque-tall-white
+      // الذي كان مستخدَمًا خطأً سابقًا).
+      return (
+        <>
+          <rect x="12" y="3" width="40" height="58" fill={YELLOW} />
+          {children}
+        </>
+      );
+    case 'plaque-yellow-red-tall':
+      // لوحة صفراء بإطار أحمر عمودي طويل — الشكل الرسمي الفعلي لعلامة C40
+      // (Ändamålsplats) بحسب صور Transportstyrelsen المباشرة: ليست دائرة زرقاء
+      // كما افتُرض سابقًا، بل لوحة نصية صفراء/حمراء تحمل اسم الغرض مع رمز صغير
+      // لمنع التوقف والوقوف أسفلها.
+      return (
+        <>
+          <rect x="12" y="3" width="40" height="58" rx="4" fill={YELLOW} stroke={RED} strokeWidth="5" />
+          {children}
+        </>
+      );
     case 'plaque-tall-white':
       // لوحة عمودية ضيقة (S1 أضيق من S2) — تُستخدم لعلامة A38 "المسافة المتبقية
       // حتى تقاطع السكة الحديد"، وهي شكل مختلف تمامًا عن مثلث التحذير القياسي
@@ -218,12 +279,9 @@ function ShapeContainer({ shape, children }) {
         </>
       );
     case 'cross-marker':
-      return (
-        <g stroke={WHITE} strokeWidth="0">
-          <line x1="8" y1="8" x2="56" y2="56" stroke={RED} strokeWidth="7" />
-          <line x1="56" y1="8" x2="8" y2="56" stroke={RED} strokeWidth="7" />
-        </g>
-      );
+      // الشكل بلا حاوية زائدة — الرسم الكامل (الأذرع المخططة) يأتي من الـglyph
+      // نفسه (cross-x/cross-x-multi) لتفادي ازدواج رسم X مرتين بمقاسين مختلفين.
+      return <>{children}</>;
     default:
       return <rect x="4" y="4" width="56" height="56" rx="8" fill="#eef1f5" />;
   }
@@ -366,6 +424,49 @@ function ArrowIcon({ c = WHITE, rot = 0, double = false }) {
     </g>
   );
 }
+// هندسة مأخوذة مباشرة من صور Transportstyrelsen الرسمية لسهم D1 المنعطف
+// (d1-4.png..d1-8.png على transportstyrelsen.se) وليست تخمينًا: ساق واحدة
+// قادمة من الأسفل تنحني بزاوية قائمة نحو الجهة المطلوبة.
+function TurnArrow({ c = WHITE, mirror = false }) {
+  return (
+    <g transform={mirror ? 'scale(-1,1)' : undefined} fill="none" stroke={c} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M 5,14 L 5,-1 C 5,-10 -2,-13 -11,-13 L -15,-13" />
+      <path d="M -9,-19 L -18,-13 L -9,-7" />
+    </g>
+  );
+}
+function ForkForwardTurn({ c = WHITE, mirror = false }) {
+  return (
+    <g transform={mirror ? 'scale(-1,1)' : undefined} fill="none" stroke={c} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M 3,14 L 3,2" />
+      <path d="M 3,2 L 3,-14 M -4,-6 L 3,-14 L 10,-6" />
+      <path d="M 3,2 C 3,-6 -3,-9 -10,-9 L -14,-9" />
+      <path d="M -8,-15 L -17,-9 L -8,-3" />
+    </g>
+  );
+}
+// T11 (نطاق سريان اللوحة): سهم مزدوج الرأس أفقي/عمودي، أو سهم مفرد لجهة واحدة
+// — تحقّق من الوصف الرسمي (Transportstyrelsen: Utsträckning) وليس تخمينًا.
+function DoubleHeadArrow({ c = BLACK, vertical = false }) {
+  return (
+    <g transform={vertical ? 'rotate(90)' : undefined} fill="none" stroke={c} strokeWidth="3.6" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="-16" y1="0" x2="16" y2="0" />
+      <path d="M -16,0 L -9,-6 M -16,0 L -9,6" />
+      <path d="M 16,0 L 9,-6 M 16,0 L 9,6" />
+    </g>
+  );
+}
+function ForkLeftRight({ c = WHITE }) {
+  return (
+    <g fill="none" stroke={c} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M 0,14 L 0,1" />
+      <path d="M 0,1 C 0,-7 -6,-10 -12,-10 L -16,-10" />
+      <path d="M -10,-16 L -19,-10 L -10,-4" />
+      <path d="M 0,1 C 0,-7 6,-10 12,-10 L 16,-10" />
+      <path d="M 10,-16 L 19,-10 L 10,-4" />
+    </g>
+  );
+}
 function ExclaimIcon({ c = BLACK }) {
   return (
     <g fill={c}>
@@ -398,10 +499,32 @@ function LineDiagram({ style = 'solid', color = WHITE }) {
   return <line x1="0" y1="-24" x2="0" y2="24" {...common} />;
 }
 function TextGlyph({ text, c = WHITE, size = 16 }) {
+  // direction/unicodeBidi صريحان: الصفحة الأم RTL، وبدونهما قد يُعاد ترتيب أي
+  // شرطة (-) أو نص لاتيني مركّب بصريًا (اكتُشف أثناء تدقيق لوحة C40).
   return (
-    <text x="0" y={size * 0.35} fontSize={size} fontWeight="800" fill={c} textAnchor="middle" fontFamily="Arial, sans-serif">
+    <text x="0" y={size * 0.35} fontSize={size} fontWeight="800" fill={c} textAnchor="middle" fontFamily="Arial, sans-serif" direction="ltr" style={{ unicodeBidi: 'bidi-override' }}>
       {text}
     </text>
+  );
+}
+// محتوى لوحة C40 (Ändamålsplats): سطر أو سطران من الكلمة السويدية الفعلية
+// كما تظهر في صورة Transportstyrelsen الرسمية (وليست ترجمة عربية مرسومة)، مع
+// نسخة مصغّرة من رمز C39 (دائرة زرقاء + خط أحمر) أسفلها — تمامًا كما في الأصل.
+function PurposePlaque({ lines, c = BLACK }) {
+  const lineHeight = 9;
+  const startY = -8 - (lines.length - 1) * (lineHeight / 2);
+  return (
+    <g>
+      {lines.map((line, i) => (
+        <text key={i} x="0" y={startY + i * lineHeight} fontSize="8.5" fontWeight="800" fill={c} textAnchor="middle" fontFamily="Arial, sans-serif" direction="ltr" style={{ unicodeBidi: 'bidi-override' }}>
+          {line}
+        </text>
+      ))}
+      <g transform="translate(0,16)">
+        <circle r="9" fill={BLUE} stroke={RED} strokeWidth="1.8" />
+        <line x1="-6.5" y1="-6.5" x2="6.5" y2="6.5" stroke={RED} strokeWidth="1.8" />
+      </g>
+    </g>
   );
 }
 function HandFigure({ arm = 'stop', c = BLACK }) {
@@ -441,7 +564,7 @@ function GenericBox({ c = WHITE }) {
 // خريطة الرموز الداخلية: كل مفتاح glyph → JSX يُرسم مركّزًا داخل الحاوية
 // ---------------------------------------------------------------------------
 function glyphContent(glyph, shape) {
-  const onColor = shape.startsWith('circle-prohibit') || shape === 'triangle-warning' || shape === 'triangle-yield' || shape === 'symbol-plate' || shape === 'gesture' || shape === 'device' || shape === 'rect-info-white-black' || shape === 'plaque-white' || shape === 'plaque-tall-white' ? BLACK : shape === 'rect-info-white-blue' ? BLUE : WHITE;
+  const onColor = shape.startsWith('circle-prohibit') || shape === 'triangle-warning' || shape === 'triangle-yield' || shape === 'symbol-plate' || shape === 'gesture' || shape === 'device' || shape === 'rect-info-white-black' || shape === 'plaque-white' || shape === 'plaque-tall-white' || shape === 'plaque-yellow-red-tall' ? BLACK : shape === 'rect-info-white-blue' ? BLUE : WHITE;
   const g = (el) => <Center>{el}</Center>;
 
   const simple = {
@@ -474,9 +597,26 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     exclaim: <ExclaimIcon c={onColor} />,
+    // A39 (Kryssmärke): تحقّق مباشر من صور Transportstyrelsen (a39-1/2.png) —
+    // الشاخصة الحقيقية أذرع صليب مخططة أصفر/أحمر (وليست X أحمر صرف كما كان
+    // مرسومًا خطأً سابقًا). النسخة متعددة الخطوط تضيف خطين رأسيين مزدوجين
+    // في المنتصف (a39-1.png) للدلالة على أكثر من خط سكة.
     'cross-x': (
-      <g stroke={RED} strokeWidth="5" strokeLinecap="round">
-        <line x1="-13" y1="-13" x2="13" y2="13" /><line x1="13" y1="-13" x2="-13" y2="13" />
+      <g strokeLinecap="butt">
+        <line x1="-23" y1="-23" x2="23" y2="23" stroke={RED} strokeWidth="9" />
+        <line x1="-23" y1="-23" x2="23" y2="23" stroke={YELLOW} strokeWidth="5" />
+        <line x1="23" y1="-23" x2="-23" y2="23" stroke={RED} strokeWidth="9" />
+        <line x1="23" y1="-23" x2="-23" y2="23" stroke={YELLOW} strokeWidth="5" />
+      </g>
+    ),
+    'cross-x-multi': (
+      <g strokeLinecap="butt">
+        <line x1="-23" y1="-23" x2="23" y2="23" stroke={RED} strokeWidth="9" />
+        <line x1="-23" y1="-23" x2="23" y2="23" stroke={YELLOW} strokeWidth="5" />
+        <line x1="23" y1="-23" x2="-23" y2="23" stroke={RED} strokeWidth="9" />
+        <line x1="23" y1="-23" x2="-23" y2="23" stroke={YELLOW} strokeWidth="5" />
+        <line x1="-3" y1="-26" x2="-3" y2="26" stroke="#8a8f98" strokeWidth="2.5" />
+        <line x1="3" y1="-26" x2="3" y2="26" stroke="#8a8f98" strokeWidth="2.5" />
       </g>
     ),
     'high-voltage': <path d="M -3,-14 L -10,2 L -1,2 L -6,14 L 12,-4 L 2,-4 Z" fill={onColor} />,
@@ -571,10 +711,22 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     crossroads: <path d="M 0,-13 L 0,13 M -13,0 L 13,0" fill="none" stroke={onColor} strokeWidth="4" strokeLinecap="round" />,
+    // A29 (تقاطع طرق يخضع فيه الطريق الفرعي لواجب الأولوية/التوقف): مصمّمة من
+    // صور Transportstyrelsen الرسمية المباشرة (a29-1.png للجهتين، a29-17.png
+    // لجهة واحدة) — شريط رئيسي غليظ برأس سهم، وفرع جانبي غليظ بلا سهم.
     'crossroads-priority': (
-      <g stroke={onColor} strokeWidth="4" strokeLinecap="round">
-        <line x1="0" y1="-13" x2="0" y2="13" />
-        <line x1="-13" y1="0" x2="13" y2="0" strokeWidth="2" strokeDasharray="3 3" />
+      <g fill={onColor}>
+        <path d="M -3.5,-14 L -3.5,-8 L -8,-2 L 8,-2 L 3.5,-8 L 3.5,-14 Z" />
+        <rect x="-3.5" y="-2" width="7" height="16" />
+        <rect x="-13" y="-2" width="10" height="4" />
+        <rect x="3" y="-2" width="10" height="4" />
+      </g>
+    ),
+    'crossroads-priority-one-side': (
+      <g fill={onColor}>
+        <path d="M -3.5,-14 L -3.5,-8 L -8,-2 L 8,-2 L 3.5,-8 L 3.5,-14 Z" />
+        <rect x="-3.5" y="-2" width="7" height="16" />
+        <path d="M -16,4 L -4,4 L -4,-2 L 3,-2 L 3,7 L -8,7 Z" />
       </g>
     ),
     'oncoming-traffic': (
@@ -593,13 +745,23 @@ function glyphContent(glyph, shape) {
     'rail-gated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13 M -16,4 h10" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" />,
     'rail-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" />,
     'tram-ungated': <path d="M -13,-13 L 13,13 M 13,-13 L -13,13 M -6,6 a6,6 0 1 0 0.1,0" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,
+    // A38 (المسافة إلى تقاطع سكة الحديد): تحقّق مباشر من صور Transportstyrelsen
+    // (a38-1/2/3.png) — لوحة صفراء صرفة بلا إطار مع 3/2/1 خطوط حمراء مائلة
+    // (وليست لوحة بيضاء بإطار أسود كما كان مفترضًا خطأً سابقًا).
     'rail-distance': (
-      <g stroke={RED} strokeWidth="4">
+      <g stroke={RED} strokeWidth="4.5">
         <line x1="-10" y1="10" x2="-2" y2="-10" />
         <line x1="-2" y1="10" x2="6" y2="-10" />
         <line x1="6" y1="10" x2="14" y2="-10" />
       </g>
     ),
+    'rail-distance-2': (
+      <g stroke={RED} strokeWidth="4.5">
+        <line x1="-2" y1="10" x2="6" y2="-10" />
+        <line x1="6" y1="10" x2="14" y2="-10" />
+      </g>
+    ),
+    'rail-distance-1': <line x1="6" y1="10" x2="14" y2="-10" stroke={RED} strokeWidth="4.5" />,
     accident: (
       <g stroke={onColor} strokeWidth="2.6" strokeLinecap="round" fill="none">
         <path d="M -10,10 L 10,-10 M -10,-10 L 10,10 M 0,-13 L 0,13 M -13,0 L 13,0" />
@@ -643,7 +805,8 @@ function glyphContent(glyph, shape) {
     'axle': <TextGlyph text="8 t" c={onColor} size={14} />,
     'bearing-class': <TextGlyph text="BK1" c={onColor} size={13} />,
     'speed-number': <TextGlyph text="50" c={onColor} size={20} />,
-    'road-number': <TextGlyph text="40" c={onColor} size={16} />,
+    'road-number': <TextGlyph text="E 4" c={onColor} size={15} />,
+    'road-number-plain': <TextGlyph text="58" c={onColor} size={17} />,
     'speed-reco': <TextGlyph text="30" c={onColor} size={18} />,
     'speed-reco-max': <TextGlyph text="70" c={onColor} size={18} />,
     clock: (
@@ -661,7 +824,12 @@ function glyphContent(glyph, shape) {
     'ear': <path d="M -2,-12 Q 10,-12 10,0 Q 10,10 0,10 Q -6,10 -6,4 Q -6,0 -2,0" fill="none" stroke={onColor} strokeWidth="2.8" strokeLinecap="round" />,
     'tunnel-cat': <TextGlyph text="B" c={onColor} size={18} />,
     'text': <TextGlyph text="…" c={onColor} size={18} />,
-    'purpose-place': <TextGlyph text="P" c={onColor} size={20} />,
+    'purpose-place': <PurposePlaque lines={['Last-', 'plats']} c={onColor} />,
+    'purpose-place-taxi': <PurposePlaque lines={['Taxi-', 'plats']} c={onColor} />,
+    'purpose-place-bokbuss': <PurposePlaque lines={['Bok-', 'buss-', 'plats']} c={onColor} />,
+    'purpose-place-ambulans': <PurposePlaque lines={['Ambu-', 'lans-', 'plats']} c={onColor} />,
+    'purpose-place-skolskjuts': <PurposePlaque lines={['Skol-', 'skjuts-', 'plats']} c={onColor} />,
+    'purpose-place-pa-av': <PurposePlaque lines={['På och', 'avstig-', 'nings-', 'plats']} c={onColor} />,
     'turning-place': <ArrowIcon c={onColor} rot={180} double />,
     'special-parking': <TextGlyph text="P" c={onColor} size={20} />,
     'studded-tire': (
@@ -818,6 +986,11 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'arrow-forced': <ArrowIcon c={onColor} rot={0} />,
+    'turn-left': <TurnArrow c={onColor} />,
+    'turn-right': <TurnArrow c={onColor} mirror />,
+    'fork-forward-left': <ForkForwardTurn c={onColor} />,
+    'fork-forward-right': <ForkForwardTurn c={onColor} mirror />,
+    'fork-left-right': <ForkLeftRight c={onColor} />,
     'arrow-lane': <ArrowIcon c={onColor} rot={0} double />,
     'arrow-yield': (
       <g>
@@ -831,7 +1004,11 @@ function glyphContent(glyph, shape) {
         <path d="M 0,10 L 0,-6 M -4,-2 L 0,-6 L 4,-2" fill="none" stroke={RED} strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
       </g>
     ),
-    'arrow-extent': <ArrowIcon c={onColor} rot={90} double />,
+    'arrow-extent': <DoubleHeadArrow c={onColor} />,
+    'arrow-extent-vertical': <DoubleHeadArrow c={onColor} vertical />,
+    'arrow-extent-end': <ArrowIcon c={onColor} rot={180} />,
+    'arrow-extent-left': <ArrowIcon c={onColor} rot={-90} />,
+    'arrow-extent-right': <ArrowIcon c={onColor} rot={90} />,
     'arrow-direction': <ArrowIcon c={onColor} rot={0} />,
     'arrow-ped-bike': <ArrowIcon c={onColor} rot={0} />,
     'lane-arrows': (
@@ -1065,16 +1242,11 @@ function glyphContent(glyph, shape) {
         {[0, 90, 180, 270].map((r) => <g key={r} transform={`rotate(${r})`}><polygon points="0,-18 6,-10 -6,-10" fill={RED} /></g>)}
       </g>
     ),
-    // ملاحظة: علامة C39 (منع التوقف والوقوف) تستخدم شكل circle-prohibit-blue
-    // نفسه المستخدم لـC35-C38، فيحصل تلقائيًا على الخط القطري الأحمر من الحاوية؛
-    // يضاف هنا خط قطري ثانٍ ليكتمل شكل X المميّز لهذه العلامة الأشد (منع
-    // التوقف والوقوف معًا وليس الوقوف فقط).
-    'no-stop-park-x': (
-      <g>
-        <TextGlyph text="P" c={onColor} size={18} />
-        <line x1="-14" y1="-14" x2="14" y2="14" stroke={RED} strokeWidth="5" />
-      </g>
-    ),
+    // C39 (منع التوقف والوقوف): تستخدم شكل circle-prohibit-blue نفسه المستخدم
+    // لـC35-C38 فتحصل تلقائيًا على الخط القطري الأول (\) من الحاوية؛ يضاف هنا
+    // الخط القطري الثاني (/) فقط ليكتمل X — بلا أي حرف P (غير موجود في الرسم
+    // الرسمي إطلاقًا، تم التأكد من صورة Transportstyrelsen المباشرة).
+    'no-stop-park-x': <line x1="-14" y1="14" x2="14" y2="-14" stroke={RED} strokeWidth="5" />,
     cutlery: <path d="M -8,-12 v10 M -11,-12 v6 a3,3 0 0 0 6,0 v-6 M -8,-2 v14 M 6,-12 a5,7 0 0 0 0,14 v-14" fill="none" stroke={onColor} strokeWidth="2.2" strokeLinecap="round" />,
     trees: (
       <g fill={onColor}>
@@ -1082,14 +1254,16 @@ function glyphContent(glyph, shape) {
         <path d="M 5,6 L 10,-8 L 15,6 Z" /><rect x="8.5" y="6" width="3" height="6" />
       </g>
     ),
-    'no-parking': <TextGlyph text="P" c={onColor} size={20} />,
-    'no-parking-odd': <TextGlyph text="1-31" c={onColor} size={13} />,
-    'no-parking-even': <TextGlyph text="2-30" c={onColor} size={13} />,
+    // C35/C36/C37/C38: الرسم الرسمي (Transportstyrelsen) لا يحوي أي حرف "P" على
+    // الإطلاق — C35 دائرة+خط فقط، وC36/C37 يستخدمان رقمًا رومانيًا (I / II) وليس
+    // نصًا كـ"1-31"، وC38 يجمع II وI معًا بشكل قطري. صُحّح بعد رؤية الصور الرسمية.
+    'no-parking': <g />,
+    'no-parking-odd': <TextGlyph text="I" c={onColor} size={20} />,
+    'no-parking-even': <TextGlyph text="II" c={onColor} size={18} />,
     'no-parking-date': (
       <g>
-        <TextGlyph text="P" c={onColor} size={17} />
-        <rect x="6" y="6" width="9" height="7" rx="1" fill="none" stroke={onColor} strokeWidth="1.6" />
-        <line x1="6" y1="9" x2="15" y2="9" stroke={onColor} strokeWidth="1.6" />
+        <text x="7" y="4" fontSize="16" fontWeight="800" fill={onColor} textAnchor="middle" fontFamily="Arial, sans-serif" direction="ltr" style={{ unicodeBidi: 'bidi-override' }}>I</text>
+        <text x="-8" y="13" fontSize="16" fontWeight="800" fill={onColor} textAnchor="middle" fontFamily="Arial, sans-serif" direction="ltr" style={{ unicodeBidi: 'bidi-override' }}>II</text>
       </g>
     ),
     'parking-angle': <path d="M -10,10 L -2,-10 L 10,10" fill="none" stroke={onColor} strokeWidth="2.6" strokeLinejoin="round" />,
@@ -1404,6 +1578,14 @@ function glyphContent(glyph, shape) {
       </g>
     ),
     'narrow-road': <path d="M -14,-13 L -4,13 L 4,13 L 14,-13" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
+    // تضييق من جهة واحدة فقط (A5-2/A5-3 الرسميتان من Transportstyrelsen):
+    // شريط ثابت + شريط منكسر نحو الداخل، وليس تخمينًا لشكل تناظري.
+    'narrow-road-one-side': (
+      <g stroke={onColor} strokeWidth="4.2" strokeLinecap="butt" strokeLinejoin="round" fill="none">
+        <path d="M -8,-14 L -8,14" />
+        <path d="M 8,-14 L 8,-2 L 3,5 L 3,14" />
+      </g>
+    ),
     'uneven-road': <path d="M -14,8 L -7,-8 L 0,8 L 7,-8 L 14,8" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
     'bump': <path d="M -14,9 L -8,9 L -4,-6 L 4,-6 L 8,9 L 14,9" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />,
     'skid': <path d="M -12,-6 Q 0,10 12,-6 M -12,6 Q 0,-10 -1,6" fill="none" stroke={onColor} strokeWidth="3" strokeLinecap="round" />,

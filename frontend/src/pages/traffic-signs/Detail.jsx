@@ -78,7 +78,12 @@ export default function TrafficSignDetail() {
         </div>
       )}
 
-      <div className="sign-modal-source muted">المصدر: {sign.source}</div>
+      <div className="sign-modal-source muted">
+        المصدر: {sign.source}
+        {group.sourceUrl && (
+          <> · <a href={group.sourceUrl} target="_blank" rel="noopener noreferrer">صفحة sweden4.com المرجعية</a></>
+        )}
+      </div>
 
       <div className="sign-detail-nav">
         <button className="sign-detail-nav-btn" disabled={!prev} onClick={() => prev && navigate(`/traffic-signs/${groupId}/${prev.code}`)}>

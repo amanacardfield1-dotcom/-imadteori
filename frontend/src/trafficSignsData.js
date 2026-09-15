@@ -111,20 +111,23 @@ export const trafficSigns = [
         "label": "الطريق يضيق من الجانبين",
         "shape": "triangle-warning",
         "glyph": "narrow-road",
+        "resolved": true
+      },
+      {
+        "id": "A5-right",
+        "label": "الطريق يضيق من جهة اليمين فقط",
+        "shape": "triangle-warning",
+        "glyph": "narrow-road-one-side",
         "mirror": false,
         "resolved": true
       },
       {
         "id": "A5-left",
         "label": "الطريق يضيق من جهة اليسار فقط",
-        "resolved": false,
-        "note": "يحتاج رسمًا غير متماثل (تضييق من جهة واحدة) لم يُنجز بعد."
-      },
-      {
-        "id": "A5-right",
-        "label": "الطريق يضيق من جهة اليمين فقط",
-        "resolved": false,
-        "note": "يحتاج رسمًا غير متماثل (تضييق من جهة واحدة) لم يُنجز بعد."
+        "shape": "triangle-warning",
+        "glyph": "narrow-road-one-side",
+        "mirror": true,
+        "resolved": true
       }
     ]
   },
@@ -491,33 +494,34 @@ export const trafficSigns = [
     "categoryNameAr": "علامات التحذير",
     "swedishName": "Varning för vägkorsning där trafikanter på anslutande väg har väjningsplikt eller stopplikt",
     "arabicName": "تحذير من تقاطع طرق يخضع مستخدمو الطريق الفرعي فيه لواجب إفساح الطريق أو التوقف الإجباري",
-    "officialMeaning": "تُحذّر هذه العلامة مستخدمي الطريق من الخطر أو الوضع الخاص التالي: تحذير من تقاطع طرق يخضع مستخدمو الطريق الفرعي فيه لواجب إفساح الطريق أو التوقف الإجباري. المطلوب من السائق تقليل السرعة وزيادة الانتباه عند الاقتراب من الموقع الذي تشير إليه العلامة.",
+    "officialMeaning": "تُحذّر هذه العلامة من تقاطع طرق يجب فيه على مستخدمي الطريق القادمين من الطريق الفرعي (المبيّن بالخط الرفيع) إعطاء الأولوية أو التوقف الإجباري أمام حركة المرور القادمة من الطريق الرئيسي (المبيّن بالخط الغليظ ورأس السهم). للرمز عدة أشكال هندسية رسمية بحسب تكوين التقاطع الفعلي في الموقع (٢١ شكلًا لدى Transportstyrelsen)، مع الإبقاء على المبدأ نفسه: خط غليظ = طريق رئيسي، خط رفيع = طريق فرعي خاضع للأولوية أو التوقف.",
     "trainingNote": "بخلاف A28، هذه تخبرك مسبقًا أن حركة المرور القادمة من الطريق الفرعي لديها واجب إفساح الطريق أو توقف إجباري — أي أن لك الأولوية في هذا التقاطع تحديدًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
     "glyph": "crossroads-priority",
     "variants": [
       {
-        "id": "A29-right",
-        "label": "طريق فرعي من جهة اليمين فقط",
+        "id": "A29-both",
+        "label": "طريق فرعي من الجهتين معًا (تقاطع +)",
         "shape": "triangle-warning",
         "glyph": "crossroads-priority",
-        "mirror": false,
         "resolved": true
       },
       {
         "id": "A29-left",
         "label": "طريق فرعي من جهة اليسار فقط",
         "shape": "triangle-warning",
-        "glyph": "crossroads-priority",
-        "mirror": true,
+        "glyph": "crossroads-priority-one-side",
+        "mirror": false,
         "resolved": true
       },
       {
-        "id": "A29-both",
-        "label": "طريق فرعي من الجهتين معًا",
-        "resolved": false,
-        "note": "يحتاج رسمًا مستقلًا (تقاطع على شكل +) لم يُنجز بعد بدقة رسمية موثّقة."
+        "id": "A29-right",
+        "label": "طريق فرعي من جهة اليمين فقط",
+        "shape": "triangle-warning",
+        "glyph": "crossroads-priority-one-side",
+        "mirror": true,
+        "resolved": true
       }
     ]
   },
@@ -643,28 +647,29 @@ export const trafficSigns = [
     "officialMeaning": "تُحذّر هذه العلامة مستخدمي الطريق من الخطر أو الوضع الخاص التالي: المسافة المتبقية حتى تقاطع السكة الحديد. المطلوب من السائق تقليل السرعة وزيادة الانتباه عند الاقتراب من الموقع الذي تشير إليه العلامة.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "plaque-tall-white",
+    "shape": "plaque-yellow-plain-tall",
     "glyph": "rail-distance",
     "variants": [
       {
         "id": "A38-3",
-        "label": "ثلاثة خطوط — أبعد نقطة (عادة 150م)",
-        "shape": "plaque-tall-white",
+        "label": "ثلاثة خطوط — أبعد نقطة (150م)",
+        "shape": "plaque-yellow-plain-tall",
         "glyph": "rail-distance",
-        "mirror": false,
         "resolved": true
       },
       {
         "id": "A38-2",
-        "label": "خطان — منتصف المسافة (عادة 100م)",
-        "resolved": false,
-        "note": "يحتاج رسمًا بعدد خطوط مختلف (خطان) لم يُنجز بعد."
+        "label": "خطان — منتصف المسافة (100م)",
+        "shape": "plaque-yellow-plain-tall",
+        "glyph": "rail-distance-2",
+        "resolved": true
       },
       {
         "id": "A38-1",
-        "label": "خط واحد — أقرب نقطة (عادة 50م)",
-        "resolved": false,
-        "note": "يحتاج رسمًا بعدد خطوط مختلف (خط واحد) لم يُنجز بعد."
+        "label": "خط واحد — أقرب نقطة (50م)",
+        "shape": "plaque-yellow-plain-tall",
+        "glyph": "rail-distance-1",
+        "resolved": true
       }
     ]
   },
@@ -686,14 +691,14 @@ export const trafficSigns = [
         "label": "تقاطع مع خط سكة حديد واحد",
         "shape": "cross-marker",
         "glyph": "cross-x",
-        "mirror": false,
         "resolved": true
       },
       {
         "id": "A39-multi",
-        "label": "تقاطع مع عدة خطوط سكك حديدية",
-        "resolved": false,
-        "note": "يحتاج رسمًا مستقلًا (صليب مزدوج) لم يُنجز بعد بدقة رسمية موثّقة."
+        "label": "تقاطع مع أكثر من خط سكة حديد",
+        "shape": "cross-marker",
+        "glyph": "cross-x-multi",
+        "resolved": true
       }
     ]
   },
@@ -1404,48 +1409,54 @@ export const trafficSigns = [
     "categoryNameSv": "Förbudsmärken",
     "categoryNameAr": "علامات المنع",
     "swedishName": "Ändamålsplats",
-    "arabicName": "موقع مخصص لغرض محدد",
-    "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: موقع مخصص لغرض محدد. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
+    "arabicName": "موقع مخصص لغرض محدد (مثال: منطقة تحميل/تفريغ)",
+    "officialMeaning": "تمنع هذه العلامة الوقوف والتوقف إلا للغرض المحدد نصًا على اللوحة نفسها (مثل Lastplats للتحميل/التفريغ، Taxiplats لموقف التاكسي، Bokbussplats لحافلة المكتبة المتنقلة، Ambulansplats لسيارة الإسعاف، Skolskjutsplats للحافلة المدرسية، أو På och avstigningsplats لنزول وصعود الركاب فقط). المركبات غير المذكورة ممنوعة من الوقوف أو التوقف هنا.",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "plaque-yellow-red-tall",
     "glyph": "purpose-place",
     "variants": [
       {
-        "id": "C40-p1",
-        "label": "مكان للتفريغ والتحميل فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-last",
+        "label": "Lastplats — منطقة تحميل وتفريغ البضائع",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place",
+        "resolved": true
       },
       {
-        "id": "C40-p2",
-        "label": "مكان للتاكسي فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-taxi",
+        "label": "Taxiplats — موقف تاكسي",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place-taxi",
+        "resolved": true
       },
       {
-        "id": "C40-p3",
-        "label": "مكان للباصات فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-bokbuss",
+        "label": "Bokbussplats — موقف حافلة المكتبة المتنقلة",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place-bokbuss",
+        "resolved": true
       },
       {
-        "id": "C40-p4",
-        "label": "مكان لسيارة الإسعاف فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-ambulans",
+        "label": "Ambulansplats — موقف سيارة إسعاف",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place-ambulans",
+        "resolved": true
       },
       {
-        "id": "C40-p5",
-        "label": "مكان للباصات المدرسية فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-skolskjuts",
+        "label": "Skolskjutsplats — موقف حافلة مدرسية",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place-skolskjuts",
+        "resolved": true
       },
       {
-        "id": "C40-p6",
-        "label": "مكان للنزول والصعود فقط",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "C40-pa-av",
+        "label": "På och avstigningsplats — مكان نزول وصعود الركاب",
+        "shape": "plaque-yellow-red-tall",
+        "glyph": "purpose-place-pa-av",
+        "resolved": true
       }
     ]
   },
@@ -1459,7 +1470,7 @@ export const trafficSigns = [
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية الموقع المخصص لغرض محدد. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "plaque-yellow-red-tall",
     "glyph": "purpose-place-end",
     "variants": []
   },
@@ -1573,32 +1584,37 @@ export const trafficSigns = [
       {
         "id": "D1-turn-right",
         "label": "انعطاف إجباري إلى اليمين",
-        "resolved": false,
-        "note": "يحتاج رسم سهم منحنٍ (Sväng) مستقلًا لم يُنجز بعد بدقة رسمية موثّقة."
+        "shape": "circle-mandatory-blue",
+        "glyph": "turn-right",
+        "resolved": true
       },
       {
         "id": "D1-turn-left",
         "label": "انعطاف إجباري إلى اليسار",
-        "resolved": false,
-        "note": "يحتاج رسم سهم منحنٍ (Sväng) مستقلًا لم يُنجز بعد بدقة رسمية موثّقة."
+        "shape": "circle-mandatory-blue",
+        "glyph": "turn-left",
+        "resolved": true
       },
       {
         "id": "D1-forward-right",
         "label": "اتجاه إجباري للأمام أو لليمين",
-        "resolved": false,
-        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+        "shape": "circle-mandatory-blue",
+        "glyph": "fork-forward-right",
+        "resolved": true
       },
       {
         "id": "D1-forward-left",
         "label": "اتجاه إجباري للأمام أو لليسار",
-        "resolved": false,
-        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+        "shape": "circle-mandatory-blue",
+        "glyph": "fork-forward-left",
+        "resolved": true
       },
       {
         "id": "D1-left-right",
         "label": "اتجاه إجباري لليمين أو لليسار",
-        "resolved": false,
-        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+        "shape": "circle-mandatory-blue",
+        "glyph": "fork-left-right",
+        "resolved": true
       }
     ]
   },
@@ -2421,35 +2437,39 @@ export const trafficSigns = [
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Vägnummer",
     "arabicName": "رقم الطريق",
-    "officialMeaning": "درع صغير يحمل الرقم الرسمي للطريق (كرقم طريق أوروبي أو وطني)، يساعد على تتبع المسار الصحيح باستخدام أرقام الطرق بدل أسماء الوجهات فقط.",
+    "officialMeaning": "تبيّن هذه العلامة رقم الطريق. اللون الأخضر يعني طريقًا أوروبيًا (E)، والأزرق يعني طريقًا عامًا مرقّمًا ضمن المجموعة 1–499. الإطار المتصل يعني أن هذا هو رقم الطريق الذي تسير عليه الآن، بينما الإطار المتقطع يعني أن العلامة ترشدك إلى طريق يمكن الوصول إليه من هنا (وليس الطريق الحالي نفسه).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
-    "shape": "rect-info-blue",
+    "shape": "rect-road-green",
     "glyph": "road-number",
     "variants": [
       {
-        "id": "F14-p1",
-        "label": "رقم طريق عادي (المجموعة 1–499)",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "F14-euro-solid",
+        "label": "طريق أوروبي (E) — الطريق نفسه، إطار متصل",
+        "shape": "rect-road-green",
+        "glyph": "road-number",
+        "resolved": true
       },
       {
-        "id": "F14-p2",
-        "label": "شاخصة الوصول إلى طريق أوروبي (E)",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "F14-euro-dashed",
+        "label": "طريق أوروبي (E) — شاخصة الوصول إليه، إطار متقطع",
+        "shape": "rect-road-green-dashed",
+        "glyph": "road-number",
+        "resolved": true
       },
       {
-        "id": "F14-p3",
-        "label": "رقم طريق ريفي/عام داخل مربع",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "F14-plain-solid",
+        "label": "طريق عام مرقّم (1–499) — الطريق نفسه، إطار متصل",
+        "shape": "rect-road-blue",
+        "glyph": "road-number-plain",
+        "resolved": true
       },
       {
-        "id": "F14-p4",
-        "label": "شاخصة الوصول إلى الطريق المرقم المبين",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "F14-plain-dashed",
+        "label": "طريق عام مرقّم (1–499) — شاخصة الوصول إليه، إطار متقطع",
+        "shape": "rect-road-blue-dashed",
+        "glyph": "road-number-plain",
+        "resolved": true
       }
     ]
   },
@@ -4096,13 +4116,13 @@ export const trafficSigns = [
     "category": "S",
     "categoryNameSv": "Symboler",
     "categoryNameAr": "الرموز الرسمية المستخدمة ضمن العلامات المرورية",
-    "swedishName": "Personbil klass II",
-    "arabicName": "سيارة ركاب من الفئة الثانية",
-    "officialMeaning": "رمز رسمي موحّد يُستخدم داخل شاخصات أخرى أو لوحات إضافية للدلالة على: سيارة ركاب من الفئة الثانية.",
+    "swedishName": "Färja",
+    "arabicName": "معدية (نقل مركبات)",
+    "officialMeaning": "رمز رسمي موحّد يُستخدم داخل شاخصات أخرى أو لوحات إضافية للدلالة على: معدية تنقل المركبات (وليست عبّارة ركاب فقط، تلك S13).",
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "car-class2",
+    "glyph": "ferry-vehicle",
     "variants": []
   },
   {
@@ -4116,7 +4136,7 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "ferry",
+    "glyph": "ferry-passenger",
     "variants": []
   },
   {
@@ -4511,34 +4531,39 @@ export const trafficSigns = [
     "glyph": "arrow-extent",
     "variants": [
       {
-        "id": "T11-p1",
-        "label": "يسري مفعولها على جهتي الشاخصة أفقيًا",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "T11-horizontal",
+        "label": "يسري أفقيًا على الجهتين",
+        "shape": "plaque-white",
+        "glyph": "arrow-extent",
+        "resolved": true
       },
       {
-        "id": "T11-p2",
-        "label": "يسري مفعولها على جهتي الشاخصة عموديًا",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "T11-vertical",
+        "label": "يسري عموديًا على الجهتين",
+        "shape": "plaque-white",
+        "glyph": "arrow-extent-vertical",
+        "resolved": true
       },
       {
-        "id": "T11-p3",
-        "label": "يسري مفعولها إلى الشاخصة (سهم لأسفل: ينتهي)",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "T11-end",
+        "label": "ينتهي السريان هنا (سهم لأسفل)",
+        "shape": "plaque-white",
+        "glyph": "arrow-extent-end",
+        "resolved": true
       },
       {
-        "id": "T11-p4",
-        "label": "يسري مفعولها إلى جهة اليسار",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "T11-left",
+        "label": "يسري باتجاه اليسار فقط",
+        "shape": "plaque-white",
+        "glyph": "arrow-extent-left",
+        "resolved": true
       },
       {
-        "id": "T11-p5",
-        "label": "يسري مفعولها إلى جهة اليمين",
-        "resolved": false,
-        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+        "id": "T11-right",
+        "label": "يسري باتجاه اليمين فقط",
+        "shape": "plaque-white",
+        "glyph": "arrow-extent-right",
+        "resolved": true
       }
     ]
   },

@@ -52,8 +52,9 @@ export default function TrafficSignsCategoryGrid() {
             <p>{group.summary}</p>
             {!group.inReference && (
               <p className="tp-disclaimer">
-                هذه الفئة تصنيف رسمي حقيقي من Transportstyrelsen، لكنها غير موجودة كصفحة مستقلة في
-                مرجع sweden4 — أُبقيت ظاهرة كتوسّع تعليمي بدل حذفها.
+                ⚠️ لم يُعثر على صفحة مقابلة لهذه الفئة في أرشيف sweden4.com الكامل (?cat=436)
+                رغم البحث الشامل. محتواها بانتظار تحقق مباشر من مصدر Transportstyrelsen الرسمي
+                (NEEDS_SOURCE_VERIFICATION) قبل اعتماده نهائيًا.
               </p>
             )}
           </div>

@@ -61,7 +61,7 @@ export default function TrafficSignsLanding() {
             <span className="sign-group-title">{group.label}</span>
             <span className="sign-group-source">
               {group.sourceLabel}
-              {!group.inReference && ' · توسّع تعليمي إضافي'}
+              {!group.inReference && ' · بانتظار تحقق من مصدر رسمي'}
             </span>
             <span className="sign-group-examples">
               {group.examples.map((sign) => (
