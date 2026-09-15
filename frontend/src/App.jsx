@@ -11,7 +11,11 @@ import Dashboard from './pages/Dashboard';
 import Pending from './pages/Pending';
 import Admin from './pages/Admin';
 import AdminQuestionBank from './pages/AdminQuestionBank';
-import TrafficSigns from './pages/TrafficSigns';
+import TrafficSignsLayout from './pages/traffic-signs/Layout';
+import TrafficSignsLanding from './pages/traffic-signs/Landing';
+import TrafficSignsCategoryGrid from './pages/traffic-signs/CategoryGrid';
+import TrafficSignsAll from './pages/traffic-signs/AllSigns';
+import TrafficSignDetail from './pages/traffic-signs/Detail';
 import TeoriProvIntro from './pages/TeoriProvIntro';
 import TeoriProvRun from './pages/TeoriProvRun';
 import AdminExamResults from './pages/AdminExamResults';
@@ -25,7 +29,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/traffic-signs" element={<TrafficSigns />} />
+          <Route path="/traffic-signs" element={<TrafficSignsLayout />}>
+            <Route index element={<TrafficSignsLanding />} />
+            <Route path="all" element={<TrafficSignsAll />} />
+            <Route path=":groupId" element={<TrafficSignsCategoryGrid />} />
+            <Route path=":groupId/:code" element={<TrafficSignDetail />} />
+          </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route

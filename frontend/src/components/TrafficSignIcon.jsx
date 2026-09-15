@@ -1498,10 +1498,13 @@ function glyphContent(glyph, shape) {
   return g(<GenericBox c={onColor} />);
 }
 
-export default function TrafficSignIcon({ shape, glyph = 'none', size = 64 }) {
+export default function TrafficSignIcon({ shape, glyph = 'none', size = 64, mirror = false, rotate = 0 }) {
+  let content = <ShapeContainer shape={shape}>{glyphContent(glyph, shape)}</ShapeContainer>;
+  if (mirror) content = <g transform="translate(64,0) scale(-1,1)">{content}</g>;
+  if (rotate) content = <g transform={`rotate(${rotate},32,32)`}>{content}</g>;
   return (
     <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
-      <ShapeContainer shape={shape}>{glyphContent(glyph, shape)}</ShapeContainer>
+      {content}
     </svg>
   );
 }

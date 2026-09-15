@@ -14,7 +14,25 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "curve-left"
+    "glyph": "curve-left",
+    "variants": [
+      {
+        "id": "A1-left",
+        "label": "منعطف خطر إلى اليسار",
+        "shape": "triangle-warning",
+        "glyph": "curve-left",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A1-right",
+        "label": "منعطف خطر إلى اليمين",
+        "shape": "triangle-warning",
+        "glyph": "curve-left",
+        "mirror": true,
+        "resolved": true
+      }
+    ]
   },
   {
     "code": "A2",
@@ -27,7 +45,25 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "curve-double"
+    "glyph": "curve-double",
+    "variants": [
+      {
+        "id": "A2-left-first",
+        "label": "منعطفات متتالية، أولها إلى اليسار",
+        "shape": "triangle-warning",
+        "glyph": "curve-double",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A2-right-first",
+        "label": "منعطفات متتالية، أولها إلى اليمين",
+        "shape": "triangle-warning",
+        "glyph": "curve-double",
+        "mirror": true,
+        "resolved": true
+      }
+    ]
   },
   {
     "code": "A3",
@@ -40,7 +76,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "slope-down"
+    "glyph": "slope-down",
+    "variants": []
   },
   {
     "code": "A4",
@@ -53,7 +90,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "slope-up"
+    "glyph": "slope-up",
+    "variants": []
   },
   {
     "code": "A5",
@@ -66,7 +104,29 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "narrow-road"
+    "glyph": "narrow-road",
+    "variants": [
+      {
+        "id": "A5-both",
+        "label": "الطريق يضيق من الجانبين",
+        "shape": "triangle-warning",
+        "glyph": "narrow-road",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A5-left",
+        "label": "الطريق يضيق من جهة اليسار فقط",
+        "resolved": false,
+        "note": "يحتاج رسمًا غير متماثل (تضييق من جهة واحدة) لم يُنجز بعد."
+      },
+      {
+        "id": "A5-right",
+        "label": "الطريق يضيق من جهة اليمين فقط",
+        "resolved": false,
+        "note": "يحتاج رسمًا غير متماثل (تضييق من جهة واحدة) لم يُنجز بعد."
+      }
+    ]
   },
   {
     "code": "A6",
@@ -79,7 +139,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "bridge"
+    "glyph": "bridge",
+    "variants": []
   },
   {
     "code": "A7",
@@ -92,7 +153,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "quay"
+    "glyph": "quay",
+    "variants": []
   },
   {
     "code": "A8",
@@ -105,7 +167,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "uneven-road"
+    "glyph": "uneven-road",
+    "variants": []
   },
   {
     "code": "A9",
@@ -118,7 +181,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "bump"
+    "glyph": "bump",
+    "variants": []
   },
   {
     "code": "A10",
@@ -131,7 +195,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "skid"
+    "glyph": "skid",
+    "variants": []
   },
   {
     "code": "A11",
@@ -144,7 +209,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "gravel"
+    "glyph": "gravel",
+    "variants": []
   },
   {
     "code": "A12",
@@ -157,7 +223,25 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "rockfall"
+    "glyph": "rockfall",
+    "variants": [
+      {
+        "id": "A12-right",
+        "label": "تساقط أحجار من جهة اليمين",
+        "shape": "triangle-warning",
+        "glyph": "rockfall",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A12-left",
+        "label": "تساقط أحجار من جهة اليسار",
+        "shape": "triangle-warning",
+        "glyph": "rockfall",
+        "mirror": true,
+        "resolved": true
+      }
+    ]
   },
   {
     "code": "A13",
@@ -170,7 +254,8 @@ export const trafficSigns = [
     "trainingNote": "شاخصة تحذير من ممر مشاة أمامي (وليست علامة الأولوية B3 التي تقع عند الممر نفسه) — تعني أن عليك التباطؤ استعدادًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "pedestrian-crossing"
+    "glyph": "pedestrian-crossing",
+    "variants": []
   },
   {
     "code": "A14",
@@ -183,7 +268,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "pedestrian"
+    "glyph": "pedestrian",
+    "variants": []
   },
   {
     "code": "A15",
@@ -196,7 +282,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "children"
+    "glyph": "children",
+    "variants": []
   },
   {
     "code": "A16",
@@ -209,7 +296,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "A17",
@@ -222,7 +310,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "skier"
+    "glyph": "skier",
+    "variants": []
   },
   {
     "code": "A18",
@@ -235,7 +324,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "horse-rider"
+    "glyph": "horse-rider",
+    "variants": []
   },
   {
     "code": "A19",
@@ -248,7 +338,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "animal"
+    "glyph": "animal",
+    "variants": []
   },
   {
     "code": "A20",
@@ -261,7 +352,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "roadwork"
+    "glyph": "roadwork",
+    "variants": []
   },
   {
     "code": "A21",
@@ -274,7 +366,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "roadwork-end"
+    "glyph": "roadwork-end",
+    "variants": []
   },
   {
     "code": "A22",
@@ -287,7 +380,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "traffic-light"
+    "glyph": "traffic-light",
+    "variants": []
   },
   {
     "code": "A23",
@@ -300,7 +394,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "airplane"
+    "glyph": "airplane",
+    "variants": []
   },
   {
     "code": "A24",
@@ -313,7 +408,25 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "crosswind"
+    "glyph": "crosswind",
+    "variants": [
+      {
+        "id": "A24-right",
+        "label": "رياح جانبية قوية من جهة اليمين",
+        "shape": "triangle-warning",
+        "glyph": "crosswind",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A24-left",
+        "label": "رياح جانبية قوية من جهة اليسار",
+        "shape": "triangle-warning",
+        "glyph": "crosswind",
+        "mirror": true,
+        "resolved": true
+      }
+    ]
   },
   {
     "code": "A25",
@@ -326,7 +439,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "oncoming-traffic"
+    "glyph": "oncoming-traffic",
+    "variants": []
   },
   {
     "code": "A26",
@@ -339,7 +453,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "tunnel"
+    "glyph": "tunnel",
+    "variants": []
   },
   {
     "code": "A27",
@@ -352,7 +467,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "weak-edge"
+    "glyph": "weak-edge",
+    "variants": []
   },
   {
     "code": "A28",
@@ -365,7 +481,8 @@ export const trafficSigns = [
     "trainingNote": "تحذّر من تقاطع عام؛ لا تحدد من له الأولوية — الأولوية تُحدَّد بقاعدة اليمين الافتراضية أو بشاخصات B الموجودة فعليًا في التقاطع.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "crossroads"
+    "glyph": "crossroads",
+    "variants": []
   },
   {
     "code": "A29",
@@ -378,7 +495,31 @@ export const trafficSigns = [
     "trainingNote": "بخلاف A28، هذه تخبرك مسبقًا أن حركة المرور القادمة من الطريق الفرعي لديها واجب إفساح الطريق أو توقف إجباري — أي أن لك الأولوية في هذا التقاطع تحديدًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "crossroads-priority"
+    "glyph": "crossroads-priority",
+    "variants": [
+      {
+        "id": "A29-right",
+        "label": "طريق فرعي من جهة اليمين فقط",
+        "shape": "triangle-warning",
+        "glyph": "crossroads-priority",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A29-left",
+        "label": "طريق فرعي من جهة اليسار فقط",
+        "shape": "triangle-warning",
+        "glyph": "crossroads-priority",
+        "mirror": true,
+        "resolved": true
+      },
+      {
+        "id": "A29-both",
+        "label": "طريق فرعي من الجهتين معًا",
+        "resolved": false,
+        "note": "يحتاج رسمًا مستقلًا (تقاطع على شكل +) لم يُنجز بعد بدقة رسمية موثّقة."
+      }
+    ]
   },
   {
     "code": "A30",
@@ -391,7 +532,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "roundabout"
+    "glyph": "roundabout",
+    "variants": []
   },
   {
     "code": "A31",
@@ -404,7 +546,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "slow-vehicle"
+    "glyph": "slow-vehicle",
+    "variants": []
   },
   {
     "code": "A32",
@@ -417,7 +560,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "horse-cart"
+    "glyph": "horse-cart",
+    "variants": []
   },
   {
     "code": "A33",
@@ -430,7 +574,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "snowmobile"
+    "glyph": "snowmobile",
+    "variants": []
   },
   {
     "code": "A34",
@@ -443,7 +588,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "queue"
+    "glyph": "queue",
+    "variants": []
   },
   {
     "code": "A35",
@@ -456,7 +602,8 @@ export const trafficSigns = [
     "trainingNote": "وجود حواجز (bommar) لا يلغي ضرورة الانتباه؛ لا تحاول الالتفاف حول الحاجز أبدًا حتى لو بدا القطار بعيدًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "rail-gated"
+    "glyph": "rail-gated",
+    "variants": []
   },
   {
     "code": "A36",
@@ -469,7 +616,8 @@ export const trafficSigns = [
     "trainingNote": "تقاطع سكة حديد بلا حواجز يتطلب توقفًا فعليًا والتأكد من خلو المسار بنفسك قبل العبور.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "rail-ungated"
+    "glyph": "rail-ungated",
+    "variants": []
   },
   {
     "code": "A37",
@@ -482,7 +630,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "tram-ungated"
+    "glyph": "tram-ungated",
+    "variants": []
   },
   {
     "code": "A38",
@@ -495,7 +644,29 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-tall-white",
-    "glyph": "rail-distance"
+    "glyph": "rail-distance",
+    "variants": [
+      {
+        "id": "A38-3",
+        "label": "ثلاثة خطوط — أبعد نقطة (عادة 150م)",
+        "shape": "plaque-tall-white",
+        "glyph": "rail-distance",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A38-2",
+        "label": "خطان — منتصف المسافة (عادة 100م)",
+        "resolved": false,
+        "note": "يحتاج رسمًا بعدد خطوط مختلف (خطان) لم يُنجز بعد."
+      },
+      {
+        "id": "A38-1",
+        "label": "خط واحد — أقرب نقطة (عادة 50م)",
+        "resolved": false,
+        "note": "يحتاج رسمًا بعدد خطوط مختلف (خط واحد) لم يُنجز بعد."
+      }
+    ]
   },
   {
     "code": "A39",
@@ -508,7 +679,23 @@ export const trafficSigns = [
     "trainingNote": "علامة الصليب (Andreaskors) تُوضع مباشرة عند تقاطع السكة نفسه، وتعني أنك عند خط السكة الآن فعليًا، وليست مجرد تحذير مسبق.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "cross-marker",
-    "glyph": "cross-x"
+    "glyph": "cross-x",
+    "variants": [
+      {
+        "id": "A39-single",
+        "label": "تقاطع مع خط سكة حديد واحد",
+        "shape": "cross-marker",
+        "glyph": "cross-x",
+        "mirror": false,
+        "resolved": true
+      },
+      {
+        "id": "A39-multi",
+        "label": "تقاطع مع عدة خطوط سكك حديدية",
+        "resolved": false,
+        "note": "يحتاج رسمًا مستقلًا (صليب مزدوج) لم يُنجز بعد بدقة رسمية موثّقة."
+      }
+    ]
   },
   {
     "code": "A40",
@@ -521,7 +708,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "exclaim"
+    "glyph": "exclaim",
+    "variants": []
   },
   {
     "code": "A41",
@@ -534,7 +722,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "accident"
+    "glyph": "accident",
+    "variants": []
   },
   {
     "code": "B1",
@@ -547,7 +736,8 @@ export const trafficSigns = [
     "trainingNote": "'واجب إفساح الطريق' لا يعني توقفًا إجباريًا؛ يكفي إبطاء السرعة والتأكد من عدم وجود حركة مرور قادمة قبل المتابعة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-yield",
-    "glyph": "none"
+    "glyph": "none",
+    "variants": []
   },
   {
     "code": "B2",
@@ -560,7 +750,8 @@ export const trafficSigns = [
     "trainingNote": "'التوقف الإجباري' (Stopplikt) يُلزم بتوقف فعلي كامل للمركبة عند خط التوقف، حتى لو كان الطريق خاليًا تمامًا من أي حركة مرور — هذا ما يميزها عن B1.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "octagon-stop",
-    "glyph": "stop-text"
+    "glyph": "stop-text",
+    "variants": []
   },
   {
     "code": "B3",
@@ -573,7 +764,8 @@ export const trafficSigns = [
     "trainingNote": "عند وجود هذه العلامة عند الممر نفسه، للمشاة أولوية الدخول للممر، لكن هذا لا يعفي السائق من واجب الانتباه والاستعداد للتوقف.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-yield",
-    "glyph": "pedestrian-crossing"
+    "glyph": "pedestrian-crossing",
+    "variants": []
   },
   {
     "code": "B4",
@@ -586,7 +778,8 @@ export const trafficSigns = [
     "trainingNote": "تبقى أولوية 'الطريق الرئيسي' سارية عبر عدة تقاطعات متتالية طالما لم تظهر علامة B5 (نهاية الطريق الرئيسي)، دون الحاجة لتكرار B4 عند كل تقاطع بالضرورة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "diamond-priority",
-    "glyph": "none"
+    "glyph": "none",
+    "variants": []
   },
   {
     "code": "B5",
@@ -599,7 +792,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "diamond-priority-end",
-    "glyph": "none"
+    "glyph": "none",
+    "variants": []
   },
   {
     "code": "B6",
@@ -612,7 +806,8 @@ export const trafficSigns = [
     "trainingNote": "أنت من عليه إفساح الطريق لحركة المرور القادمة من الاتجاه المعاكس (شائعة في الطرق الضيقة أو الجسور أحادية المسار).",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-yield",
-    "glyph": "arrow-yield"
+    "glyph": "arrow-yield",
+    "variants": []
   },
   {
     "code": "B7",
@@ -625,7 +820,8 @@ export const trafficSigns = [
     "trainingNote": "عكس B6 تمامًا: حركة المرور القادمة من الاتجاه المعاكس هي من عليها إفساح الطريق لك، فلك الأولوية هنا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-yield",
-    "glyph": "arrow-yield-rev"
+    "glyph": "arrow-yield-rev",
+    "variants": []
   },
   {
     "code": "B8",
@@ -638,7 +834,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-yield",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "C1",
@@ -651,7 +848,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-solid-red",
-    "glyph": "none"
+    "glyph": "none",
+    "variants": []
   },
   {
     "code": "C2",
@@ -664,7 +862,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-vehicles"
+    "glyph": "no-vehicles",
+    "variants": []
   },
   {
     "code": "C3",
@@ -677,7 +876,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "car"
+    "glyph": "car",
+    "variants": []
   },
   {
     "code": "C4",
@@ -690,7 +890,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "motor-multi"
+    "glyph": "motor-multi",
+    "variants": []
   },
   {
     "code": "C5",
@@ -703,7 +904,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "motorcycle"
+    "glyph": "motorcycle",
+    "variants": []
   },
   {
     "code": "C6",
@@ -716,7 +918,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "car-trailer"
+    "glyph": "car-trailer",
+    "variants": []
   },
   {
     "code": "C7",
@@ -729,7 +932,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "truck"
+    "glyph": "truck",
+    "variants": []
   },
   {
     "code": "C8",
@@ -742,7 +946,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "tractor"
+    "glyph": "tractor",
+    "variants": []
   },
   {
     "code": "C9",
@@ -755,7 +960,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "hazmat"
+    "glyph": "hazmat",
+    "variants": []
   },
   {
     "code": "C10",
@@ -768,7 +974,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "C11",
@@ -781,7 +988,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "moped"
+    "glyph": "moped",
+    "variants": []
   },
   {
     "code": "C12",
@@ -794,7 +1002,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "horse-cart"
+    "glyph": "horse-cart",
+    "variants": []
   },
   {
     "code": "C13",
@@ -807,7 +1016,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "snowmobile"
+    "glyph": "snowmobile",
+    "variants": []
   },
   {
     "code": "C14",
@@ -820,7 +1030,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "horse-rider"
+    "glyph": "horse-rider",
+    "variants": []
   },
   {
     "code": "C15",
@@ -833,7 +1044,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "pedestrian"
+    "glyph": "pedestrian",
+    "variants": []
   },
   {
     "code": "C16",
@@ -846,7 +1058,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "width"
+    "glyph": "width",
+    "variants": []
   },
   {
     "code": "C17",
@@ -859,7 +1072,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "height"
+    "glyph": "height",
+    "variants": []
   },
   {
     "code": "C18",
@@ -872,7 +1086,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "length"
+    "glyph": "length",
+    "variants": []
   },
   {
     "code": "C19",
@@ -885,7 +1100,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "distance"
+    "glyph": "distance",
+    "variants": []
   },
   {
     "code": "C20",
@@ -898,7 +1114,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "weight-10t"
+    "glyph": "weight-10t",
+    "variants": []
   },
   {
     "code": "C21",
@@ -911,7 +1128,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "weight-16t"
+    "glyph": "weight-16t",
+    "variants": []
   },
   {
     "code": "C22",
@@ -924,7 +1142,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "bearing-class"
+    "glyph": "bearing-class",
+    "variants": []
   },
   {
     "code": "C23",
@@ -937,7 +1156,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "axle-8t"
+    "glyph": "axle-8t",
+    "variants": []
   },
   {
     "code": "C24",
@@ -950,7 +1170,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "axle-12t"
+    "glyph": "axle-12t",
+    "variants": []
   },
   {
     "code": "C25",
@@ -963,7 +1184,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-turn"
+    "glyph": "no-turn",
+    "variants": []
   },
   {
     "code": "C26",
@@ -976,7 +1198,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-uturn"
+    "glyph": "no-uturn",
+    "variants": []
   },
   {
     "code": "C27",
@@ -989,7 +1212,8 @@ export const trafficSigns = [
     "trainingNote": "منع التجاوز هنا يخص تجاوز المركبات الآلية الأخرى تحديدًا؛ لا يمنع عادة تجاوز الدراجات الهوائية أو الدراجات الخفيفة ذات العجلتين بلا مقطورة جانبية، ما لم يُذكر خلاف ذلك.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-overtake"
+    "glyph": "no-overtake",
+    "variants": []
   },
   {
     "code": "C28",
@@ -1002,7 +1226,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-overtake-end"
+    "glyph": "no-overtake-end",
+    "variants": []
   },
   {
     "code": "C29",
@@ -1015,7 +1240,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-overtake-truck"
+    "glyph": "no-overtake-truck",
+    "variants": []
   },
   {
     "code": "C30",
@@ -1028,7 +1254,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "no-overtake-truck-end"
+    "glyph": "no-overtake-truck-end",
+    "variants": []
   },
   {
     "code": "C31",
@@ -1041,7 +1268,8 @@ export const trafficSigns = [
     "trainingNote": "الرقم الظاهر على العلامة هو الحد الأقصى المسموح به قانونًا في هذا المقطع تحديدًا، ويُلغي حد السرعة العام الافتراضي لنوع الطريق حتى ظهور علامة جديدة أو الوصول لتقاطع يُنهي سريانها.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "speed-number"
+    "glyph": "speed-number",
+    "variants": []
   },
   {
     "code": "C32",
@@ -1054,7 +1282,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "speed-number-end"
+    "glyph": "speed-number-end",
+    "variants": []
   },
   {
     "code": "C33",
@@ -1067,7 +1296,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "customs"
+    "glyph": "customs",
+    "variants": []
   },
   {
     "code": "C34",
@@ -1080,7 +1310,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "stop-purpose"
+    "glyph": "stop-purpose",
+    "variants": []
   },
   {
     "code": "C35",
@@ -1093,7 +1324,8 @@ export const trafficSigns = [
     "trainingNote": "منع 'الوقوف' (parkering) يسمح بالتوقف القصير لتحميل/تنزيل الركاب أو البضائع طالما السائق بقي في المركبة أو بالقرب منها جاهزًا للتحرك فورًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-parking"
+    "glyph": "no-parking",
+    "variants": []
   },
   {
     "code": "C36",
@@ -1106,7 +1338,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-parking-odd"
+    "glyph": "no-parking-odd",
+    "variants": []
   },
   {
     "code": "C37",
@@ -1119,7 +1352,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-parking-even"
+    "glyph": "no-parking-even",
+    "variants": []
   },
   {
     "code": "C38",
@@ -1132,7 +1366,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-parking-date"
+    "glyph": "no-parking-date",
+    "variants": []
   },
   {
     "code": "C39",
@@ -1145,7 +1380,8 @@ export const trafficSigns = [
     "trainingNote": "منع 'التوقف والوقوف' معًا أشد من C35 — يمنع حتى التوقف اللحظي القصير لأي غرض تقريبًا، عدا حالات الاضطرار الحقيقي.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-blue",
-    "glyph": "no-stop-park-x"
+    "glyph": "no-stop-park-x",
+    "variants": []
   },
   {
     "code": "C40",
@@ -1158,7 +1394,45 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "purpose-place"
+    "glyph": "purpose-place",
+    "variants": [
+      {
+        "id": "C40-p1",
+        "label": "مكان للتفريغ والتحميل فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "C40-p2",
+        "label": "مكان للتاكسي فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "C40-p3",
+        "label": "مكان للباصات فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "C40-p4",
+        "label": "مكان لسيارة الإسعاف فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "C40-p5",
+        "label": "مكان للباصات المدرسية فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "C40-p6",
+        "label": "مكان للنزول والصعود فقط",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      }
+    ]
   },
   {
     "code": "C41",
@@ -1171,7 +1445,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "purpose-place-end"
+    "glyph": "purpose-place-end",
+    "variants": []
   },
   {
     "code": "C42",
@@ -1184,7 +1459,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "turning-place"
+    "glyph": "turning-place",
+    "variants": []
   },
   {
     "code": "C43",
@@ -1197,7 +1473,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "turning-place-end"
+    "glyph": "turning-place-end",
+    "variants": []
   },
   {
     "code": "C44",
@@ -1210,7 +1487,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "studded-tire"
+    "glyph": "studded-tire",
+    "variants": []
   },
   {
     "code": "C45",
@@ -1223,7 +1501,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "special-parking"
+    "glyph": "special-parking",
+    "variants": []
   },
   {
     "code": "C46",
@@ -1236,7 +1515,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-prohibit-red",
-    "glyph": "axle-18t"
+    "glyph": "axle-18t",
+    "variants": []
   },
   {
     "code": "D1",
@@ -1249,7 +1529,63 @@ export const trafficSigns = [
     "trainingNote": "الاتجاه المرسوم على العلامة (يمين/يسار/أمام) هو الاتجاه الوحيد المسموح به إلزاميًا عند هذه النقطة، وليس مجرد اقتراح.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "arrow-forced"
+    "glyph": "arrow-forced",
+    "variants": [
+      {
+        "id": "D1-forward",
+        "label": "اتجاه إجباري للأمام",
+        "shape": "circle-mandatory-blue",
+        "glyph": "arrow-forced",
+        "rotate": 0,
+        "resolved": true
+      },
+      {
+        "id": "D1-right",
+        "label": "اتجاه إجباري إلى اليمين",
+        "shape": "circle-mandatory-blue",
+        "glyph": "arrow-forced",
+        "rotate": 90,
+        "resolved": true
+      },
+      {
+        "id": "D1-left",
+        "label": "اتجاه إجباري إلى اليسار",
+        "shape": "circle-mandatory-blue",
+        "glyph": "arrow-forced",
+        "rotate": -90,
+        "resolved": true
+      },
+      {
+        "id": "D1-turn-right",
+        "label": "انعطاف إجباري إلى اليمين",
+        "resolved": false,
+        "note": "يحتاج رسم سهم منحنٍ (Sväng) مستقلًا لم يُنجز بعد بدقة رسمية موثّقة."
+      },
+      {
+        "id": "D1-turn-left",
+        "label": "انعطاف إجباري إلى اليسار",
+        "resolved": false,
+        "note": "يحتاج رسم سهم منحنٍ (Sväng) مستقلًا لم يُنجز بعد بدقة رسمية موثّقة."
+      },
+      {
+        "id": "D1-forward-right",
+        "label": "اتجاه إجباري للأمام أو لليمين",
+        "resolved": false,
+        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+      },
+      {
+        "id": "D1-forward-left",
+        "label": "اتجاه إجباري للأمام أو لليسار",
+        "resolved": false,
+        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+      },
+      {
+        "id": "D1-left-right",
+        "label": "اتجاه إجباري لليمين أو لليسار",
+        "resolved": false,
+        "note": "يحتاج رسم سهمين مركّبين لم يُنجز بعد بدقة رسمية موثّقة."
+      }
+    ]
   },
   {
     "code": "D2",
@@ -1262,7 +1598,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "arrow-lane"
+    "glyph": "arrow-lane",
+    "variants": []
   },
   {
     "code": "D3",
@@ -1275,7 +1612,8 @@ export const trafficSigns = [
     "trainingNote": "علامة الدوار الإلزامي تعني أن حركة السير داخل الدوار تسير بالاتجاه المُبيَّن (عكس عقارب الساعة في السويد لأنها قيادة يمينية) وأن للمركبات داخل الدوار الأولوية عادة على الداخلة إليه ما لم يُذكر خلاف ذلك بعلامة B.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "roundabout-arrow"
+    "glyph": "roundabout-arrow",
+    "variants": []
   },
   {
     "code": "D4",
@@ -1288,7 +1626,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "D5",
@@ -1301,7 +1640,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "pedestrian"
+    "glyph": "pedestrian",
+    "variants": []
   },
   {
     "code": "D6",
@@ -1314,7 +1654,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "pedestrian-bicycle"
+    "glyph": "pedestrian-bicycle",
+    "variants": []
   },
   {
     "code": "D7",
@@ -1327,7 +1668,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "pedestrian-bicycle-sep"
+    "glyph": "pedestrian-bicycle-sep",
+    "variants": []
   },
   {
     "code": "D8",
@@ -1340,7 +1682,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "horse-rider"
+    "glyph": "horse-rider",
+    "variants": []
   },
   {
     "code": "D9",
@@ -1353,7 +1696,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "snowmobile"
+    "glyph": "snowmobile",
+    "variants": []
   },
   {
     "code": "D10",
@@ -1366,7 +1710,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "bus-lane"
+    "glyph": "bus-lane",
+    "variants": []
   },
   {
     "code": "D11",
@@ -1379,7 +1724,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "arrow-forced-end"
+    "glyph": "arrow-forced-end",
+    "variants": []
   },
   {
     "code": "D12",
@@ -1392,7 +1738,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "circle-mandatory-blue",
-    "glyph": "hazmat-arrow"
+    "glyph": "hazmat-arrow",
+    "variants": []
   },
   {
     "code": "E1",
@@ -1405,7 +1752,8 @@ export const trafficSigns = [
     "trainingNote": "دخول الطريق السريع (Motorväg) يعني تطبيق قواعد خاصة: ممنوع السير للمشاة والدراجات والمركبات البطيئة، وحد أدنى للسرعة في بعض المسارات.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "motorway"
+    "glyph": "motorway",
+    "variants": []
   },
   {
     "code": "E2",
@@ -1418,7 +1766,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "motorway-end"
+    "glyph": "motorway-end",
+    "variants": []
   },
   {
     "code": "E3",
@@ -1431,7 +1780,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "expressway"
+    "glyph": "expressway",
+    "variants": []
   },
   {
     "code": "E4",
@@ -1444,7 +1794,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "expressway-end"
+    "glyph": "expressway-end",
+    "variants": []
   },
   {
     "code": "E5",
@@ -1457,7 +1808,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-white-black",
-    "glyph": "urban-area"
+    "glyph": "urban-area",
+    "variants": []
   },
   {
     "code": "E6",
@@ -1470,7 +1822,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-white-black",
-    "glyph": "urban-area-end"
+    "glyph": "urban-area-end",
+    "variants": []
   },
   {
     "code": "E7",
@@ -1483,7 +1836,8 @@ export const trafficSigns = [
     "trainingNote": "'شارع مشاة' (Gågata) يعني أن الأولوية المطلقة للمشاة، والقيادة فيه مقيدة جدًا (عادة فقط للتحميل ببطء شديد وبإذن).",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "pedestrian-street"
+    "glyph": "pedestrian-street",
+    "variants": []
   },
   {
     "code": "E8",
@@ -1496,7 +1850,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "pedestrian-street-end"
+    "glyph": "pedestrian-street-end",
+    "variants": []
   },
   {
     "code": "E9",
@@ -1509,7 +1864,8 @@ export const trafficSigns = [
     "trainingNote": "'منطقة سرعة المشي' (Gångfartsområde) تُلزم السائق بعدم تجاوز سرعة المشي فعليًا، وليس فقط التوصية بالتمهل.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-white-blue",
-    "glyph": "walking-speed"
+    "glyph": "walking-speed",
+    "variants": []
   },
   {
     "code": "E10",
@@ -1522,7 +1878,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-white-blue",
-    "glyph": "walking-speed-end"
+    "glyph": "walking-speed-end",
+    "variants": []
   },
   {
     "code": "E11",
@@ -1535,7 +1892,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "speed-reco"
+    "glyph": "speed-reco",
+    "variants": []
   },
   {
     "code": "E12",
@@ -1548,7 +1906,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "speed-reco-end"
+    "glyph": "speed-reco-end",
+    "variants": []
   },
   {
     "code": "E13",
@@ -1561,7 +1920,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "speed-reco-max"
+    "glyph": "speed-reco-max",
+    "variants": []
   },
   {
     "code": "E14",
@@ -1574,7 +1934,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "speed-reco-max-end"
+    "glyph": "speed-reco-max-end",
+    "variants": []
   },
   {
     "code": "E15",
@@ -1587,7 +1948,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "merge"
+    "glyph": "merge",
+    "variants": []
   },
   {
     "code": "E16",
@@ -1600,7 +1962,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "one-way"
+    "glyph": "one-way",
+    "variants": []
   },
   {
     "code": "E17",
@@ -1613,7 +1976,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "dead-end"
+    "glyph": "dead-end",
+    "variants": []
   },
   {
     "code": "E18",
@@ -1626,7 +1990,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "passing-place"
+    "glyph": "passing-place",
+    "variants": []
   },
   {
     "code": "E19",
@@ -1639,7 +2004,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "parking-p"
+    "glyph": "parking-p",
+    "variants": []
   },
   {
     "code": "E20",
@@ -1652,7 +2018,8 @@ export const trafficSigns = [
     "trainingNote": "علامة 'المنطقة' (Områdesmärke) تُطبِّق القاعدة المذكورة عليها (مثل حد سرعة أو حد وقوف) على كل الطريق داخل تلك المنطقة حتى ظهور علامة 'نهاية المنطقة' المقابلة، وليس فقط عند نقطة العلامة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "area"
+    "glyph": "area",
+    "variants": []
   },
   {
     "code": "E21",
@@ -1665,7 +2032,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "area-end"
+    "glyph": "area-end",
+    "variants": []
   },
   {
     "code": "E22",
@@ -1678,7 +2046,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "bus"
+    "glyph": "bus",
+    "variants": []
   },
   {
     "code": "E23",
@@ -1691,7 +2060,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "taxi-text"
+    "glyph": "taxi-text",
+    "variants": []
   },
   {
     "code": "E24",
@@ -1704,7 +2074,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "camera"
+    "glyph": "camera",
+    "variants": []
   },
   {
     "code": "E25",
@@ -1717,7 +2088,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "toll"
+    "glyph": "toll",
+    "variants": []
   },
   {
     "code": "E26",
@@ -1730,7 +2102,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "tunnel"
+    "glyph": "tunnel",
+    "variants": []
   },
   {
     "code": "E27",
@@ -1743,7 +2116,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "emergency-bay"
+    "glyph": "emergency-bay",
+    "variants": []
   },
   {
     "code": "E28",
@@ -1756,7 +2130,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "emergency-exit"
+    "glyph": "emergency-exit",
+    "variants": []
   },
   {
     "code": "E29",
@@ -1769,7 +2144,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "evac-route"
+    "glyph": "evac-route",
+    "variants": []
   },
   {
     "code": "E30",
@@ -1782,7 +2158,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "parking-p-special"
+    "glyph": "parking-p-special",
+    "variants": []
   },
   {
     "code": "E31",
@@ -1795,7 +2172,8 @@ export const trafficSigns = [
     "trainingNote": "المنطقة البيئية (Miljözon) تمنع أو تقيّد دخول مركبات معينة حسب معيار الانبعاثات (Euro)، بصرف النظر عن حد السرعة أو قواعد المرور الأخرى في نفس المكان.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "eco-zone"
+    "glyph": "eco-zone",
+    "variants": []
   },
   {
     "code": "E32",
@@ -1808,7 +2186,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "eco-zone-end"
+    "glyph": "eco-zone-end",
+    "variants": []
   },
   {
     "code": "E33",
@@ -1821,7 +2200,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "square-blue-framed",
-    "glyph": "bicycle-street"
+    "glyph": "bicycle-street",
+    "variants": []
   },
   {
     "code": "E34",
@@ -1834,7 +2214,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "square-blue-framed",
-    "glyph": "bicycle-street-end"
+    "glyph": "bicycle-street-end",
+    "variants": []
   },
   {
     "code": "F1-1",
@@ -1847,7 +2228,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "map-junction"
+    "glyph": "map-junction",
+    "variants": []
   },
   {
     "code": "F2",
@@ -1860,7 +2242,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "map-junction-noturn"
+    "glyph": "map-junction-noturn",
+    "variants": []
   },
   {
     "code": "F3",
@@ -1873,7 +2256,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "table-list-junction"
+    "glyph": "table-list-junction",
+    "variants": []
   },
   {
     "code": "F4",
@@ -1886,7 +2270,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "map-junction-exit"
+    "glyph": "map-junction-exit",
+    "variants": []
   },
   {
     "code": "F5",
@@ -1899,7 +2284,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "arrow-signpost"
+    "glyph": "arrow-signpost",
+    "variants": []
   },
   {
     "code": "F6",
@@ -1912,7 +2298,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "table-list"
+    "glyph": "table-list",
+    "variants": []
   },
   {
     "code": "F7",
@@ -1925,7 +2312,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "exit-arrow"
+    "glyph": "exit-arrow",
+    "variants": []
   },
   {
     "code": "F8",
@@ -1938,7 +2326,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-arrows"
+    "glyph": "lane-arrows",
+    "variants": []
   },
   {
     "code": "F9",
@@ -1951,7 +2340,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "signpost-cluster"
+    "glyph": "signpost-cluster",
+    "variants": []
   },
   {
     "code": "F10",
@@ -1964,7 +2354,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "location-pin"
+    "glyph": "location-pin",
+    "variants": []
   },
   {
     "code": "F11",
@@ -1977,7 +2368,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "street-name-plate"
+    "glyph": "street-name-plate",
+    "variants": []
   },
   {
     "code": "F12",
@@ -1990,7 +2382,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "water-wave"
+    "glyph": "water-wave",
+    "variants": []
   },
   {
     "code": "F13",
@@ -2003,7 +2396,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "distance-list"
+    "glyph": "distance-list",
+    "variants": []
   },
   {
     "code": "F14",
@@ -2016,7 +2410,33 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "road-number"
+    "glyph": "road-number",
+    "variants": [
+      {
+        "id": "F14-p1",
+        "label": "رقم طريق عادي (المجموعة 1–499)",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "F14-p2",
+        "label": "شاخصة الوصول إلى طريق أوروبي (E)",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "F14-p3",
+        "label": "رقم طريق ريفي/عام داخل مربع",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "F14-p4",
+        "label": "شاخصة الوصول إلى الطريق المرقم المبين",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      }
+    ]
   },
   {
     "code": "F15",
@@ -2029,7 +2449,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "diversion-arrow"
+    "glyph": "diversion-arrow",
+    "variants": []
   },
   {
     "code": "F16",
@@ -2042,7 +2463,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-increase"
+    "glyph": "lane-increase",
+    "variants": []
   },
   {
     "code": "F17",
@@ -2055,7 +2477,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-decrease"
+    "glyph": "lane-decrease",
+    "variants": []
   },
   {
     "code": "F18",
@@ -2068,7 +2491,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-config"
+    "glyph": "lane-config",
+    "variants": []
   },
   {
     "code": "F19",
@@ -2081,7 +2505,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-merge-accel"
+    "glyph": "lane-merge-accel",
+    "variants": []
   },
   {
     "code": "F20",
@@ -2094,7 +2519,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-merge-separate"
+    "glyph": "lane-merge-separate",
+    "variants": []
   },
   {
     "code": "F21",
@@ -2107,7 +2533,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-config-junction"
+    "glyph": "lane-config-junction",
+    "variants": []
   },
   {
     "code": "F22",
@@ -2120,7 +2547,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "national-emblem"
+    "glyph": "national-emblem",
+    "variants": []
   },
   {
     "code": "F23",
@@ -2133,7 +2561,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "diversion-map"
+    "glyph": "diversion-map",
+    "variants": []
   },
   {
     "code": "F24",
@@ -2146,7 +2575,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "diversion-direction-arrow"
+    "glyph": "diversion-direction-arrow",
+    "variants": []
   },
   {
     "code": "F25",
@@ -2159,7 +2589,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-ends"
+    "glyph": "lane-ends",
+    "variants": []
   },
   {
     "code": "F26",
@@ -2172,7 +2603,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "lane-closed"
+    "glyph": "lane-closed",
+    "variants": []
   },
   {
     "code": "F27",
@@ -2185,7 +2617,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "junction-number-shield"
+    "glyph": "junction-number-shield",
+    "variants": []
   },
   {
     "code": "F28",
@@ -2198,7 +2631,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "parking-garage"
+    "glyph": "parking-garage",
+    "variants": []
   },
   {
     "code": "F29",
@@ -2211,7 +2645,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "park-ride"
+    "glyph": "park-ride",
+    "variants": []
   },
   {
     "code": "F30",
@@ -2224,7 +2659,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "local-loop"
+    "glyph": "local-loop",
+    "variants": []
   },
   {
     "code": "F31",
@@ -2237,7 +2673,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "route-truck"
+    "glyph": "route-truck",
+    "variants": []
   },
   {
     "code": "F31a",
@@ -2250,7 +2687,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "route-truck-long"
+    "glyph": "route-truck-long",
+    "variants": []
   },
   {
     "code": "F32",
@@ -2263,7 +2701,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "hazmat"
+    "glyph": "hazmat",
+    "variants": []
   },
   {
     "code": "F33",
@@ -2276,7 +2715,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "rescue-point"
+    "glyph": "rescue-point",
+    "variants": []
   },
   {
     "code": "F34",
@@ -2289,7 +2729,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-navy",
-    "glyph": "arrow-signpost-ped"
+    "glyph": "arrow-signpost-ped",
+    "variants": []
   },
   {
     "code": "F35",
@@ -2302,7 +2743,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-navy",
-    "glyph": "table-list-ped"
+    "glyph": "table-list-ped",
+    "variants": []
   },
   {
     "code": "F36",
@@ -2315,7 +2757,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-navy",
-    "glyph": "location-pin-ped"
+    "glyph": "location-pin-ped",
+    "variants": []
   },
   {
     "code": "F37",
@@ -2328,7 +2771,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-navy",
-    "glyph": "distance-list-ped"
+    "glyph": "distance-list-ped",
+    "variants": []
   },
   {
     "code": "F38",
@@ -2341,7 +2785,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-navy",
-    "glyph": "bike-route"
+    "glyph": "bike-route",
+    "variants": []
   },
   {
     "code": "G1",
@@ -2354,7 +2799,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "posthorn"
+    "glyph": "posthorn",
+    "variants": []
   },
   {
     "code": "G2",
@@ -2367,7 +2813,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "phone"
+    "glyph": "phone",
+    "variants": []
   },
   {
     "code": "G3",
@@ -2380,7 +2827,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "radio"
+    "glyph": "radio",
+    "variants": []
   },
   {
     "code": "G4",
@@ -2393,7 +2841,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "hospital"
+    "glyph": "hospital",
+    "variants": []
   },
   {
     "code": "G5",
@@ -2406,7 +2855,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "industry"
+    "glyph": "industry",
+    "variants": []
   },
   {
     "code": "G6",
@@ -2419,7 +2869,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "train"
+    "glyph": "train",
+    "variants": []
   },
   {
     "code": "G7",
@@ -2432,7 +2883,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "bus-station"
+    "glyph": "bus-station",
+    "variants": []
   },
   {
     "code": "G8",
@@ -2445,7 +2897,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "airplane"
+    "glyph": "airplane",
+    "variants": []
   },
   {
     "code": "G9",
@@ -2458,7 +2911,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "extinguisher"
+    "glyph": "extinguisher",
+    "variants": []
   },
   {
     "code": "G10",
@@ -2471,7 +2925,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "shop-commercial"
+    "glyph": "shop-commercial",
+    "variants": []
   },
   {
     "code": "G11",
@@ -2484,7 +2939,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "ferry-vehicle"
+    "glyph": "ferry-vehicle",
+    "variants": []
   },
   {
     "code": "G12",
@@ -2497,7 +2953,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "ferry-passenger"
+    "glyph": "ferry-passenger",
+    "variants": []
   },
   {
     "code": "H1",
@@ -2510,7 +2967,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "info-i"
+    "glyph": "info-i",
+    "variants": []
   },
   {
     "code": "H2",
@@ -2523,7 +2981,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "wrench"
+    "glyph": "wrench",
+    "variants": []
   },
   {
     "code": "H3",
@@ -2536,7 +2995,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "fuel"
+    "glyph": "fuel",
+    "variants": []
   },
   {
     "code": "H4",
@@ -2549,7 +3009,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "gas"
+    "glyph": "gas",
+    "variants": []
   },
   {
     "code": "H5",
@@ -2562,7 +3023,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "cutlery-snack"
+    "glyph": "cutlery-snack",
+    "variants": []
   },
   {
     "code": "H6",
@@ -2575,7 +3037,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "cutlery-restaurant"
+    "glyph": "cutlery-restaurant",
+    "variants": []
   },
   {
     "code": "H7",
@@ -2588,7 +3051,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "bed-hotel"
+    "glyph": "bed-hotel",
+    "variants": []
   },
   {
     "code": "H8",
@@ -2601,7 +3065,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "bed-hostel"
+    "glyph": "bed-hostel",
+    "variants": []
   },
   {
     "code": "H9",
@@ -2614,7 +3079,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "cabin-village"
+    "glyph": "cabin-village",
+    "variants": []
   },
   {
     "code": "H10",
@@ -2627,7 +3093,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "cabin-single"
+    "glyph": "cabin-single",
+    "variants": []
   },
   {
     "code": "H11",
@@ -2640,7 +3107,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "tent"
+    "glyph": "tent",
+    "variants": []
   },
   {
     "code": "H12",
@@ -2653,7 +3121,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "caravan"
+    "glyph": "caravan",
+    "variants": []
   },
   {
     "code": "H13",
@@ -2666,7 +3135,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "picnic"
+    "glyph": "picnic",
+    "variants": []
   },
   {
     "code": "H14",
@@ -2679,7 +3149,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "toilet"
+    "glyph": "toilet",
+    "variants": []
   },
   {
     "code": "H15",
@@ -2692,7 +3163,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "swim"
+    "glyph": "swim",
+    "variants": []
   },
   {
     "code": "H16",
@@ -2705,7 +3177,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "trees"
+    "glyph": "trees",
+    "variants": []
   },
   {
     "code": "H17",
@@ -2718,7 +3191,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "hiker"
+    "glyph": "hiker",
+    "variants": []
   },
   {
     "code": "H18",
@@ -2731,7 +3205,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "chairlift"
+    "glyph": "chairlift",
+    "variants": []
   },
   {
     "code": "H19",
@@ -2744,7 +3219,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "towlift"
+    "glyph": "towlift",
+    "variants": []
   },
   {
     "code": "H20",
@@ -2757,7 +3233,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "golf"
+    "glyph": "golf",
+    "variants": []
   },
   {
     "code": "H21",
@@ -2770,7 +3247,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "fish"
+    "glyph": "fish",
+    "variants": []
   },
   {
     "code": "H22",
@@ -2783,7 +3261,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "star"
+    "glyph": "star",
+    "variants": []
   },
   {
     "code": "H23",
@@ -2796,7 +3275,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "info-advance"
+    "glyph": "info-advance",
+    "variants": []
   },
   {
     "code": "H24",
@@ -2809,7 +3289,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "bed-bnb"
+    "glyph": "bed-bnb",
+    "variants": []
   },
   {
     "code": "H25",
@@ -2822,7 +3303,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "shop-farm"
+    "glyph": "shop-farm",
+    "variants": []
   },
   {
     "code": "H26",
@@ -2835,7 +3317,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "craft"
+    "glyph": "craft",
+    "variants": []
   },
   {
     "code": "H27",
@@ -2848,7 +3331,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "ev-plug"
+    "glyph": "ev-plug",
+    "variants": []
   },
   {
     "code": "H28",
@@ -2861,7 +3345,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "caravan-facility"
+    "glyph": "caravan-facility",
+    "variants": []
   },
   {
     "code": "I1",
@@ -2874,7 +3359,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
-    "glyph": "route"
+    "glyph": "route",
+    "variants": []
   },
   {
     "code": "I2",
@@ -2887,7 +3373,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
-    "glyph": "area"
+    "glyph": "area",
+    "variants": []
   },
   {
     "code": "I3",
@@ -2900,7 +3387,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
-    "glyph": "landmark"
+    "glyph": "landmark",
+    "variants": []
   },
   {
     "code": "I4",
@@ -2913,7 +3401,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-brown",
-    "glyph": "heritage"
+    "glyph": "heritage",
+    "variants": []
   },
   {
     "code": "J2",
@@ -2926,7 +3415,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "rect-info-blue",
-    "glyph": "info-generic"
+    "glyph": "info-generic",
+    "variants": []
   },
   {
     "code": "J3",
@@ -2939,7 +3429,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "triangle-warning",
-    "glyph": "high-voltage"
+    "glyph": "high-voltage",
+    "variants": []
   },
   {
     "code": "M1",
@@ -2952,7 +3443,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-center"
+    "glyph": "line-center",
+    "variants": []
   },
   {
     "code": "M2",
@@ -2965,7 +3457,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-edge"
+    "glyph": "line-edge",
+    "variants": []
   },
   {
     "code": "M3",
@@ -2978,7 +3471,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-warning"
+    "glyph": "line-warning",
+    "variants": []
   },
   {
     "code": "M4",
@@ -2991,7 +3485,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-guide"
+    "glyph": "line-guide",
+    "variants": []
   },
   {
     "code": "M5",
@@ -3004,7 +3499,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-bike"
+    "glyph": "line-bike",
+    "variants": []
   },
   {
     "code": "M6",
@@ -3017,7 +3513,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-transit"
+    "glyph": "line-transit",
+    "variants": []
   },
   {
     "code": "M7",
@@ -3030,7 +3527,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-reversible"
+    "glyph": "line-reversible",
+    "variants": []
   },
   {
     "code": "M8",
@@ -3043,7 +3541,8 @@ export const trafficSigns = [
     "trainingNote": "الخط المتصل يمنع تجاوزه أو الانتقال فوقه لتغيير المسار أو التجاوز، بعكس الخط المتقطع الذي يسمح بذلك بحذر.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-solid"
+    "glyph": "line-solid",
+    "variants": []
   },
   {
     "code": "M9",
@@ -3056,7 +3555,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "hatched-area"
+    "glyph": "hatched-area",
+    "variants": []
   },
   {
     "code": "M10",
@@ -3069,7 +3569,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-combo-center-solid"
+    "glyph": "line-combo-center-solid",
+    "variants": []
   },
   {
     "code": "M11",
@@ -3082,7 +3583,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-combo-warning-solid"
+    "glyph": "line-combo-warning-solid",
+    "variants": []
   },
   {
     "code": "M12",
@@ -3095,7 +3597,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "line-combo-center-warning"
+    "glyph": "line-combo-center-warning",
+    "variants": []
   },
   {
     "code": "M13",
@@ -3108,7 +3611,8 @@ export const trafficSigns = [
     "trainingNote": "خط التوقف يحدد بدقة أين يجب أن تتوقف المركبة الأولى فعليًا عند إشارة حمراء أو عند شاخصة B2، ويُفضَّل التوقف عنده تحديدًا لا قبله بمسافة كبيرة ولا بعده.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "stop-line"
+    "glyph": "stop-line",
+    "variants": []
   },
   {
     "code": "M14",
@@ -3121,7 +3625,8 @@ export const trafficSigns = [
     "trainingNote": "خط إفساح الطريق يُستخدم عادة مصحوبًا بشاخصة B1 ليحدد بدقة أين تنتهي مسؤوليتك بإفساح الطريق للحركة المتقاطعة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "yield-line"
+    "glyph": "yield-line",
+    "variants": []
   },
   {
     "code": "M15",
@@ -3134,7 +3639,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "zebra"
+    "glyph": "zebra",
+    "variants": []
   },
   {
     "code": "M16",
@@ -3147,7 +3653,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "bike-crossing-mark"
+    "glyph": "bike-crossing-mark",
+    "variants": []
   },
   {
     "code": "M17",
@@ -3160,7 +3667,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "bump"
+    "glyph": "bump",
+    "variants": []
   },
   {
     "code": "M17a",
@@ -3173,7 +3681,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "bike-box"
+    "glyph": "bike-box",
+    "variants": []
   },
   {
     "code": "M18",
@@ -3186,7 +3695,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "yield-advance-mark"
+    "glyph": "yield-advance-mark",
+    "variants": []
   },
   {
     "code": "M19",
@@ -3199,7 +3709,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "lane-arrows"
+    "glyph": "lane-arrows",
+    "variants": []
   },
   {
     "code": "M20",
@@ -3212,7 +3723,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "lane-change"
+    "glyph": "lane-change",
+    "variants": []
   },
   {
     "code": "M21",
@@ -3225,7 +3737,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "no-stop-mark"
+    "glyph": "no-stop-mark",
+    "variants": []
   },
   {
     "code": "M22",
@@ -3238,7 +3751,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "no-park-mark"
+    "glyph": "no-park-mark",
+    "variants": []
   },
   {
     "code": "M23",
@@ -3251,7 +3765,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "no-stop-park-mark"
+    "glyph": "no-stop-park-mark",
+    "variants": []
   },
   {
     "code": "M24",
@@ -3264,7 +3779,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "parking-spot-mark"
+    "glyph": "parking-spot-mark",
+    "variants": []
   },
   {
     "code": "M25",
@@ -3277,7 +3793,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "arrow-ped-bike"
+    "glyph": "arrow-ped-bike",
+    "variants": []
   },
   {
     "code": "M26",
@@ -3290,7 +3807,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "M27",
@@ -3303,7 +3821,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "pedestrian"
+    "glyph": "pedestrian",
+    "variants": []
   },
   {
     "code": "M28",
@@ -3316,7 +3835,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "bus"
+    "glyph": "bus",
+    "variants": []
   },
   {
     "code": "M29",
@@ -3329,7 +3849,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "speed-number"
+    "glyph": "speed-number",
+    "variants": []
   },
   {
     "code": "M30",
@@ -3342,7 +3863,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "road-number"
+    "glyph": "road-number",
+    "variants": []
   },
   {
     "code": "M31",
@@ -3355,7 +3877,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "purpose-place"
+    "glyph": "purpose-place",
+    "variants": []
   },
   {
     "code": "M32",
@@ -3368,7 +3891,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "stop-text"
+    "glyph": "stop-text",
+    "variants": []
   },
   {
     "code": "M33",
@@ -3381,7 +3905,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "wheelchair"
+    "glyph": "wheelchair",
+    "variants": []
   },
   {
     "code": "M34",
@@ -3394,7 +3919,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "roadmark",
-    "glyph": "info-i"
+    "glyph": "info-i",
+    "variants": []
   },
   {
     "code": "S1",
@@ -3407,7 +3933,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "truck"
+    "glyph": "truck",
+    "variants": []
   },
   {
     "code": "S2",
@@ -3420,7 +3947,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "truck-trailer"
+    "glyph": "truck-trailer",
+    "variants": []
   },
   {
     "code": "S3",
@@ -3433,7 +3961,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "car"
+    "glyph": "car",
+    "variants": []
   },
   {
     "code": "S4",
@@ -3446,7 +3975,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "car-trailer"
+    "glyph": "car-trailer",
+    "variants": []
   },
   {
     "code": "S5",
@@ -3459,7 +3989,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "bus"
+    "glyph": "bus",
+    "variants": []
   },
   {
     "code": "S6",
@@ -3472,7 +4003,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "tractor"
+    "glyph": "tractor",
+    "variants": []
   },
   {
     "code": "S7",
@@ -3485,7 +4017,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "motorcycle"
+    "glyph": "motorcycle",
+    "variants": []
   },
   {
     "code": "S8",
@@ -3498,7 +4031,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "bicycle"
+    "glyph": "bicycle",
+    "variants": []
   },
   {
     "code": "S9",
@@ -3511,7 +4045,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "trailer"
+    "glyph": "trailer",
+    "variants": []
   },
   {
     "code": "S10",
@@ -3524,7 +4059,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "pedestrian"
+    "glyph": "pedestrian",
+    "variants": []
   },
   {
     "code": "S11",
@@ -3537,7 +4073,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "wheelchair"
+    "glyph": "wheelchair",
+    "variants": []
   },
   {
     "code": "S12",
@@ -3550,7 +4087,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "car-class2"
+    "glyph": "car-class2",
+    "variants": []
   },
   {
     "code": "S13",
@@ -3563,7 +4101,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "symbol-plate",
-    "glyph": "ferry"
+    "glyph": "ferry",
+    "variants": []
   },
   {
     "code": "SIG1",
@@ -3576,7 +4115,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-red"
+    "glyph": "dot-red",
+    "variants": []
   },
   {
     "code": "SIG2",
@@ -3589,7 +4129,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-red-yellow"
+    "glyph": "dot-red-yellow",
+    "variants": []
   },
   {
     "code": "SIG3",
@@ -3602,7 +4143,8 @@ export const trafficSigns = [
     "trainingNote": "الضوء الأخضر لا يعني أولوية مطلقة تلقائيًا؛ يجب التأكد من خلو التقاطع من مشاة أو مركبات لم تُخلِ المكان بعد قبل المتابعة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-green"
+    "glyph": "dot-green",
+    "variants": []
   },
   {
     "code": "SIG4",
@@ -3615,7 +4157,8 @@ export const trafficSigns = [
     "trainingNote": "الضوء الأصفر الثابت (غير الوامض) يعني الاستعداد للتوقف قبل خط التوقف إن أمكن ذلك بأمان، وليس إشارة للتسريع لعبور التقاطع.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-yellow"
+    "glyph": "dot-yellow",
+    "variants": []
   },
   {
     "code": "SIG5",
@@ -3628,7 +4171,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-yellow-blink"
+    "glyph": "dot-yellow-blink",
+    "variants": []
   },
   {
     "code": "SIG6",
@@ -3641,7 +4185,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "sound-red"
+    "glyph": "sound-red",
+    "variants": []
   },
   {
     "code": "SIG7",
@@ -3654,7 +4199,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "sound-green"
+    "glyph": "sound-green",
+    "variants": []
   },
   {
     "code": "SIG8",
@@ -3667,7 +4213,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "s-symbol"
+    "glyph": "s-symbol",
+    "variants": []
   },
   {
     "code": "SIG9",
@@ -3680,7 +4227,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "s-symbol-line"
+    "glyph": "s-symbol-line",
+    "variants": []
   },
   {
     "code": "SIG10",
@@ -3693,7 +4241,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "vertical-line"
+    "glyph": "vertical-line",
+    "variants": []
   },
   {
     "code": "SIG11",
@@ -3706,7 +4255,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "horizontal-line"
+    "glyph": "horizontal-line",
+    "variants": []
   },
   {
     "code": "SIG12",
@@ -3719,7 +4269,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "cross-x"
+    "glyph": "cross-x",
+    "variants": []
   },
   {
     "code": "SIG13",
@@ -3732,7 +4283,8 @@ export const trafficSigns = [
     "trainingNote": "الأسهم الصفراء في نظام إشارات المسارات تعني أن هذا المسار مفتوح لكن بحركة محدودة أو استثنائية (كإعادة توجيه)، بخلاف السهم الأخضر الذي يعني سريان طبيعي كامل.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "arrow-yellow"
+    "glyph": "arrow-yellow",
+    "variants": []
   },
   {
     "code": "SIG14",
@@ -3745,7 +4297,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "arrow-green"
+    "glyph": "arrow-green",
+    "variants": []
   },
   {
     "code": "SIG16",
@@ -3758,7 +4311,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-red-blink"
+    "glyph": "dot-red-blink",
+    "variants": []
   },
   {
     "code": "SIG17",
@@ -3771,7 +4325,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-red-steady"
+    "glyph": "dot-red-steady",
+    "variants": []
   },
   {
     "code": "SIG18",
@@ -3784,7 +4339,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "signal",
-    "glyph": "dot-yellow-blink-caution"
+    "glyph": "dot-yellow-blink-caution",
+    "variants": []
   },
   {
     "code": "T1",
@@ -3797,7 +4353,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text-length"
+    "glyph": "text-length",
+    "variants": []
   },
   {
     "code": "T2",
@@ -3810,7 +4367,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text-distance"
+    "glyph": "text-distance",
+    "variants": []
   },
   {
     "code": "T3",
@@ -3823,7 +4381,8 @@ export const trafficSigns = [
     "trainingNote": "عند رؤية شاخصة B1 أو B2 مصحوبة بهذه اللوحة، فالمعنى أن واجب إفساح الطريق أو التوقف الإجباري يبدأ عند المسافة المذكورة أمامك، وليس عند موضع العلامة نفسها.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text-distance-stop"
+    "glyph": "text-distance-stop",
+    "variants": []
   },
   {
     "code": "T4",
@@ -3836,7 +4395,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "width"
+    "glyph": "width",
+    "variants": []
   },
   {
     "code": "T5",
@@ -3849,7 +4409,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "weight"
+    "glyph": "weight",
+    "variants": []
   },
   {
     "code": "T6",
@@ -3862,7 +4423,8 @@ export const trafficSigns = [
     "trainingNote": "اللوحة الزمنية تحدّد الفترة (أيام/ساعات) التي تسري خلالها الشاخصة الرئيسية فقط؛ خارج هذه الفترة قد لا يسري الحكم إطلاقًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "clock-general"
+    "glyph": "clock-general",
+    "variants": []
   },
   {
     "code": "T7",
@@ -3875,7 +4437,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "wheelchair"
+    "glyph": "wheelchair",
+    "variants": []
   },
   {
     "code": "T8",
@@ -3888,7 +4451,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "generic"
+    "glyph": "generic",
+    "variants": []
   },
   {
     "code": "T9",
@@ -3901,7 +4465,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "eye"
+    "glyph": "eye",
+    "variants": []
   },
   {
     "code": "T10",
@@ -3914,7 +4479,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "ear"
+    "glyph": "ear",
+    "variants": []
   },
   {
     "code": "T11",
@@ -3927,7 +4493,39 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "arrow-extent"
+    "glyph": "arrow-extent",
+    "variants": [
+      {
+        "id": "T11-p1",
+        "label": "يسري مفعولها على جهتي الشاخصة أفقيًا",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "T11-p2",
+        "label": "يسري مفعولها على جهتي الشاخصة عموديًا",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "T11-p3",
+        "label": "يسري مفعولها إلى الشاخصة (سهم لأسفل: ينتهي)",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "T11-p4",
+        "label": "يسري مفعولها إلى جهة اليسار",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      },
+      {
+        "id": "T11-p5",
+        "label": "يسري مفعولها إلى جهة اليمين",
+        "resolved": false,
+        "note": "موثّق نصيًا من sweden4.com، يحتاج رسمًا رسميًا مستقلًا لم يُنجز بعد بدقة كافية."
+      }
+    ]
   },
   {
     "code": "T12",
@@ -3940,7 +4538,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "arrow-direction"
+    "glyph": "arrow-direction",
+    "variants": []
   },
   {
     "code": "T13",
@@ -3953,7 +4552,8 @@ export const trafficSigns = [
     "trainingNote": "'إفساح طريق متعدد الاتجاهات' تُستخدم عادة مع B1 في تقاطعات من نوع 'كل الاتجاهات عليها واجب إفساح الطريق' — يجب حينها تطبيق قاعدة الأولوية العامة (كاليمين) بين المركبات المتزامنة.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "yield-multi"
+    "glyph": "yield-multi",
+    "variants": []
   },
   {
     "code": "T14",
@@ -3966,7 +4566,8 @@ export const trafficSigns = [
     "trainingNote": "مثل T13 لكن مع B2 — توقف إجباري لجميع الاتجاهات عند هذا التقاطع تحديدًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "stop-multi"
+    "glyph": "stop-multi",
+    "variants": []
   },
   {
     "code": "T15",
@@ -3979,7 +4580,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "road-continue"
+    "glyph": "road-continue",
+    "variants": []
   },
   {
     "code": "T16",
@@ -3992,7 +4594,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "coin"
+    "glyph": "coin",
+    "variants": []
   },
   {
     "code": "T17",
@@ -4005,7 +4608,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "disc"
+    "glyph": "disc",
+    "variants": []
   },
   {
     "code": "T18",
@@ -4018,7 +4622,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "clock-parking"
+    "glyph": "clock-parking",
+    "variants": []
   },
   {
     "code": "T19",
@@ -4031,7 +4636,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "resident"
+    "glyph": "resident",
+    "variants": []
   },
   {
     "code": "T20",
@@ -4044,7 +4650,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "ticket"
+    "glyph": "ticket",
+    "variants": []
   },
   {
     "code": "T21",
@@ -4057,7 +4664,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "parking-angle"
+    "glyph": "parking-angle",
+    "variants": []
   },
   {
     "code": "T22",
@@ -4070,7 +4678,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "text"
+    "glyph": "text",
+    "variants": []
   },
   {
     "code": "T23",
@@ -4083,7 +4692,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "tunnel-cat"
+    "glyph": "tunnel-cat",
+    "variants": []
   },
   {
     "code": "T24",
@@ -4096,7 +4706,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "ev-plug"
+    "glyph": "ev-plug",
+    "variants": []
   },
   {
     "code": "T25",
@@ -4109,7 +4720,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "plaque-white",
-    "glyph": "clock24"
+    "glyph": "clock24",
+    "variants": []
   },
   {
     "code": "P1",
@@ -4122,7 +4734,8 @@ export const trafficSigns = [
     "trainingNote": "إشارات الشرطة اليدوية لها أولوية على أي إشارة ضوئية أو شاخصة أخرى في نفس الموقع — يجب اتّباعها فورًا حتى لو تعارضت ظاهريًا مع لون الإشارة الضوئية.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-stop"
+    "glyph": "hand-stop",
+    "variants": []
   },
   {
     "code": "P2",
@@ -4135,7 +4748,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-stop-side"
+    "glyph": "hand-stop-side",
+    "variants": []
   },
   {
     "code": "P3",
@@ -4148,7 +4762,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-stop-torch"
+    "glyph": "hand-stop-torch",
+    "variants": []
   },
   {
     "code": "P4",
@@ -4161,7 +4776,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-forward"
+    "glyph": "hand-forward",
+    "variants": []
   },
   {
     "code": "P5",
@@ -4174,7 +4790,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-slow"
+    "glyph": "hand-slow",
+    "variants": []
   },
   {
     "code": "P6",
@@ -4187,7 +4804,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-control"
+    "glyph": "hand-control",
+    "variants": []
   },
   {
     "code": "P7",
@@ -4200,7 +4818,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-control-advance"
+    "glyph": "hand-control-advance",
+    "variants": []
   },
   {
     "code": "P8",
@@ -4213,7 +4832,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-slow-behind"
+    "glyph": "hand-slow-behind",
+    "variants": []
   },
   {
     "code": "P9",
@@ -4226,7 +4846,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-slow-oncoming"
+    "glyph": "hand-slow-oncoming",
+    "variants": []
   },
   {
     "code": "P10",
@@ -4239,7 +4860,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-follow"
+    "glyph": "hand-follow",
+    "variants": []
   },
   {
     "code": "P11",
@@ -4252,7 +4874,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-pullover"
+    "glyph": "hand-pullover",
+    "variants": []
   },
   {
     "code": "V1",
@@ -4265,7 +4888,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-stop-vest"
+    "glyph": "hand-stop-vest",
+    "variants": []
   },
   {
     "code": "V2",
@@ -4278,7 +4902,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "hand-forward-vest"
+    "glyph": "hand-forward-vest",
+    "variants": []
   },
   {
     "code": "V3",
@@ -4291,7 +4916,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "gesture",
-    "glyph": "badge"
+    "glyph": "badge",
+    "variants": []
   },
   {
     "code": "X1",
@@ -4304,7 +4930,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "arrow-forced"
+    "glyph": "arrow-forced",
+    "variants": []
   },
   {
     "code": "X2",
@@ -4317,7 +4944,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "screen-obstacle"
+    "glyph": "screen-obstacle",
+    "variants": []
   },
   {
     "code": "X3",
@@ -4330,7 +4958,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "screen-side-obstacle"
+    "glyph": "screen-side-obstacle",
+    "variants": []
   },
   {
     "code": "X4",
@@ -4343,7 +4972,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "screen-exit"
+    "glyph": "screen-exit",
+    "variants": []
   },
   {
     "code": "X5",
@@ -4356,7 +4986,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "arrow-yellow"
+    "glyph": "arrow-yellow",
+    "variants": []
   },
   {
     "code": "X6",
@@ -4369,7 +5000,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "exclaim"
+    "glyph": "exclaim",
+    "variants": []
   },
   {
     "code": "X7",
@@ -4382,7 +5014,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "barrier-road"
+    "glyph": "barrier-road",
+    "variants": []
   },
   {
     "code": "X8",
@@ -4395,7 +5028,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "closed"
+    "glyph": "closed",
+    "variants": []
   },
   {
     "code": "X9",
@@ -4408,7 +5042,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "roundabout-arrow"
+    "glyph": "roundabout-arrow",
+    "variants": []
   },
   {
     "code": "X10",
@@ -4421,7 +5056,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "post-marker"
+    "glyph": "post-marker",
+    "variants": []
   },
   {
     "code": "Y1",
@@ -4434,7 +5070,8 @@ export const trafficSigns = [
     "trainingNote": "الضوء الأحمر الوامض عند تقاطع السكة الحديد يُلزم بالتوقف الفعلي الكامل، تمامًا كإشارة B2، ولا يجوز عبور التقاطع أثناء وميضه مهما بدا القطار بعيدًا.",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "dot-red-blink"
+    "glyph": "dot-red-blink",
+    "variants": []
   },
   {
     "code": "Y2",
@@ -4447,7 +5084,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "sound-red"
+    "glyph": "sound-red",
+    "variants": []
   },
   {
     "code": "Y3",
@@ -4460,7 +5098,8 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "barrier-railway"
+    "glyph": "barrier-railway",
+    "variants": []
   },
   {
     "code": "Y4",
@@ -4473,6 +5112,7 @@ export const trafficSigns = [
     "trainingNote": "",
     "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
     "shape": "device",
-    "glyph": "screen-railway"
+    "glyph": "screen-railway",
+    "variants": []
   }
 ];
