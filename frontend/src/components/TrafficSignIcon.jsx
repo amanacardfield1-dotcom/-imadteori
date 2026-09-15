@@ -611,6 +611,12 @@ function glyphContent(glyph, shape) {
         <line x1="-14" y1="14" x2="14" y2="-14" stroke={RED} strokeWidth="4.5" />
       </g>
     ),
+    'no-turn-left': (
+      <g>
+        <ArrowIcon c={onColor} rot={-90} />
+        <line x1="-14" y1="14" x2="14" y2="-14" stroke={RED} strokeWidth="4.5" />
+      </g>
+    ),
     'no-uturn': (
       <g>
         <path d="M -6,10 L -6,-4 a8,8 0 1 1 16,0 M 10,-4 L 10,-10 M 10,-4 L 4,-4" fill="none" stroke={onColor} strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />
