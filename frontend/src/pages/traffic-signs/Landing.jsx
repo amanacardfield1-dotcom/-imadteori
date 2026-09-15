@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import TrafficSignIcon from '../../components/TrafficSignIcon';
+import TrafficSignVisual from '../../components/TrafficSignVisual';
 import { SIGN_GROUPS, IMPORTANT_CODES, getGroupSigns } from './data';
 
 export default function TrafficSignsLanding() {
@@ -56,7 +56,7 @@ export default function TrafficSignsLanding() {
             <span className="sign-group-title">{group.label}</span>
             <span className="sign-group-examples">
               {group.examples.map((sign) => (
-                <TrafficSignIcon key={sign.code} shape={sign.shape} glyph={sign.glyph} size={34} />
+                <TrafficSignVisual key={sign.code} sign={sign} size={34} />
               ))}
             </span>
             <span className="sign-group-meta">{group.count} علامة</span>

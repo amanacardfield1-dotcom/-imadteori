@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
-import TrafficSignIcon from '../../components/TrafficSignIcon';
+import TrafficSignVisual from '../../components/TrafficSignVisual';
 import { CATEGORY_CHIPS, getGroup, getGroupSigns, matchesQuery } from './data';
 
 function SignCard({ sign, groupId }) {
@@ -8,7 +8,7 @@ function SignCard({ sign, groupId }) {
   return (
     <button className="sign-card" onClick={() => navigate(`/traffic-signs/${groupId}/${sign.code}`)}>
       <span className="sign-card-visual">
-        <TrafficSignIcon shape={sign.shape} glyph={sign.glyph} size={64} />
+        <TrafficSignVisual sign={sign} size={64} />
       </span>
       <span className="sign-card-code">{sign.code}</span>
       <span className="sign-card-ar">{sign.arabicName}</span>

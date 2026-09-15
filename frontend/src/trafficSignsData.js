@@ -1,6 +1,6 @@
 // ملف مُولَّد: مرجع شامل لكل الشاخصات المرورية السويدية الرسمية (344 رمزًا)
-// المصدر: Transportstyrelsen – Vägmärken، و Vägmärkesförordning (2007:90).
-// كل حقل 'officialMeaning' وصف رسمي للمعنى القانوني/الوظيفي للشاخصة.
+// المصدر: Sweden4.com (?p=70940) كفهرس حصري لقسم الشاخصات، مع صور مستحضرة من الصفحات التي يربط إليها.
+// كل حقل 'officialMeaning' وصف عربي تعليمي لمعنى الشاخصة.
 // حقل 'trainingNote' (عند وجوده فقط) شرح تعليمي إضافي لفارق أو قاعدة قد تُخلط بغيرها.
 export const trafficSigns = [
   {
@@ -12,7 +12,7 @@ export const trafficSigns = [
     "arabicName": "منعطف خطر (يسار/يمين)",
     "officialMeaning": "تبين الشاخصة وجود منعطف خطير واتجاه المنعطف. خفف السرعة. لا يحق لك الوقوف عندما تكون الرؤية محجوبة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "curve-left",
     "variants": [
@@ -32,7 +32,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A1-1.jpg",
+    "imageAlt": "منعطف خطر (يسار/يمين)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A2",
@@ -43,7 +47,7 @@ export const trafficSigns = [
     "arabicName": "منعطفات خطرة متتابعة",
     "officialMeaning": "تحذير من منعطفات متتالية خطرة، أولها إلى اليسار أو إلى اليمين بحسب الشاخصة — قُد بحذر.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "curve-double",
     "variants": [
@@ -63,7 +67,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A2-1.jpg",
+    "imageAlt": "منعطفات خطرة متتابعة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A3",
@@ -74,10 +82,14 @@ export const trafficSigns = [
     "arabicName": "منحدر هابط حاد وخطر",
     "officialMeaning": "تحذير من منحدر حاد وخطر، مسافة الفرملة تصبح أطول. يدل الرقم على النسبة المئوية لانحدار الطريق، مثال: ميلان 10م لكل مسافة أفقية 100م.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "slope-down",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A3.jpg",
+    "imageAlt": "منحدر هابط حاد وخطر",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A4",
@@ -88,10 +100,14 @@ export const trafficSigns = [
     "arabicName": "صعود حاد وخطر",
     "officialMeaning": "تحذير من صعود حاد وخطر، مسافة الفرملة تصبح أطول. يدل الرقم على النسبة المئوية لانحدار الطريق، مثال: ميلان 10م لكل مسافة أفقية 100م.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "slope-up",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A4.jpg",
+    "imageAlt": "صعود حاد وخطر",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A5",
@@ -102,7 +118,7 @@ export const trafficSigns = [
     "arabicName": "الطريق يضيق (من الجانبين/جهة واحدة)",
     "officialMeaning": "تحذير أن الطريق أو مسار القيادة سوف يضيق من الجانبين، أو من جهة اليسار فقط، أو من جهة اليمين فقط بحسب الشاخصة. التجاوز غير مناسب في هذه المنطقة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "narrow-road",
     "variants": [
@@ -129,7 +145,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A5.jpg",
+    "imageAlt": "الطريق يضيق (من الجانبين/جهة واحدة)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A6",
@@ -140,10 +160,14 @@ export const trafficSigns = [
     "arabicName": "جسر متحرك",
     "officialMeaning": "تحذير من جسر متحرك — يجب الانتباه للإشارة الضوئية لغرض الوقوف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "bridge",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A6.jpg",
+    "imageAlt": "جسر متحرك",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A7",
@@ -154,10 +178,14 @@ export const trafficSigns = [
     "arabicName": "رصيف بحري",
     "officialMeaning": "تحذير أن الطريق ينتهي برصيف ميناء أو نهر — أمامك رصيف بحري أو حافة شاطئ أو مرفأ لسفن العبور. تبين الشاخصة أن الطريق باتجاه الماء.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "quay",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A7.jpg",
+    "imageAlt": "رصيف بحري",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A8",
@@ -168,10 +196,14 @@ export const trafficSigns = [
     "arabicName": "طريق غير مستوٍ",
     "officialMeaning": "تحذير من طريق غير مستوٍ (متموّج، فيه مطبات) — يجب الانتباه ومن المناسب القيادة ببطء. تبين الشاخصة وجود مسافات غير مستوية أو أضرار في الطريق تجعل القيادة بالسرعة المعتادة غير مناسبة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "uneven-road",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A8.jpg",
+    "imageAlt": "طريق غير مستوٍ",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A9",
@@ -182,10 +214,14 @@ export const trafficSigns = [
     "arabicName": "مطبات السرعة",
     "officialMeaning": "تحذير من مطبات السرعة — خفف السرعة. تبين الشاخصة أن هناك مطبات أو حفرات أُنشئت بهدف تخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "bump",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A9-1.jpg",
+    "imageAlt": "مطبات السرعة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A10",
@@ -196,10 +232,14 @@ export const trafficSigns = [
     "arabicName": "طريق زلق",
     "officialMeaning": "تحذير من طريق زلق لأسباب أخرى غير الثلج والجليد. لا تُستعمل الشاخصة للتحذير من خطر الانزلاق بسبب الثلج أو الجليد إلا في حالة وجود أسباب خاصة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "skid",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A10.jpg",
+    "imageAlt": "طريق زلق",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A11",
@@ -210,10 +250,14 @@ export const trafficSigns = [
     "arabicName": "تطاير الأحجار والحصى",
     "officialMeaning": "تحذير من خطر تطاير الأحجار والحصى. لا تُستعمل الشاخصة في الطرق المفروشة بالحصى التي يكون فيها تطاير الحصى أمرًا معتادًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "gravel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A11.jpg",
+    "imageAlt": "تطاير الأحجار والحصى",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A12",
@@ -224,7 +268,7 @@ export const trafficSigns = [
     "arabicName": "تساقط أحجار (يمين/يسار)",
     "officialMeaning": "تحذير من تساقط الأحجار من جهة اليمين أو من جهة اليسار بحسب الشاخصة — وجود خطر تساقط الأحجار أو وجود أحجار على الطريق بسبب تساقطها.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "rockfall",
     "variants": [
@@ -244,7 +288,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A12-1.jpg",
+    "imageAlt": "تساقط أحجار (يمين/يسار)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A13",
@@ -255,10 +303,14 @@ export const trafficSigns = [
     "arabicName": "معبر مشاة",
     "officialMeaning": "تحذير من معبر مشاة — الانتباه والاستعداد للوقوف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "pedestrian-crossing",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A13-1.jpg",
+    "imageAlt": "معبر مشاة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A14",
@@ -269,10 +321,14 @@ export const trafficSigns = [
     "arabicName": "مشاة",
     "officialMeaning": "تحذير من وجود مشاة — احذر أمامك مشاة، انتبه وخفف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "pedestrian",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A14.jpg",
+    "imageAlt": "مشاة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A15",
@@ -283,10 +339,11 @@ export const trafficSigns = [
     "arabicName": "مرور أطفال",
     "officialMeaning": "تحذير من مرور أطفال — يجب الانتباه. تبين الشاخصة أن الأطفال يعبرون هذا الطريق غالبًا أو يتواجدون فيه أو بقربه.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "children",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A16",
@@ -297,10 +354,14 @@ export const trafficSigns = [
     "arabicName": "دراجات هوائية ودراجات خفيفة (موبيد)",
     "officialMeaning": "تحذير من الدراجات الهوائية والدراجات الخفيفة (الموبيدات) — تتقاطع مع الطريق. تبين الشاخصة أن الطريق يقطعه أو يمر فيه غالبًا دراجات هوائية أو دراجات بخارية خفيفة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A16-338x300.jpg",
+    "imageAlt": "دراجات هوائية ودراجات خفيفة (موبيد)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A17",
@@ -311,10 +372,14 @@ export const trafficSigns = [
     "arabicName": "متزلجون (زحافات)",
     "officialMeaning": "تحذير من مرور مستخدمي الزحافات (المتزلجين) — مسار التزلج يتقاطع مع الطريق، يجب الانتباه. تبين الشاخصة أن المكان يوجد فيه متزلجون يعبرون الطريق غالبًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "skier",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A17-338x300.jpg",
+    "imageAlt": "متزلجون (زحافات)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A18",
@@ -325,10 +390,14 @@ export const trafficSigns = [
     "arabicName": "فرسان (خيّالة)",
     "officialMeaning": "تحذير من مرور فرسان (خيّالة) — تتقاطع مسارات الخيّالة مع الطريق، يجب الانتباه.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "horse-rider",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A18-338x300.jpg",
+    "imageAlt": "فرسان (خيّالة)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A19",
@@ -339,10 +408,14 @@ export const trafficSigns = [
     "arabicName": "حيوانات",
     "officialMeaning": "تحذير من مرور حيوانات — تحذر الشاخصة من وجود حيوانات على امتداد جانبي الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "animal",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a19.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A19-1-338x300.png",
+    "imageAlt": "حيوانات",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A20",
@@ -353,10 +426,14 @@ export const trafficSigns = [
     "arabicName": "أعمال طريق",
     "officialMeaning": "تحذير من أعمال على الطريق — تحذر الشاخصة من وجود أشغال على الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "roadwork",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a20.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A20-1-338x300.png",
+    "imageAlt": "أعمال طريق",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A21",
@@ -367,10 +444,14 @@ export const trafficSigns = [
     "arabicName": "نهاية منطقة تصليح الطرق",
     "officialMeaning": "تبين الشاخصة نهاية منطقة تصليح الطرق. لا توضع الشاخصة إذا كان المكان الذي تنتهي فيه أعمال الطريق واضحًا بذاته.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "roadwork-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a21.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A21-1.png",
+    "imageAlt": "نهاية منطقة تصليح الطرق",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A22",
@@ -381,10 +462,14 @@ export const trafficSigns = [
     "arabicName": "إشارة ضوئية ثلاثية",
     "officialMeaning": "تحذير من إشارة ضوئية ثلاثية أمامك — الاستعداد للوقوف بعد مسافة. تبين الشاخصة أن الطريق أمامك فيه إشارة ضوئية.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "traffic-light",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a22.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A22-1-338x300.png",
+    "imageAlt": "إشارة ضوئية ثلاثية",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A23",
@@ -395,10 +480,14 @@ export const trafficSigns = [
     "arabicName": "طائرات منخفضة",
     "officialMeaning": "تحذير من طائرات تحلق على ارتفاع منخفض — الانتباه لصوت الطائرة، وقد توجد إشارة ضوئية مصاحبة أحيانًا.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "airplane",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a23.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A23-2-338x300.png",
+    "imageAlt": "طائرات منخفضة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A24",
@@ -409,7 +498,7 @@ export const trafficSigns = [
     "arabicName": "رياح جانبية قوية (يمين/يسار)",
     "officialMeaning": "تحذير من رياح جانبية قوية تهب من جهة اليمين أو من جهة اليسار بحسب الشاخصة. تبين الشاخصة منطقة يوجد فيها غالبًا رياح جانبية قوية على امتداد الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "crosswind",
     "variants": [
@@ -429,7 +518,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a24.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A24-1-338x300.png",
+    "imageAlt": "رياح جانبية قوية (يمين/يسار)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A25",
@@ -440,10 +533,14 @@ export const trafficSigns = [
     "arabicName": "حركة السير المقابلة",
     "officialMeaning": "تحذير من حركة السير المقابلة باتجاهك: أنت وحركة المرور القادمة من الجهة المعاكسة على نفس الطريق بدون حاجز يفصل بين الاتجاهين. تبين الشاخصة أن مضمار القيادة ذا الاتجاه الواحد سيصبح طريقًا بكلا الاتجاهين.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "oncoming-traffic",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a25.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A25-1-338x300.png",
+    "imageAlt": "حركة السير المقابلة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A26",
@@ -454,10 +551,14 @@ export const trafficSigns = [
     "arabicName": "نفق",
     "officialMeaning": "تحذير من نفق أمامك — ممنوع الوقوف داخل النفق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "tunnel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a26.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A26-1-338x300.png",
+    "imageAlt": "نفق",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A27",
@@ -468,10 +569,14 @@ export const trafficSigns = [
     "arabicName": "حافة طريق هشة أو مرتفعة",
     "officialMeaning": "تحذير من هشاشة حافة الطريق أو ارتفاع جانب الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "weak-edge",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a27.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A27-1-338x300.png",
+    "imageAlt": "حافة طريق هشة أو مرتفعة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A28",
@@ -482,10 +587,14 @@ export const trafficSigns = [
     "arabicName": "تقاطع طرق",
     "officialMeaning": "تحذير من تقاطع طريق — الرؤية محجوبة، عليك الانتباه. تبين الشاخصة أن قاعدة الأولوية لليمين تُطبَّق في هذا التقاطع.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "crossroads",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a28.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A28-1-338x300.png",
+    "imageAlt": "تقاطع طرق",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A29",
@@ -496,7 +605,7 @@ export const trafficSigns = [
     "arabicName": "تقاطع طريق رئيسي مع فرعي",
     "officialMeaning": "تحذير من تقاطع طريق رئيسي مع طريق فرعية من جهة اليمين أو اليسار أو من الجهتين معًا. يجب على المركبات القادمة من الطريق الفرعي إعطاء حق الأولوية أو التوقف.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "crossroads-priority",
     "variants": [
@@ -523,7 +632,11 @@ export const trafficSigns = [
         "mirror": true,
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a29.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A29-1-338x300.png",
+    "imageAlt": "تقاطع طريق رئيسي مع فرعي",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A30",
@@ -534,10 +647,14 @@ export const trafficSigns = [
     "arabicName": "دوار (منطقة دورانية)",
     "officialMeaning": "تحذير من دوار أمامك — إعطاء الأولوية لمن هو داخل الدوار، خفف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "roundabout",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a30.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A30-1-338x300.png",
+    "imageAlt": "دوار (منطقة دورانية)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A31",
@@ -548,10 +665,14 @@ export const trafficSigns = [
     "arabicName": "مركبات بطيئة",
     "officialMeaning": "تحذير من مرور مركبات بطيئة الحركة — الطريق غالبًا يوجد فيه مركبات بطيئة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "slow-vehicle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a31.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A31-1-338x300.png",
+    "imageAlt": "مركبات بطيئة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A32",
@@ -562,10 +683,14 @@ export const trafficSigns = [
     "arabicName": "مركبات تجرها حيوانات",
     "officialMeaning": "تحذير من مركبات تجرها الحيوانات على الطريق.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "horse-cart",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a32.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A32-1-338x300.png",
+    "imageAlt": "مركبات تجرها حيوانات",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A33",
@@ -576,10 +701,14 @@ export const trafficSigns = [
     "arabicName": "مركبات الطرق الوعرة",
     "officialMeaning": "تحذير من مرور المركبات التي تسير على الطرق الوعرة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "snowmobile",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a33.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A33-1-338x300.png",
+    "imageAlt": "مركبات الطرق الوعرة",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A34",
@@ -590,10 +719,14 @@ export const trafficSigns = [
     "arabicName": "طابور سيارات",
     "officialMeaning": "تحذير من وجود طابور للسيارات على امتداد الطريق — الانتباه وتخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "queue",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a34.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A34-1-338x300.png",
+    "imageAlt": "طابور سيارات",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A35",
@@ -604,10 +737,14 @@ export const trafficSigns = [
     "arabicName": "تقاطع سكة حديد بحواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة حديد ذات بوابة مع حواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "rail-gated",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a35.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A35-1-338x300.png",
+    "imageAlt": "تقاطع سكة حديد بحواجز",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A36",
@@ -618,10 +755,14 @@ export const trafficSigns = [
     "arabicName": "تقاطع سكة حديد بلا حواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة حديد من دون حواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "rail-ungated",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a36.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A36-1-338x300.png",
+    "imageAlt": "تقاطع سكة حديد بلا حواجز",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A37",
@@ -632,10 +773,14 @@ export const trafficSigns = [
     "arabicName": "تقاطع ترامواي بلا حواجز",
     "officialMeaning": "تحذير من تقاطع مع سكة ترامواي (قطار الترام) غير مجهّز بحواجز.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "tram-ungated",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a37.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A37-1-338x300.png",
+    "imageAlt": "تقاطع ترامواي بلا حواجز",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A38",
@@ -646,7 +791,7 @@ export const trafficSigns = [
     "arabicName": "المسافة إلى تقاطع سكة حديد",
     "officialMeaning": "تبين هذه الشاخصات المسافة المتبقية إلى تقاطع سكة الحديد عبر عدد الخطوط (لا تشير إلى عدد الأمتار مباشرة). الشاخصة بثلاثة خطوط هي الأبعد (عادة 150م)، وبخطين تبين ثلثي المسافة (عادة 100م)، وبخط واحد تبين الأقرب — ثلث المسافة (عادة 50م). تقل المسافة إلى السكة الحديد كلما قل عدد الخطوط.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "plaque-yellow-plain-tall",
     "glyph": "rail-distance",
     "variants": [
@@ -671,7 +816,11 @@ export const trafficSigns = [
         "glyph": "rail-distance-1",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a38.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A38-1-93x300.png",
+    "imageAlt": "المسافة إلى تقاطع سكة حديد",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A39",
@@ -682,7 +831,7 @@ export const trafficSigns = [
     "arabicName": "علامة الصليب (تقاطع سكة حديد)",
     "officialMeaning": "تشير الشاخصة إلى وجود تقاطع مع سكة حديد أو سكة ترامواي — بخط واحد أو بعدة سكك حديدية بحسب الشاخصة. توضع مباشرة قبل تقاطع السكة الحديد، ولا داعي لوضعها في الطريق الفردي إذا كانت الحركة المرورية فيه قليلة ولا يشكل ذلك خطرًا على السلامة المرورية.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "cross-marker",
     "glyph": "cross-x",
     "variants": [
@@ -700,7 +849,11 @@ export const trafficSigns = [
         "glyph": "cross-x-multi",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/a39.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A39-1-435x300.png",
+    "imageAlt": "علامة الصليب (تقاطع سكة حديد)",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A40",
@@ -711,10 +864,14 @@ export const trafficSigns = [
     "arabicName": "أخطار أخرى",
     "officialMeaning": "تحذير من أخطار مختلفة — تبين الشاخصة وجود خطر من نوع آخر لا يمكن التحذير عنه بواسطة إشارة مرورية أخرى، ويُبيَّن نوع الخطر في شاخصة ملحقة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "exclaim",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a40.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A40-1-338x300.png",
+    "imageAlt": "أخطار أخرى",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "A41",
@@ -725,10 +882,14 @@ export const trafficSigns = [
     "arabicName": "حادث سير",
     "officialMeaning": "تحذير من حادث سير — تحذر الشاخصة من وجود حادث مروري أمامك، الانتباه وتخفيف السرعة.",
     "trainingNote": "",
-    "source": "Sweden4.com (https://sweden4.com/?p=70677) - مرجع بنيوي؛ Transportstyrelsen - Vägmärken / Vägmärkesförordning (2007:90) - تحقق بصري للشكل",
+    "source": "Sweden4.com (https://sweden4.com/?p=70677)",
     "shape": "triangle-warning",
     "glyph": "accident",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/a41.png",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/A41-1-338x300.png",
+    "imageAlt": "حادث سير",
+    "sourceUrl": "https://sweden4.com/?p=70677"
   },
   {
     "code": "B1",
@@ -739,10 +900,14 @@ export const trafficSigns = [
     "arabicName": "واجب إفساح الطريق (إعطاء الأولوية)",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: واجب إفساح الطريق (إعطاء الأولوية).",
     "trainingNote": "'واجب إفساح الطريق' لا يعني توقفًا إجباريًا؛ يكفي إبطاء السرعة والتأكد من عدم وجود حركة مرور قادمة قبل المتابعة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "triangle-yield",
     "glyph": "none",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B1.jpg",
+    "imageAlt": "واجب إفساح الطريق (إعطاء الأولوية)",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B2",
@@ -753,10 +918,14 @@ export const trafficSigns = [
     "arabicName": "التوقف الإجباري (قف)",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: التوقف الإجباري (قف).",
     "trainingNote": "'التوقف الإجباري' (Stopplikt) يُلزم بتوقف فعلي كامل للمركبة عند خط التوقف، حتى لو كان الطريق خاليًا تمامًا من أي حركة مرور — هذا ما يميزها عن B1.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "octagon-stop",
     "glyph": "stop-text",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B2.jpg",
+    "imageAlt": "التوقف الإجباري (قف)",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B3",
@@ -767,10 +936,14 @@ export const trafficSigns = [
     "arabicName": "ممر مشاة",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: ممر مشاة.",
     "trainingNote": "عند وجود هذه العلامة عند الممر نفسه، للمشاة أولوية الدخول للممر، لكن هذا لا يعفي السائق من واجب الانتباه والاستعداد للتوقف.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "triangle-yield",
     "glyph": "pedestrian-crossing",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B3.jpg",
+    "imageAlt": "ممر مشاة",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B4",
@@ -781,10 +954,14 @@ export const trafficSigns = [
     "arabicName": "طريق ذو أولوية (الطريق الرئيسي)",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: طريق ذو أولوية (الطريق الرئيسي).",
     "trainingNote": "تبقى أولوية 'الطريق الرئيسي' سارية عبر عدة تقاطعات متتالية طالما لم تظهر علامة B5 (نهاية الطريق الرئيسي)، دون الحاجة لتكرار B4 عند كل تقاطع بالضرورة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "diamond-priority",
     "glyph": "none",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B4.jpg",
+    "imageAlt": "طريق ذو أولوية (الطريق الرئيسي)",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B5",
@@ -795,10 +972,14 @@ export const trafficSigns = [
     "arabicName": "نهاية الطريق ذي الأولوية",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: نهاية الطريق ذي الأولوية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "diamond-priority-end",
     "glyph": "none",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B5.jpg",
+    "imageAlt": "نهاية الطريق ذي الأولوية",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B6",
@@ -809,10 +990,14 @@ export const trafficSigns = [
     "arabicName": "واجب إفساح الطريق لحركة المرور القادمة بالاتجاه المعاكس",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: واجب إفساح الطريق لحركة المرور القادمة بالاتجاه المعاكس.",
     "trainingNote": "أنت من عليه إفساح الطريق لحركة المرور القادمة من الاتجاه المعاكس (شائعة في الطرق الضيقة أو الجسور أحادية المسار).",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "triangle-yield",
     "glyph": "arrow-yield",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B6.jpg",
+    "imageAlt": "واجب إفساح الطريق لحركة المرور القادمة بالاتجاه المعاكس",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B7",
@@ -823,10 +1008,14 @@ export const trafficSigns = [
     "arabicName": "حركة المرور القادمة بالاتجاه المعاكس عليها واجب إفساح الطريق",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: حركة المرور القادمة بالاتجاه المعاكس عليها واجب إفساح الطريق.",
     "trainingNote": "عكس B6 تمامًا: حركة المرور القادمة من الاتجاه المعاكس هي من عليها إفساح الطريق لك، فلك الأولوية هنا.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "triangle-yield",
     "glyph": "arrow-yield-rev",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B7.jpg",
+    "imageAlt": "حركة المرور القادمة بالاتجاه المعاكس عليها واجب إفساح الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "B8",
@@ -837,10 +1026,14 @@ export const trafficSigns = [
     "arabicName": "معبر دراجات هوائية",
     "officialMeaning": "تحدد هذه العلامة قاعدة أولوية مرور: معبر دراجات هوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70706)",
     "shape": "triangle-yield",
     "glyph": "bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/b8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/B8.jpg",
+    "imageAlt": "معبر دراجات هوائية",
+    "sourceUrl": "https://sweden4.com/?p=70706"
   },
   {
     "code": "C1",
@@ -851,10 +1044,14 @@ export const trafficSigns = [
     "arabicName": "منع دخول المركبات",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع دخول المركبات. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-solid-red",
     "glyph": "none",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C1.jpg",
+    "imageAlt": "منع دخول المركبات",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C2",
@@ -865,10 +1062,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة مرور المركبات",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة مرور المركبات. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-vehicles",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C2.jpg",
+    "imageAlt": "منع حركة مرور المركبات",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C3",
@@ -879,10 +1080,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة أي مركبة آلية عدا الدراجة النارية الخفيفة من الفئة الثانية",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة أي مركبة آلية عدا الدراجة النارية الخفيفة من الفئة الثانية. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "car",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C3.jpg",
+    "imageAlt": "منع حركة أي مركبة آلية عدا الدراجة النارية الخفيفة من الفئة الثانية",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C4",
@@ -893,10 +1098,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المركبات الآلية ذات أكثر من عجلتين",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة المركبات الآلية ذات أكثر من عجلتين. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "motor-multi",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C4.jpg",
+    "imageAlt": "منع حركة المركبات الآلية ذات أكثر من عجلتين",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C5",
@@ -907,10 +1116,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة الدراجات النارية والدراجات الخفيفة من الفئة الأولى",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة الدراجات النارية والدراجات الخفيفة من الفئة الأولى. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "motorcycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C5.jpg",
+    "imageAlt": "منع حركة الدراجات النارية والدراجات الخفيفة من الفئة الأولى",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C6",
@@ -921,10 +1134,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المركبات الآلية المقطورة بمقطورة",
     "officialMeaning": "تمنع هذه العلامة حركة المركبات الآلية التي تجر مقطورة، باستثناء المقطورات نصف المفصلية (semi-trailers) والمقطورات الصغيرة ذات المحور الواحد. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "car-trailer",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C6.jpg",
+    "imageAlt": "منع حركة المركبات الآلية المقطورة بمقطورة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C7",
@@ -935,10 +1152,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة الشاحنات الثقيلة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة الشاحنات الثقيلة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "truck",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C7.jpg",
+    "imageAlt": "منع حركة الشاحنات الثقيلة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C8",
@@ -949,10 +1170,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة الجرارات والآليات من الفئة الثانية",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة الجرارات والآليات من الفئة الثانية. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "tractor",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C8.jpg",
+    "imageAlt": "منع حركة الجرارات والآليات من الفئة الثانية",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C9",
@@ -963,10 +1188,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المركبات المحمَّلة ببضائع خطرة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة المركبات المحمَّلة ببضائع خطرة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "hazmat",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C9.jpg",
+    "imageAlt": "منع حركة المركبات المحمَّلة ببضائع خطرة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C10",
@@ -977,10 +1206,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة الدراجات الهوائية والدراجات الخفيفة من الفئة الثانية",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة الدراجات الهوائية والدراجات الخفيفة من الفئة الثانية. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C10.jpg",
+    "imageAlt": "منع حركة الدراجات الهوائية والدراجات الخفيفة من الفئة الثانية",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C11",
@@ -991,10 +1224,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة الدراجات الخفيفة من الفئة الثانية",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة الدراجات الخفيفة من الفئة الثانية. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "moped",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C11.jpg",
+    "imageAlt": "منع حركة الدراجات الخفيفة من الفئة الثانية",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C12",
@@ -1005,10 +1242,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المركبات التي تجرها حيوانات",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة المركبات التي تجرها حيوانات. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "horse-cart",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C12.jpg",
+    "imageAlt": "منع حركة المركبات التي تجرها حيوانات",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C13",
@@ -1019,10 +1260,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة مركبات ومقطورات التضاريس",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة مركبات ومقطورات التضاريس. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "snowmobile",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C13.jpg",
+    "imageAlt": "منع حركة مركبات ومقطورات التضاريس",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C14",
@@ -1033,10 +1278,14 @@ export const trafficSigns = [
     "arabicName": "منع ركوب الخيل",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع ركوب الخيل. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "horse-rider",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C14.jpg",
+    "imageAlt": "منع ركوب الخيل",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C15",
@@ -1047,10 +1296,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المشاة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة المشاة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "pedestrian",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C15.jpg",
+    "imageAlt": "منع حركة المشاة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C16",
@@ -1061,10 +1314,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى عرض للمركبة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى عرض للمركبة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "width",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C16.jpg",
+    "imageAlt": "تحديد أقصى عرض للمركبة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C17",
@@ -1075,10 +1332,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى ارتفاع للمركبة",
     "officialMeaning": "تحدد هذه العلامة أقصى ارتفاع مسموح به للمركبة (بالمتر كما هو مكتوب عليها)، وتُستخدم عادة عندما تكون المسافة الرأسية الحرة أقل من 4.5 متر. يسري التحديد من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "height",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C17.jpg",
+    "imageAlt": "تحديد أقصى ارتفاع للمركبة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C18",
@@ -1089,10 +1350,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى طول للمركبة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى طول للمركبة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "length",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C18.jpg",
+    "imageAlt": "تحديد أقصى طول للمركبة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C19",
@@ -1103,10 +1368,14 @@ export const trafficSigns = [
     "arabicName": "أقل مسافة فاصلة مطلوبة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: أقل مسافة فاصلة مطلوبة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "distance",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C19.jpg",
+    "imageAlt": "أقل مسافة فاصلة مطلوبة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C20",
@@ -1117,10 +1386,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى وزن إجمالي للمركبة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى وزن إجمالي للمركبة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "weight-10t",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C20.jpg",
+    "imageAlt": "تحديد أقصى وزن إجمالي للمركبة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C21",
@@ -1131,10 +1404,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى وزن إجمالي للمركبة وقطار المركبات",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى وزن إجمالي للمركبة وقطار المركبات. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "weight-16t",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C21.jpg",
+    "imageAlt": "تحديد أقصى وزن إجمالي للمركبة وقطار المركبات",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C22",
@@ -1145,10 +1422,14 @@ export const trafficSigns = [
     "arabicName": "فئة تحمّل الطريق",
     "officialMeaning": "تبيّن هذه العلامة فئة تحمّل الطريق (Bärighetsklass) المسموحة للمركبات الثقيلة — وفق تصنيف BK1 وBK2 وBK3 السويدي الذي يحدد أقصى وزن إجمالي مسموح به على الطريق (قد يصل إلى نحو 60 طنًا في أعلى الفئات). يسري التحديد من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "bearing-class",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C22-1.jpg",
+    "imageAlt": "فئة تحمّل الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C23",
@@ -1159,10 +1440,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى حمل على المحور",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى حمل على المحور. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "axle-8t",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c23.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C23.jpg",
+    "imageAlt": "تحديد أقصى حمل على المحور",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C24",
@@ -1173,10 +1458,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى حمل على مجموعة المحاور (بوجي)",
     "officialMeaning": "تحدد هذه العلامة أقصى حمل مسموح به على مجموعة محورين متقاربين (بوجي) تقل المسافة بينهما عن مترين. يسري التحديد من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "axle-12t",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C24.jpg",
+    "imageAlt": "تحديد أقصى حمل على مجموعة المحاور (بوجي)",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C25",
@@ -1187,7 +1476,7 @@ export const trafficSigns = [
     "arabicName": "منع الانعطاف عند التقاطع",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع الانعطاف عند التقاطع. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-turn",
     "variants": [
@@ -1205,7 +1494,11 @@ export const trafficSigns = [
         "glyph": "no-turn-left",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/c25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C25.jpg",
+    "imageAlt": "منع الانعطاف عند التقاطع",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C26",
@@ -1216,10 +1509,14 @@ export const trafficSigns = [
     "arabicName": "منع الدوران للخلف (U-turn)",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع الدوران للخلف (U-turn). يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-uturn",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c26.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C26.jpg",
+    "imageAlt": "منع الدوران للخلف (U-turn)",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C27",
@@ -1230,10 +1527,14 @@ export const trafficSigns = [
     "arabicName": "منع التجاوز",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع التجاوز. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "منع التجاوز هنا يخص تجاوز المركبات الآلية الأخرى تحديدًا؛ لا يمنع عادة تجاوز الدراجات الهوائية أو الدراجات الخفيفة ذات العجلتين بلا مقطورة جانبية، ما لم يُذكر خلاف ذلك.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-overtake",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c27.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C27.jpg",
+    "imageAlt": "منع التجاوز",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C28",
@@ -1244,10 +1545,14 @@ export const trafficSigns = [
     "arabicName": "نهاية منطقة منع التجاوز",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية منطقة منع التجاوز. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-overtake-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c28.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C28.jpg",
+    "imageAlt": "نهاية منطقة منع التجاوز",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C29",
@@ -1258,10 +1563,14 @@ export const trafficSigns = [
     "arabicName": "منع تجاوز الشاحنات الثقيلة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع تجاوز الشاحنات الثقيلة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-overtake-truck",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c29.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C29.jpg",
+    "imageAlt": "منع تجاوز الشاحنات الثقيلة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C30",
@@ -1272,10 +1581,14 @@ export const trafficSigns = [
     "arabicName": "نهاية منع تجاوز الشاحنات الثقيلة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية منع تجاوز الشاحنات الثقيلة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "no-overtake-truck-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c30.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C30.jpg",
+    "imageAlt": "نهاية منع تجاوز الشاحنات الثقيلة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C31",
@@ -1286,10 +1599,14 @@ export const trafficSigns = [
     "arabicName": "تحديد السرعة القصوى",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد السرعة القصوى. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "الرقم الظاهر على العلامة هو الحد الأقصى المسموح به قانونًا في هذا المقطع تحديدًا، ويُلغي حد السرعة العام الافتراضي لنوع الطريق حتى ظهور علامة جديدة أو الوصول لتقاطع يُنهي سريانها.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "speed-number",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c31.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C31.jpg",
+    "imageAlt": "تحديد السرعة القصوى",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C32",
@@ -1300,10 +1617,14 @@ export const trafficSigns = [
     "arabicName": "نهاية تحديد سرعة مؤقت",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية تحديد سرعة مؤقت. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "speed-number-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c32.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C32.jpg",
+    "imageAlt": "نهاية تحديد سرعة مؤقت",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C33",
@@ -1314,10 +1635,14 @@ export const trafficSigns = [
     "arabicName": "التوقف الإجباري عند الجمارك",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: التوقف الإجباري عند الجمارك. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "customs",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c33.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C33.jpg",
+    "imageAlt": "التوقف الإجباري عند الجمارك",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C34",
@@ -1328,10 +1653,14 @@ export const trafficSigns = [
     "arabicName": "التوقف لغرض محدد",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: التوقف لغرض محدد. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "stop-purpose",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c34.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C34.jpg",
+    "imageAlt": "التوقف لغرض محدد",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C35",
@@ -1342,10 +1671,14 @@ export const trafficSigns = [
     "arabicName": "منع وقوف المركبات (ركن)",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع وقوف المركبات (ركن). يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "منع 'الوقوف' (parkering) يسمح بالتوقف القصير لتحميل/تنزيل الركاب أو البضائع طالما السائق بقي في المركبة أو بالقرب منها جاهزًا للتحرك فورًا.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-blue",
     "glyph": "no-parking",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c35.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C35.jpg",
+    "imageAlt": "منع وقوف المركبات (ركن)",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C36",
@@ -1356,10 +1689,14 @@ export const trafficSigns = [
     "arabicName": "منع وقوف المركبات في الأيام ذات التاريخ الفردي",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع وقوف المركبات في الأيام ذات التاريخ الفردي. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-blue",
     "glyph": "no-parking-odd",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c36.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C36.jpg",
+    "imageAlt": "منع وقوف المركبات في الأيام ذات التاريخ الفردي",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C37",
@@ -1370,10 +1707,14 @@ export const trafficSigns = [
     "arabicName": "منع وقوف المركبات في الأيام ذات التاريخ الزوجي",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع وقوف المركبات في الأيام ذات التاريخ الزوجي. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-blue",
     "glyph": "no-parking-even",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c37.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C37.jpg",
+    "imageAlt": "منع وقوف المركبات في الأيام ذات التاريخ الزوجي",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C38",
@@ -1384,10 +1725,14 @@ export const trafficSigns = [
     "arabicName": "الوقوف بحسب التاريخ (تناوب الجانبين)",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: الوقوف بحسب التاريخ (تناوب الجانبين). يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-blue",
     "glyph": "no-parking-date",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c38.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C38.jpg",
+    "imageAlt": "الوقوف بحسب التاريخ (تناوب الجانبين)",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C39",
@@ -1398,10 +1743,14 @@ export const trafficSigns = [
     "arabicName": "منع التوقف والوقوف نهائيًا",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع التوقف والوقوف نهائيًا. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "منع 'التوقف والوقوف' معًا أشد من C35 — يمنع حتى التوقف اللحظي القصير لأي غرض تقريبًا، عدا حالات الاضطرار الحقيقي.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-blue",
     "glyph": "no-stop-park-x",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c39.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C39.jpg",
+    "imageAlt": "منع التوقف والوقوف نهائيًا",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C40",
@@ -1412,7 +1761,7 @@ export const trafficSigns = [
     "arabicName": "موقع مخصص لغرض محدد (مثال: منطقة تحميل/تفريغ)",
     "officialMeaning": "تمنع هذه العلامة الوقوف والتوقف إلا للغرض المحدد نصًا على اللوحة نفسها (مثل Lastplats للتحميل/التفريغ، Taxiplats لموقف التاكسي، Bokbussplats لحافلة المكتبة المتنقلة، Ambulansplats لسيارة الإسعاف، Skolskjutsplats للحافلة المدرسية، أو På och avstigningsplats لنزول وصعود الركاب فقط). المركبات غير المذكورة ممنوعة من الوقوف أو التوقف هنا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "plaque-yellow-red-tall",
     "glyph": "purpose-place",
     "variants": [
@@ -1458,7 +1807,11 @@ export const trafficSigns = [
         "glyph": "purpose-place-pa-av",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/c40.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C40.jpg",
+    "imageAlt": "موقع مخصص لغرض محدد (مثال: منطقة تحميل/تفريغ)",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C41",
@@ -1469,10 +1822,14 @@ export const trafficSigns = [
     "arabicName": "نهاية الموقع المخصص لغرض محدد",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية الموقع المخصص لغرض محدد. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "plaque-yellow-red-tall",
     "glyph": "purpose-place-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c41.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C41-1.jpg",
+    "imageAlt": "نهاية الموقع المخصص لغرض محدد",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C42",
@@ -1483,10 +1840,14 @@ export const trafficSigns = [
     "arabicName": "مكان الاستدارة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: مكان الاستدارة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "rect-info-blue",
     "glyph": "turning-place",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c42.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C42-1.jpg",
+    "imageAlt": "مكان الاستدارة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C43",
@@ -1497,10 +1858,14 @@ export const trafficSigns = [
     "arabicName": "نهاية مكان الاستدارة",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: نهاية مكان الاستدارة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "rect-info-blue",
     "glyph": "turning-place-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c43.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C43-1.jpg",
+    "imageAlt": "نهاية مكان الاستدارة",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C44",
@@ -1511,10 +1876,14 @@ export const trafficSigns = [
     "arabicName": "منع حركة المركبات الآلية المزودة بإطارات مسمّرة عدا الدراجة الخفيفة من الفئة الثانية",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة المركبات الآلية المزودة بإطارات مسمّرة عدا الدراجة الخفيفة من الفئة الثانية. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "studded-tire",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c44.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C44.jpg",
+    "imageAlt": "منع حركة المركبات الآلية المزودة بإطارات مسمّرة عدا الدراجة الخفيفة من الفئة الثانية",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C45",
@@ -1525,10 +1894,14 @@ export const trafficSigns = [
     "arabicName": "أحكام خاصة بالتوقف والوقوف",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: أحكام خاصة بالتوقف والوقوف. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "special-parking",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c45.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C45-1.jpg",
+    "imageAlt": "أحكام خاصة بالتوقف والوقوف",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "C46",
@@ -1539,10 +1912,14 @@ export const trafficSigns = [
     "arabicName": "تحديد أقصى حمل على مجموعة ثلاثية المحاور",
     "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: تحديد أقصى حمل على مجموعة ثلاثية المحاور. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
     "glyph": "axle-18t",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/c46.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C46.jpg",
+    "imageAlt": "تحديد أقصى حمل على مجموعة ثلاثية المحاور",
+    "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
     "code": "D1",
@@ -1553,7 +1930,7 @@ export const trafficSigns = [
     "arabicName": "اتجاه القيادة الإلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: اتجاه القيادة الإلزامي.",
     "trainingNote": "الاتجاه المرسوم على العلامة (يمين/يسار/أمام) هو الاتجاه الوحيد المسموح به إلزاميًا عند هذه النقطة، وليس مجرد اقتراح.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "arrow-forced",
     "variants": [
@@ -1616,7 +1993,11 @@ export const trafficSigns = [
         "glyph": "fork-left-right",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/d1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D1-1.jpg",
+    "imageAlt": "اتجاه القيادة الإلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D2",
@@ -1627,10 +2008,14 @@ export const trafficSigns = [
     "arabicName": "المسار الإلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: المسار الإلزامي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "arrow-lane",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D2-1.jpg",
+    "imageAlt": "المسار الإلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D3",
@@ -1641,10 +2026,14 @@ export const trafficSigns = [
     "arabicName": "دوار (منطقة دورانية إلزامية الاتجاه)",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: دوار (منطقة دورانية إلزامية الاتجاه).",
     "trainingNote": "علامة الدوار الإلزامي تعني أن حركة السير داخل الدوار تسير بالاتجاه المُبيَّن (عكس عقارب الساعة في السويد لأنها قيادة يمينية) وأن للمركبات داخل الدوار الأولوية عادة على الداخلة إليه ما لم يُذكر خلاف ذلك بعلامة B.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "roundabout-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D3.jpg",
+    "imageAlt": "دوار (منطقة دورانية إلزامية الاتجاه)",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D4",
@@ -1655,10 +2044,14 @@ export const trafficSigns = [
     "arabicName": "مسار دراجات هوائية إلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: مسار دراجات هوائية إلزامي. يشمل الإلزام أيضًا الموبيد من الصنف الثاني ما لم يُذكر خلاف ذلك في شاخصة ملحقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D4.jpg",
+    "imageAlt": "مسار دراجات هوائية إلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D5",
@@ -1669,10 +2062,14 @@ export const trafficSigns = [
     "arabicName": "رصيف مشاة إلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: رصيف مشاة إلزامي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "pedestrian",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D5.jpg",
+    "imageAlt": "رصيف مشاة إلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D6",
@@ -1683,10 +2080,14 @@ export const trafficSigns = [
     "arabicName": "مسار مشترك إلزامي للمشاة والدراجات",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: مسار مشترك إلزامي للمشاة والدراجات الهوائية. يشمل الإلزام أيضًا الموبيد من الصنف الثاني ما لم يُذكر خلاف ذلك في شاخصة ملحقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "pedestrian-bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D6.jpg",
+    "imageAlt": "مسار مشترك إلزامي للمشاة والدراجات",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D7",
@@ -1697,10 +2098,14 @@ export const trafficSigns = [
     "arabicName": "مسارات منفصلة إلزامية للمشاة والدراجات",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: مسارات منفصلة إلزامية للمشاة والدراجات الهوائية (يفصل بينهما خط أو علامة على الطريق). يشمل الإلزام أيضًا الموبيد من الصنف الثاني ما لم يُذكر خلاف ذلك في شاخصة ملحقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "pedestrian-bicycle-sep",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D7.jpg",
+    "imageAlt": "مسارات منفصلة إلزامية للمشاة والدراجات",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D8",
@@ -1711,10 +2116,14 @@ export const trafficSigns = [
     "arabicName": "طريق ركوب خيل إلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: طريق ركوب خيل إلزامي. السير على الأقدام مسموح به أيضًا على هذا الطريق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "horse-rider",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D8.jpg",
+    "imageAlt": "طريق ركوب خيل إلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D9",
@@ -1725,10 +2134,14 @@ export const trafficSigns = [
     "arabicName": "طريق إلزامي لمركبات ومقطورات التضاريس",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: طريق إلزامي لمركبات ومقطورات التضاريس (كالسكوترات الثلجية). لا تمنع هذه العلامة سير المشاة أو استخدام الزحافات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "snowmobile",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D9.jpg",
+    "imageAlt": "طريق إلزامي لمركبات ومقطورات التضاريس",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D10",
@@ -1739,10 +2152,14 @@ export const trafficSigns = [
     "arabicName": "مسار أو طريق إلزامي لمركبات النقل المنتظم (كالحافلات) وغيرها",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: مسار أو طريق إلزامي لمركبات النقل المنتظم (كالحافلات) وغيرها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "bus-lane",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D10.jpg",
+    "imageAlt": "مسار أو طريق إلزامي لمركبات النقل المنتظم (كالحافلات) وغيرها",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D11",
@@ -1753,10 +2170,14 @@ export const trafficSigns = [
     "arabicName": "نهاية المسار أو الطريق أو الممر الإلزامي",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: نهاية المسار أو الطريق أو الممر الإلزامي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "arrow-forced-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D11-2-1.jpg",
+    "imageAlt": "نهاية المسار أو الطريق أو الممر الإلزامي",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "D12",
@@ -1767,10 +2188,14 @@ export const trafficSigns = [
     "arabicName": "اتجاه القيادة الإلزامي للمركبات المحمَّلة ببضائع خطرة",
     "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: اتجاه القيادة الإلزامي للمركبات المحمَّلة ببضائع خطرة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
     "glyph": "hazmat-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/d12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D12.jpg",
+    "imageAlt": "اتجاه القيادة الإلزامي للمركبات المحمَّلة ببضائع خطرة",
+    "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
     "code": "E1",
@@ -1781,10 +2206,14 @@ export const trafficSigns = [
     "arabicName": "طريق سريع (أوتوستراد)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق سريع (أوتوستراد).",
     "trainingNote": "دخول الطريق السريع (Motorväg) يعني تطبيق قواعد خاصة: ممنوع السير للمشاة والدراجات والمركبات البطيئة، وحد أدنى للسرعة في بعض المسارات.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "motorway",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E1-1-svg.jpg",
+    "imageAlt": "طريق سريع (أوتوستراد)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E2",
@@ -1795,10 +2224,14 @@ export const trafficSigns = [
     "arabicName": "نهاية الطريق السريع",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية الطريق السريع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "motorway-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E2-1-svg.jpg",
+    "imageAlt": "نهاية الطريق السريع",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E3",
@@ -1809,10 +2242,14 @@ export const trafficSigns = [
     "arabicName": "طريق شبه سريع",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق شبه سريع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "expressway",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E3-1-svg.jpg",
+    "imageAlt": "طريق شبه سريع",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E4",
@@ -1823,10 +2260,14 @@ export const trafficSigns = [
     "arabicName": "نهاية الطريق شبه السريع",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية الطريق شبه السريع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "expressway-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E4-1-svg.jpg",
+    "imageAlt": "نهاية الطريق شبه السريع",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E5",
@@ -1837,10 +2278,14 @@ export const trafficSigns = [
     "arabicName": "منطقة مأهولة (بداية منطقة سكنية/حضرية)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: منطقة مأهولة (بداية منطقة سكنية/حضرية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-white-black",
     "glyph": "urban-area",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E5-1-svg.jpg",
+    "imageAlt": "منطقة مأهولة (بداية منطقة سكنية/حضرية)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E6",
@@ -1851,10 +2296,14 @@ export const trafficSigns = [
     "arabicName": "نهاية المنطقة المأهولة",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية المنطقة المأهولة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-white-black",
     "glyph": "urban-area-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E6-1-svg.jpg",
+    "imageAlt": "نهاية المنطقة المأهولة",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E7",
@@ -1865,10 +2314,14 @@ export const trafficSigns = [
     "arabicName": "شارع مشاة",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: شارع مشاة.",
     "trainingNote": "'شارع مشاة' (Gågata) يعني أن الأولوية المطلقة للمشاة، والقيادة فيه مقيدة جدًا (عادة فقط للتحميل ببطء شديد وبإذن).",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "pedestrian-street",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E7-1-svg.jpg",
+    "imageAlt": "شارع مشاة",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E8",
@@ -1879,10 +2332,14 @@ export const trafficSigns = [
     "arabicName": "نهاية شارع المشاة",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية شارع المشاة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "pedestrian-street-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E8-1-svg.jpg",
+    "imageAlt": "نهاية شارع المشاة",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E9",
@@ -1893,10 +2350,14 @@ export const trafficSigns = [
     "arabicName": "منطقة بسرعة المشي",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: منطقة بسرعة المشي.",
     "trainingNote": "'منطقة سرعة المشي' (Gångfartsområde) تُلزم السائق بعدم تجاوز سرعة المشي فعليًا، وليس فقط التوصية بالتمهل.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-white-blue",
     "glyph": "walking-speed",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E9-1-svg.jpg",
+    "imageAlt": "منطقة بسرعة المشي",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E10",
@@ -1907,10 +2368,14 @@ export const trafficSigns = [
     "arabicName": "نهاية منطقة سرعة المشي",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية منطقة سرعة المشي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-white-blue",
     "glyph": "walking-speed-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E10-1-svg.jpg",
+    "imageAlt": "نهاية منطقة سرعة المشي",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E11",
@@ -1921,10 +2386,14 @@ export const trafficSigns = [
     "arabicName": "سرعة موصى بها أقل من الحد المسموح",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: سرعة موصى بها أقل من الحد المسموح.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "speed-reco",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E11-1-svg.jpg",
+    "imageAlt": "سرعة موصى بها أقل من الحد المسموح",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E12",
@@ -1935,10 +2404,14 @@ export const trafficSigns = [
     "arabicName": "نهاية السرعة الموصى بها الأقل",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية السرعة الموصى بها الأقل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "speed-reco-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E12-1-svg.jpg",
+    "imageAlt": "نهاية السرعة الموصى بها الأقل",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E13",
@@ -1949,10 +2422,14 @@ export const trafficSigns = [
     "arabicName": "أقصى سرعة موصى بها",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: أقصى سرعة موصى بها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "speed-reco-max",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E13-1-svg.jpg",
+    "imageAlt": "أقصى سرعة موصى بها",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E14",
@@ -1963,10 +2440,14 @@ export const trafficSigns = [
     "arabicName": "نهاية أقصى سرعة موصى بها",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية أقصى سرعة موصى بها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "speed-reco-max-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E14-1-svg.jpg",
+    "imageAlt": "نهاية أقصى سرعة موصى بها",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E15",
@@ -1977,10 +2458,14 @@ export const trafficSigns = [
     "arabicName": "اندماج مسارات (تشابك حركة مرور)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: اندماج مسارات (تشابك حركة مرور).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "merge",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E15-1-svg.jpg",
+    "imageAlt": "اندماج مسارات (تشابك حركة مرور)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E16",
@@ -1991,10 +2476,14 @@ export const trafficSigns = [
     "arabicName": "طريق باتجاه واحد",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق باتجاه واحد.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "one-way",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E16-1-svg.jpg",
+    "imageAlt": "طريق باتجاه واحد",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E17",
@@ -2005,10 +2494,14 @@ export const trafficSigns = [
     "arabicName": "طريق مسدود (بلا منفذ)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق مسدود (بلا منفذ).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "dead-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E17-1-svg.jpg",
+    "imageAlt": "طريق مسدود (بلا منفذ)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E18",
@@ -2019,10 +2512,14 @@ export const trafficSigns = [
     "arabicName": "مكان تلاقٍ / تجاوز على طريق ضيق",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: مكان تلاقٍ / تجاوز على طريق ضيق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "passing-place",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E18-1-svg.jpg",
+    "imageAlt": "مكان تلاقٍ / تجاوز على طريق ضيق",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E19",
@@ -2033,10 +2530,14 @@ export const trafficSigns = [
     "arabicName": "موقف سيارات (باركينج)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: موقف سيارات (باركينج).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "parking-p",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E19-1-svg.jpg",
+    "imageAlt": "موقف سيارات (باركينج)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E20",
@@ -2047,10 +2548,14 @@ export const trafficSigns = [
     "arabicName": "علامة منطقة (بداية منطقة ذات قواعد خاصة)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: علامة منطقة (بداية منطقة ذات قواعد خاصة).",
     "trainingNote": "علامة 'المنطقة' (Områdesmärke) تُطبِّق القاعدة المذكورة عليها (مثل حد سرعة أو حد وقوف) على كل الطريق داخل تلك المنطقة حتى ظهور علامة 'نهاية المنطقة' المقابلة، وليس فقط عند نقطة العلامة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "area",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E20-1.jpg",
+    "imageAlt": "علامة منطقة (بداية منطقة ذات قواعد خاصة)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E21",
@@ -2061,10 +2566,14 @@ export const trafficSigns = [
     "arabicName": "نهاية المنطقة",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية المنطقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "area-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E21-1.jpg",
+    "imageAlt": "نهاية المنطقة",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E22",
@@ -2075,10 +2584,14 @@ export const trafficSigns = [
     "arabicName": "موقف حافلات",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: موقف حافلات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "bus",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E22-1-svg.jpg",
+    "imageAlt": "موقف حافلات",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E23",
@@ -2089,10 +2602,14 @@ export const trafficSigns = [
     "arabicName": "سيارات الأجرة (تاكسي)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: سيارات الأجرة (تاكسي).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "taxi-text",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e23.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E23-1-svg.jpg",
+    "imageAlt": "سيارات الأجرة (تاكسي)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E24",
@@ -2103,10 +2620,14 @@ export const trafficSigns = [
     "arabicName": "مراقبة مرورية آلية (رادار/كاميرا)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: مراقبة مرورية آلية (رادار/كاميرا).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "camera",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E24-1-svg.jpg",
+    "imageAlt": "مراقبة مرورية آلية (رادار/كاميرا)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E25",
@@ -2117,10 +2638,14 @@ export const trafficSigns = [
     "arabicName": "طريق برسوم (طريق مدفوع)",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق برسوم (طريق مدفوع).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "toll",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E25-1-svg.jpg",
+    "imageAlt": "طريق برسوم (طريق مدفوع)",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E26",
@@ -2131,10 +2656,14 @@ export const trafficSigns = [
     "arabicName": "نفق",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نفق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "tunnel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e26.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E26-1-svg.jpg",
+    "imageAlt": "نفق",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E27",
@@ -2145,10 +2674,14 @@ export const trafficSigns = [
     "arabicName": "موقف طوارئ",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: موقف طوارئ.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "emergency-bay",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e27.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E27-1-svg.jpg",
+    "imageAlt": "موقف طوارئ",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E28",
@@ -2159,10 +2692,14 @@ export const trafficSigns = [
     "arabicName": "مخرج طوارئ",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: مخرج طوارئ.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "emergency-exit",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e28.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E28-1-svg.jpg",
+    "imageAlt": "مخرج طوارئ",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E29",
@@ -2173,10 +2710,14 @@ export const trafficSigns = [
     "arabicName": "طريق إخلاء",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: طريق إخلاء.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "evac-route",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e29.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E29-1-svg.jpg",
+    "imageAlt": "طريق إخلاء",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E30",
@@ -2187,10 +2728,14 @@ export const trafficSigns = [
     "arabicName": "أحكام خاصة لمواقف السيارات",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: أحكام خاصة لمواقف السيارات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "parking-p-special",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e30.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E30-1-svg.jpg",
+    "imageAlt": "أحكام خاصة لمواقف السيارات",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E31",
@@ -2201,10 +2746,14 @@ export const trafficSigns = [
     "arabicName": "منطقة بيئية",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: منطقة بيئية.",
     "trainingNote": "المنطقة البيئية (Miljözon) تمنع أو تقيّد دخول مركبات معينة حسب معيار الانبعاثات (Euro)، بصرف النظر عن حد السرعة أو قواعد المرور الأخرى في نفس المكان.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "eco-zone",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e31.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E31-1-svg.jpg",
+    "imageAlt": "منطقة بيئية",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E32",
@@ -2215,10 +2764,14 @@ export const trafficSigns = [
     "arabicName": "نهاية المنطقة البيئية",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية المنطقة البيئية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "rect-info-blue",
     "glyph": "eco-zone-end",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/e32.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/E32-1-svg.jpg",
+    "imageAlt": "نهاية المنطقة البيئية",
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E33",
@@ -2229,10 +2782,11 @@ export const trafficSigns = [
     "arabicName": "شارع للدراجات الهوائية",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: شارع للدراجات الهوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "square-blue-framed",
     "glyph": "bicycle-street",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "E34",
@@ -2243,10 +2797,11 @@ export const trafficSigns = [
     "arabicName": "نهاية شارع الدراجات الهوائية",
     "officialMeaning": "تُعلم هذه العلامة السائق بدخوله أو خروجه من وضع طرقي خاص، أو تُعطيه تعليمات إرشادية: نهاية شارع الدراجات الهوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70827)",
     "shape": "square-blue-framed",
     "glyph": "bicycle-street-end",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70827"
   },
   {
     "code": "F1-1",
@@ -2257,10 +2812,14 @@ export const trafficSigns = [
     "arabicName": "لوحة توجيهية عامة (خريطة اتجاهات)",
     "officialMeaning": "لوحة توجيهية شاملة تُثبَّت قبل تقاطع أو مفترق طرق معقّد نسبيًا، وتعرض مخططًا تخطيطيًا لشكل التقاطع القادم مع أسماء الاتجاهات والوجهات المتاحة من كل فرع، لمساعدتك على اختيار المسار الصحيح مبكرًا قبل الوصول فعليًا للتقاطع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "map-junction",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f1-1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F1-1.jpg",
+    "imageAlt": "لوحة توجيهية عامة (خريطة اتجاهات)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F2",
@@ -2271,10 +2830,14 @@ export const trafficSigns = [
     "arabicName": "لوحة توجيهية عند منع الانعطاف بالتقاطع",
     "officialMeaning": "نسخة خاصة من لوحة التوجيه الشاملة (F1-1) تُستخدم تحديدًا عند تقاطعات يُمنع فيها الانعطاف باتجاه معين، فتوضح شكل التقاطع مع تمييز الاتجاه الممنوع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "map-junction-noturn",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F2-1.jpg",
+    "imageAlt": "لوحة توجيهية عند منع الانعطاف بالتقاطع",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F3",
@@ -2285,10 +2848,14 @@ export const trafficSigns = [
     "arabicName": "لوحة توجيهية بجدول مسارات",
     "officialMeaning": "لوحة توجيهية بشكل جدول نصي (وليس مخططًا تخطيطيًا للتقاطع)، تسرد الوجهات المتاحة من كل مسار بشكل قائمة واضحة قبل تقاطعات كبيرة أو معقدة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "table-list-junction",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F3-1.jpg",
+    "imageAlt": "لوحة توجيهية بجدول مسارات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F4",
@@ -2299,10 +2866,14 @@ export const trafficSigns = [
     "arabicName": "لوحة توجيهية عند مخرج الطريق",
     "officialMeaning": "لوحة توجيهية تُثبَّت قبل مخرج طريق سريع أو شبه سريع تحديدًا، وتعرض مخططًا لشكل نقطة الخروج والوجهات المتاحة عبره.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "map-junction-exit",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F4-1.jpg",
+    "imageAlt": "لوحة توجيهية عند مخرج الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F5",
@@ -2313,10 +2884,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه (دليل اتجاهات)",
     "officialMeaning": "اللافتة الأساسية الأكثر شيوعًا للإرشاد: سهم باتجاه معين مصحوب باسم وجهة أو أكثر، تُثبَّت عند التقاطعات لتوجيه السائق نحو الاتجاه الصحيح مباشرة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "arrow-signpost",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F5-1.jpg",
+    "imageAlt": "لافتة توجيه (دليل اتجاهات)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F6",
@@ -2327,10 +2902,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه بجدول مسارات",
     "officialMeaning": "لافتة توجيه بشكل جدول يجمع عدة وجهات واتجاهاتها في لوحة واحدة، بديلة عن استخدام عدة لافتات سهمية منفصلة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "table-list",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F6-1.jpg",
+    "imageAlt": "لافتة توجيه بجدول مسارات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F7",
@@ -2341,10 +2920,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه عند مخرج الطريق",
     "officialMeaning": "لافتة توجيه مخصصة لمخارج الطرق السريعة تحديدًا، توضح اسم الوجهة أو المنطقة التي يؤدي إليها ذلك المخرج بالتحديد.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "exit-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F7-1.jpg",
+    "imageAlt": "لافتة توجيه عند مخرج الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F8",
@@ -2355,10 +2938,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه حسب المسار",
     "officialMeaning": "لافتة تُثبَّت فوق كل مسار من مسارات الطريق على حدة (عادة على جسر أو حامل علوي)، وتوضح أي وجهة أو اتجاه يجب اتباعه من ذلك المسار تحديدًا — مفيدة جدًا في الطرق متعددة المسارات قبل تشعبها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-arrows",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F8-1.jpg",
+    "imageAlt": "لافتة توجيه حسب المسار",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F9",
@@ -2369,10 +2956,14 @@ export const trafficSigns = [
     "arabicName": "علامة توجيه مجمّعة",
     "officialMeaning": "علامة تجمع بين عدة عناصر توجيه في لوحة واحدة مركّبة (كأسهم واتجاهات ورموز مصادر)، تُستخدم لتبسيط المشهد بدل تكرار عدة لافتات منفصلة متجاورة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "signpost-cluster",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F9-1.jpg",
+    "imageAlt": "علامة توجيه مجمّعة",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F10",
@@ -2383,10 +2974,14 @@ export const trafficSigns = [
     "arabicName": "علامة تحديد موقع/مكان",
     "officialMeaning": "لوحة صغيرة تحمل اسم موقع أو منطقة أو حي معين دون سهم اتجاه بالضرورة، تُستخدم غالبًا لتأكيد دخولك لمنطقة معينة أو المرور بجانبها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "location-pin",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F10-1.jpg",
+    "imageAlt": "علامة تحديد موقع/مكان",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F11",
@@ -2397,10 +2992,14 @@ export const trafficSigns = [
     "arabicName": "اسم الطريق",
     "officialMeaning": "لوحة تحمل اسم الطريق أو الشارع نفسه الذي تسير عليه حاليًا، وليست لافتة توجيه لمكان آخر.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "street-name-plate",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F11-1.jpg",
+    "imageAlt": "اسم الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F12",
@@ -2411,10 +3010,14 @@ export const trafficSigns = [
     "arabicName": "اسم مجرى مائي",
     "officialMeaning": "لوحة تحمل اسم مجرى مائي (نهر أو بحيرة) يمر بجانب الطريق أو يعبره جسر قريب.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "water-wave",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F12-1.jpg",
+    "imageAlt": "اسم مجرى مائي",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F13",
@@ -2425,10 +3028,14 @@ export const trafficSigns = [
     "arabicName": "لوحة المسافات",
     "officialMeaning": "لوحة تعرض المسافات بالكيلومترات إلى عدة وجهات على نفس الطريق دفعة واحدة، عادة عند مدخل طريق رئيسي أو بعد تقاطع كبير.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "distance-list",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F13-1.jpg",
+    "imageAlt": "لوحة المسافات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F14",
@@ -2439,7 +3046,7 @@ export const trafficSigns = [
     "arabicName": "رقم الطريق",
     "officialMeaning": "تبيّن هذه العلامة رقم الطريق. اللون الأخضر يعني طريقًا أوروبيًا (E)، والأزرق يعني طريقًا عامًا مرقّمًا ضمن المجموعة 1–499. الإطار المتصل يعني أن هذا هو رقم الطريق الذي تسير عليه الآن، بينما الإطار المتقطع يعني أن العلامة ترشدك إلى طريق يمكن الوصول إليه من هنا (وليس الطريق الحالي نفسه).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-road-green",
     "glyph": "road-number",
     "variants": [
@@ -2471,7 +3078,11 @@ export const trafficSigns = [
         "glyph": "road-number-plain",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/f14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F14-1.jpg",
+    "imageAlt": "رقم الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F15",
@@ -2482,10 +3093,14 @@ export const trafficSigns = [
     "arabicName": "مسار تحويل (تحويلة مرورية)",
     "officialMeaning": "لوحة تشير إلى وجود مسار تحويل مروري (Omledning) بديل مؤقت، غالبًا بسبب أعمال طريق أو إغلاق جزئي، مع توضيح الوجهة التي يقود إليها هذا التحويل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "diversion-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F15-1.jpg",
+    "imageAlt": "مسار تحويل (تحويلة مرورية)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F16",
@@ -2496,10 +3111,14 @@ export const trafficSigns = [
     "arabicName": "زيادة عدد المسارات",
     "officialMeaning": "مخطط تخطيطي يوضح أن عدد مسارات الطريق سيزداد قريبًا (كإضافة مسار جديد)، ليستعد السائق لإعادة توزيع موقعه بين المسارات إذا لزم.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-increase",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F16-1.jpg",
+    "imageAlt": "زيادة عدد المسارات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F17",
@@ -2510,10 +3129,14 @@ export const trafficSigns = [
     "arabicName": "نقصان عدد المسارات",
     "officialMeaning": "مخطط تخطيطي يوضح أن عدد مسارات الطريق سينقص قريبًا (اندماج مسارين في واحد)، لتنبيه السائقين لضرورة الاندماج بأمان قبل نقطة الانتهاء.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-decrease",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F17-1.jpg",
+    "imageAlt": "نقصان عدد المسارات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F18",
@@ -2524,10 +3147,14 @@ export const trafficSigns = [
     "arabicName": "توزيع المسارات على امتداد الطريق",
     "officialMeaning": "مخطط يوضح كيفية توزّع المسارات المتاحة على امتداد مسافة معينة من الطريق (أيها يستمر مباشرة وأيها ينحرف)، وليس فقط عند نقطة تقاطع واحدة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-config",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F18-1.jpg",
+    "imageAlt": "توزيع المسارات على امتداد الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F19",
@@ -2538,10 +3165,14 @@ export const trafficSigns = [
     "arabicName": "نقطة اتصال طريق بمسار تسارع",
     "officialMeaning": "مخطط يوضح نقطة انضمام طريق فرعي إلى الطريق الرئيسي عبر مسار تسارع مخصص، يسمح للمركبات القادمة برفع سرعتها قبل الاندماج الفعلي في حركة المرور الرئيسية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-merge-accel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F19-1.jpg",
+    "imageAlt": "نقطة اتصال طريق بمسار تسارع",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F20",
@@ -2552,10 +3183,14 @@ export const trafficSigns = [
     "arabicName": "نقطة اتصال طريق بمسار منفصل",
     "officialMeaning": "مخطط يوضح نقطة انضمام طريق فرعي إلى الطريق الرئيسي عبر مسار منفصل يستمر لمسافة إضافية (بخلاف مسار التسارع القصير)، مما يمنح وقتًا أطول للاندماج الآمن.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-merge-separate",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F20-1.jpg",
+    "imageAlt": "نقطة اتصال طريق بمسار منفصل",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F21",
@@ -2566,10 +3201,14 @@ export const trafficSigns = [
     "arabicName": "توزيع المسارات قبل التقاطع",
     "officialMeaning": "مخطط يوضح كيف ستتوزع المسارات تحديدًا قبل الوصول إلى تقاطع قادم (أي مسار يتجه يمينًا أو يسارًا أو يستمر مستقيمًا)، لمساعدة السائق على اختيار مساره الصحيح من مسافة كافية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-config-junction",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F21-1.jpg",
+    "imageAlt": "توزيع المسارات قبل التقاطع",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F22",
@@ -2580,10 +3219,14 @@ export const trafficSigns = [
     "arabicName": "علامة حدودية وطنية (Riksmärke)",
     "officialMeaning": "علامة تُنصب عادة عند حدود الدولة (مثلًا حدود السويد ضمن السوق الأوروبية المشتركة) لتبيين اسم الدولة أو الدخول إليها، وتُستخدم أيضًا لتمييز طرق ذات صفة وطنية رسمية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "national-emblem",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F22-1.jpg",
+    "imageAlt": "علامة حدودية وطنية (Riksmärke)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F23",
@@ -2594,10 +3237,14 @@ export const trafficSigns = [
     "arabicName": "لوحة توجيهية لطريق التحويل",
     "officialMeaning": "لوحة توجيهية شاملة خاصة تُستخدم عند بداية مسار تحويل مروري (لا عند تقاطع عادي)، وتوضح شكل مسار التحويل البديل بأكمله.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "diversion-map",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f23.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F23-1.jpg",
+    "imageAlt": "لوحة توجيهية لطريق التحويل",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F24",
@@ -2608,10 +3255,14 @@ export const trafficSigns = [
     "arabicName": "اتجاه السير أثناء التحويل المروري",
     "officialMeaning": "سهم يوضح تحديدًا الاتجاه الذي يجب اتباعه أثناء السير على مسار تحويل مروري مؤقت، لضمان عدم ضياع السائق عن المسار البديل المخصص.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "diversion-direction-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F24-1.jpg",
+    "imageAlt": "اتجاه السير أثناء التحويل المروري",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F25",
@@ -2622,10 +3273,14 @@ export const trafficSigns = [
     "arabicName": "نهاية المسار",
     "officialMeaning": "مخطط يُنبّه أن المسار الذي تسير فيه تحديدًا سينتهي قريبًا (وليس أن عدد المسارات الكلي سينقص بالضرورة)، فعليك تغيير مسارك قبل نقطة الانتهاء.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-ends",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F25-1.jpg",
+    "imageAlt": "نهاية المسار",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F26",
@@ -2636,10 +3291,14 @@ export const trafficSigns = [
     "arabicName": "إغلاق المسار",
     "officialMeaning": "مخطط يوضح أن مسارًا معينًا مغلق حاليًا أمامك (غالبًا بسبب أعمال طريق أو حادث)، ويُظهر عادة علامة X فوق المسار المغلق تحديدًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "lane-closed",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f26.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F26-1.jpg",
+    "imageAlt": "إغلاق المسار",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F27",
@@ -2650,10 +3309,14 @@ export const trafficSigns = [
     "arabicName": "رقم مفترق الطرق",
     "officialMeaning": "درع يحمل رقمًا تعريفيًا لمفترق طرق أو نقطة تبادل (Trafikplats) معينة، يُستخدم كمرجع دقيق (مثلًا في نظام GPS أو تقارير حوادث) لتحديد ذلك الموقع بدقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "junction-number-shield",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f27.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F27-1.jpg",
+    "imageAlt": "رقم مفترق الطرق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F28",
@@ -2664,10 +3327,14 @@ export const trafficSigns = [
     "arabicName": "مرآب/موقف سيارات مغطى",
     "officialMeaning": "علامة ترشدك إلى وجود مرآب أو موقف سيارات مغطى (متعدد الطوابق غالبًا) قريب، بخلاف مواقف السيارات المكشوفة العادية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "parking-garage",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f28.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F28-1.jpg",
+    "imageAlt": "مرآب/موقف سيارات مغطى",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F29",
@@ -2678,10 +3345,14 @@ export const trafficSigns = [
     "arabicName": "موقف انتقال لوسائل النقل العام (Park & Ride)",
     "officialMeaning": "علامة ترشدك إلى موقف مخصص لترك سيارتك والانتقال باستخدام وسيلة نقل عام (حافلة أو قطار) لبقية الرحلة — نظام معروف باسم Park & Ride.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "park-ride",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f29.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F29-1.jpg",
+    "imageAlt": "موقف انتقال لوسائل النقل العام (Park & Ride)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F30",
@@ -2692,10 +3363,14 @@ export const trafficSigns = [
     "arabicName": "مسار محلي دائري",
     "officialMeaning": "علامة تشير إلى وجود مسار محلي دائري (Lokal slinga) يعيدك إلى نقطة قريبة من بدايتك بعد جولة قصيرة، غالبًا لأغراض سياحية أو خدمية محلية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "local-loop",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f30.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F30-1.jpg",
+    "imageAlt": "مسار محلي دائري",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F31",
@@ -2706,10 +3381,14 @@ export const trafficSigns = [
     "arabicName": "طريق أو طريق بديل مناسب لنوع معين من المركبات أو مستخدمي الطريق",
     "officialMeaning": "علامة تشير إلى وجود طريق أو مسار بديل أنسب لنوع معين من المركبات أو مستخدمي الطريق (كالشاحنات الثقيلة أو الدراجات)، لتجنيبهم طريقًا أقل ملاءمة لهم.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "route-truck",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f31.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F31-1.jpg",
+    "imageAlt": "طريق أو طريق بديل مناسب لنوع معين من المركبات أو مستخدمي الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F31a",
@@ -2720,10 +3399,11 @@ export const trafficSigns = [
     "arabicName": "مسار مخصص لقطارات المركبات الطويلة",
     "officialMeaning": "نسخة خاصة من علامة الطريق البديل، مخصصة تحديدًا لمركبات جر القطارات الطويلة (كالشاحنات ذات المقطورات المزدوجة) التي تحتاج مسارًا يستوعب طولها الإضافي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "route-truck-long",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F32",
@@ -2734,10 +3414,14 @@ export const trafficSigns = [
     "arabicName": "بضائع خطرة (طريق مخصص لنقلها)",
     "officialMeaning": "علامة توجّه تحديدًا المركبات المحمَّلة ببضائع خطرة نحو المسار المصرَّح لها قانونًا باستخدامه، والذي قد يختلف عن المسار المعتاد للمركبات العادية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "hazmat",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f32.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F32-1.jpg",
+    "imageAlt": "بضائع خطرة (طريق مخصص لنقلها)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F33",
@@ -2748,10 +3432,14 @@ export const trafficSigns = [
     "arabicName": "موقع إنقاذ/إغاثة",
     "officialMeaning": "علامة تشير إلى أقرب نقطة وصول رسمية لفرق الإنقاذ والطوارئ (تحمل رقمًا مرجعيًا للموقع)، مفيدة بشكل خاص في الطرق الريفية أو الغابات البعيدة عند الإبلاغ عن حادث لتحديد الموقع بدقة لطاقم الطوارئ.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
     "glyph": "rescue-point",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f33.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F33-1.jpg",
+    "imageAlt": "موقع إنقاذ/إغاثة",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F34",
@@ -2762,10 +3450,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه للمشاة والدراجات",
     "officialMeaning": "نسخة من لافتة التوجيه الأساسية (F5) لكنها مخصصة لمسارات المشاة والدراجات الهوائية تحديدًا، وليس لحركة المركبات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-navy",
     "glyph": "arrow-signpost-ped",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f34.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F34-1.jpg",
+    "imageAlt": "لافتة توجيه للمشاة والدراجات",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F35",
@@ -2776,10 +3468,14 @@ export const trafficSigns = [
     "arabicName": "لافتة توجيه بجدول مسارات (مشاة/دراجات)",
     "officialMeaning": "نسخة من لافتة التوجيه بجدول (F6) لكنها مخصصة لمسارات المشاة والدراجات الهوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-navy",
     "glyph": "table-list-ped",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f35.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F35-1.jpg",
+    "imageAlt": "لافتة توجيه بجدول مسارات (مشاة/دراجات)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F36",
@@ -2790,10 +3486,14 @@ export const trafficSigns = [
     "arabicName": "علامة تحديد موقع (مشاة/دراجات)",
     "officialMeaning": "نسخة من علامة تحديد الموقع (F10) لكنها مخصصة لمستخدمي مسارات المشاة والدراجات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-navy",
     "glyph": "location-pin-ped",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f36.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F36-1.jpg",
+    "imageAlt": "علامة تحديد موقع (مشاة/دراجات)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F37",
@@ -2804,10 +3504,14 @@ export const trafficSigns = [
     "arabicName": "لوحة مسافات (مشاة/دراجات)",
     "officialMeaning": "نسخة من لوحة المسافات (F13) لكنها مخصصة لمسارات المشاة والدراجات، وتُقدَّر المسافات فيها عادة بالكيلومترات أو الأمتار المناسبة للسير أو ركوب الدراجة لا القيادة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-navy",
     "glyph": "distance-list-ped",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f37.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F37-1.jpg",
+    "imageAlt": "لوحة مسافات (مشاة/دراجات)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "F38",
@@ -2818,10 +3522,14 @@ export const trafficSigns = [
     "arabicName": "مسار دراجات هوائية سياحي (Cykelled)",
     "officialMeaning": "علامة تشير إلى مسار مخصص ومُعلَّم رسميًا لركوب الدراجات الهوائية لمسافات طويلة (غالبًا لأغراض سياحية أو رياضية)، بخلاف مسار الدراجات اليومي العادي داخل المدن.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-navy",
     "glyph": "bike-route",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/f38.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F38-1.jpg",
+    "imageAlt": "مسار دراجات هوائية سياحي (Cykelled)",
+    "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {
     "code": "G1",
@@ -2832,10 +3540,14 @@ export const trafficSigns = [
     "arabicName": "مكتب بريد",
     "officialMeaning": "ترشدك إلى أقرب مكتب بريد رسمي (Postombud) يقدّم خدمات إرسال واستلام الطرود والرسائل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "posthorn",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G1-1-svg.jpg",
+    "imageAlt": "مكتب بريد",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G2",
@@ -2846,10 +3558,14 @@ export const trafficSigns = [
     "arabicName": "هاتف طوارئ",
     "officialMeaning": "ترشدك إلى أقرب هاتف طوارئ عمومي ثابت، وهي مفيدة خصوصًا في مناطق ريفية أو نفقية قد تضعف فيها تغطية الهاتف المحمول.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "phone",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G2-1-svg.jpg",
+    "imageAlt": "هاتف طوارئ",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G3",
@@ -2860,10 +3576,14 @@ export const trafficSigns = [
     "arabicName": "محطة إذاعة لمعلومات حركة المرور",
     "officialMeaning": "تُعلمك بوجود بث إذاعي محلي مخصص لمعلومات حركة المرور (كالازدحام أو الحوادث) يمكنك التقاطه على تردد مذكور عادة أسفل العلامة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "radio",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G3-1-svg.jpg",
+    "imageAlt": "محطة إذاعة لمعلومات حركة المرور",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G4",
@@ -2874,10 +3594,14 @@ export const trafficSigns = [
     "arabicName": "مستشفى للحالات الطارئة",
     "officialMeaning": "تحديدًا للمستشفيات التي تحتوي قسم طوارئ فعلي يستقبل الحالات الحرجة على مدار الساعة، وليس لأي عيادة أو مركز صحي عادي بلا قسم طوارئ.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "hospital",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G4-1-svg.jpg",
+    "imageAlt": "مستشفى للحالات الطارئة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G5",
@@ -2888,10 +3612,14 @@ export const trafficSigns = [
     "arabicName": "منطقة صناعية",
     "officialMeaning": "تشير إلى بداية منطقة صناعية (مصانع ومستودعات)، وتُستخدم غالبًا للتوجيه إلى عناوين الشركات هناك أكثر من كونها معلمًا سياحيًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "industry",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G5-1-svg.jpg",
+    "imageAlt": "منطقة صناعية",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G6",
@@ -2902,10 +3630,14 @@ export const trafficSigns = [
     "arabicName": "محطة قطار",
     "officialMeaning": "ترشدك إلى أقرب محطة قطار للركاب، سواء للنقل الحضري أو بين المدن.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "train",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G6-1-svg.jpg",
+    "imageAlt": "محطة قطار",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G7",
@@ -2916,10 +3648,14 @@ export const trafficSigns = [
     "arabicName": "محطة حافلات",
     "officialMeaning": "ترشدك إلى محطة حافلات رئيسية (وليس مجرد موقف توقف عادي على الطريق) قد تخدم عدة خطوط.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "bus-station",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G7-1-svg.jpg",
+    "imageAlt": "محطة حافلات",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G8",
@@ -2930,10 +3666,14 @@ export const trafficSigns = [
     "arabicName": "مطار",
     "officialMeaning": "ترشدك إلى أقرب مطار، وتظهر عادة على الطرق الرئيسية المؤدية إليه من مسافة كافية للتخطيط للمسار.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "airplane",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G8-1-svg.jpg",
+    "imageAlt": "مطار",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G9",
@@ -2944,10 +3684,14 @@ export const trafficSigns = [
     "arabicName": "طفاية حريق",
     "officialMeaning": "تشير إلى موقع طفاية حريق عمومية متاحة للطوارئ، وتظهر غالبًا داخل الأنفاق الطويلة أو مناطق الخدمات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "extinguisher",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G9-1-svg.jpg",
+    "imageAlt": "طفاية حريق",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G10",
@@ -2958,10 +3702,14 @@ export const trafficSigns = [
     "arabicName": "منطقة تجارية",
     "officialMeaning": "تشير إلى بداية منطقة تجارية (مجمّعات محال ومتاجر)، مفيدة للتوجه نحو التسوق دون الحاجة لعنوان محدد.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "shop-commercial",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G10-1-svg.jpg",
+    "imageAlt": "منطقة تجارية",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G11",
@@ -2972,10 +3720,14 @@ export const trafficSigns = [
     "arabicName": "معدية (عبّارة)",
     "officialMeaning": "ترشدك إلى نقطة ركوب معدية تنقل المركبات عبر مسطح مائي ضمن مسار الطريق نفسه.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "ferry-vehicle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G11-1-svg.jpg",
+    "imageAlt": "معدية (عبّارة)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "G12",
@@ -2986,10 +3738,14 @@ export const trafficSigns = [
     "arabicName": "معدية ركاب",
     "officialMeaning": "ترشدك إلى معدية مخصصة لنقل الركاب سيرًا على الأقدام (وليست بالضرورة مؤهَّلة لنقل المركبات كالمعدية العادية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "ferry-passenger",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/g12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/G12-1-svg.jpg",
+    "imageAlt": "معدية ركاب",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H1",
@@ -3000,10 +3756,14 @@ export const trafficSigns = [
     "arabicName": "نقطة معلومات",
     "officialMeaning": "تشير إلى نقطة معلومات سياحية أو خدمية عامة (غير مرتبطة بالضرورة بموقع محدد)، تجد فيها عادة خرائط أو نشرات إرشادية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "info-i",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H1-1-svg.jpg",
+    "imageAlt": "نقطة معلومات",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H2",
@@ -3014,10 +3774,14 @@ export const trafficSigns = [
     "arabicName": "ورشة صيانة مركبات",
     "officialMeaning": "ترشدك إلى ورشة صيانة وإصلاح مركبات، مفيدة عند وجود عطل أو حاجة لصيانة أثناء رحلة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "wrench",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H2-1-svg.jpg",
+    "imageAlt": "ورشة صيانة مركبات",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H3",
@@ -3028,10 +3792,14 @@ export const trafficSigns = [
     "arabicName": "محطة وقود",
     "officialMeaning": "ترشدك إلى محطة وقود تقليدية (بنزين/ديزل)، وتختلف عن علامة الغاز (H4) المخصصة تحديدًا لمحطات تعبئة الغاز.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "fuel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H3-1-svg.jpg",
+    "imageAlt": "محطة وقود",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H4",
@@ -3042,10 +3810,14 @@ export const trafficSigns = [
     "arabicName": "غاز لتشغيل المركبات",
     "officialMeaning": "مخصصة تحديدًا لمحطات تعبئة الغاز (كالغاز الطبيعي المضغوط) لتشغيل المركبات العاملة بهذا النوع من الوقود، بخلاف محطات الوقود التقليدية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "gas",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H4-1-svg.jpg",
+    "imageAlt": "غاز لتشغيل المركبات",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H5",
@@ -3056,10 +3828,14 @@ export const trafficSigns = [
     "arabicName": "مطعم/مكان تقديم وجبات خفيفة",
     "officialMeaning": "تشير إلى مكان لتقديم وجبات خفيفة أو مرطبات سريعة، وهي أخف من علامة \"مطعم\" (H6) الكاملة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "cutlery-snack",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H5-1-svg.jpg",
+    "imageAlt": "مطعم/مكان تقديم وجبات خفيفة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H6",
@@ -3070,10 +3846,14 @@ export const trafficSigns = [
     "arabicName": "مطعم",
     "officialMeaning": "تشير تحديدًا إلى مطعم يقدّم وجبات كاملة (وليس فقط وجبات خفيفة كما في H5).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "cutlery-restaurant",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H6-1-svg.jpg",
+    "imageAlt": "مطعم",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H7",
@@ -3084,10 +3864,14 @@ export const trafficSigns = [
     "arabicName": "فندق",
     "officialMeaning": "تشير إلى فندق يقدّم إقامة مدفوعة بمعايير فندقية اعتيادية، بخلاف بيت الشباب (H8) الأبسط والأرخص عادة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "bed-hotel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H7-1-svg.jpg",
+    "imageAlt": "فندق",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H8",
@@ -3098,10 +3882,14 @@ export const trafficSigns = [
     "arabicName": "بيت شباب (نُزل)",
     "officialMeaning": "تشير إلى بيت شباب أو نُزل اقتصادي (Vandrarhem)، وهو خيار إقامة أبسط وأرخص عادة من الفندق التقليدي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "bed-hostel",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H8-1-svg.jpg",
+    "imageAlt": "بيت شباب (نُزل)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H9",
@@ -3112,10 +3900,14 @@ export const trafficSigns = [
     "arabicName": "قرية أكواخ سياحية",
     "officialMeaning": "تشير إلى مجمّع أكواخ سياحية متعددة (Stugby) مخصص للإيجار قصير المدى، وليس كوخًا واحدًا فرديًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "cabin-village",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H9-1-svg.jpg",
+    "imageAlt": "قرية أكواخ سياحية",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H10",
@@ -3126,10 +3918,14 @@ export const trafficSigns = [
     "arabicName": "كوخ سياحي",
     "officialMeaning": "تشير إلى كوخ سياحي فردي واحد متاح للإيجار، بخلاف علامة قرية الأكواخ (H9) التي تشير إلى مجمّع كامل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "cabin-single",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H10-1-svg.jpg",
+    "imageAlt": "كوخ سياحي",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H11",
@@ -3140,10 +3936,14 @@ export const trafficSigns = [
     "arabicName": "موقع تخييم",
     "officialMeaning": "ترشدك إلى موقع تخييم رسمي مجهَّز (غالبًا بمرافق أساسية كالمياه ودورات المياه)، وليس أي أرض مفتوحة عشوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "tent",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H11-1-svg.jpg",
+    "imageAlt": "موقع تخييم",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H12",
@@ -3154,10 +3954,14 @@ export const trafficSigns = [
     "arabicName": "موقف مقطورات سكنية (كارافان)",
     "officialMeaning": "تشير تحديدًا إلى موقف مخصص لمقطورات السكن المتنقل (كارافان)، بخلاف موقف السيارات العادي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "caravan",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H12-1-svg.jpg",
+    "imageAlt": "موقف مقطورات سكنية (كارافان)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H13",
@@ -3168,10 +3972,14 @@ export const trafficSigns = [
     "arabicName": "منطقة استراحة",
     "officialMeaning": "تشير إلى منطقة استراحة على الطريق (Rastplats) مجهَّزة عادة بمقاعد وطاولات، دون بالضرورة خدمات إضافية كالمطاعم أو الوقود.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "picnic",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H13-1-svg.jpg",
+    "imageAlt": "منطقة استراحة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H14",
@@ -3182,10 +3990,14 @@ export const trafficSigns = [
     "arabicName": "دورة مياه عامة",
     "officialMeaning": "ترشدك إلى دورة مياه عامة متاحة للاستخدام المجاني أو شبه المجاني.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "toilet",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H14-1-svg.jpg",
+    "imageAlt": "دورة مياه عامة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H15",
@@ -3196,10 +4008,14 @@ export const trafficSigns = [
     "arabicName": "مكان سباحة",
     "officialMeaning": "ترشدك إلى مكان سباحة عام رسمي (كبحيرة أو شاطئ مخصص للسباحة)، وليس أي مسطح مائي عشوائي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "swim",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H15-1-svg.jpg",
+    "imageAlt": "مكان سباحة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H16",
@@ -3210,10 +4026,14 @@ export const trafficSigns = [
     "arabicName": "منطقة ترفيه في الهواء الطلق",
     "officialMeaning": "تشير إلى منطقة مخصصة للأنشطة الترفيهية في الهواء الطلق (كالمتنزهات الطبيعية العامة).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "trees",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H16-1-svg.jpg",
+    "imageAlt": "منطقة ترفيه في الهواء الطلق",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H17",
@@ -3224,10 +4044,14 @@ export const trafficSigns = [
     "arabicName": "مسار مشي (هايكنغ)",
     "officialMeaning": "ترشدك إلى بداية مسار مشي أو هايكنغ رسمي معلَّم، غالبًا في مناطق طبيعية أو غابات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "hiker",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H17-1-svg.jpg",
+    "imageAlt": "مسار مشي (هايكنغ)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H18",
@@ -3238,10 +4062,14 @@ export const trafficSigns = [
     "arabicName": "مصعد تزلج (تلفريك مقاعد)",
     "officialMeaning": "تشير تحديدًا إلى مصعد تزلج من نوع التلفريك بمقاعد (وليس مصعد الجر البسيط في H19).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "chairlift",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H18-1-svg.jpg",
+    "imageAlt": "مصعد تزلج (تلفريك مقاعد)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H19",
@@ -3252,10 +4080,14 @@ export const trafficSigns = [
     "arabicName": "مصعد جر للمتزلجين",
     "officialMeaning": "تشير إلى مصعد جر بسيط للمتزلجين (يُجرّون به واقفين على الثلج)، بخلاف التلفريك بمقاعد (H18).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "towlift",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H19-1-svg.jpg",
+    "imageAlt": "مصعد جر للمتزلجين",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H20",
@@ -3266,10 +4098,14 @@ export const trafficSigns = [
     "arabicName": "ملعب غولف",
     "officialMeaning": "ترشدك إلى ملعب غولف رسمي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "golf",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H20-1-svg.jpg",
+    "imageAlt": "ملعب غولف",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H21",
@@ -3280,10 +4116,14 @@ export const trafficSigns = [
     "arabicName": "نقطة بيع تصاريح الصيد",
     "officialMeaning": "ترشدك إلى نقطة بيع تصاريح الصيد الرسمية المطلوبة قانونًا لممارسة الصيد في تلك المنطقة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "fish",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H21-1-svg.jpg",
+    "imageAlt": "نقطة بيع تصاريح الصيد",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H22",
@@ -3294,10 +4134,14 @@ export const trafficSigns = [
     "arabicName": "معلم أو مكان جدير بالمشاهدة",
     "officialMeaning": "تشير إلى معلم أو موقع يستحق المشاهدة (منظر طبيعي أو أثر تاريخي) دون أن يكون بالضرورة موقعًا سياحيًا رسميًا مصنَّفًا كتراث عالمي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "star",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H22-1-svg.jpg",
+    "imageAlt": "معلم أو مكان جدير بالمشاهدة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H23",
@@ -3308,10 +4152,14 @@ export const trafficSigns = [
     "arabicName": "معلومات تمهيدية عن خدمات قريبة من الطريق",
     "officialMeaning": "لوحة تمهيدية تظهر قبل مجموعة من علامات الخدمات القادمة (كتجمع محطة وقود ومطعم واستراحة معًا)، لتنبيهك مسبقًا بأن خدمات متعددة تقترب دفعة واحدة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "info-advance",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h23.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H23-1-svg.jpg",
+    "imageAlt": "معلومات تمهيدية عن خدمات قريبة من الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H24",
@@ -3322,10 +4170,14 @@ export const trafficSigns = [
     "arabicName": "غرفة وإفطار (Bed & Breakfast)",
     "officialMeaning": "تشير إلى إقامة من نوع \"غرفة وإفطار\" (Bed & Breakfast) — إقامة صغيرة في منزل خاص مع وجبة إفطار، وهي أبسط من الفندق (H7) وغالبًا أصغر من بيت الشباب (H8).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "bed-bnb",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H24-1-svg.jpg",
+    "imageAlt": "غرفة وإفطار (Bed & Breakfast)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H25",
@@ -3336,10 +4188,14 @@ export const trafficSigns = [
     "arabicName": "متجر مزرعة",
     "officialMeaning": "ترشدك إلى متجر يبيع منتجات مزرعة محلية مباشرة (كالخضار والألبان)، بخلاف علامة \"المنطقة التجارية\" العامة (G10).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "shop-farm",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H25-1-svg.jpg",
+    "imageAlt": "متجر مزرعة",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H26",
@@ -3350,10 +4206,14 @@ export const trafficSigns = [
     "arabicName": "حرفة يدوية محلية",
     "officialMeaning": "ترشدك إلى مكان لبيع أو عرض حرف يدوية محلية تقليدية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "craft",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h26.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H26-1-svg.jpg",
+    "imageAlt": "حرفة يدوية محلية",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H27",
@@ -3364,10 +4224,14 @@ export const trafficSigns = [
     "arabicName": "محطة شحن (مركبات كهربائية)",
     "officialMeaning": "ترشدك إلى محطة شحن مخصصة للمركبات الكهربائية، بخلاف محطات الوقود التقليدية (H3) أو محطات الغاز (H4).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "ev-plug",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h27.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H27-1-svg.jpg",
+    "imageAlt": "محطة شحن (مركبات كهربائية)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "H28",
@@ -3378,10 +4242,14 @@ export const trafficSigns = [
     "arabicName": "منشأة مخصصة فقط لمواقف مركبات السكن المتنقل",
     "officialMeaning": "منشأة مخصصة حصريًا لمواقف مركبات السكن المتنقل (لا تشمل خدمات تخييم أو أكواخ إضافية كما في H11/H9).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-blue",
     "glyph": "caravan-facility",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/h28.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/H28-1-svg.jpg",
+    "imageAlt": "منشأة مخصصة فقط لمواقف مركبات السكن المتنقل",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "I1",
@@ -3392,10 +4260,14 @@ export const trafficSigns = [
     "arabicName": "طريق سياحي",
     "officialMeaning": "يشير إلى طريق مصنَّف رسميًا كـ\"طريق سياحي\" (Turistväg) لجودة مناظره الطبيعية أو أهميته الثقافية على امتداد مساره كاملًا، وليس فقط عند نقطة واحدة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-brown",
     "glyph": "route",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/i1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/I1-1-svg.jpg",
+    "imageAlt": "طريق سياحي",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "I2",
@@ -3406,10 +4278,14 @@ export const trafficSigns = [
     "arabicName": "منطقة سياحية",
     "officialMeaning": "يشير إلى منطقة جغرافية أوسع مصنَّفة كمنطقة ذات أهمية سياحية عامة، وليس معلمًا واحدًا محددًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-brown",
     "glyph": "area",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/i2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/I2-1-svg.jpg",
+    "imageAlt": "منطقة سياحية",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "I3",
@@ -3420,10 +4296,14 @@ export const trafficSigns = [
     "arabicName": "معلم بارز (لاند مارك)",
     "officialMeaning": "يشير إلى معلم بارز مميز (Landmärke) يمكن رؤيته من مسافة بعيدة كنقطة استدلال بصري (كبرج أو تمثال ضخم)، بخلاف علامة \"معلم يستحق المشاهدة\" العامة (H22).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-brown",
     "glyph": "landmark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/i3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/I3-1-svg.jpg",
+    "imageAlt": "معلم بارز (لاند مارك)",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "I4",
@@ -3434,10 +4314,14 @@ export const trafficSigns = [
     "arabicName": "موقع تراث عالمي",
     "officialMeaning": "مخصصة حصريًا للمواقع المصنَّفة رسميًا ضمن قائمة التراث العالمي لليونسكو (UNESCO World Heritage)، وهو تصنيف دولي رسمي أعلى درجة من أي علامة سياحية محلية أخرى.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70913)",
     "shape": "rect-info-brown",
     "glyph": "heritage",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/i4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/I4-1-svg.jpg",
+    "imageAlt": "موقع تراث عالمي",
+    "sourceUrl": "https://sweden4.com/?p=70913"
   },
   {
     "code": "J2",
@@ -3476,10 +4360,14 @@ export const trafficSigns = [
     "arabicName": "خط وسطي أو خط فاصل بين المسارات",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط وسطي أو خط فاصل بين المسارات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-center",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m1.jpg",
+    "imageAlt": "خط وسطي أو خط فاصل بين المسارات",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M2",
@@ -3490,10 +4378,14 @@ export const trafficSigns = [
     "arabicName": "خط حافة الطريق",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط حافة الطريق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-edge",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m2.jpg",
+    "imageAlt": "خط حافة الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M3",
@@ -3504,10 +4396,14 @@ export const trafficSigns = [
     "arabicName": "خط تحذير",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط تحذير.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-warning",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m3.jpg",
+    "imageAlt": "خط تحذير",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M4",
@@ -3518,10 +4414,14 @@ export const trafficSigns = [
     "arabicName": "خط توجيهي (دليل مسار)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط توجيهي (دليل مسار).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-guide",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m4.jpg",
+    "imageAlt": "خط توجيهي (دليل مسار)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M5",
@@ -3532,10 +4432,14 @@ export const trafficSigns = [
     "arabicName": "خط مسار الدراجات الهوائية",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط مسار الدراجات الهوائية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-bike",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m5.jpg",
+    "imageAlt": "خط مسار الدراجات الهوائية",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M6",
@@ -3546,10 +4450,14 @@ export const trafficSigns = [
     "arabicName": "خط مسار لمركبات النقل المنتظم وغيرها",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط مسار لمركبات النقل المنتظم وغيرها.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-transit",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m6.jpg",
+    "imageAlt": "خط مسار لمركبات النقل المنتظم وغيرها",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M7",
@@ -3560,10 +4468,14 @@ export const trafficSigns = [
     "arabicName": "مسار عكسي الاتجاه (قابل للانعكاس)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): مسار عكسي الاتجاه (قابل للانعكاس).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-reversible",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m7.jpg",
+    "imageAlt": "مسار عكسي الاتجاه (قابل للانعكاس)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M8",
@@ -3574,10 +4486,14 @@ export const trafficSigns = [
     "arabicName": "خط متصل",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط متصل.",
     "trainingNote": "الخط المتصل يمنع تجاوزه أو الانتقال فوقه لتغيير المسار أو التجاوز، بعكس الخط المتقطع الذي يسمح بذلك بحذر.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-solid",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m8.jpg",
+    "imageAlt": "خط متصل",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M9",
@@ -3588,10 +4504,14 @@ export const trafficSigns = [
     "arabicName": "منطقة محظورة (مساحة مؤشّرة بخطوط)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): منطقة محظورة (مساحة مؤشّرة بخطوط).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "hatched-area",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m9.jpg",
+    "imageAlt": "منطقة محظورة (مساحة مؤشّرة بخطوط)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M10",
@@ -3602,10 +4522,14 @@ export const trafficSigns = [
     "arabicName": "خط وسطي أو فاصل مسارات مع خط متصل",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط وسطي أو فاصل مسارات مع خط متصل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-combo-center-solid",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m10.jpg",
+    "imageAlt": "خط وسطي أو فاصل مسارات مع خط متصل",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M11",
@@ -3616,10 +4540,14 @@ export const trafficSigns = [
     "arabicName": "خط تحذير مع خط متصل",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط تحذير مع خط متصل.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-combo-warning-solid",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m11.jpg",
+    "imageAlt": "خط تحذير مع خط متصل",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M12",
@@ -3630,10 +4558,14 @@ export const trafficSigns = [
     "arabicName": "خط وسطي مع خط تحذير",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط وسطي مع خط تحذير.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "line-combo-center-warning",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m12.jpg",
+    "imageAlt": "خط وسطي مع خط تحذير",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M13",
@@ -3644,10 +4576,14 @@ export const trafficSigns = [
     "arabicName": "خط التوقف",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط التوقف.",
     "trainingNote": "خط التوقف يحدد بدقة أين يجب أن تتوقف المركبة الأولى فعليًا عند إشارة حمراء أو عند شاخصة B2، ويُفضَّل التوقف عنده تحديدًا لا قبله بمسافة كبيرة ولا بعده.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "stop-line",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m13.jpg",
+    "imageAlt": "خط التوقف",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M14",
@@ -3658,10 +4594,14 @@ export const trafficSigns = [
     "arabicName": "خط إفساح الطريق (خط الأولوية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): خط إفساح الطريق (خط الأولوية).",
     "trainingNote": "خط إفساح الطريق يُستخدم عادة مصحوبًا بشاخصة B1 ليحدد بدقة أين تنتهي مسؤوليتك بإفساح الطريق للحركة المتقاطعة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "yield-line",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m14.jpg",
+    "imageAlt": "خط إفساح الطريق (خط الأولوية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M15",
@@ -3672,10 +4612,14 @@ export const trafficSigns = [
     "arabicName": "ممر مشاة (مرسوم على الأرض)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): ممر مشاة (مرسوم على الأرض).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "zebra",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m15.jpg",
+    "imageAlt": "ممر مشاة (مرسوم على الأرض)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M16",
@@ -3686,10 +4630,14 @@ export const trafficSigns = [
     "arabicName": "معبر أو ممر دراجات هوائية (مرسوم على الأرض)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): معبر أو ممر دراجات هوائية (مرسوم على الأرض).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "bike-crossing-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m16.jpg",
+    "imageAlt": "معبر أو ممر دراجات هوائية (مرسوم على الأرض)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M17",
@@ -3700,10 +4648,14 @@ export const trafficSigns = [
     "arabicName": "مطب صناعي (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): مطب صناعي (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "bump",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m17.jpg",
+    "imageAlt": "مطب صناعي (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M17a",
@@ -3714,10 +4666,14 @@ export const trafficSigns = [
     "arabicName": "صندوق انتظار الدراجات الهوائية عند التقاطع",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): صندوق انتظار الدراجات الهوائية عند التقاطع.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "bike-box",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m17a.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m17a.jpg",
+    "imageAlt": "صندوق انتظار الدراجات الهوائية عند التقاطع",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M18",
@@ -3728,10 +4684,14 @@ export const trafficSigns = [
     "arabicName": "تنبيه مسبق بوجود واجب إفساح الطريق أو التوقف الإجباري",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): تنبيه مسبق بوجود واجب إفساح الطريق أو التوقف الإجباري.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "yield-advance-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m18.jpg",
+    "imageAlt": "تنبيه مسبق بوجود واجب إفساح الطريق أو التوقف الإجباري",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M19",
@@ -3742,10 +4702,14 @@ export const trafficSigns = [
     "arabicName": "أسهم توجيه المسار",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): أسهم توجيه المسار.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "lane-arrows",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m19.jpg",
+    "imageAlt": "أسهم توجيه المسار",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M20",
@@ -3756,10 +4720,14 @@ export const trafficSigns = [
     "arabicName": "علامة تغيير المسار",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): علامة تغيير المسار.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "lane-change",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m20.jpg",
+    "imageAlt": "علامة تغيير المسار",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M21",
@@ -3770,10 +4738,14 @@ export const trafficSigns = [
     "arabicName": "منع التوقف والوقوف (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): منع التوقف والوقوف (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "no-stop-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m21.jpg",
+    "imageAlt": "منع التوقف والوقوف (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M22",
@@ -3784,10 +4756,14 @@ export const trafficSigns = [
     "arabicName": "منع الوقوف (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): منع الوقوف (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "no-park-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m22.jpg",
+    "imageAlt": "منع الوقوف (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M23",
@@ -3798,10 +4774,14 @@ export const trafficSigns = [
     "arabicName": "منع التوقف والوقوف أو الوقوف فقط (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): منع التوقف والوقوف أو الوقوف فقط (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "no-stop-park-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m23.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m23.jpg",
+    "imageAlt": "منع التوقف والوقوف أو الوقوف فقط (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M24",
@@ -3812,10 +4792,14 @@ export const trafficSigns = [
     "arabicName": "مكان تمركز/اصطفاف محدد",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): مكان تمركز/اصطفاف محدد.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "parking-spot-mark",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m24.jpg",
+    "imageAlt": "مكان تمركز/اصطفاف محدد",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M25",
@@ -3826,10 +4810,14 @@ export const trafficSigns = [
     "arabicName": "سهم مسار المشاة والدراجات",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): سهم مسار المشاة والدراجات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "arrow-ped-bike",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m25.jpg",
+    "imageAlt": "سهم مسار المشاة والدراجات",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M26",
@@ -3840,10 +4828,14 @@ export const trafficSigns = [
     "arabicName": "رمز الدراجة الهوائية (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رمز الدراجة الهوائية (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "bicycle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m26.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m26.jpg",
+    "imageAlt": "رمز الدراجة الهوائية (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M27",
@@ -3854,10 +4846,14 @@ export const trafficSigns = [
     "arabicName": "رمز المشاة (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رمز المشاة (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "pedestrian",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m27.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m27.jpg",
+    "imageAlt": "رمز المشاة (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M28",
@@ -3868,10 +4864,14 @@ export const trafficSigns = [
     "arabicName": "رمز الحافلة (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رمز الحافلة (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "bus",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m28.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m28.jpg",
+    "imageAlt": "رمز الحافلة (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M29",
@@ -3882,10 +4882,14 @@ export const trafficSigns = [
     "arabicName": "رقم السرعة (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رقم السرعة (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "speed-number",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m29.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m29.jpg",
+    "imageAlt": "رقم السرعة (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M30",
@@ -3896,10 +4900,14 @@ export const trafficSigns = [
     "arabicName": "رقم الطريق (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رقم الطريق (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "road-number",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m30.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m30.jpg",
+    "imageAlt": "رقم الطريق (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M31",
@@ -3910,10 +4918,14 @@ export const trafficSigns = [
     "arabicName": "موقع مخصص لغرض محدد (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): موقع مخصص لغرض محدد (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "purpose-place",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m31.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m31.jpg",
+    "imageAlt": "موقع مخصص لغرض محدد (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M32",
@@ -3924,10 +4936,14 @@ export const trafficSigns = [
     "arabicName": "كلمة STOP (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): كلمة STOP (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "stop-text",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m32.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m32.jpg",
+    "imageAlt": "كلمة STOP (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M33",
@@ -3938,10 +4954,14 @@ export const trafficSigns = [
     "arabicName": "رمز ذوي الإعاقة الحركية (علامة أرضية)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): رمز ذوي الإعاقة الحركية (علامة أرضية).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "wheelchair",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m33.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m33.jpg",
+    "imageAlt": "رمز ذوي الإعاقة الحركية (علامة أرضية)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "M34",
@@ -3952,10 +4972,14 @@ export const trafficSigns = [
     "arabicName": "معلومات (نص أو رمز إعلامي على الأرض)",
     "officialMeaning": "علامة أرضية مرسومة على سطح الطريق نفسه (وليست شاخصة مثبتة على عمود): معلومات (نص أو رمز إعلامي على الأرض).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70914)",
     "shape": "roadmark",
     "glyph": "info-i",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/m34.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/m34.jpg",
+    "imageAlt": "معلومات (نص أو رمز إعلامي على الأرض)",
+    "sourceUrl": "https://sweden4.com/?p=70914"
   },
   {
     "code": "S1",
@@ -4148,10 +5172,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أحمر",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أحمر.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-red",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG1.jpg",
+    "imageAlt": "ضوء أحمر",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG2",
@@ -4162,10 +5190,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أحمر + أصفر معًا",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أحمر + أصفر معًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-red-yellow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG2.jpg",
+    "imageAlt": "ضوء أحمر + أصفر معًا",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG3",
@@ -4176,10 +5208,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أخضر",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أخضر.",
     "trainingNote": "الضوء الأخضر لا يعني أولوية مطلقة تلقائيًا؛ يجب التأكد من خلو التقاطع من مشاة أو مركبات لم تُخلِ المكان بعد قبل المتابعة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-green",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG3.jpg",
+    "imageAlt": "ضوء أخضر",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG4",
@@ -4190,10 +5226,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أصفر",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أصفر.",
     "trainingNote": "الضوء الأصفر الثابت (غير الوامض) يعني الاستعداد للتوقف قبل خط التوقف إن أمكن ذلك بأمان، وليس إشارة للتسريع لعبور التقاطع.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-yellow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG4.jpg",
+    "imageAlt": "ضوء أصفر",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG5",
@@ -4204,10 +5244,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أصفر وامض",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أصفر وامض.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-yellow-blink",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG5.jpg",
+    "imageAlt": "ضوء أصفر وامض",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG6",
@@ -4218,10 +5262,14 @@ export const trafficSigns = [
     "arabicName": "إشارة صوتية حمراء بمعدل نبضات بطيء",
     "officialMeaning": "جزء من نظام إشارات عبور المشاة الضوئي والصوتي معًا: نغمة صوتية بمعدل نبضات بطيء تُصاحب الضوء الأحمر، وتعني منع المشاة من عبور الطريق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "sound-red",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG6.jpg",
+    "imageAlt": "إشارة صوتية حمراء بمعدل نبضات بطيء",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG7",
@@ -4232,10 +5280,14 @@ export const trafficSigns = [
     "arabicName": "إشارة صوتية خضراء بمعدل نبضات سريع",
     "officialMeaning": "جزء من نظام إشارات عبور المشاة الضوئي والصوتي معًا: نغمة صوتية بمعدل نبضات سريع تُصاحب الضوء الأخضر، وتعني السماح للمشاة بعبور الطريق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "sound-green",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG7.jpg",
+    "imageAlt": "إشارة صوتية خضراء بمعدل نبضات سريع",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG8",
@@ -4246,10 +5298,14 @@ export const trafficSigns = [
     "arabicName": "رمز S (دراجات/ترام)",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: رمز S (دراجات/ترام).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "s-symbol",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG8.jpg",
+    "imageAlt": "رمز S (دراجات/ترام)",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG9",
@@ -4260,10 +5316,14 @@ export const trafficSigns = [
     "arabicName": "رمز S مع خط أفقي",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: رمز S مع خط أفقي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "s-symbol-line",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG9.jpg",
+    "imageAlt": "رمز S مع خط أفقي",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG10",
@@ -4274,10 +5334,14 @@ export const trafficSigns = [
     "arabicName": "خط عمودي أو سهم",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: خط عمودي أو سهم.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "vertical-line",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG10.jpg",
+    "imageAlt": "خط عمودي أو سهم",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG11",
@@ -4288,10 +5352,14 @@ export const trafficSigns = [
     "arabicName": "خط أفقي",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: خط أفقي.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "horizontal-line",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG11.jpg",
+    "imageAlt": "خط أفقي",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG12",
@@ -4302,10 +5370,14 @@ export const trafficSigns = [
     "arabicName": "صليب أحمر",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: صليب أحمر.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "cross-x",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG12.jpg",
+    "imageAlt": "صليب أحمر",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG13",
@@ -4316,10 +5388,14 @@ export const trafficSigns = [
     "arabicName": "سهم أو أسهم صفراء",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: سهم أو أسهم صفراء.",
     "trainingNote": "الأسهم الصفراء في نظام إشارات المسارات تعني أن هذا المسار مفتوح لكن بحركة محدودة أو استثنائية (كإعادة توجيه)، بخلاف السهم الأخضر الذي يعني سريان طبيعي كامل.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "arrow-yellow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG13.jpg",
+    "imageAlt": "سهم أو أسهم صفراء",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG14",
@@ -4330,10 +5406,14 @@ export const trafficSigns = [
     "arabicName": "سهم أخضر",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: سهم أخضر.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "arrow-green",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG14.jpg",
+    "imageAlt": "سهم أخضر",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG16",
@@ -4344,10 +5424,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أحمر وامض",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أحمر وامض.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-red-blink",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG16.jpg",
+    "imageAlt": "ضوء أحمر وامض",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG17",
@@ -4358,10 +5442,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أحمر ثابت",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أحمر ثابت.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-red-steady",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG17.jpg",
+    "imageAlt": "ضوء أحمر ثابت",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "SIG18",
@@ -4372,10 +5460,14 @@ export const trafficSigns = [
     "arabicName": "ضوء أصفر وامض لتنبيه الحذر الخاص",
     "officialMeaning": "جزء من نظام الإشارات الضوئية لتنظيم المرور: ضوء أصفر وامض لتنبيه الحذر الخاص.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70915)",
     "shape": "signal",
     "glyph": "dot-yellow-blink-caution",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/sig18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/SIG18.jpg",
+    "imageAlt": "ضوء أصفر وامض لتنبيه الحذر الخاص",
+    "sourceUrl": "https://sweden4.com/?p=70915"
   },
   {
     "code": "T1",
@@ -4386,10 +5478,14 @@ export const trafficSigns = [
     "arabicName": "طول المقطع الطرقي المعني",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: طول المقطع الطرقي المعني. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "text-length",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T1-1-svg.jpg",
+    "imageAlt": "طول المقطع الطرقي المعني",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T2",
@@ -4400,10 +5496,14 @@ export const trafficSigns = [
     "arabicName": "المسافة (حتى نقطة معينة)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: المسافة (حتى نقطة معينة). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "text-distance",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T2-1-svg.jpg",
+    "imageAlt": "المسافة (حتى نقطة معينة)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T3",
@@ -4414,10 +5514,14 @@ export const trafficSigns = [
     "arabicName": "المسافة حتى نقطة التوقف الإجباري",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: المسافة حتى نقطة التوقف الإجباري. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "عند رؤية شاخصة B1 أو B2 مصحوبة بهذه اللوحة، فالمعنى أن واجب إفساح الطريق أو التوقف الإجباري يبدأ عند المسافة المذكورة أمامك، وليس عند موضع العلامة نفسها.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "text-distance-stop",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T3-1-svg.jpg",
+    "imageAlt": "المسافة حتى نقطة التوقف الإجباري",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T4",
@@ -4428,10 +5532,14 @@ export const trafficSigns = [
     "arabicName": "العرض الحر المتاح للمرور",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: العرض الحر المتاح للمرور. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "width",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T4-1-svg.jpg",
+    "imageAlt": "العرض الحر المتاح للمرور",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T5",
@@ -4442,10 +5550,14 @@ export const trafficSigns = [
     "arabicName": "الوزن الإجمالي",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: الوزن الإجمالي. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "weight",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T5-1-svg.jpg",
+    "imageAlt": "الوزن الإجمالي",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T6",
@@ -4456,10 +5568,14 @@ export const trafficSigns = [
     "arabicName": "تحديد زمني (فترة سريان)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: تحديد زمني (فترة سريان). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "اللوحة الزمنية تحدّد الفترة (أيام/ساعات) التي تسري خلالها الشاخصة الرئيسية فقط؛ خارج هذه الفترة قد لا يسري الحكم إطلاقًا.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "clock-general",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T6-1-svg.jpg",
+    "imageAlt": "تحديد زمني (فترة سريان)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T7",
@@ -4470,10 +5586,14 @@ export const trafficSigns = [
     "arabicName": "ذوو الإعاقة الحركية",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: ذوو الإعاقة الحركية. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "wheelchair",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T7-1-svg.jpg",
+    "imageAlt": "ذوو الإعاقة الحركية",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T8",
@@ -4484,10 +5604,11 @@ export const trafficSigns = [
     "arabicName": "لوحة رمزية توضيحية",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: لوحة رمزية توضيحية. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "generic",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T9",
@@ -4498,10 +5619,14 @@ export const trafficSigns = [
     "arabicName": "ضعف البصر",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: ضعف البصر. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "eye",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T9-1-svg.jpg",
+    "imageAlt": "ضعف البصر",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T10",
@@ -4512,10 +5637,14 @@ export const trafficSigns = [
     "arabicName": "ضعف السمع",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: ضعف السمع. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "ear",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T10-1-svg.jpg",
+    "imageAlt": "ضعف السمع",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T11",
@@ -4526,7 +5655,7 @@ export const trafficSigns = [
     "arabicName": "امتداد نطاق سريان العلامة",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: امتداد نطاق سريان العلامة. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "arrow-extent",
     "variants": [
@@ -4565,7 +5694,11 @@ export const trafficSigns = [
         "glyph": "arrow-extent-right",
         "resolved": true
       }
-    ]
+    ],
+    "image": "/traffic-signs/sweden4/t11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T11-1-svg.jpg",
+    "imageAlt": "امتداد نطاق سريان العلامة",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T12",
@@ -4576,10 +5709,14 @@ export const trafficSigns = [
     "arabicName": "اتجاه سريان العلامة",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: اتجاه سريان العلامة. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "arrow-direction",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t12.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T12-1-svg.jpg",
+    "imageAlt": "اتجاه سريان العلامة",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T13",
@@ -4590,10 +5727,14 @@ export const trafficSigns = [
     "arabicName": "إفساح طريق متعدد الاتجاهات (تقاطع)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: إفساح طريق متعدد الاتجاهات (تقاطع). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "'إفساح طريق متعدد الاتجاهات' تُستخدم عادة مع B1 في تقاطعات من نوع 'كل الاتجاهات عليها واجب إفساح الطريق' — يجب حينها تطبيق قاعدة الأولوية العامة (كاليمين) بين المركبات المتزامنة.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "yield-multi",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t13.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T13-1-svg.jpg",
+    "imageAlt": "إفساح طريق متعدد الاتجاهات (تقاطع)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T14",
@@ -4604,10 +5745,14 @@ export const trafficSigns = [
     "arabicName": "توقف إجباري متعدد الاتجاهات (تقاطع)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: توقف إجباري متعدد الاتجاهات (تقاطع). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "مثل T13 لكن مع B2 — توقف إجباري لجميع الاتجاهات عند هذا التقاطع تحديدًا.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "stop-multi",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t14.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T14-1-svg.jpg",
+    "imageAlt": "توقف إجباري متعدد الاتجاهات (تقاطع)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T15",
@@ -4618,10 +5763,14 @@ export const trafficSigns = [
     "arabicName": "استمرارية الطرق عند التقاطع",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: استمرارية الطرق عند التقاطع. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "road-continue",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t15.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T15-1-svg.jpg",
+    "imageAlt": "استمرارية الطرق عند التقاطع",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T16",
@@ -4632,10 +5781,14 @@ export const trafficSigns = [
     "arabicName": "رسوم/تعرفة",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: رسوم/تعرفة. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "coin",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t16.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T16-1-svg.jpg",
+    "imageAlt": "رسوم/تعرفة",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T17",
@@ -4646,10 +5799,14 @@ export const trafficSigns = [
     "arabicName": "قرص الوقوف (Parkeringsskiva)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: قرص الوقوف (Parkeringsskiva). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "disc",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t17.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T17-1-svg.jpg",
+    "imageAlt": "قرص الوقوف (Parkeringsskiva)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T18",
@@ -4660,10 +5817,14 @@ export const trafficSigns = [
     "arabicName": "المدة المسموح بها للوقوف",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: المدة المسموح بها للوقوف. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "clock-parking",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t18.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T18-1-svg.jpg",
+    "imageAlt": "المدة المسموح بها للوقوف",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T19",
@@ -4674,10 +5835,14 @@ export const trafficSigns = [
     "arabicName": "المقيمون (استثناء لسكان المنطقة)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: المقيمون (استثناء لسكان المنطقة). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "resident",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t19.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T19-1-svg.jpg",
+    "imageAlt": "المقيمون (استثناء لسكان المنطقة)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T20",
@@ -4688,10 +5853,14 @@ export const trafficSigns = [
     "arabicName": "تذكرة الوقوف",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: تذكرة الوقوف. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "ticket",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t20.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T20-1-svg.jpg",
+    "imageAlt": "تذكرة الوقوف",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T21",
@@ -4702,10 +5871,14 @@ export const trafficSigns = [
     "arabicName": "طريقة اصطفاف المركبة",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: طريقة اصطفاف المركبة. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "parking-angle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t21.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T21-1-svg.jpg",
+    "imageAlt": "طريقة اصطفاف المركبة",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T22",
@@ -4716,10 +5889,14 @@ export const trafficSigns = [
     "arabicName": "نص توضيحي إضافي",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: نص توضيحي إضافي. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "text",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t22.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T22-1-svg.jpg",
+    "imageAlt": "نص توضيحي إضافي",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T23",
@@ -4730,10 +5907,11 @@ export const trafficSigns = [
     "arabicName": "فئة تصنيف النفق",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: فئة تصنيف النفق. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "tunnel-cat",
-    "variants": []
+    "variants": [],
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T24",
@@ -4744,10 +5922,14 @@ export const trafficSigns = [
     "arabicName": "نقطة شحن (مركبات كهربائية)",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: نقطة شحن (مركبات كهربائية). معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "ev-plug",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t24.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T24-1-svg.jpg",
+    "imageAlt": "نقطة شحن (مركبات كهربائية)",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "T25",
@@ -4758,10 +5940,14 @@ export const trafficSigns = [
     "arabicName": "مفتوح على مدار الساعة",
     "officialMeaning": "لوحة إضافية تُثبَّت أسفل شاخصة رئيسية لتحديد أو تعديل نطاق سريانها: مفتوح على مدار الساعة. معنى الشاخصة الرئيسية قد يتغيّر بوجود هذه اللوحة، فيجب قراءتهما معًا دائمًا.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70918)",
     "shape": "plaque-white",
     "glyph": "clock24",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/t25.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/T25-1-svg.jpg",
+    "imageAlt": "مفتوح على مدار الساعة",
+    "sourceUrl": "https://sweden4.com/?p=70918"
   },
   {
     "code": "P1",
@@ -4772,10 +5958,14 @@ export const trafficSigns = [
     "arabicName": "توقف",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: توقف.",
     "trainingNote": "إشارات الشرطة اليدوية لها أولوية على أي إشارة ضوئية أو شاخصة أخرى في نفس الموقع — يجب اتّباعها فورًا حتى لو تعارضت ظاهريًا مع لون الإشارة الضوئية.",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-stop",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P1.jpg",
+    "imageAlt": "توقف",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P2",
@@ -4786,10 +5976,14 @@ export const trafficSigns = [
     "arabicName": "توقف",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: توقف.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-stop-side",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P2.jpg",
+    "imageAlt": "توقف",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P3",
@@ -4800,10 +5994,14 @@ export const trafficSigns = [
     "arabicName": "توقف",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: توقف.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-stop-torch",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P3.jpg",
+    "imageAlt": "توقف",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P4",
@@ -4814,10 +6012,14 @@ export const trafficSigns = [
     "arabicName": "تابع السير",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: تابع السير.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-forward",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P4-1.jpg",
+    "imageAlt": "تابع السير",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P5",
@@ -4828,10 +6030,14 @@ export const trafficSigns = [
     "arabicName": "خفّف السرعة",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: خفّف السرعة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-slow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P5.jpg",
+    "imageAlt": "خفّف السرعة",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P6",
@@ -4842,10 +6048,14 @@ export const trafficSigns = [
     "arabicName": "نقطة تفتيش/فحص",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: نقطة تفتيش/فحص.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-control",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P6.jpg",
+    "imageAlt": "نقطة تفتيش/فحص",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P7",
@@ -4856,10 +6066,14 @@ export const trafficSigns = [
     "arabicName": "تنبيه مسبق بوجود نقطة تفتيش",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: تنبيه مسبق بوجود نقطة تفتيش.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-control-advance",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P7.jpg",
+    "imageAlt": "تنبيه مسبق بوجود نقطة تفتيش",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P8",
@@ -4870,10 +6084,14 @@ export const trafficSigns = [
     "arabicName": "خفّف السرعة",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: خفّف السرعة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-slow-behind",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P8.jpg",
+    "imageAlt": "خفّف السرعة",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P9",
@@ -4884,10 +6102,14 @@ export const trafficSigns = [
     "arabicName": "خفّف السرعة",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: خفّف السرعة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-slow-oncoming",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P9.jpg",
+    "imageAlt": "خفّف السرعة",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P10",
@@ -4898,10 +6120,14 @@ export const trafficSigns = [
     "arabicName": "تابع خلف مركبة الشرطة وتوقف عندما تتوقف",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: تابع خلف مركبة الشرطة وتوقف عندما تتوقف.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-follow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P10-.jpg",
+    "imageAlt": "تابع خلف مركبة الشرطة وتوقف عندما تتوقف",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "P11",
@@ -4912,10 +6138,14 @@ export const trafficSigns = [
     "arabicName": "انتقل إلى كتف الطريق وتوقف أمام مركبة الشرطة",
     "officialMeaning": "إشارة يدوية يُعطيها ضابط شرطة (أو من في حكمه) لتنظيم حركة المرور مباشرة، ولها أولوية على أي شاخصة أو إشارة ضوئية أخرى: انتقل إلى كتف الطريق وتوقف أمام مركبة الشرطة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70916)",
     "shape": "gesture",
     "glyph": "hand-pullover",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/p11.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/P11.jpg",
+    "imageAlt": "انتقل إلى كتف الطريق وتوقف أمام مركبة الشرطة",
+    "sourceUrl": "https://sweden4.com/?p=70916"
   },
   {
     "code": "V1",
@@ -4968,10 +6198,14 @@ export const trafficSigns = [
     "arabicName": "سهم تحديد اتجاه",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: سهم تحديد اتجاه.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "arrow-forced",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x1.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X1.jpg",
+    "imageAlt": "سهم تحديد اتجاه",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X2",
@@ -4982,10 +6216,14 @@ export const trafficSigns = [
     "arabicName": "شاشة/حاجز تحديد عائق",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: شاشة/حاجز تحديد عائق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "screen-obstacle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x2.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X2.jpg",
+    "imageAlt": "شاشة/حاجز تحديد عائق",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X3",
@@ -4996,10 +6234,14 @@ export const trafficSigns = [
     "arabicName": "شاشة/حاجز تحديد عوائق جانبية أو مطبات",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: شاشة/حاجز تحديد عوائق جانبية أو مطبات.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "screen-side-obstacle",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x3.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X3.jpg",
+    "imageAlt": "شاشة/حاجز تحديد عوائق جانبية أو مطبات",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X4",
@@ -5010,10 +6252,14 @@ export const trafficSigns = [
     "arabicName": "شاشة تحديد مخرج الطريق",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: شاشة تحديد مخرج الطريق.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "screen-exit",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x4.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X4.jpg",
+    "imageAlt": "شاشة تحديد مخرج الطريق",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X5",
@@ -5024,10 +6270,14 @@ export const trafficSigns = [
     "arabicName": "سهم ضوئي أصفر أو أسهم ضوئية",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: سهم ضوئي أصفر أو أسهم ضوئية.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "arrow-yellow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x5.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X5.jpg",
+    "imageAlt": "سهم ضوئي أصفر أو أسهم ضوئية",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X6",
@@ -5038,10 +6288,14 @@ export const trafficSigns = [
     "arabicName": "جهاز تحذير خاص",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: جهاز تحذير خاص.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "exclaim",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x6.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X6-1.jpg",
+    "imageAlt": "جهاز تحذير خاص",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X7",
@@ -5052,10 +6306,14 @@ export const trafficSigns = [
     "arabicName": "حاجز طريق (بوابة)",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: حاجز طريق (بوابة).",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "barrier-road",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x7.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X7.jpg",
+    "imageAlt": "حاجز طريق (بوابة)",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X8",
@@ -5066,10 +6324,14 @@ export const trafficSigns = [
     "arabicName": "إغلاق مؤقت",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: إغلاق مؤقت.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "closed",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x8.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X8-1.jpg",
+    "imageAlt": "إغلاق مؤقت",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X9",
@@ -5080,10 +6342,14 @@ export const trafficSigns = [
     "arabicName": "جهاز تنظيم حركة الدوران",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: جهاز تنظيم حركة الدوران.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "roundabout-arrow",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x9.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X9.jpg",
+    "imageAlt": "جهاز تنظيم حركة الدوران",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "X10",
@@ -5094,10 +6360,14 @@ export const trafficSigns = [
     "arabicName": "جهاز تعليم على الأعمدة",
     "officialMeaning": "جهاز أو وسيلة إضافية لتوجيه حركة المرور في حالات خاصة لا تغطيها الشاخصات القياسية وحدها: جهاز تعليم على الأعمدة.",
     "trainingNote": "",
-    "source": "Transportstyrelsen – Vägmärken؛ Vägmärkesförordning (2007:90)",
+    "source": "Sweden4.com (https://sweden4.com/?p=70917)",
     "shape": "device",
     "glyph": "post-marker",
-    "variants": []
+    "variants": [],
+    "image": "/traffic-signs/sweden4/x10.jpg",
+    "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/X10.jpg",
+    "imageAlt": "جهاز تعليم على الأعمدة",
+    "sourceUrl": "https://sweden4.com/?p=70917"
   },
   {
     "code": "Y1",

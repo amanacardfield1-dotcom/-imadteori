@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import TrafficSignIcon from '../../components/TrafficSignIcon';
+import TrafficSignVisual from '../../components/TrafficSignVisual';
 import { CATEGORY_CHIPS, getGroup, getGroupSigns } from './data';
 
 function VariantChip({ variant }) {
@@ -41,7 +42,7 @@ export default function TrafficSignDetail() {
 
       <div className="sign-detail-header">
         <div className="sign-detail-visual">
-          <TrafficSignIcon shape={sign.shape} glyph={sign.glyph} size={140} />
+          <TrafficSignVisual sign={sign} size={140} />
         </div>
         <div>
           <div className="sign-modal-code">{sign.code}</div>
