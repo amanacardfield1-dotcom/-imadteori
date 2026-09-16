@@ -1257,8 +1257,8 @@ export const trafficSigns = [
     "categoryNameSv": "Förbudsmärken",
     "categoryNameAr": "علامات المنع",
     "swedishName": "Förbud mot trafik med terrängmotorfordon och terrängsläp",
-    "arabicName": "منع حركة مركبات ومقطورات التضاريس",
-    "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: منع حركة مركبات ومقطورات التضاريس. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
+    "arabicName": "ممنوع مرور مركبات و عربات الطرق الوعرة",
+    "officialMeaning": "تمنع هذه العلامة أو تقيّد ما يلي: ممنوع مرور مركبات و عربات الطرق الوعرة. يسري المنع من موضع العلامة وحتى أقرب تقاطع أو حتى علامة نهاية المنع، ما لم تُحدَّد مسافة السريان بلوحة إضافية (Tilläggstavla).",
     "trainingNote": "",
     "source": "Sweden4.com (https://sweden4.com/?p=70744)",
     "shape": "circle-prohibit-red",
@@ -1266,7 +1266,7 @@ export const trafficSigns = [
     "variants": [],
     "image": "/traffic-signs/sweden4/c13.jpg",
     "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/C13.jpg",
-    "imageAlt": "منع حركة مركبات ومقطورات التضاريس",
+    "imageAlt": "ممنوع مرور مركبات و عربات الطرق الوعرة",
     "sourceUrl": "https://sweden4.com/?p=70744"
   },
   {
