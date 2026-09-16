@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Tests from './pages/Tests';
 import PracticeExamRun from './pages/PracticeExamRun';
+import ImagePracticeExamRun from './pages/ImagePracticeExamRun';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
@@ -58,6 +59,14 @@ export default function App() {
             element={
               <ProtectedRoute requireApproved>
                 <PracticeExamRun />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tests/images"
+            element={
+              <ProtectedRoute requireApproved>
+                <ImagePracticeExamRun />
               </ProtectedRoute>
             }
           />

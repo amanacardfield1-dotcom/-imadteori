@@ -2,12 +2,14 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { fetchPracticeBank, getMyAttempts } from '../practiceExam/api';
+import { getImageQuestionBankStats, IMAGE_EXAM_QUESTION_COUNT } from '../imagePracticeExam/bank';
 
 export default function Tests() {
   const { user } = useAuth();
   const [attempts, setAttempts] = useState([]);
   const [groupCount, setGroupCount] = useState(null);
   const [questionCount, setQuestionCount] = useState(null);
+  const imageBankStats = getImageQuestionBankStats();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -37,7 +39,15 @@ export default function Tests() {
         </div>
       )}
 
-      <Link to="/tests/run" className="btn-primary tp-start-btn">ابدأ اختبارًا تدريبيًا جديدًا</Link>
+      <div className="tests-actions">
+        <Link to="/tests/run" className="btn-primary tp-start-btn">ابدأ اختبارًا تدريبيًا جديدًا</Link>
+        <Link to="/tests/images" className="btn-secondary tp-start-btn">ابدأ اختبارًا تفاعليًا بالصور</Link>
+      </div>
+
+      <div className="image-bank-strip">
+        <strong>{imageBankStats.total}</strong>
+        <span>سؤالًا مصورًا في بنك الشاخصات، يظهر منها {IMAGE_EXAM_QUESTION_COUNT} سؤالًا في كل محاولة.</span>
+      </div>
 
       {!loading && attempts.length > 0 && (
         <div className="tp-history">
