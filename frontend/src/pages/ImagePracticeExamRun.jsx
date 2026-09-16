@@ -128,9 +128,9 @@ export default function ImagePracticeExamRun() {
         ))}
       </div>
 
-      <fieldset className="quiz-question tp-question-box image-question-box">
+      <section className="quiz-question tp-question-box image-question-box">
         <div className="tp-question-toolbar">
-          <legend>{currentIndex + 1}. {currentQuestion.text}</legend>
+          <h2 className="image-question-title">{currentIndex + 1}. {currentQuestion.text}</h2>
           <button
             type="button"
             className={`tp-flag-btn ${flagged[currentQuestion.id] ? 'active' : ''}`}
@@ -140,7 +140,7 @@ export default function ImagePracticeExamRun() {
           </button>
         </div>
 
-        <p className="muted image-question-meta">{currentQuestion.groupName} — {currentQuestion.signCode}</p>
+        <p className="muted image-question-meta">رمز الشاخصة: {currentQuestion.signCode}</p>
         <img src={currentQuestion.imageUrl} alt={currentQuestion.imageAlt} className="image-exam-question-image" />
 
         <div className="image-options">
@@ -156,7 +156,7 @@ export default function ImagePracticeExamRun() {
             </label>
           ))}
         </div>
-      </fieldset>
+      </section>
 
       <div className="tp-exam-nav">
         <button type="button" className="btn-secondary" onClick={() => goTo(currentIndex - 1)} disabled={currentIndex === 0}>

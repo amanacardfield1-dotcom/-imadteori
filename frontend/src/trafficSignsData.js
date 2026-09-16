@@ -3306,8 +3306,8 @@ export const trafficSigns = [
     "categoryNameSv": "Lokaliseringsmärken för vägvisning",
     "categoryNameAr": "علامات الاتجاهات والإرشاد إلى الوجهات",
     "swedishName": "Trafikplatsnummer",
-    "arabicName": "رقم مفترق الطرق",
-    "officialMeaning": "درع يحمل رقمًا تعريفيًا لمفترق طرق أو نقطة تبادل (Trafikplats) معينة، يُستخدم كمرجع دقيق (مثلًا في نظام GPS أو تقارير حوادث) لتحديد ذلك الموقع بدقة.",
+    "arabicName": "رقم المخرج من طريق الأوتوستراد أو الطريق السريع",
+    "officialMeaning": "تبين هذه الشاخصة رقم المخرج من طريق الأوتوستراد أو الطريق السريع، وتُستخدم للتعرف على المخرج أو نقطة التبادل بدقة عند القيادة أو عند وصف الموقع.",
     "trainingNote": "",
     "source": "Sweden4.com (https://sweden4.com/?p=70912)",
     "shape": "rect-info-blue",
@@ -3315,7 +3315,7 @@ export const trafficSigns = [
     "variants": [],
     "image": "/traffic-signs/sweden4/f27.jpg",
     "imageSource": "https://sweden4.com/wp-content/uploads/2025/02/F27-1.jpg",
-    "imageAlt": "رقم مفترق الطرق",
+    "imageAlt": "رقم المخرج من طريق الأوتوستراد أو الطريق السريع",
     "sourceUrl": "https://sweden4.com/?p=70912"
   },
   {

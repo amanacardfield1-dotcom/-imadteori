@@ -1039,8 +1039,20 @@ main {
 .image-question-box {
   padding: 22px;
 }
+.image-question-title {
+  color: var(--text);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0;
+}
 .image-question-meta {
-  margin: 10px 4px 0;
+  background: #eef4ff;
+  border-radius: 999px;
+  color: var(--blue-dark);
+  display: inline-block;
+  font-size: 0.86rem;
+  margin: 12px 4px 0;
+  padding: 4px 12px;
 }
 .image-exam-question-image {
   display: block;
