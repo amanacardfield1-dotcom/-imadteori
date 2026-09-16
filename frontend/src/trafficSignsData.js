@@ -2131,8 +2131,8 @@ export const trafficSigns = [
     "categoryNameSv": "Påbudsmärken",
     "categoryNameAr": "علامات الإلزام",
     "swedishName": "Påbjuden led för terrängmotorfordon och terrängsläp",
-    "arabicName": "طريق إلزامي لمركبات ومقطورات التضاريس",
-    "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: طريق إلزامي لمركبات ومقطورات التضاريس (كالسكوترات الثلجية). لا تمنع هذه العلامة سير المشاة أو استخدام الزحافات.",
+    "arabicName": "طريق إلزامي لمركبات و عربات الطرق الوعرة",
+    "officialMeaning": "تُلزم هذه العلامة مستخدمي الطريق بما يلي: طريق إلزامي لمركبات و عربات الطرق الوعرة (كالسكوترات الثلجية). لا تمنع هذه العلامة سير المشاة أو استخدام الزحافات.",
     "trainingNote": "",
     "source": "Sweden4.com (https://sweden4.com/?p=70820)",
     "shape": "circle-mandatory-blue",
@@ -2140,7 +2140,7 @@ export const trafficSigns = [
     "variants": [],
     "image": "/traffic-signs/sweden4/d9.jpg",
     "imageSource": "https://sweden4.com/wp-content/uploads/2020/09/D9.jpg",
-    "imageAlt": "طريق إلزامي لمركبات ومقطورات التضاريس",
+    "imageAlt": "طريق إلزامي لمركبات و عربات الطرق الوعرة",
     "sourceUrl": "https://sweden4.com/?p=70820"
   },
   {
