@@ -1,4 +1,4 @@
-import { trafficSigns } from '../trafficSignsData';
+import { trafficSigns } from '../trafficSignsData.js';
 
 export const IMAGE_EXAM_QUESTION_COUNT = 40;
 
@@ -17,10 +17,78 @@ function normalizeText(value) {
   return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
-function firstMeaningSentence(sign) {
-  const meaning = normalizeText(sign.officialMeaning);
-  const [first] = meaning.split(/[.!؟]/);
-  return normalizeText(first || meaning || sign.arabicName);
+const conciseOverrides = {
+  C1: 'ممنوع دخول المركبات',
+  C2: 'ممنوع حركة السير',
+  C3: 'ممنوع مرور المركبات الآلية',
+  C35: 'الركن Parkera ممنوع بعد الشاخصة',
+  C36: 'الركن Parkera ممنوع في التاريخ الفردي',
+  C37: 'الركن Parkera ممنوع في التاريخ الزوجي',
+  C38: 'الركن حسب التاريخ Datumparkering',
+  C39: 'نهاية منع الركن Parkera',
+  E19: 'موقف سيارات Parkering',
+  E20: 'بداية منطقة ذات قواعد خاصة',
+  E21: 'نهاية منطقة ذات قواعد خاصة',
+  E22: 'محطة حافلات',
+  E23: 'موقف سيارات أجرة Taxi',
+  E24: 'مستشفى',
+};
+
+const preferredDistractorCodes = {
+  B6: ['B7', 'B1', 'B2', 'B3'],
+  B7: ['B6', 'B1', 'B2', 'B3'],
+  C2: ['C1', 'C3', 'C4', 'C5'],
+  C3: ['C2', 'C4', 'C5', 'C6'],
+  C4: ['C3', 'C5', 'C6', 'C7'],
+  C35: ['C36', 'C37', 'C38', 'C39'],
+  C36: ['C35', 'C37', 'C38', 'C39'],
+  C37: ['C35', 'C36', 'C38', 'C39'],
+  C38: ['C35', 'C36', 'C37', 'C39'],
+  C39: ['C35', 'C36', 'C37', 'C38'],
+  E20: ['E21', 'E9', 'E10', 'E11', 'E19'],
+  E21: ['E20', 'E9', 'E10', 'E11', 'E19'],
+};
+
+function stripLongParentheses(text) {
+  return text.replace(/\s*\(([^)]*)\)/g, (_, inner) => {
+    if (/Parkera|Stanna|Datum|P\b/.test(inner)) return ` ${inner}`;
+    if (inner.length <= 12) return ` (${inner})`;
+    return '';
+  });
+}
+
+function compactOptionText(sign) {
+  let text = conciseOverrides[sign.code] || sign.arabicName || '';
+  text = normalizeText(stripLongParentheses(text));
+  text = text
+    .replace(/^علامة\s+/, '')
+    .replace(/^شاخصة\s+/, '')
+    .replace(/^تحذير\s+من\s+/, 'تحذير: ')
+    .replace(/^منع\s+وقوف\s+المركبات/, 'ممنوع الركن Parkera')
+    .replace(/^منع\s+حركة\s+/, 'ممنوع مرور ')
+    .replace(/^منع\s+مرور\s+/, 'ممنوع مرور ')
+    .replace(/\s+وذلك.*$/, '')
+    .replace(/\s+ما لم.*$/, '')
+    .replace(/\s+بحسب.*$/, (match) => (text.length > 70 ? '' : match));
+
+  if (text.length > 82 && text.includes('،')) {
+    text = text.split('،')[0];
+  }
+  if (text.length > 82 && text.includes(' - ')) {
+    text = text.split(' - ')[0];
+  }
+  if (text.length > 92) {
+    text = `${text.slice(0, 88).trim()}…`;
+  }
+  return normalizeText(text);
+}
+
+function questionTextFor(sign) {
+  if (sign.category === 'A') return 'ماذا تحذر هذه الشاخصة؟';
+  if (sign.category === 'B') return 'ماذا يسري عند هذه الشاخصة؟';
+  if (sign.category === 'D') return 'ماذا توجب هذه الشاخصة؟';
+  if (sign.category === 'T') return 'ماذا تعني اللوحة الإضافية؟';
+  return 'ماذا تعني هذه الشاخصة؟';
 }
 
 const signPool = trafficSigns
@@ -41,10 +109,14 @@ const signsByCategory = signPool.reduce((acc, sign) => {
 function pickDistractors(sign, textGetter, count = 3) {
   const correct = textGetter(sign);
   const sameCategory = signsByCategory[sign.category] || [];
-  const candidates = shuffle([
-    ...sameCategory.filter((item) => item.code !== sign.code),
-    ...signPool.filter((item) => item.category !== sign.category),
-  ]);
+  const preferred = (preferredDistractorCodes[sign.code] || [])
+    .map((code) => signPool.find((item) => item.code === code))
+    .filter(Boolean);
+  const candidates = [
+    ...shuffle(preferred),
+    ...shuffle(sameCategory.filter((item) => item.code !== sign.code)),
+    ...shuffle(signPool.filter((item) => item.category !== sign.category)),
+  ];
 
   const seen = new Set([correct]);
   const result = [];
@@ -65,36 +137,25 @@ function buildOptions(correctText, distractors) {
   ]);
 }
 
-function questionKindFor(sign) {
-  const codeSum = String(sign.code)
-    .split('')
-    .reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return codeSum % 2 === 0 ? 'meaning' : 'use';
-}
-
 function buildQuestion(sign) {
-  const kind = questionKindFor(sign);
-  const correctText = kind === 'meaning' ? sign.arabicName : firstMeaningSentence(sign);
-  const textGetter = kind === 'meaning' ? (item) => item.arabicName : firstMeaningSentence;
-  const options = buildOptions(correctText, pickDistractors(sign, textGetter));
+  const correctText = compactOptionText(sign);
+  const options = buildOptions(correctText, pickDistractors(sign, compactOptionText));
   const correctIndex = options.findIndex((option) => option.correct);
   const meaning = normalizeText(sign.officialMeaning);
   const note = normalizeText(sign.trainingNote);
 
   return {
-    id: `image-${sign.code.toLowerCase()}-${kind}`,
+    id: `image-${sign.code.toLowerCase()}`,
     groupId: `sign-${sign.category}`,
     groupName: sign.categoryNameAr || 'الشاخصات المرورية',
     signCode: sign.code,
-    text: kind === 'meaning'
-      ? 'ما المعنى الأدق للشاخصة الظاهرة في الصورة؟'
-      : 'أي توقع أو تصرف يطابق هذه الشاخصة بشكل أدق؟',
+    text: questionTextFor(sign),
     imageUrl: sign.image,
     imageAlt: sign.imageAlt || sign.arabicName,
     options: options.map((option) => option.text),
     correctIndex,
     explanation: note ? `${meaning} ${note}` : meaning,
-    difficulty: kind === 'meaning' ? 'medium' : 'hard',
+    difficulty: 'medium',
   };
 }
 
