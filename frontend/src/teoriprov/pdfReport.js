@@ -21,6 +21,7 @@ export async function generateAttemptPdf(attempt) {
     const container = sections[i];
     document.body.appendChild(container);
     try {
+      await document.fonts.ready;
       const canvas = await html2canvas(container, { scale: 1.5, useCORS: true, backgroundColor: '#ffffff' });
       const imgHeight = (canvas.height * pageWidth) / canvas.width;
       if (i > 0) pdf.addPage();
@@ -47,7 +48,7 @@ function baseContainer() {
   wrap.style.top = '0';
   wrap.style.width = '780px';
   wrap.style.direction = 'rtl';
-  wrap.style.fontFamily = "'Tajawal', 'Segoe UI', sans-serif";
+  wrap.style.fontFamily = getComputedStyle(document.body).fontFamily;
   wrap.style.background = '#ffffff';
   wrap.style.color = '#1b1f27';
   wrap.style.padding = '32px';

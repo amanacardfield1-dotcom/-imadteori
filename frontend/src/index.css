@@ -18,7 +18,25 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: 'Tajawal', 'Segoe UI', sans-serif;
+  font-family: 'Noto Sans Arabic', 'Segoe UI', sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: 700;
 }
 
 a {
@@ -1130,6 +1148,7 @@ main {
   background: #eaf8ef;
   border-color: #38985b;
   color: #175d35;
+  font-weight: 700;
 }
 .tp-answer-option.is-correct input {
   accent-color: #217a43;
