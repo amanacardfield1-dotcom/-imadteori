@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { fetchBank, getLastAttemptQuestionIds, saveAttempt } from '../teoriprov/api';
-import { generateExam, gradeExam, EXAM_SECONDS, CATEGORY_LABELS } from '../teoriprov/engine';
+import { generateExam, gradeExam, isCurrentExam, EXAM_SECONDS, CATEGORY_LABELS } from '../teoriprov/engine';
 
 const STORAGE_KEY = 'tp-exam-inprogress';
 const FLOW_VERSION = 2;
@@ -45,7 +45,7 @@ export default function TeoriProvRun() {
       if (raw) {
         try {
           const saved = JSON.parse(raw);
-          if (saved.userId === user.uid && Array.isArray(saved.exam) && saved.exam.length > 0) {
+          if (saved.userId === user.uid && isCurrentExam(saved.exam)) {
             const elapsed = Math.floor((Date.now() - saved.startTime) / 1000);
             if (elapsed >= 0 && elapsed < EXAM_SECONDS) {
               const restoredAnswers = {};

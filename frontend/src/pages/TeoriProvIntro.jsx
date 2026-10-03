@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { getMyAttempts } from '../teoriprov/api';
-import { TOTAL_QUESTIONS, TOTAL_SCORED, TRIAL_COUNT, PASS_SCORE, EXAM_SECONDS } from '../teoriprov/engine';
+import { TOTAL_QUESTIONS, TOTAL_SCORED, PASS_SCORE, EXAM_SECONDS } from '../teoriprov/engine';
 
 export default function TeoriProvIntro() {
   const { user } = useAuth();
@@ -20,21 +20,17 @@ export default function TeoriProvIntro() {
     <div className="page">
       <h1>محاكاة اختبار Teoriprov — رخصة B</h1>
       <p className="muted">
-        هذا الاختبار التدريبي مصمَّم ليحاكي بنية اختبار القيادة النظري السويدي الحقيقي لفئة B
-        (Behörighet B) من حيث عدد الأسئلة، الوقت، وطريقة احتساب النتيجة.
+        اختبار تدريبي لرخصة B في قواعد المرور والسلامة المرورية ومعرفة المركبة والبيئة والعوامل الشخصية.
       </p>
 
       <div className="tp-info-grid">
         <div className="tp-info-card"><strong>{TOTAL_QUESTIONS}</strong><span>سؤالًا إجماليًا</span></div>
         <div className="tp-info-card"><strong>{Math.floor(EXAM_SECONDS / 60)}</strong><span>دقيقة</span></div>
-        <div className="tp-info-card"><strong>{TOTAL_SCORED}</strong><span>سؤالًا محتسبًا</span></div>
-        <div className="tp-info-card"><strong>{TRIAL_COUNT}</strong><span>أسئلة تجريبية غير محتسبة</span></div>
         <div className="tp-info-card"><strong>{PASS_SCORE}/{TOTAL_SCORED}</strong><span>درجة النجاح</span></div>
       </div>
 
       <ul className="tp-rules-list">
         <li>الأسئلة والخيارات تُولَّد وتُرتَّب عشوائيًا في كل محاولة — لن تحصل على نفس الترتيب مرتين.</li>
-        <li>الأسئلة الخمسة التجريبية غير محتسبة ولا يمكنك معرفة أيها هي أثناء الاختبار — تمامًا كالاختبار الحقيقي.</li>
         <li>لكل سؤال إجابة صحيحة واحدة فقط.</li>
         <li>عند انتهاء الوقت، يُنهى الاختبار تلقائيًا وتُحتسب الأسئلة غير المجاب عنها كإجابات خاطئة.</li>
       </ul>

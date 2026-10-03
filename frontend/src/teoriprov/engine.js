@@ -1,11 +1,8 @@
-// محرك توليد اختبار Teoriprov: يختار 70 سؤالًا عشوائيًا موزّعة على المجالات
-// الخمسة الرسمية، يخلط ترتيب الأسئلة وترتيب خياراتها، ويحدد 5 أسئلة تجريبية
-// غير محتسبة بشكل عشوائي وخفي عن المستخدم — تمامًا كآلية الاختبار الحقيقي.
+// Generate 65 scored questions with fixed category quotas and shuffled options.
 
-export const CATEGORY_COUNTS = { regler: 20, sakerhet: 16, fordon: 14, miljo: 10, personliga: 10 };
-export const TOTAL_QUESTIONS = 70;
-export const TRIAL_COUNT = 5;
-export const TOTAL_SCORED = 65;
+export const CATEGORY_COUNTS = { regler: 32, sakerhet: 16, fordon: 7, miljo: 5, personliga: 5 };
+export const TOTAL_QUESTIONS = 65;
+export const TOTAL_SCORED = TOTAL_QUESTIONS;
 export const PASS_SCORE = 52;
 export const EXAM_SECONDS = 50 * 60;
 
@@ -26,6 +23,16 @@ function shuffle(arr) {
   return a;
 }
 
+export function isCurrentExam(exam) {
+  return Array.isArray(exam)
+    && exam.length === TOTAL_QUESTIONS
+    && exam.every((q) => q && !q.isTrial)
+    && new Set(exam.map((q) => q.id)).size === TOTAL_QUESTIONS
+    && Object.entries(CATEGORY_COUNTS).every(([category, count]) => (
+      exam.filter((q) => q.category === category).length === count
+    ));
+}
+
 /**
  * bankByCategory: { regler: [...], sakerhet: [...], ... } من بنك Firestore.
  * recentIds: مجموعة معرفات الأسئلة المستخدمة في آخر محاولة (لتفادي تكرارها قدر الإمكان).
@@ -35,6 +42,9 @@ export function generateExam(bankByCategory, recentIds = new Set()) {
 
   for (const [cat, count] of Object.entries(CATEGORY_COUNTS)) {
     const pool = bankByCategory[cat] || [];
+    if (pool.length < count) {
+      throw new Error(`Insufficient questions for ${cat}: need ${count}, found ${pool.length}`);
+    }
     const fresh = pool.filter((q) => !recentIds.has(q.id));
     const usable = fresh.length >= count ? fresh : pool; // fallback إن كان البنك صغيرًا جدًا
     selected.push(...shuffle(usable).slice(0, count));
@@ -42,9 +52,7 @@ export function generateExam(bankByCategory, recentIds = new Set()) {
 
   selected = shuffle(selected);
 
-  const trialPositions = new Set(shuffle(selected.map((_, i) => i)).slice(0, TRIAL_COUNT));
-
-  const exam = selected.map((q, i) => {
+  const exam = selected.map((q) => {
     const withFlag = q.options.map((text, idx) => ({ text, isCorrect: idx === q.correctIndex }));
     const shuffled = shuffle(withFlag);
     return {
@@ -57,7 +65,7 @@ export function generateExam(bankByCategory, recentIds = new Set()) {
       ...(q.imageUrl ? { imageUrl: q.imageUrl, imageAlt: q.imageAlt || '' } : {}),
       options: shuffled.map((o) => o.text),
       correctIndex: shuffled.findIndex((o) => o.isCorrect),
-      isTrial: trialPositions.has(i),
+      isTrial: false,
     };
   });
 
