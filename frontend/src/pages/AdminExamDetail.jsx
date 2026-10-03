@@ -106,8 +106,8 @@ export default function AdminExamDetail() {
                 <li
                   key={i}
                   style={{
-                    fontWeight: i === q.correctIndex ? 700 : 400,
-                    color: i === q.selectedIndex && i !== q.correctIndex ? 'var(--danger)' : i === q.correctIndex ? 'var(--success)' : 'inherit',
+                    fontWeight: i === q.correctIndex ? 800 : 700,
+                    color: i === q.selectedIndex && i !== q.correctIndex ? 'var(--question-incorrect)' : i === q.correctIndex ? 'var(--question-correct)' : 'inherit',
                   }}
                 >
                   {opt}

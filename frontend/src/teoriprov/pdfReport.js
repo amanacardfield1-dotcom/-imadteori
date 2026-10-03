@@ -132,19 +132,19 @@ function buildQuestionSections(a) {
           : q.selectedIndex === null
           ? '<span style="color:#b8860b;">⬤ لم تتم الإجابة</span>'
           : q.isCorrect
-          ? '<span style="color:#1e8449;">✓ إجابة صحيحة</span>'
-          : '<span style="color:#c0392b;">✗ إجابة خاطئة</span>';
+          ? '<span style="color:#124b2b;">✓ إجابة صحيحة</span>'
+          : '<span style="color:#8c1d2c;">✗ إجابة خاطئة</span>';
 
         const userAnswer = q.selectedIndex !== null ? esc(q.options[q.selectedIndex]) : 'لم تتم الإجابة';
         const correctLine =
           !q.isTrial && !q.isCorrect
-            ? `<div style="color:#1e8449;">الإجابة الصحيحة: ${esc(q.options[q.correctIndex])}</div>`
+            ? `<div style="color:#124b2b;">الإجابة الصحيحة: ${esc(q.options[q.correctIndex])}</div>`
             : '';
         const imgHtml = q.imageUrl ? `<img src="${esc(q.imageUrl)}" style="max-width:100%;margin:6px 0;border-radius:6px;" />` : '';
 
         return `
-          <div style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 14px;margin-bottom:10px;">
-            <div style="font-weight:700;margin-bottom:4px;">${num}. ${esc(q.text)}</div>
+          <div style="border:1px solid #e5e7eb;border-radius:8px;padding:12px 14px;margin-bottom:10px;color:#111827;font-weight:700;">
+            <div style="font-weight:800;margin-bottom:4px;">${num}. ${esc(q.text)}</div>
             <div style="font-size:12px;color:#6b7280;margin-bottom:4px;">المجال: ${esc(CATEGORY_LABELS[q.category] || q.category)}</div>
             ${imgHtml}
             <div>إجابة المستخدم: ${userAnswer}</div>
