@@ -54,6 +54,7 @@ export function generateExam(bankByCategory, recentIds = new Set()) {
       scenario: q.scenario,
       text: q.text,
       explanation: q.explanation,
+      ...(q.imageUrl ? { imageUrl: q.imageUrl, imageAlt: q.imageAlt || '' } : {}),
       options: shuffled.map((o) => o.text),
       correctIndex: shuffled.findIndex((o) => o.isCorrect),
       isTrial: trialPositions.has(i),
