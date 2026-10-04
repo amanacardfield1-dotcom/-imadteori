@@ -1,11 +1,14 @@
 import { collection, getDocs, addDoc, doc, getDoc, query, where } from 'firebase/firestore';
 import { db } from '../firebase';
 import { CATEGORY_COUNTS } from './engine';
+import { fetchPracticeBank } from '../practiceExam/api';
+import { toCategoryBank, mergeCategoryBanks } from '../practiceExam/bankAdapters';
 
 let bankCache = null;
 
 export async function fetchBank() {
   if (bankCache) return bankCache;
+  const bank = await fetchPracticeBank();
   const snap = await getDocs(collection(db, 'teoriprovBank'));
   const byCategory = {};
   Object.keys(CATEGORY_COUNTS).forEach((cat) => (byCategory[cat] = []));
@@ -13,8 +16,8 @@ export async function fetchBank() {
     const data = { id: d.id, ...d.data() };
     if (byCategory[data.category]) byCategory[data.category].push(data);
   });
-  bankCache = byCategory;
-  return byCategory;
+  bankCache = mergeCategoryBanks(byCategory, toCategoryBank(bank, { editionsOnly: true }));
+  return bankCache;
 }
 
 export async function getLastAttemptQuestionIds(uid) {

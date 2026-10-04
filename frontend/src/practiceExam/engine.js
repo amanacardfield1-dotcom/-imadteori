@@ -96,18 +96,27 @@ export function generatePracticeExam(bank, recentIds = new Set()) {
   const settings = bank.settings || {};
   const totalQuestions = settings.exam_question_count || DEFAULT_EXAM_QUESTION_COUNT;
   const weights = settings.group_weights || {};
-  const activeGroups = (bank.groups || []).filter((g) => g.active !== false && (bank.byGroup[g.id] || []).length > 0);
+  const pools = Object.fromEntries((bank.groups || []).map((g) => [g.id, (bank.byGroup[g.id] || []).filter((q) => (
+    q.status === 'active' && q.answers?.length === 4 && q.answers.filter((a) => a.correct).length === 1
+  ))]));
+  const activeGroups = (bank.groups || []).filter((g) => (
+    g.active !== false && (weights[g.id] ?? g.weight ?? 0) > 0 && pools[g.id].length > 0
+  ));
 
   const counts = allocateWeightedCounts(activeGroups, weights, totalQuestions);
   const groupNamesById = Object.fromEntries((bank.groups || []).map((g) => [g.id, g.group_name]));
 
   let selected = [];
   activeGroups.forEach((g) => {
-    const pool = (bank.byGroup[g.id] || []).filter((q) => q.status === 'active');
+    const pool = pools[g.id];
     selected.push(...pickFromPool(pool, counts[g.id] || 0, recentIds));
   });
 
-  selected = shuffle(selected).slice(0, totalQuestions);
+  const selectedIds = new Set(selected.map((q) => q.question_id));
+  const remaining = activeGroups.flatMap((g) => pools[g.id]).filter((q) => !selectedIds.has(q.question_id));
+  if (selected.length < totalQuestions) selected.push(...pickFromPool(remaining, totalQuestions - selected.length, recentIds));
+  if (selected.length !== totalQuestions) throw new Error('Insufficient active questions for a complete practice exam');
+  selected = shuffle(selected);
   const examQuestions = shuffle(selected).map((q, i) => toExamQuestion(q, i, groupNamesById));
 
   const coverage = {};

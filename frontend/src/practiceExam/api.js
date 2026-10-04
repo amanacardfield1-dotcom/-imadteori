@@ -3,6 +3,7 @@ import {
   query, where, writeBatch, increment,
 } from 'firebase/firestore';
 import { db } from '../firebase';
+import { isQuestionIncluded } from './bankAdapters';
 
 let bankCache = null;
 
@@ -15,11 +16,13 @@ export function clearBankCache() {
 export async function fetchPracticeBank() {
   if (bankCache) return bankCache;
 
-  const [groupsSnap, questionsSnap, settingsSnap] = await Promise.all([
+  const [groupsSnap, settingsSnap] = await Promise.all([
     getDocs(collection(db, 'questionBankV2', 'groups', 'items')),
-    getDocs(collection(db, 'questionBankV2', 'questions', 'items')),
     getDoc(doc(db, 'questionBankV2', 'settings')),
   ]);
+  const settings = settingsSnap.exists() ? settingsSnap.data() : {};
+  const questionsRef = collection(db, 'questionBankV2', 'questions', 'items');
+  const questionsSnap = await getDocs(questionsRef);
 
   const groups = groupsSnap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
@@ -29,11 +32,12 @@ export async function fetchPracticeBank() {
   groups.forEach((g) => { byGroup[g.id] = []; });
   questionsSnap.docs.forEach((d) => {
     const data = { question_id: d.id, ...d.data() };
+    if (!isQuestionIncluded(data, settings)) return;
     if (!byGroup[data.group_id]) byGroup[data.group_id] = [];
     byGroup[data.group_id].push(data);
   });
 
-  bankCache = { groups, byGroup, settings: settingsSnap.exists() ? settingsSnap.data() : {} };
+  bankCache = { groups, byGroup, settings };
   return bankCache;
 }
 

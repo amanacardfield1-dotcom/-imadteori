@@ -57,6 +57,7 @@ export function generateExam(bankByCategory, recentIds = new Set()) {
     const shuffled = shuffle(withFlag);
     return {
       id: q.id,
+      ...(q.edition ? { edition: q.edition } : {}),
       category: q.category,
       difficulty: q.difficulty,
       scenario: q.scenario,

@@ -506,6 +506,17 @@ export function getImageQuestionBank() {
   return signPool.map(buildQuestion);
 }
 
+export function combinedImageQuestionBank(additions = []) {
+  const ids = new Set();
+  const images = new Set();
+  return [...getImageQuestionBank(), ...additions].filter((q) => {
+    if (!q.imageUrl || ids.has(q.id) || images.has(q.imageUrl)) return false;
+    ids.add(q.id);
+    images.add(q.imageUrl);
+    return true;
+  });
+}
+
 export function getImageQuestionBankStats() {
   const groups = new Set(signPool.map((sign) => sign.category));
   return {
@@ -555,14 +566,27 @@ export function saveImageExamAttempt(user, result, durationUsedSeconds) {
   }
 }
 
-export function generateImagePracticeExam(recentIds = new Set()) {
-  const bank = getImageQuestionBank();
-  const fresh = shuffle(bank.filter((question) => !recentIds.has(question.id)));
-  const repeated = shuffle(bank.filter((question) => recentIds.has(question.id)));
+export function generateImagePracticeExam(recentIds = new Set(), originalQuestions = null) {
+  const bank = originalQuestions ?? getImageQuestionBank();
+  if (bank.length < IMAGE_EXAM_QUESTION_COUNT) throw new Error('Insufficient illustrated questions');
+  const ids = new Set();
+  const images = new Set();
+  const unique = bank.filter((q) => {
+    if (!q.imageUrl || ids.has(q.id) || images.has(q.imageUrl)) return false;
+    ids.add(q.id);
+    images.add(q.imageUrl);
+    return true;
+  });
+  if (unique.length < IMAGE_EXAM_QUESTION_COUNT) throw new Error('Insufficient unique illustrated questions');
+  const fresh = shuffle(unique.filter((question) => !recentIds.has(question.id)));
+  const repeated = shuffle(unique.filter((question) => recentIds.has(question.id)));
   const selected = [...fresh, ...repeated].slice(0, IMAGE_EXAM_QUESTION_COUNT);
 
   return {
-    questions: selected.map((question, index) => ({ ...question, questionOrder: index + 1 })),
+    questions: selected.map((question, index) => {
+      const options = shuffle(question.options.map((text, i) => ({ text, correct: i === question.correctIndex })));
+      return { ...question, options: options.map((o) => o.text), correctIndex: options.findIndex((o) => o.correct), questionOrder: index + 1 };
+    }),
     totalQuestions: selected.length,
     bankSize: bank.length,
   };

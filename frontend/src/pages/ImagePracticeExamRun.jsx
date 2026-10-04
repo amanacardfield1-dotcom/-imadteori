@@ -1,8 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { fetchPracticeBank } from '../practiceExam/api';
+import { originalImageQuestions } from '../practiceExam/bankAdapters';
 import {
   generateImagePracticeExam,
+  combinedImageQuestionBank,
   getLastImageExamQuestionIds,
   gradeImagePracticeExam,
   saveImageExamAttempt,
@@ -10,17 +13,22 @@ import {
 
 export default function ImagePracticeExamRun() {
   const { user } = useAuth();
-  const [exam] = useState(() => {
-    const recentIds = getLastImageExamQuestionIds(user.uid);
-    return generateImagePracticeExam(recentIds);
-  });
-  const [stage, setStage] = useState(() => (exam.questions.length ? 'exam' : 'empty'));
+  const [exam, setExam] = useState(null);
+  const [stage, setStage] = useState('loading');
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flagged, setFlagged] = useState({});
   const [result, setResult] = useState(null);
   const [submitting, setSubmitting] = useState(false);
-  const [startTime] = useState(() => Date.now());
+  const [startTime, setStartTime] = useState(null);
+  useEffect(() => {
+    let cancelled = false;
+    fetchPracticeBank().then((bank) => {
+      const generated = generateImagePracticeExam(getLastImageExamQuestionIds(user.uid), combinedImageQuestionBank(originalImageQuestions(bank)));
+      if (!cancelled) { setExam(generated); setStartTime(Date.now()); setStage('exam'); }
+    }).catch(() => { if (!cancelled) setStage('error'); });
+    return () => { cancelled = true; };
+  }, [user.uid]);
 
   const answeredCount = Object.keys(answers).length;
   const currentQuestion = exam?.questions[currentIndex];
@@ -63,7 +71,8 @@ export default function ImagePracticeExamRun() {
     setSubmitting(false);
   };
 
-  if (stage === 'empty') return <div className="page error">بنك أسئلة الصور فارغ حاليًا.</div>;
+  if (stage === 'loading') return <div className="page">جارٍ تحميل الأسئلة...</div>;
+  if (stage === 'error') return <div className="page error">تعذر تحميل أسئلة الصور. <Link to="/tests">العودة للاختبارات</Link></div>;
 
   if (stage === 'result' && result) {
     return (
@@ -84,8 +93,8 @@ export default function ImagePracticeExamRun() {
           {result.questions.map((question, idx) => (
             <div key={question.id} className={`review-item ${question.isCorrect ? 'correct' : 'incorrect'}`}>
               <p className="review-question">{idx + 1}. {question.text}</p>
-              <p className="muted">{question.groupName} — {question.signCode}</p>
-              <img src={question.imageUrl} alt={question.imageAlt} className="image-exam-review-image" />
+              <p className="muted">{question.groupName}{question.signCode ? ` — ${question.signCode}` : ''}</p>
+              <img src={question.imageUrl} alt={question.imageAlt} className={`image-exam-review-image ${question.edition ? 'original-scene-image' : ''}`} />
               <p>إجابتك: {question.selectedIndex !== null ? question.options[question.selectedIndex] : 'لم تُجب'}</p>
               {!question.isCorrect && <p>الإجابة الصحيحة: {question.options[question.correctIndex]}</p>}
               <p className="explanation">{question.explanation}</p>
@@ -140,8 +149,8 @@ export default function ImagePracticeExamRun() {
           </button>
         </div>
 
-        <p className="muted image-question-meta">رمز الشاخصة: {currentQuestion.signCode}</p>
-        <img src={currentQuestion.imageUrl} alt={currentQuestion.imageAlt} className="image-exam-question-image" />
+        {currentQuestion.signCode && <p className="muted image-question-meta">رمز الشاخصة: {currentQuestion.signCode}</p>}
+        <img src={currentQuestion.imageUrl} alt={currentQuestion.imageAlt} className={`image-exam-question-image ${currentQuestion.edition ? 'original-scene-image' : ''}`} />
 
         <div className="image-options">
           {currentQuestion.options.map((option, index) => (
