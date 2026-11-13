@@ -30,7 +30,6 @@ export default function ImagePracticeExamRun() {
     return () => { cancelled = true; };
   }, [user.uid]);
 
-  const answeredCount = Object.keys(answers).length;
   const currentQuestion = exam?.questions[currentIndex];
 
   const weakGroups = useMemo(() => {
@@ -46,6 +45,7 @@ export default function ImagePracticeExamRun() {
   }, [result]);
 
   const selectAnswer = (qid, optionIndex) => {
+    if (answers[qid] !== undefined) return;
     setAnswers((prev) => ({ ...prev, [qid]: optionIndex }));
   };
 
@@ -107,39 +107,27 @@ export default function ImagePracticeExamRun() {
     );
   }
 
+  const selectedIndex = answers[currentQuestion?.id];
+  const isAnswered = selectedIndex !== undefined;
+  const isCorrect = isAnswered && selectedIndex === currentQuestion.correctIndex;
+
   return (
-    <div className="page image-exam-page">
+    <div className="page image-exam-page tp-sequential-exam">
       <div className="tp-exam-header">
-        <div>
-          <h1>اختبار تفاعلي بالصور</h1>
-          <p className="muted">أجبت على {answeredCount} من {exam.questions.length} سؤالًا.</p>
-        </div>
+        <div className="tp-current-question">السؤال <strong>{currentIndex + 1}</strong> من {exam.questions.length}</div>
         <button type="button" className="btn-primary" onClick={handleSubmit} disabled={submitting}>
           {submitting ? 'جارِ الإنهاء...' : 'إنهاء الاختبار'}
         </button>
       </div>
 
-      <div className="tp-question-grid image-question-grid" aria-label="تنقل بين الأسئلة">
-        {exam.questions.map((question, index) => (
-          <button
-            key={question.id}
-            type="button"
-            className={[
-              'tp-grid-cell',
-              answers[question.id] !== undefined ? 'answered' : '',
-              flagged[question.id] ? 'flagged' : '',
-              currentIndex === index ? 'current' : '',
-            ].filter(Boolean).join(' ')}
-            onClick={() => goTo(index)}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div>
-
-      <section className="quiz-question tp-question-box image-question-box">
+      <section
+        className={`tp-live-question image-question-box ${isAnswered ? (isCorrect ? 'is-correct' : 'is-incorrect') : ''}`}
+        aria-labelledby="image-question-title"
+      >
         <div className="tp-question-toolbar">
-          <h2 className="image-question-title">{currentIndex + 1}. {currentQuestion.text}</h2>
+          <div className="tp-live-question-heading">
+            <h1 id="image-question-title">{currentQuestion.text}</h1>
+          </div>
           <button
             type="button"
             className={`tp-flag-btn ${flagged[currentQuestion.id] ? 'active' : ''}`}
@@ -150,38 +138,56 @@ export default function ImagePracticeExamRun() {
         </div>
 
         {currentQuestion.signCode && <p className="muted image-question-meta">رمز الشاخصة: {currentQuestion.signCode}</p>}
-        <img src={currentQuestion.imageUrl} alt={currentQuestion.imageAlt} className={`image-exam-question-image ${currentQuestion.edition ? 'original-scene-image' : ''}`} />
+        <img
+          src={currentQuestion.imageUrl}
+          alt={currentQuestion.imageAlt}
+          className={`image-exam-question-image tp-live-question-image ${currentQuestion.edition ? 'original-scene-image' : ''}`}
+        />
 
-        <div className="image-options">
-          {currentQuestion.options.map((option, index) => (
-            <label key={option} className="quiz-option image-option">
-              <input
-                type="radio"
-                name={currentQuestion.id}
-                checked={answers[currentQuestion.id] === index}
-                onChange={() => selectAnswer(currentQuestion.id, index)}
-              />
-              {option}
-            </label>
-          ))}
-        </div>
+        <fieldset className="tp-live-options" disabled={isAnswered} aria-labelledby="image-question-title">
+          {currentQuestion.options.map((option, index) => {
+            const correctOption = isAnswered && index === currentQuestion.correctIndex;
+            const incorrectOption = isAnswered && index === selectedIndex && !isCorrect;
+            return (
+              <label
+                key={`${currentQuestion.id}-${index}`}
+                className={`tp-answer-option ${correctOption ? 'is-correct' : ''} ${incorrectOption ? 'is-incorrect' : ''}`}
+              >
+                <input
+                  type="radio"
+                  name={currentQuestion.id}
+                  checked={selectedIndex === index}
+                  onChange={() => selectAnswer(currentQuestion.id, index)}
+                />
+                <span className="tp-answer-text">{option}</span>
+                {(correctOption || incorrectOption) && (
+                  <span className="tp-answer-status">{correctOption ? 'الإجابة الصحيحة' : 'إجابتك'}</span>
+                )}
+              </label>
+            );
+          })}
+        </fieldset>
+        <p className="tp-answer-feedback" role="status">
+          {isAnswered ? (isCorrect ? 'إجابة صحيحة' : 'إجابة غير صحيحة') : ''}
+        </p>
       </section>
 
       <div className="tp-exam-nav">
         <button type="button" className="btn-secondary" onClick={() => goTo(currentIndex - 1)} disabled={currentIndex === 0}>
           السابق
         </button>
-        <button
-          type="button"
-          className="btn-primary"
-          onClick={() => goTo(currentIndex + 1)}
-          disabled={currentIndex === exam.questions.length - 1}
-        >
-          التالي
-        </button>
+        {currentIndex < exam.questions.length - 1 ? (
+          <button type="button" className="btn-primary" disabled={!isAnswered} onClick={() => goTo(currentIndex + 1)}>
+            السؤال التالي
+          </button>
+        ) : (
+          <button type="button" className="btn-primary" disabled={!isAnswered} onClick={handleSubmit}>
+            إنهاء الاختبار
+          </button>
+        )}
       </div>
 
-      <button type="button" className="tp-force-submit" onClick={handleSubmit}>
+      <button type="button" className="link-btn tp-force-submit" onClick={handleSubmit}>
         إنهاء الاختبار الآن
       </button>
     </div>
