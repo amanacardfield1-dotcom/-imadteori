@@ -10,6 +10,7 @@ import {
   gradeImagePracticeExam,
   saveImageExamAttempt,
 } from '../imagePracticeExam/bank';
+import { realPhotoQuestions } from '../imagePracticeExam/realPhotoQuestions';
 
 export default function ImagePracticeExamRun() {
   const { user } = useAuth();
@@ -24,7 +25,10 @@ export default function ImagePracticeExamRun() {
   useEffect(() => {
     let cancelled = false;
     fetchPracticeBank().then((bank) => {
-      const generated = generateImagePracticeExam(getLastImageExamQuestionIds(user.uid), combinedImageQuestionBank(originalImageQuestions(bank)));
+      const generated = generateImagePracticeExam(
+        getLastImageExamQuestionIds(user.uid),
+        combinedImageQuestionBank([...originalImageQuestions(bank), ...realPhotoQuestions])
+      );
       if (!cancelled) { setExam(generated); setStartTime(Date.now()); setStage('exam'); }
     }).catch(() => { if (!cancelled) setStage('error'); });
     return () => { cancelled = true; };

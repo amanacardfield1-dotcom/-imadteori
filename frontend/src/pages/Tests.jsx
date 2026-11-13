@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { fetchPracticeBank, getMyAttempts } from '../practiceExam/api';
 import { getImageQuestionBankStats, combinedImageQuestionBank, IMAGE_EXAM_QUESTION_COUNT } from '../imagePracticeExam/bank';
 import { originalImageQuestions } from '../practiceExam/bankAdapters';
+import { realPhotoQuestions } from '../imagePracticeExam/realPhotoQuestions';
 
 export default function Tests() {
   const { user } = useAuth();
@@ -19,7 +20,7 @@ export default function Tests() {
         setAttempts(myAttempts);
         setGroupCount(bank.groups.filter((g) => g.active !== false).length);
         setQuestionCount(Object.values(bank.byGroup).flat().length);
-        setImageBankStats({ total: combinedImageQuestionBank(originalImageQuestions(bank)).length });
+        setImageBankStats({ total: combinedImageQuestionBank([...originalImageQuestions(bank), ...realPhotoQuestions]).length });
       })
       .finally(() => setLoading(false));
   }, [user.uid]);
