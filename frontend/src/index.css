@@ -372,11 +372,21 @@ main {
   border-radius: var(--radius);
   padding: 18px 20px;
   box-shadow: var(--shadow-sm);
+  min-width: 0;
 }
 .quiz-question legend {
+  /* بدون float+width:100% يضع المتصفح الـlegend افتراضيًا فوق حدّ الـfieldset
+     نفسه (سلوك HTML قديم)، فيظهر متداخلاً مع أول خيار أسفله بصريًا. */
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--question-text);
   font-weight: 800;
-  padding: 0 4px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  padding: 0 0 14px;
+  margin: 0 0 14px;
+  border-bottom: 1px solid var(--border);
 }
 .quiz-option {
   display: flex;
