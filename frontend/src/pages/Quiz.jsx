@@ -8,6 +8,7 @@ export default function Quiz() {
   const { user } = useAuth();
   const [test, setTest] = useState(null);
   const [answers, setAnswers] = useState({});
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -16,15 +17,22 @@ export default function Quiz() {
     setTest(null);
     setResult(null);
     setAnswers({});
+    setCurrentIndex(0);
     api.getTest(id).then(setTest).catch((e) => setError(e.message));
   }, [id]);
 
   const selectAnswer = (questionId, optionIndex) => {
+    if (answers[questionId] !== undefined) return;
     setAnswers((prev) => ({ ...prev, [questionId]: optionIndex }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const goTo = (index) => {
+    if (!test) return;
+    setCurrentIndex(Math.min(Math.max(index, 0), test.questions.length - 1));
+  };
+
+  const handleSubmit = async () => {
+    if (submitting) return;
     setSubmitting(true);
     setError('');
     try {
@@ -65,35 +73,71 @@ export default function Quiz() {
     );
   }
 
-  return (
-    <div className="page">
-      <h1>{test.title}</h1>
-      <p>{test.description}</p>
+  const currentQuestion = test.questions[currentIndex];
+  const selectedIndex = answers[currentQuestion.id];
+  const isAnswered = selectedIndex !== undefined;
+  const isCorrect = isAnswered && selectedIndex === currentQuestion.correctIndex;
 
-      <form onSubmit={handleSubmit} className="quiz-form">
-        {test.questions.map((q, idx) => (
-          <fieldset key={q.id} className="quiz-question">
-            <legend>{idx + 1}. {q.text}</legend>
-            {q.options.map((opt, i) => (
-              <label key={i} className="quiz-option">
+  return (
+    <div className="page tp-sequential-exam">
+      <h1>{test.title}</h1>
+      <p className="muted">{test.description}</p>
+
+      <div className="tp-exam-header">
+        <div className="tp-current-question">السؤال <strong>{currentIndex + 1}</strong> من {test.questions.length}</div>
+      </div>
+
+      <section
+        className={`tp-live-question ${isAnswered ? (isCorrect ? 'is-correct' : 'is-incorrect') : ''}`}
+        aria-labelledby="quiz-question-title"
+      >
+        <div className="tp-live-question-heading">
+          <h2 id="quiz-question-title">{currentQuestion.text}</h2>
+        </div>
+        <fieldset className="tp-live-options" disabled={isAnswered} aria-labelledby="quiz-question-title">
+          {currentQuestion.options.map((opt, i) => {
+            const correctOption = isAnswered && i === currentQuestion.correctIndex;
+            const incorrectOption = isAnswered && i === selectedIndex && !isCorrect;
+            return (
+              <label
+                key={i}
+                className={`tp-answer-option ${correctOption ? 'is-correct' : ''} ${incorrectOption ? 'is-incorrect' : ''}`}
+              >
                 <input
                   type="radio"
-                  name={q.id}
-                  checked={answers[q.id] === i}
-                  onChange={() => selectAnswer(q.id, i)}
-                  required
+                  name={currentQuestion.id}
+                  checked={selectedIndex === i}
+                  onChange={() => selectAnswer(currentQuestion.id, i)}
                 />
-                {opt}
+                <span className="tp-answer-text">{opt}</span>
+                {(correctOption || incorrectOption) && (
+                  <span className="tp-answer-status">{correctOption ? 'الإجابة الصحيحة' : 'إجابتك'}</span>
+                )}
               </label>
-            ))}
-          </fieldset>
-        ))}
+            );
+          })}
+        </fieldset>
+        <p className="tp-answer-feedback" role="status">
+          {isAnswered ? (isCorrect ? 'إجابة صحيحة' : 'إجابة غير صحيحة') : ''}
+        </p>
+      </section>
 
-        {error && <p className="error">{error}</p>}
-        <button type="submit" className="btn-primary" disabled={submitting}>
-          {submitting ? 'جارِ الإرسال...' : 'إنهاء وعرض النتيجة'}
+      {error && <p className="error">{error}</p>}
+
+      <div className="tp-exam-nav">
+        <button type="button" className="btn-secondary" onClick={() => goTo(currentIndex - 1)} disabled={currentIndex === 0}>
+          السابق
         </button>
-      </form>
+        {currentIndex < test.questions.length - 1 ? (
+          <button type="button" className="btn-primary" disabled={!isAnswered} onClick={() => goTo(currentIndex + 1)}>
+            السؤال التالي
+          </button>
+        ) : (
+          <button type="button" className="btn-primary" disabled={!isAnswered || submitting} onClick={handleSubmit}>
+            {submitting ? 'جارِ الإرسال...' : 'إنهاء وعرض النتيجة'}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
